@@ -50,32 +50,6 @@ local wcls_input = g.pnode({
     },
 }, nin=0, nout=1);
 
-
-local magoutput = 'mag.root';
-local magnify = import 'pgrapher/experiment/dune-vd/magnify-sinks.jsonnet';
-local sinks = magnify(tools, magoutput);
-
-local multipass = [
-  g.pipeline([
-                sinks.decon_pipe[n],
-             ],
-             'multipass%d' % n)
-  for n in std.range(0, nanodes - 1)];
-
-local magdecon = 
-g.pnode({
-    type: 'MagnifySink',
-    name: 'magdecon_all',
-    data: {
-        output_filename: magoutput,
-        root_file_mode: 'UPDATE',
-        frames: ['gauss'],
-        trace_has_tag: true,
-        anode: wc.tn(mega_anode),
-    },
-}, nin=1, nout=1, uses=[mega_anode]);
-
-
 local hio_sp = g.pnode({
       type: 'HDF5FrameTap',
       name: 'hio_sp_all',
@@ -90,7 +64,6 @@ local hio_sp = g.pnode({
     }, nin=1, nout=1);
 
 local dumpcap = g.pnode({ type: 'DumpFrames' }, nin=1, nout=0);
-local fanpipe = f.fanpipe('FrameFanout', multipass, 'FrameFanin', 'sn_mag_nf');
 local graph = g.pipeline([wcls_input, hio_sp, dumpcap], "main");
 
 local app = {
