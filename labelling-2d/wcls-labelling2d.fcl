@@ -65,8 +65,10 @@ physics :{
 
             plugins: ["WireCellGen", "WireCellImg", "WireCellClus", "WireCellPgraph", "WireCellSio", "WireCellHio", "WireCellRoot", "WireCellLarsoft", "WireCellAIML"]
 
-            inputers: ["wclsCookedFrameSource:sigs"
-                      ]
+            inputers: [
+                "wclsCookedFrameSource:sigs"
+                , "Labelling2D:all"
+            ]
 
             # outputers: ["wclsNumpyFrameSaver:signal"]
 
