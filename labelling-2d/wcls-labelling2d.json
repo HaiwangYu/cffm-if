@@ -48,17 +48,30 @@
             "gauss"
          ]
       },
-      "name": "hio_sp_all",
+      "name": "hio_rec_all",
       "type": "HDF5FrameTap"
    },
    {
       "data": {
-         "m_reco_tag": "gauss",
          "nticks": 6000,
+         "reco_tag": "gauss",
          "simchannel_label": "tpcrawdecoder:simpleSC"
       },
       "name": "all",
       "type": "Labelling2D"
+   },
+   {
+      "data": {
+         "anode": "MegaAnodePlane:meganodes",
+         "filename": "g4-tru.h5",
+         "gzip": 2,
+         "trace_tags": [
+            "trackid",
+            "pid"
+         ]
+      },
+      "name": "hio_tru_all",
+      "type": "HDF5FrameTap"
    },
    {
       "type": "DumpFrames"
@@ -68,7 +81,7 @@
          "edges": [
             {
                "head": {
-                  "node": "HDF5FrameTap:hio_sp_all",
+                  "node": "HDF5FrameTap:hio_rec_all",
                   "port": 0
                },
                "tail": {
@@ -82,7 +95,17 @@
                   "port": 0
                },
                "tail": {
-                  "node": "HDF5FrameTap:hio_sp_all",
+                  "node": "HDF5FrameTap:hio_rec_all",
+                  "port": 0
+               }
+            },
+            {
+               "head": {
+                  "node": "HDF5FrameTap:hio_tru_all",
+                  "port": 0
+               },
+               "tail": {
+                  "node": "Labelling2D:all",
                   "port": 0
                }
             },
@@ -92,7 +115,7 @@
                   "port": 0
                },
                "tail": {
-                  "node": "Labelling2D:all",
+                  "node": "HDF5FrameTap:hio_tru_all",
                   "port": 0
                }
             }
