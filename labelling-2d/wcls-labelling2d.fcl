@@ -1,0 +1,93 @@
+
+#include "HDF5RawInput3.fcl"
+#include "PDVDTPCReader.fcl"
+#include "DAPHNEReaderPDHD.fcl"
+
+#include "wirecell_dune.fcl"
+#include "hitfindermodules_dune.fcl"
+#include "SpacePointSolver_dune.fcl"
+#include "cluster_dune.fcl"
+#include "trackfindermodules_dune.fcl"
+#include "pandoramodules_dune.fcl"
+#include "calorimetry_pdune.fcl"
+#include "calibration_dune.fcl"
+#include "featurelabelingmodules.fcl"
+#include "particleid.fcl"
+#include "mctrutht0matching.fcl"
+#include "t0reco.fcl"
+#include "opticaldetectormodules_dune.fcl"
+#include "showerfindermodules_dune.fcl"
+#include "emshower3d.fcl"
+#include "ProtoDUNETriggerFilter.fcl"
+#include "OpSlicer.fcl"
+#include "CRT.fcl"
+#include "T0RecoAnodePiercers.fcl"
+#include "numberofhitsfilter.fcl"
+#include "protodune_tools_dune.fcl"
+
+process_name: wcai
+
+services:{
+   TFileService: { fileName: "%ifb_reco_hist.root" }
+   TimeTracker:       @local::dune_time_tracker
+   MemoryTracker:     @local::dune_memory_tracker
+   RandomNumberGenerator: {}
+   FileCatalogMetadata:  @local::art_file_catalog_data
+                         @table::protodunevd_reco_services
+   message:  @local::dune_message_services_prod
+        
+   HDF5RawFile3Service:  {}
+   IFDH: {}
+   DetectorPropertiesService:  @local::protodunevd_detproperties
+}
+
+
+
+source: {
+   module_type: RootInput
+   #saveMemoryObjectThreshold: 10485760 //commented Ewerton 2024-07-08
+
+   #inputCommands: ["drop *", "keep raw::RawDigits_*_*_*"]
+   #inputCommands: ["drop *", "keep *_*_*_Swizzler"]
+}
+
+physics :{
+   producers: {
+
+      sig2img : {
+         module_type : WireCellToolkit
+         wcls_main: {
+            tool_type: WCLS
+            apps: ["Pgrapher"]
+
+            logsinks: ["stdout"]
+            loglevels: ["debug"]
+
+            plugins: ["WireCellGen", "WireCellImg", "WireCellClus", "WireCellPgraph", "WireCellSio", "WireCellRoot", "WireCellLarsoft"]
+
+            inputers: ["wclsCookedFrameSource:sigs"
+                      ]
+
+            # outputers: ["wclsNumpyFrameSaver:signal"]
+
+            configs: ["wcls-img-clus.jsonnet"]
+
+            params : {
+                # Set "data" vs. "sim".
+                reality: "data"
+            }
+            structs : {
+                recobwire_tags: "[\"wclsdatavd:gauss\"]"
+                trace_tags: "[\"gauss\"]"
+                summary_tags: "[\"\"]"
+                input_mask_tags: "[]"
+                output_mask_tags: "[]"
+            }
+         }
+      }
+   }
+
+   p1 : [ sig2img ]
+   trigger_paths : [ p1 ]
+
+}
