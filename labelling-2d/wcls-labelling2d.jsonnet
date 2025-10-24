@@ -50,21 +50,40 @@ local wcls_input = g.pnode({
     },
 }, nin=0, nout=1);
 
-local hio_sp = g.pnode({
-      type: 'HDF5FrameTap',
-      name: 'hio_sp_all',
-      data: {
+local labelling2d = g.pnode({
+    type: 'Labelling2D',
+    name: 'all',
+    data: {
+        nticks: params.daq.nticks,
+        reco_tag: "gauss",
+        simchannel_label: "tpcrawdecoder:simpleSC",
+    },
+}, nin=1, nout=1);
+
+local hio_rec = g.pnode({
+    type: 'HDF5FrameTap',
+    name: 'hio_rec_all',
+    data: {
         anode: wc.tn(mega_anode),
         trace_tags: ['gauss'], 
         filename: "g4-rec.h5",
-        // chunk: [1, 1], // ncol, nrow
         gzip: 2,
-        // high_throughput: true,
-      },
-    }, nin=1, nout=1);
+    },
+}, nin=1, nout=1);
+
+local hio_tru = g.pnode({
+    type: 'HDF5FrameTap',
+    name: 'hio_tru_all',
+    data: {
+        anode: wc.tn(mega_anode),
+        trace_tags: ['truth'], 
+        filename: "g4-tru.h5",
+        gzip: 2,
+    },
+}, nin=1, nout=1);
 
 local dumpcap = g.pnode({ type: 'DumpFrames' }, nin=1, nout=0);
-local graph = g.pipeline([wcls_input, hio_sp, dumpcap], "main");
+local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow

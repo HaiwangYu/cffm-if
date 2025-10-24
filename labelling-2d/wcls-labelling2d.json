@@ -52,6 +52,15 @@
       "type": "HDF5FrameTap"
    },
    {
+      "data": {
+         "m_reco_tag": "gauss",
+         "nticks": 6000,
+         "simchannel_label": "tpcrawdecoder:simpleSC"
+      },
+      "name": "all",
+      "type": "Labelling2D"
+   },
+   {
       "type": "DumpFrames"
    },
    {
@@ -69,11 +78,21 @@
             },
             {
                "head": {
-                  "node": "DumpFrames",
+                  "node": "Labelling2D:all",
                   "port": 0
                },
                "tail": {
                   "node": "HDF5FrameTap:hio_sp_all",
+                  "port": 0
+               }
+            },
+            {
+               "head": {
+                  "node": "DumpFrames",
+                  "port": 0
+               },
+               "tail": {
+                  "node": "Labelling2D:all",
                   "port": 0
                }
             }
