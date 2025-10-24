@@ -1,0 +1,116 @@
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/protodunevd_v4_refactored.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Error: Unsupported GDML Tag Used :gdml_simple_extension. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :extension. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :color. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :color. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :color. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :color. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :color. Please Check Geometry/Schema.
+Error: Unsupported GDML Tag Used :color. Please Check Geometry/Schema.
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 292
+Info in <TGeoManager::CloseGeometry>: 16451 nodes/ 2412 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+GeoApaChannelGroupService::ctor: Group 0 (apa0) has 3072 channels from 3/3 readout planes.
+GeoApaChannelGroupService::ctor: Group 1 (apa1) has 3072 channels from 3/3 readout planes.
+GeoApaChannelGroupService::ctor: Group 2 (apa2) has 3072 channels from 3/3 readout planes.
+GeoApaChannelGroupService::ctor: Group 3 (apa3) has 3072 channels from 3/3 readout planes.
+PDSP Channel Map: Building RCE TPC wiremap from file protoDUNETPCChannelMap_RCE_v4.txt
+PDSP Channel Map: Building FELIX TPC wiremap from file protoDUNETPCChannelMap_RCE_v4.txt
+PDSP Channel Map: Building SSP channel map from file protoDUNESSPChannelMap_v1.txt
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+[09:35:39.546] D [  main  ] configuring component: "wclsCookedFrameSource":"sigs"
+[09:35:39.547] D [  main  ] configuring component: "HDF5FrameTap":"hio_rec_all"
+[09:35:39.547] W [  hio   ] <HDF5FrameTap:hio_rec_all> The parameter "anode" is ignored, consider fixing your config 
+[09:35:39.549] D [  hio   ] <HDF5FrameTap:hio_rec_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
+[09:35:39.555] D [  hio   ] <HDF5FrameTap:hio_rec_all> created file g4-rec.h5 
+[09:35:39.555] D [  main  ] configuring component: "Labelling2D":"all"
+[09:35:39.555] D [  main  ] configuring component: "HDF5FrameTap":"hio_tru_all"
+[09:35:39.555] W [  hio   ] <HDF5FrameTap:hio_tru_all> The parameter "anode" is ignored, consider fixing your config 
+[09:35:39.555] D [  hio   ] <HDF5FrameTap:hio_tru_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
+[09:35:39.558] D [  hio   ] <HDF5FrameTap:hio_tru_all> created file g4-tru.h5 
+[09:35:39.558] D [  main  ] configuring component: "DumpFrames":""
+[09:35:39.558] D [  main  ] configuring component: "Pgrapher":""
+[09:35:39.558] D [ pgraph ] <Pgrapher:> connecting: 4 edges 
+[09:35:39.559] D [ pgraph ] connect <Node  type:wcls::CookedFrameSource cat:1 sig:WireCell::ISourceNode<WireCell::IFrame> inputs:[ ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[09:35:39.559] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[09:35:39.559] D [ pgraph ] connect <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[09:35:39.559] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Gen::DumpFrames cat:2 sig:WireCell::IFrameSink inputs:[ WireCell::IFrame ] outputs:[ ](WireCell::IFrame:0)
+Inputer: "wclsCookedFrameSource:sigs"
+Inputer: "Labelling2D:all"
+24-Oct-2025 09:35:39 CDT  Initiating request to open input file "xuyang.root"
+24-Oct-2025 09:35:40 CDT  Opened input file "xuyang.root"
+db: runtime398922776
+Begin processing the 1st record. run: 1 subRun: 0 event: 1 at 24-Oct-2025 09:35:40 CDT
+[09:35:44.104] D [   io   ] CookedFrameSource::visit: event: 1
+[09:35:44.143] D [   io   ] wcls::CookedFrameSource: got 12288 wclsdatavd:gauss recob::Wire objects
+[09:35:44.471] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 1 
+[09:35:44.529] D [  aiml  ] <Labelling2D:all> Labelling2D cached 12288 SimChannels and 8418 track->pid entries 
+[09:35:44.530] D [  main  ] executing 2 apps, thread limit 0:
+[09:35:44.530] D [  main  ] executing 2 apps, thread limit 0:
+[09:35:44.530] D [  main  ] executing app: "Pgrapher"
+[09:35:44.530] D [ pgraph ] <Pgrapher:> executing graph 
+[09:35:44.530] D [ pgraph ] executing with 5 nodes
+[09:35:44.530] D [   io   ] CookedFrameSource output frame: ident=1 time=0 tick=500 with 12288 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "gauss":12288 [0] ] cmm:[ ]
+[09:35:44.530] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #1 with 12288 traces with frame tags: "orig" and trace tags: "gauss" looking for tags: "gauss" 
+[09:35:45.810] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[09:35:47.745] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /1/frame_gauss with 12288 channels 6000 ticks @t=0 ms qtot=9691618 
+[09:35:49.530] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=1 time=0 tick=500 with 24576 traces.  frame tags:[ "trackid" ] 2 tagged trace sets:[ "pid":12288 [0] "trackid":12288 [0] ] cmm:[ ] 
+[09:35:49.534] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #1 with 24576 traces with frame tags: "trackid" and trace tags: "pid" "trackid" looking for tags: "trackid" "pid" 
+[09:35:50.835] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[09:35:52.677] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_trackid with 12288 channels 6000 ticks @t=0 ms qtot=51933463000 
+[09:35:53.964] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[09:35:55.805] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_pid with 12288 channels 6000 ticks @t=0 ms qtot=319057530000 
+[09:35:55.807] D [  glue  ] sink frame: #1 @0 with 24576 traces, frame tags:[trackid], trace tags:[pid, trackid]
+[09:35:55.836] D [   io   ] CookedFrameSource output (null frame pointer)
+[09:35:55.836] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=1 
+[09:35:55.836] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=1 
+[09:35:55.836] D [  glue  ] frame sink sees EOS
+[09:35:55.836] D [ pgraph ] <Pgrapher:> graph execution complete 
+[09:35:55.836] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 6.27 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.21 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 1.78 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.02 sec
+[09:35:55.836] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[09:35:55.836] I [ timer  ] Timer: Total node execution : 11.279999990016222 sec
+[09:35:55.836] D [  main  ] executing app: "Pgrapher"
+[09:35:55.836] D [ pgraph ] <Pgrapher:> executing graph 
+[09:35:55.836] D [ pgraph ] executing with 5 nodes
+[09:35:55.836] D [ pgraph ] <Pgrapher:> graph execution complete 
+[09:35:55.836] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[09:35:55.836] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[09:35:55.836] I [ timer  ] Timer: Total node execution : 0 sec
+24-Oct-2025 09:35:55 CDT  Closed input file "xuyang.root"
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                      11.733        11.733        11.733        11.733           0            1     
+--------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                        0.000467822   0.000467822   0.000467822   0.000467822        0            1     
+p1:sig2img:WireCellToolkit                      11.7318       11.7318       11.7318       11.7318          0            1     
+[art]:TriggerResults:TriggerResultInserter    9.3469e-05    9.3469e-05    9.3469e-05    9.3469e-05         0            1     
+================================================================================================================================
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 5067.2 MB
+  Peak resident set size usage (VmHWM): 3624.14 MB
+  Details saved in: 'mem.db'
+====================================================================================================
+[09:35:57.727] D [  main  ] finalizing component: "HDF5FrameTap":"hio_rec_all"
+[09:35:57.728] D [  main  ] finalizing component: "HDF5FrameTap":"hio_tru_all"
+Art has completed and will exit with status 0.
