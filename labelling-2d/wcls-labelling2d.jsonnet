@@ -24,6 +24,15 @@ local tools = tools_all {anodes: [tools_all.anodes[n] for n in [0,1]]};
 local nanodes = std.length(tools.anodes);
 local anode_iota = std.range(0, nanodes - 1);
 
+local mega_anode = {
+    type: 'MegaAnodePlane',
+    name: 'meganodes',
+    data: {
+        anodes_tn: [wc.tn(anode) for anode in tools.anodes],
+    },
+    uses: [anode for anode in tools.anodes],
+};
+
 // must match name used in fcl
 local wcls_input = g.pnode({
     type: 'wclsCookedFrameSource',
@@ -39,7 +48,7 @@ local wcls_input = g.pnode({
         input_mask_tags: std.extVar('input_mask_tags'), // ["sptpc2d:badmasks"],
         output_mask_tags: std.extVar('output_mask_tags'), // ["bad"],
     },
-}, nin=0, nout=1, uses=tools.anodes);
+}, nin=0, nout=1);
 
 
 local magoutput = 'mag.root';
@@ -51,11 +60,38 @@ local multipass = [
                 sinks.decon_pipe[n],
              ],
              'multipass%d' % n)
-  for n in std.range(0, nanodes - 1)
-];
+  for n in std.range(0, nanodes - 1)];
+
+local magdecon = 
+g.pnode({
+    type: 'MagnifySink',
+    name: 'magdecon_all',
+    data: {
+        output_filename: magoutput,
+        root_file_mode: 'UPDATE',
+        frames: ['gauss'],
+        trace_has_tag: true,
+        anode: wc.tn(mega_anode),
+    },
+}, nin=1, nout=1, uses=[mega_anode]);
+
+
+local hio_sp = g.pnode({
+      type: 'HDF5FrameTap',
+      name: 'hio_sp_all',
+      data: {
+        anode: wc.tn(mega_anode),
+        trace_tags: ['gauss'], 
+        filename: "g4-rec.h5",
+        // chunk: [1, 1], // ncol, nrow
+        gzip: 2,
+        // high_throughput: true,
+      },
+    }, nin=1, nout=1);
+
 local dumpcap = g.pnode({ type: 'DumpFrames' }, nin=1, nout=0);
 local fanpipe = f.fanpipe('FrameFanout', multipass, 'FrameFanin', 'sn_mag_nf');
-local graph = g.pipeline([wcls_input, fanpipe, dumpcap], "main");
+local graph = g.pipeline([wcls_input, hio_sp, dumpcap], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow

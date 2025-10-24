@@ -18,54 +18,6 @@
    },
    {
       "data": {
-         "filename": "protodunevd-wires-larsoft-v3.json.bz2"
-      },
-      "type": "WireSchemaFile"
-   },
-   {
-      "data": {
-         "faces": [
-            {
-               "anode": -3358.3499999999999,
-               "cathode": -25.400000000000091,
-               "response": -3191.6374999999998
-            },
-            {
-               "anode": -3358.3499999999999,
-               "cathode": -25.400000000000091,
-               "response": -3191.6374999999998
-            }
-         ],
-         "ident": 0,
-         "nimpacts": 10,
-         "wire_schema": "WireSchemaFile"
-      },
-      "name": "anode0",
-      "type": "AnodePlane"
-   },
-   {
-      "data": {
-         "faces": [
-            {
-               "anode": -3358.3499999999999,
-               "cathode": -25.400000000000091,
-               "response": -3191.6374999999998
-            },
-            {
-               "anode": -3358.3499999999999,
-               "cathode": -25.400000000000091,
-               "response": -3191.6374999999998
-            }
-         ],
-         "ident": 1,
-         "nimpacts": 10,
-         "wire_schema": "WireSchemaFile"
-      },
-      "name": "anode1",
-      "type": "AnodePlane"
-   },
-   {
-      "data": {
          "frame_scale": 50,
          "frame_tags": [
             "orig"
@@ -89,48 +41,15 @@
    },
    {
       "data": {
-         "multiplicity": 2,
-         "tag_rules": [ ]
+         "anode": "MegaAnodePlane:meganodes",
+         "filename": "g4-rec.h5",
+         "gzip": 2,
+         "trace_tags": [
+            "gauss"
+         ]
       },
-      "name": "sn_mag_nf",
-      "type": "FrameFanout"
-   },
-   {
-      "data": {
-         "multiplicity": 2,
-         "tag_rules": [ ],
-         "tags": [ ]
-      },
-      "name": "sn_mag_nf",
-      "type": "FrameFanin"
-   },
-   {
-      "data": {
-         "anode": "AnodePlane:anode0",
-         "frames": [
-            "gauss0",
-            "wiener0"
-         ],
-         "output_filename": "mag.root",
-         "root_file_mode": "UPDATE",
-         "trace_has_tag": true
-      },
-      "name": "magdecon0",
-      "type": "MagnifySink"
-   },
-   {
-      "data": {
-         "anode": "AnodePlane:anode1",
-         "frames": [
-            "gauss1",
-            "wiener1"
-         ],
-         "output_filename": "mag.root",
-         "root_file_mode": "UPDATE",
-         "trace_has_tag": true
-      },
-      "name": "magdecon1",
-      "type": "MagnifySink"
+      "name": "hio_sp_all",
+      "type": "HDF5FrameTap"
    },
    {
       "type": "DumpFrames"
@@ -140,7 +59,7 @@
          "edges": [
             {
                "head": {
-                  "node": "FrameFanout:sn_mag_nf",
+                  "node": "HDF5FrameTap:hio_sp_all",
                   "port": 0
                },
                "tail": {
@@ -154,47 +73,7 @@
                   "port": 0
                },
                "tail": {
-                  "node": "FrameFanin:sn_mag_nf",
-                  "port": 0
-               }
-            },
-            {
-               "head": {
-                  "node": "MagnifySink:magdecon0",
-                  "port": 0
-               },
-               "tail": {
-                  "node": "FrameFanout:sn_mag_nf",
-                  "port": 0
-               }
-            },
-            {
-               "head": {
-                  "node": "MagnifySink:magdecon1",
-                  "port": 0
-               },
-               "tail": {
-                  "node": "FrameFanout:sn_mag_nf",
-                  "port": 1
-               }
-            },
-            {
-               "head": {
-                  "node": "FrameFanin:sn_mag_nf",
-                  "port": 0
-               },
-               "tail": {
-                  "node": "MagnifySink:magdecon0",
-                  "port": 0
-               }
-            },
-            {
-               "head": {
-                  "node": "FrameFanin:sn_mag_nf",
-                  "port": 1
-               },
-               "tail": {
-                  "node": "MagnifySink:magdecon1",
+                  "node": "HDF5FrameTap:hio_sp_all",
                   "port": 0
                }
             }

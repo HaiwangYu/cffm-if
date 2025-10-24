@@ -1,4 +1,5 @@
 *.root
-*.log
+*log
 *.db
+*.h5
 .tmp

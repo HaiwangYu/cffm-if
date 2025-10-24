@@ -63,14 +63,14 @@ physics :{
             logsinks: ["stdout"]
             loglevels: ["debug"]
 
-            plugins: ["WireCellGen", "WireCellImg", "WireCellClus", "WireCellPgraph", "WireCellSio", "WireCellRoot", "WireCellLarsoft"]
+            plugins: ["WireCellGen", "WireCellImg", "WireCellClus", "WireCellPgraph", "WireCellSio", "WireCellHio", "WireCellRoot", "WireCellLarsoft"]
 
             inputers: ["wclsCookedFrameSource:sigs"
                       ]
 
             # outputers: ["wclsNumpyFrameSaver:signal"]
 
-            configs: ["wcls-img-clus.jsonnet"]
+            configs: ["wcls-labelling2d.jsonnet"]
 
             params : {
                 # Set "data" vs. "sim".
