@@ -141,12 +141,20 @@ class FrameRebinner:
         rebin_channel: int
     ) -> Tuple[np.ndarray, np.ndarray]:
         """
-        Rebin track data by keeping track of 1st and 2nd contributions.
-        For each rebinned bin, select the 1st and 2nd based on biggest charge.
+        Rebin track data by combining and sorting all contributions.
+
+        For each rebinned bin:
+        1. Collect all values (trackid/pid) from both 1st and 2nd contributions
+        2. Group by value and sum their charges
+        3. Sort by combined charge (descending)
+        4. Output the top 2 values
+
+        This handles cases where the same track/PID appears in multiple small bins
+        within a rebinned pixel - their charges are combined before sorting.
 
         Args:
-            data_1st: (n_channels, n_ticks) array of 1st contribution
-            data_2nd: (n_channels, n_ticks) array of 2nd contribution
+            data_1st: (n_channels, n_ticks) array of 1st contribution values
+            data_2nd: (n_channels, n_ticks) array of 2nd contribution values
             charge_1st: (n_channels, n_ticks) array of charges for 1st
             charge_2nd: (n_channels, n_ticks) array of charges for 2nd
             rebin_time: rebin factor in time
@@ -172,22 +180,34 @@ class FrameRebinner:
                 tick_start = i_tick * rebin_time
                 tick_end = min(tick_start + rebin_time, n_ticks)
 
-                # Collect all 1st and 2nd contributions in this bin
-                contributions = []
+                # Group values by their charge sum
+                # {value: total_charge}
+                value_charges = {}
 
                 for ch in range(ch_start, ch_end):
                     for tick in range(tick_start, tick_end):
+                        # Collect from 1st contributions
                         if charge_1st[ch, tick] > 0:
-                            contributions.append((charge_1st[ch, tick], data_1st[ch, tick]))
-                        if charge_2nd[ch, tick] > 0:
-                            contributions.append((charge_2nd[ch, tick], data_2nd[ch, tick]))
+                            val = int(data_1st[ch, tick])
+                            if val not in value_charges:
+                                value_charges[val] = 0.0
+                            value_charges[val] += charge_1st[ch, tick]
 
-                if len(contributions) > 0:
-                    # Sort by charge descending
-                    contributions.sort(key=lambda x: x[0], reverse=True)
-                    out_1st[i_ch, i_tick] = contributions[0][1]
-                    if len(contributions) > 1:
-                        out_2nd[i_ch, i_tick] = contributions[1][1]
+                        # Collect from 2nd contributions
+                        if charge_2nd[ch, tick] > 0:
+                            val = int(data_2nd[ch, tick])
+                            if val not in value_charges:
+                                value_charges[val] = 0.0
+                            value_charges[val] += charge_2nd[ch, tick]
+
+                if len(value_charges) > 0:
+                    # Sort by combined charge (descending)
+                    sorted_values = sorted(value_charges.items(),
+                                          key=lambda x: x[1], reverse=True)
+                    # Output top 2 values
+                    out_1st[i_ch, i_tick] = sorted_values[0][0]
+                    if len(sorted_values) > 1:
+                        out_2nd[i_ch, i_tick] = sorted_values[1][0]
 
         return out_1st, out_2nd
 
@@ -302,8 +322,8 @@ class HDF5FrameProcessor:
                 plane_key = f"anode{anode_id}_plane{plane_id}"
 
                 # For g4-rec.h5
-                if 'frame_gauss' in frames_rec:
-                    data = frames_rec['frame_gauss'][plane_channels, :]
+                if 'gauss' in frames_rec:
+                    data = frames_rec['gauss'][plane_channels, :]
                     rebinned = self.rebinner.rebin_sum(data, self.rebin_time, self.rebin_channel)
                     rebinned_data[f"{plane_key}_gauss"] = rebinned
 
