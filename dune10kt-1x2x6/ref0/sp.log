@@ -1,0 +1,1309 @@
+The following module labels are either not assigned to any path,
+or they have been assigned to ignored path(s):
+  opdigi
+  rns
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 1149
+Info in <TGeoManager::CloseGeometry>: 67545 nodes/ 3831 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+registering to  primaryGeneratorActionsMap_
+registering to   eventActionsMap_
+registering to   trackingActionsMap_
+registering to  steppingActionsMap_
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+[08:50:08.920] D [  main  ] configuring component: "wclsSimDepoSource":""
+[08:50:08.921] D [  main  ] configuring component: "Random":""
+[08:50:08.922] D [  main  ] configuring component: "Drifter":""
+[08:50:08.922] D [  gen   ] <Drifter:> time offset: 0 ms, drift speed: 1.60563 mm/us 
+[08:50:08.922] D [  main  ] configuring component: "WireSchemaFile":""
+[08:50:08.922] I [  wct   ] loading compressed json file: /exp/dune/app/users/yuhw/wire-cell-data/dune10kt-1x2x6-wires-larsoft-v1.json.bz2
+[08:50:18.933] D [  main  ] configuring component: "AnodePlane":"apa0"
+[08:50:18.933] D [  geom  ] <AnodePlane:apa0> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.935] D [  geom  ] <AnodePlane:apa0> face:0, plane:0, origin:(130.016 -3005.57 1153.19) mm, wpid:[WirePlaneId "a0f0pU" ident=1 ind:0 layer:U apa:0 face:0 valid] 
+[08:50:18.936] D [  geom  ] <AnodePlane:apa0> face:0, plane:1, origin:(130.016 -3006.65 1153.19) mm, wpid:[WirePlaneId "a0f0pV" ident=2 ind:1 layer:V apa:0 face:0 valid] 
+[08:50:18.936] D [  geom  ] <AnodePlane:apa0> face:0, plane:2, origin:(130.016 -3008.24 1153.19) mm, wpid:[WirePlaneId "a0f0pW" ident=4 ind:2 layer:W apa:0 face:0 valid] 
+[08:50:18.936] D [  geom  ] <AnodePlane:apa0> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 3.58606) --> (3629.16 -16.2875 2302.78)] 
+[08:50:18.936] D [  geom  ] <AnodePlane:apa0> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.937] D [  geom  ] <AnodePlane:apa0> face:1, plane:0, origin:(-130.016 -3005.57 1153.19) mm, wpid:[WirePlaneId "a0f1pU" ident=9 ind:0 layer:U apa:0 face:1 valid] 
+[08:50:18.938] D [  geom  ] <AnodePlane:apa0> face:1, plane:1, origin:(-130.016 -3006.65 1153.19) mm, wpid:[WirePlaneId "a0f1pV" ident=10 ind:1 layer:V apa:0 face:1 valid] 
+[08:50:18.938] D [  geom  ] <AnodePlane:apa0> face:1, plane:2, origin:(-130.016 -3008.24 1153.19) mm, wpid:[WirePlaneId "a0f1pW" ident=12 ind:2 layer:W apa:0 face:1 valid] 
+[08:50:18.939] D [  geom  ] <AnodePlane:apa0> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 3.58626) --> (-39.5355 -16.2875 2302.78)] 
+[08:50:18.939] D [  main  ] configuring component: "AnodePlane":"apa1"
+[08:50:18.939] D [  geom  ] <AnodePlane:apa1> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.940] D [  geom  ] <AnodePlane:apa1> face:0, plane:0, origin:(130.016 3005.57 1153.19) mm, wpid:[WirePlaneId "a1f0pU" ident=17 ind:0 layer:U apa:1 face:0 valid] 
+[08:50:18.941] D [  geom  ] <AnodePlane:apa1> face:0, plane:1, origin:(130.016 3006.65 1153.19) mm, wpid:[WirePlaneId "a1f0pV" ident=18 ind:1 layer:V apa:1 face:0 valid] 
+[08:50:18.941] D [  geom  ] <AnodePlane:apa1> face:0, plane:2, origin:(130.016 3008.24 1153.19) mm, wpid:[WirePlaneId "a1f0pW" ident=20 ind:2 layer:W apa:1 face:0 valid] 
+[08:50:18.941] D [  geom  ] <AnodePlane:apa1> face:0 with 3 planes and sensvol: [(39.5355 16.2875 3.58622) --> (3629.16 6000.19 2302.78)] 
+[08:50:18.941] D [  geom  ] <AnodePlane:apa1> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.942] D [  geom  ] <AnodePlane:apa1> face:1, plane:0, origin:(-130.016 3005.57 1153.19) mm, wpid:[WirePlaneId "a1f1pU" ident=25 ind:0 layer:U apa:1 face:1 valid] 
+[08:50:18.943] D [  geom  ] <AnodePlane:apa1> face:1, plane:1, origin:(-130.016 3006.65 1153.19) mm, wpid:[WirePlaneId "a1f1pV" ident=26 ind:1 layer:V apa:1 face:1 valid] 
+[08:50:18.943] D [  geom  ] <AnodePlane:apa1> face:1, plane:2, origin:(-130.016 3008.24 1153.19) mm, wpid:[WirePlaneId "a1f1pW" ident=28 ind:2 layer:W apa:1 face:1 valid] 
+[08:50:18.943] D [  geom  ] <AnodePlane:apa1> face:1 with 3 planes and sensvol: [(-3629.16 16.2875 3.58606) --> (-39.5355 6000.19 2302.78)] 
+[08:50:18.944] D [  main  ] configuring component: "AnodePlane":"apa2"
+[08:50:18.944] D [  geom  ] <AnodePlane:apa2> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.944] D [  geom  ] <AnodePlane:apa2> face:0, plane:0, origin:(130.016 -3005.57 3477.09) mm, wpid:[WirePlaneId "a2f0pU" ident=33 ind:0 layer:U apa:2 face:0 valid] 
+[08:50:18.945] D [  geom  ] <AnodePlane:apa2> face:0, plane:1, origin:(130.016 -3006.65 3477.09) mm, wpid:[WirePlaneId "a2f0pV" ident=34 ind:1 layer:V apa:2 face:0 valid] 
+[08:50:18.946] D [  geom  ] <AnodePlane:apa2> face:0, plane:2, origin:(130.016 -3008.24 3477.08) mm, wpid:[WirePlaneId "a2f0pW" ident=36 ind:2 layer:W apa:2 face:0 valid] 
+[08:50:18.946] D [  geom  ] <AnodePlane:apa2> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 2327.48) --> (3629.16 -16.2875 4626.68)] 
+[08:50:18.946] D [  geom  ] <AnodePlane:apa2> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.946] D [  geom  ] <AnodePlane:apa2> face:1, plane:0, origin:(-130.016 -3005.57 3477.09) mm, wpid:[WirePlaneId "a2f1pU" ident=41 ind:0 layer:U apa:2 face:1 valid] 
+[08:50:18.947] D [  geom  ] <AnodePlane:apa2> face:1, plane:1, origin:(-130.016 -3006.65 3477.09) mm, wpid:[WirePlaneId "a2f1pV" ident=42 ind:1 layer:V apa:2 face:1 valid] 
+[08:50:18.948] D [  geom  ] <AnodePlane:apa2> face:1, plane:2, origin:(-130.016 -3008.24 3477.08) mm, wpid:[WirePlaneId "a2f1pW" ident=44 ind:2 layer:W apa:2 face:1 valid] 
+[08:50:18.948] D [  geom  ] <AnodePlane:apa2> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 2327.48) --> (-39.5355 -16.2875 4626.68)] 
+[08:50:18.948] D [  main  ] configuring component: "AnodePlane":"apa3"
+[08:50:18.948] D [  geom  ] <AnodePlane:apa3> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.949] D [  geom  ] <AnodePlane:apa3> face:0, plane:0, origin:(130.016 3005.57 3477.09) mm, wpid:[WirePlaneId "a3f0pU" ident=49 ind:0 layer:U apa:3 face:0 valid] 
+[08:50:18.950] D [  geom  ] <AnodePlane:apa3> face:0, plane:1, origin:(130.016 3006.65 3477.09) mm, wpid:[WirePlaneId "a3f0pV" ident=50 ind:1 layer:V apa:3 face:0 valid] 
+[08:50:18.950] D [  geom  ] <AnodePlane:apa3> face:0, plane:2, origin:(130.016 3008.24 3477.08) mm, wpid:[WirePlaneId "a3f0pW" ident=52 ind:2 layer:W apa:3 face:0 valid] 
+[08:50:18.951] D [  geom  ] <AnodePlane:apa3> face:0 with 3 planes and sensvol: [(39.5355 16.2875 2327.48) --> (3629.16 6000.19 4626.68)] 
+[08:50:18.951] D [  geom  ] <AnodePlane:apa3> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.951] D [  geom  ] <AnodePlane:apa3> face:1, plane:0, origin:(-130.016 3005.57 3477.09) mm, wpid:[WirePlaneId "a3f1pU" ident=57 ind:0 layer:U apa:3 face:1 valid] 
+[08:50:18.952] D [  geom  ] <AnodePlane:apa3> face:1, plane:1, origin:(-130.016 3006.65 3477.09) mm, wpid:[WirePlaneId "a3f1pV" ident=58 ind:1 layer:V apa:3 face:1 valid] 
+[08:50:18.952] D [  geom  ] <AnodePlane:apa3> face:1, plane:2, origin:(-130.016 3008.24 3477.08) mm, wpid:[WirePlaneId "a3f1pW" ident=60 ind:2 layer:W apa:3 face:1 valid] 
+[08:50:18.953] D [  geom  ] <AnodePlane:apa3> face:1 with 3 planes and sensvol: [(-3629.16 16.2875 2327.48) --> (-39.5355 6000.19 4626.68)] 
+[08:50:18.953] D [  main  ] configuring component: "AnodePlane":"apa4"
+[08:50:18.953] D [  geom  ] <AnodePlane:apa4> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.954] D [  geom  ] <AnodePlane:apa4> face:0, plane:0, origin:(130.016 -3005.57 5800.99) mm, wpid:[WirePlaneId "a4f0pU" ident=65 ind:0 layer:U apa:4 face:0 valid] 
+[08:50:18.955] D [  geom  ] <AnodePlane:apa4> face:0, plane:1, origin:(130.016 -3006.65 5800.99) mm, wpid:[WirePlaneId "a4f0pV" ident=66 ind:1 layer:V apa:4 face:0 valid] 
+[08:50:18.955] D [  geom  ] <AnodePlane:apa4> face:0, plane:2, origin:(130.016 -3008.24 5800.98) mm, wpid:[WirePlaneId "a4f0pW" ident=68 ind:2 layer:W apa:4 face:0 valid] 
+[08:50:18.955] D [  geom  ] <AnodePlane:apa4> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 4651.38) --> (3629.16 -16.2875 6950.58)] 
+[08:50:18.955] D [  geom  ] <AnodePlane:apa4> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.956] D [  geom  ] <AnodePlane:apa4> face:1, plane:0, origin:(-130.016 -3005.57 5800.99) mm, wpid:[WirePlaneId "a4f1pU" ident=73 ind:0 layer:U apa:4 face:1 valid] 
+[08:50:18.957] D [  geom  ] <AnodePlane:apa4> face:1, plane:1, origin:(-130.016 -3006.65 5800.99) mm, wpid:[WirePlaneId "a4f1pV" ident=74 ind:1 layer:V apa:4 face:1 valid] 
+[08:50:18.957] D [  geom  ] <AnodePlane:apa4> face:1, plane:2, origin:(-130.016 -3008.24 5800.98) mm, wpid:[WirePlaneId "a4f1pW" ident=76 ind:2 layer:W apa:4 face:1 valid] 
+[08:50:18.957] D [  geom  ] <AnodePlane:apa4> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 4651.38) --> (-39.5355 -16.2875 6950.58)] 
+[08:50:18.958] D [  main  ] configuring component: "AnodePlane":"apa5"
+[08:50:18.958] D [  geom  ] <AnodePlane:apa5> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.958] D [  geom  ] <AnodePlane:apa5> face:0, plane:0, origin:(130.016 3005.57 5800.99) mm, wpid:[WirePlaneId "a5f0pU" ident=81 ind:0 layer:U apa:5 face:0 valid] 
+[08:50:18.959] D [  geom  ] <AnodePlane:apa5> face:0, plane:1, origin:(130.016 3006.65 5800.99) mm, wpid:[WirePlaneId "a5f0pV" ident=82 ind:1 layer:V apa:5 face:0 valid] 
+[08:50:18.960] D [  geom  ] <AnodePlane:apa5> face:0, plane:2, origin:(130.016 3008.24 5800.98) mm, wpid:[WirePlaneId "a5f0pW" ident=84 ind:2 layer:W apa:5 face:0 valid] 
+[08:50:18.960] D [  geom  ] <AnodePlane:apa5> face:0 with 3 planes and sensvol: [(39.5355 16.2875 4651.38) --> (3629.16 6000.19 6950.58)] 
+[08:50:18.960] D [  geom  ] <AnodePlane:apa5> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.960] D [  geom  ] <AnodePlane:apa5> face:1, plane:0, origin:(-130.016 3005.57 5800.99) mm, wpid:[WirePlaneId "a5f1pU" ident=89 ind:0 layer:U apa:5 face:1 valid] 
+[08:50:18.961] D [  geom  ] <AnodePlane:apa5> face:1, plane:1, origin:(-130.016 3006.65 5800.99) mm, wpid:[WirePlaneId "a5f1pV" ident=90 ind:1 layer:V apa:5 face:1 valid] 
+[08:50:18.962] D [  geom  ] <AnodePlane:apa5> face:1, plane:2, origin:(-130.016 3008.24 5800.98) mm, wpid:[WirePlaneId "a5f1pW" ident=92 ind:2 layer:W apa:5 face:1 valid] 
+[08:50:18.962] D [  geom  ] <AnodePlane:apa5> face:1 with 3 planes and sensvol: [(-3629.16 16.2875 4651.38) --> (-39.5355 6000.19 6950.58)] 
+[08:50:18.962] D [  main  ] configuring component: "AnodePlane":"apa6"
+[08:50:18.962] D [  geom  ] <AnodePlane:apa6> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.963] D [  geom  ] <AnodePlane:apa6> face:0, plane:0, origin:(130.016 -3005.57 8124.89) mm, wpid:[WirePlaneId "a6f0pU" ident=97 ind:0 layer:U apa:6 face:0 valid] 
+[08:50:18.964] D [  geom  ] <AnodePlane:apa6> face:0, plane:1, origin:(130.016 -3006.65 8124.89) mm, wpid:[WirePlaneId "a6f0pV" ident=98 ind:1 layer:V apa:6 face:0 valid] 
+[08:50:18.964] D [  geom  ] <AnodePlane:apa6> face:0, plane:2, origin:(130.016 -3008.24 8124.89) mm, wpid:[WirePlaneId "a6f0pW" ident=100 ind:2 layer:W apa:6 face:0 valid] 
+[08:50:18.964] D [  geom  ] <AnodePlane:apa6> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 6975.28) --> (3629.16 -16.2875 9274.49)] 
+[08:50:18.965] D [  geom  ] <AnodePlane:apa6> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.965] D [  geom  ] <AnodePlane:apa6> face:1, plane:0, origin:(-130.016 -3005.57 8124.89) mm, wpid:[WirePlaneId "a6f1pU" ident=105 ind:0 layer:U apa:6 face:1 valid] 
+[08:50:18.966] D [  geom  ] <AnodePlane:apa6> face:1, plane:1, origin:(-130.016 -3006.65 8124.89) mm, wpid:[WirePlaneId "a6f1pV" ident=106 ind:1 layer:V apa:6 face:1 valid] 
+[08:50:18.966] D [  geom  ] <AnodePlane:apa6> face:1, plane:2, origin:(-130.016 -3008.24 8124.89) mm, wpid:[WirePlaneId "a6f1pW" ident=108 ind:2 layer:W apa:6 face:1 valid] 
+[08:50:18.967] D [  geom  ] <AnodePlane:apa6> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 6975.28) --> (-39.5355 -16.2875 9274.49)] 
+[08:50:18.967] D [  main  ] configuring component: "AnodePlane":"apa7"
+[08:50:18.967] D [  geom  ] <AnodePlane:apa7> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.968] D [  geom  ] <AnodePlane:apa7> face:0, plane:0, origin:(130.016 3005.57 8124.89) mm, wpid:[WirePlaneId "a7f0pU" ident=113 ind:0 layer:U apa:7 face:0 valid] 
+[08:50:18.969] D [  geom  ] <AnodePlane:apa7> face:0, plane:1, origin:(130.016 3006.65 8124.89) mm, wpid:[WirePlaneId "a7f0pV" ident=114 ind:1 layer:V apa:7 face:0 valid] 
+[08:50:18.969] D [  geom  ] <AnodePlane:apa7> face:0, plane:2, origin:(130.016 3008.24 8124.89) mm, wpid:[WirePlaneId "a7f0pW" ident=116 ind:2 layer:W apa:7 face:0 valid] 
+[08:50:18.969] D [  geom  ] <AnodePlane:apa7> face:0 with 3 planes and sensvol: [(39.5355 16.2875 6975.28) --> (3629.16 6000.19 9274.49)] 
+[08:50:18.969] D [  geom  ] <AnodePlane:apa7> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.970] D [  geom  ] <AnodePlane:apa7> face:1, plane:0, origin:(-130.016 3005.57 8124.89) mm, wpid:[WirePlaneId "a7f1pU" ident=121 ind:0 layer:U apa:7 face:1 valid] 
+[08:50:18.971] D [  geom  ] <AnodePlane:apa7> face:1, plane:1, origin:(-130.016 3006.65 8124.89) mm, wpid:[WirePlaneId "a7f1pV" ident=122 ind:1 layer:V apa:7 face:1 valid] 
+[08:50:18.971] D [  geom  ] <AnodePlane:apa7> face:1, plane:2, origin:(-130.016 3008.24 8124.89) mm, wpid:[WirePlaneId "a7f1pW" ident=124 ind:2 layer:W apa:7 face:1 valid] 
+[08:50:18.971] D [  geom  ] <AnodePlane:apa7> face:1 with 3 planes and sensvol: [(-3629.16 16.2875 6975.28) --> (-39.5355 6000.19 9274.49)] 
+[08:50:18.972] D [  main  ] configuring component: "AnodePlane":"apa8"
+[08:50:18.972] D [  geom  ] <AnodePlane:apa8> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.972] D [  geom  ] <AnodePlane:apa8> face:0, plane:0, origin:(130.016 -3005.56 10448.8) mm, wpid:[WirePlaneId "a8f0pU" ident=129 ind:0 layer:U apa:8 face:0 valid] 
+[08:50:18.973] D [  geom  ] <AnodePlane:apa8> face:0, plane:1, origin:(130.016 -3006.65 10448.8) mm, wpid:[WirePlaneId "a8f0pV" ident=130 ind:1 layer:V apa:8 face:0 valid] 
+[08:50:18.974] D [  geom  ] <AnodePlane:apa8> face:0, plane:2, origin:(130.016 -3008.24 10448.8) mm, wpid:[WirePlaneId "a8f0pW" ident=132 ind:2 layer:W apa:8 face:0 valid] 
+[08:50:18.974] D [  geom  ] <AnodePlane:apa8> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 9299.2) --> (3629.16 -16.2875 11598.4)] 
+[08:50:18.974] D [  geom  ] <AnodePlane:apa8> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.974] D [  geom  ] <AnodePlane:apa8> face:1, plane:0, origin:(-130.016 -3005.55 10448.8) mm, wpid:[WirePlaneId "a8f1pU" ident=137 ind:0 layer:U apa:8 face:1 valid] 
+[08:50:18.975] D [  geom  ] <AnodePlane:apa8> face:1, plane:1, origin:(-130.016 -3006.65 10448.8) mm, wpid:[WirePlaneId "a8f1pV" ident=138 ind:1 layer:V apa:8 face:1 valid] 
+[08:50:18.976] D [  geom  ] <AnodePlane:apa8> face:1, plane:2, origin:(-130.016 -3008.24 10448.8) mm, wpid:[WirePlaneId "a8f1pW" ident=140 ind:2 layer:W apa:8 face:1 valid] 
+[08:50:18.976] D [  geom  ] <AnodePlane:apa8> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 9299.2) --> (-39.5355 -16.2875 11598.4)] 
+[08:50:18.976] D [  main  ] configuring component: "AnodePlane":"apa9"
+[08:50:18.976] D [  geom  ] <AnodePlane:apa9> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.977] D [  geom  ] <AnodePlane:apa9> face:0, plane:0, origin:(130.016 3005.55 10448.8) mm, wpid:[WirePlaneId "a9f0pU" ident=145 ind:0 layer:U apa:9 face:0 valid] 
+[08:50:18.978] D [  geom  ] <AnodePlane:apa9> face:0, plane:1, origin:(130.016 3006.65 10448.8) mm, wpid:[WirePlaneId "a9f0pV" ident=146 ind:1 layer:V apa:9 face:0 valid] 
+[08:50:18.978] D [  geom  ] <AnodePlane:apa9> face:0, plane:2, origin:(130.016 3008.24 10448.8) mm, wpid:[WirePlaneId "a9f0pW" ident=148 ind:2 layer:W apa:9 face:0 valid] 
+[08:50:18.978] D [  geom  ] <AnodePlane:apa9> face:0 with 3 planes and sensvol: [(39.5355 16.2875 9299.2) --> (3629.16 6000.19 11598.4)] 
+[08:50:18.978] D [  geom  ] <AnodePlane:apa9> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.979] D [  geom  ] <AnodePlane:apa9> face:1, plane:0, origin:(-130.016 3005.56 10448.8) mm, wpid:[WirePlaneId "a9f1pU" ident=153 ind:0 layer:U apa:9 face:1 valid] 
+[08:50:18.980] D [  geom  ] <AnodePlane:apa9> face:1, plane:1, origin:(-130.016 3006.65 10448.8) mm, wpid:[WirePlaneId "a9f1pV" ident=154 ind:1 layer:V apa:9 face:1 valid] 
+[08:50:18.980] D [  geom  ] <AnodePlane:apa9> face:1, plane:2, origin:(-130.016 3008.24 10448.8) mm, wpid:[WirePlaneId "a9f1pW" ident=156 ind:2 layer:W apa:9 face:1 valid] 
+[08:50:18.980] D [  geom  ] <AnodePlane:apa9> face:1 with 3 planes and sensvol: [(-3629.16 16.2875 9299.2) --> (-39.5355 6000.19 11598.4)] 
+[08:50:18.981] D [  main  ] configuring component: "AnodePlane":"apa10"
+[08:50:18.981] D [  geom  ] <AnodePlane:apa10> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.981] D [  geom  ] <AnodePlane:apa10> face:0, plane:0, origin:(130.016 -3005.56 12772.7) mm, wpid:[WirePlaneId "a10f0pU" ident=161 ind:0 layer:U apa:10 face:0 valid] 
+[08:50:18.982] D [  geom  ] <AnodePlane:apa10> face:0, plane:1, origin:(130.016 -3006.64 12772.7) mm, wpid:[WirePlaneId "a10f0pV" ident=162 ind:1 layer:V apa:10 face:0 valid] 
+[08:50:18.983] D [  geom  ] <AnodePlane:apa10> face:0, plane:2, origin:(130.016 -3008.24 12772.7) mm, wpid:[WirePlaneId "a10f0pW" ident=164 ind:2 layer:W apa:10 face:0 valid] 
+[08:50:18.983] D [  geom  ] <AnodePlane:apa10> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 11623.1) --> (3629.16 -16.2875 13922.3)] 
+[08:50:18.983] D [  geom  ] <AnodePlane:apa10> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.983] D [  geom  ] <AnodePlane:apa10> face:1, plane:0, origin:(-130.016 -3005.55 12772.7) mm, wpid:[WirePlaneId "a10f1pU" ident=169 ind:0 layer:U apa:10 face:1 valid] 
+[08:50:18.984] D [  geom  ] <AnodePlane:apa10> face:1, plane:1, origin:(-130.016 -3006.66 12772.7) mm, wpid:[WirePlaneId "a10f1pV" ident=170 ind:1 layer:V apa:10 face:1 valid] 
+[08:50:18.985] D [  geom  ] <AnodePlane:apa10> face:1, plane:2, origin:(-130.016 -3008.24 12772.7) mm, wpid:[WirePlaneId "a10f1pW" ident=172 ind:2 layer:W apa:10 face:1 valid] 
+[08:50:18.985] D [  geom  ] <AnodePlane:apa10> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 11623.1) --> (-39.5355 -16.2875 13922.3)] 
+[08:50:18.985] D [  main  ] configuring component: "AnodePlane":"apa11"
+[08:50:18.985] D [  geom  ] <AnodePlane:apa11> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[08:50:18.986] D [  geom  ] <AnodePlane:apa11> face:0, plane:0, origin:(130.016 3005.55 12772.7) mm, wpid:[WirePlaneId "a11f0pU" ident=177 ind:0 layer:U apa:11 face:0 valid] 
+[08:50:18.987] D [  geom  ] <AnodePlane:apa11> face:0, plane:1, origin:(130.016 3006.66 12772.7) mm, wpid:[WirePlaneId "a11f0pV" ident=178 ind:1 layer:V apa:11 face:0 valid] 
+[08:50:18.987] D [  geom  ] <AnodePlane:apa11> face:0, plane:2, origin:(130.016 3008.24 12772.7) mm, wpid:[WirePlaneId "a11f0pW" ident=180 ind:2 layer:W apa:11 face:0 valid] 
+[08:50:18.987] D [  geom  ] <AnodePlane:apa11> face:0 with 3 planes and sensvol: [(39.5355 16.2875 11623.1) --> (3629.16 6000.19 13922.3)] 
+[08:50:18.988] D [  geom  ] <AnodePlane:apa11> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[08:50:18.988] D [  geom  ] <AnodePlane:apa11> face:1, plane:0, origin:(-130.016 3005.56 12772.7) mm, wpid:[WirePlaneId "a11f1pU" ident=185 ind:0 layer:U apa:11 face:1 valid] 
+[08:50:18.989] D [  geom  ] <AnodePlane:apa11> face:1, plane:1, origin:(-130.016 3006.64 12772.7) mm, wpid:[WirePlaneId "a11f1pV" ident=186 ind:1 layer:V apa:11 face:1 valid] 
+[08:50:18.989] D [  geom  ] <AnodePlane:apa11> face:1, plane:2, origin:(-130.016 3008.24 12772.7) mm, wpid:[WirePlaneId "a11f1pW" ident=188 ind:2 layer:W apa:11 face:1 valid] 
+[08:50:18.990] D [  geom  ] <AnodePlane:apa11> face:1 with 3 planes and sensvol: [(-3629.16 16.2875 11623.1) --> (-39.5355 6000.19 13922.3)] 
+[08:50:18.990] D [  main  ] configuring component: "wclsSimChannelSink":"postdrift"
+[08:50:18.994] D [  main  ] configuring component: "DepoBagger":"bagger"
+[08:50:18.994] D [  main  ] configuring component: "DepoSetFanout":"sn_mag_nf_fout_0_0"
+[08:50:18.994] D [  main  ] configuring component: "DepoSetFanout":"sn_mag_nf_fout_1_0"
+[08:50:18.994] D [  main  ] configuring component: "DepoSetFanout":"sn_mag_nf_fout_1_1"
+[08:50:18.996] D [  main  ] configuring component: "FrameFanin":"sn_mag_nf_fin_1_0"
+[08:50:19.001] D [  main  ] configuring component: "FrameFanin":"sn_mag_nf_fin_1_1"
+[08:50:19.005] D [  main  ] configuring component: "FrameFanin":"sn_mag_nf_fin_0_0"
+[08:50:19.006] D [  main  ] configuring component: "FftwDFT":""
+[08:50:19.006] D [  main  ] configuring component: "FieldResponse":"field0"
+[08:50:19.006] I [  wct   ] loading compressed json file: /exp/dune/app/users/yuhw/larsoft/v10_04_03d01/localProducts_larsoft_v10_04_03_e26_prof/dunereco/v10_04_04d00/wire-cell-cfg/dune-garfield-1d60563.json.bz2
+[08:50:21.447] D [  main  ] configuring component: "ColdElecResponse":""
+[08:50:21.447] D [  main  ] configuring component: "RCResponse":""
+[08:50:21.447] D [  main  ] configuring component: "ResponseSys":""
+[08:50:21.447] D [  main  ] configuring component: "PlaneImpactResponse":"PIRfield0plane0"
+[08:50:21.448] D [  gen   ] <PlaneImpactResponse:PIRfield0plane0> short response ColdElecResponse has different number of samples (6125) than expected (200) 
+[08:50:21.449] D [  gen   ] <PlaneImpactResponse:PIRfield0plane0> Nfr=1000 Nfr_slow=200 Nfr_ext=2000 Ner=200 Nfrxer=400 Tfr=100 Ter=500 FieldResponse:field0 
+[08:50:21.458] D [  gen   ] <PlaneImpactResponse:PIRfield0plane0> fr=FieldResponse:field0 plane=0 short=100000 long=1500000 tick=500 nticks=6125 
+[08:50:21.458] D [  main  ] configuring component: "PlaneImpactResponse":"PIRfield0plane1"
+[08:50:21.459] D [  gen   ] <PlaneImpactResponse:PIRfield0plane1> short response ColdElecResponse has different number of samples (6125) than expected (200) 
+[08:50:21.459] D [  gen   ] <PlaneImpactResponse:PIRfield0plane1> Nfr=1000 Nfr_slow=200 Nfr_ext=2000 Ner=200 Nfrxer=400 Tfr=100 Ter=500 FieldResponse:field0 
+[08:50:21.467] D [  gen   ] <PlaneImpactResponse:PIRfield0plane1> fr=FieldResponse:field0 plane=1 short=100000 long=1500000 tick=500 nticks=6125 
+[08:50:21.467] D [  main  ] configuring component: "PlaneImpactResponse":"PIRfield0plane2"
+[08:50:21.467] D [  gen   ] <PlaneImpactResponse:PIRfield0plane2> short response ColdElecResponse has different number of samples (6125) than expected (200) 
+[08:50:21.467] D [  gen   ] <PlaneImpactResponse:PIRfield0plane2> Nfr=1000 Nfr_slow=200 Nfr_ext=2000 Ner=200 Nfrxer=400 Tfr=100 Ter=500 FieldResponse:field0 
+[08:50:21.476] D [  gen   ] <PlaneImpactResponse:PIRfield0plane2> fr=FieldResponse:field0 plane=2 short=100000 long=1500000 tick=500 nticks=6125 
+[08:50:21.476] D [  main  ] configuring component: "DepoTransform":"depotransform0"
+[08:50:21.476] D [  gen   ] <DepoTransform:depotransform0> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.476] D [  main  ] configuring component: "Reframer":"reframer0"
+[08:50:21.476] D [  gen   ] <Reframer:reframer0> using anode: "AnodePlane:apa0" 
+[08:50:21.476] D [  main  ] configuring component: "MegaAnodePlane":"meganodes"
+[08:50:21.476] D [  main  ] configuring component: "EmpiricalNoiseModel":"empericalnoisemeganodes"
+[08:50:21.477] D [  gen   ] <EmpiricalNoiseModel:empericalnoisemeganodes> using anode MegaAnodePlane:meganodes, chanstat  
+[08:50:21.477] I [  wct   ] loading compressed json file: /exp/dune/app/users/yuhw/wire-cell-data/protodune-noise-spectra-v1.json.bz2
+[08:50:21.484] D [  main  ] configuring component: "AddNoise":"addnoiseapa0"
+[08:50:21.484] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.484] D [  main  ] configuring component: "Digitizer":"digitizer0"
+[08:50:21.485] D [  gen   ] <Digitizer:digitizer0> tag="orig0", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.485] D [  main  ] configuring component: "LfFilter":"ROI_tight_lf"
+[08:50:21.485] D [  main  ] configuring component: "LfFilter":"ROI_tighter_lf"
+[08:50:21.485] D [  main  ] configuring component: "LfFilter":"ROI_loose_lf"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Gaus_tight"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Gaus_wide"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wiener_tight_U"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wiener_tight_V"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wiener_tight_W"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wiener_wide_U"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wiener_wide_V"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wiener_wide_W"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wire_ind"
+[08:50:21.485] D [  main  ] configuring component: "HfFilter":"Wire_col"
+[08:50:21.486] D [  main  ] configuring component: "OmnibusSigProc":"apa0sigproc0"
+[08:50:21.489] W [sigproc ] <OmnibusSigProc:apa0sigproc0> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.491] D [sigproc ] <OmnibusSigProc:apa0sigproc0> config: internal channel map for tags: gauss:"gauss0", wiener:"wiener0", frame:"sigproc"
+	pind0 lind0 aid0 fid0 pid0 cid799 -> cid400, cind0 -> cind399, (n=400)
+	pind1 lind1 aid0 fid0 pid1 cid1200 -> cid1599, cind0 -> cind399, (n=400)
+	pind2 lind2 aid0 fid0 pid2 cid2080 -> cid2559, cind0 -> cind479, (n=480)
+	pind0 lind0 aid0 fid1 pid0 cid0 -> cid399, cind0 -> cind399, (n=800)
+	pind1 lind1 aid0 fid1 pid1 cid1199 -> cid800, cind0 -> cind399, (n=800)
+	pind2 lind2 aid0 fid1 pid2 cid1600 -> cid2079, cind0 -> cind479, (n=960)
+ 
+[08:50:21.491] D [  main  ] configuring component: "MagnifySink":"magdecon0"
+[08:50:21.681] D [  main  ] configuring component: "DepoTransform":"depotransform1"
+[08:50:21.681] D [  gen   ] <DepoTransform:depotransform1> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.681] D [  main  ] configuring component: "Reframer":"reframer1"
+[08:50:21.681] D [  gen   ] <Reframer:reframer1> using anode: "AnodePlane:apa1" 
+[08:50:21.682] D [  main  ] configuring component: "AddNoise":"addnoiseapa1"
+[08:50:21.682] D [  gen   ] <IncoherentAddNoise:addnoiseapa1> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.682] D [  main  ] configuring component: "Digitizer":"digitizer1"
+[08:50:21.682] D [  gen   ] <Digitizer:digitizer1> tag="orig1", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.682] D [  main  ] configuring component: "OmnibusSigProc":"apa1sigproc1"
+[08:50:21.685] W [sigproc ] <OmnibusSigProc:apa1sigproc1> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.687] D [sigproc ] <OmnibusSigProc:apa1sigproc1> config: internal channel map for tags: gauss:"gauss1", wiener:"wiener1", frame:"sigproc"
+	pind0 lind0 aid1 fid0 pid0 cid2960 -> cid3359, cind0 -> cind399, (n=400)
+	pind1 lind1 aid1 fid0 pid1 cid4159 -> cid3760, cind0 -> cind399, (n=400)
+	pind2 lind2 aid1 fid0 pid2 cid4640 -> cid5119, cind0 -> cind479, (n=480)
+	pind0 lind0 aid1 fid1 pid0 cid2959 -> cid2560, cind0 -> cind399, (n=800)
+	pind1 lind1 aid1 fid1 pid1 cid3360 -> cid3759, cind0 -> cind399, (n=800)
+	pind2 lind2 aid1 fid1 pid2 cid4160 -> cid4639, cind0 -> cind479, (n=960)
+ 
+[08:50:21.688] D [  main  ] configuring component: "MagnifySink":"magdecon1"
+[08:50:21.730] D [  main  ] configuring component: "DepoTransform":"depotransform2"
+[08:50:21.730] D [  gen   ] <DepoTransform:depotransform2> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.730] D [  main  ] configuring component: "Reframer":"reframer2"
+[08:50:21.731] D [  gen   ] <Reframer:reframer2> using anode: "AnodePlane:apa2" 
+[08:50:21.731] D [  main  ] configuring component: "AddNoise":"addnoiseapa2"
+[08:50:21.731] D [  gen   ] <IncoherentAddNoise:addnoiseapa2> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.731] D [  main  ] configuring component: "Digitizer":"digitizer2"
+[08:50:21.731] D [  gen   ] <Digitizer:digitizer2> tag="orig2", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.731] D [  main  ] configuring component: "OmnibusSigProc":"apa2sigproc2"
+[08:50:21.734] W [sigproc ] <OmnibusSigProc:apa2sigproc2> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.736] D [sigproc ] <OmnibusSigProc:apa2sigproc2> config: internal channel map for tags: gauss:"gauss2", wiener:"wiener2", frame:"sigproc"
+	pind0 lind0 aid2 fid0 pid0 cid5919 -> cid5520, cind0 -> cind399, (n=400)
+	pind1 lind1 aid2 fid0 pid1 cid6320 -> cid6719, cind0 -> cind399, (n=400)
+	pind2 lind2 aid2 fid0 pid2 cid7200 -> cid7679, cind0 -> cind479, (n=480)
+	pind0 lind0 aid2 fid1 pid0 cid5120 -> cid5519, cind0 -> cind399, (n=800)
+	pind1 lind1 aid2 fid1 pid1 cid6319 -> cid5920, cind0 -> cind399, (n=800)
+	pind2 lind2 aid2 fid1 pid2 cid6720 -> cid7199, cind0 -> cind479, (n=960)
+ 
+[08:50:21.737] D [  main  ] configuring component: "MagnifySink":"magdecon2"
+[08:50:21.762] D [  main  ] configuring component: "DepoTransform":"depotransform3"
+[08:50:21.763] D [  gen   ] <DepoTransform:depotransform3> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.763] D [  main  ] configuring component: "Reframer":"reframer3"
+[08:50:21.763] D [  gen   ] <Reframer:reframer3> using anode: "AnodePlane:apa3" 
+[08:50:21.763] D [  main  ] configuring component: "AddNoise":"addnoiseapa3"
+[08:50:21.763] D [  gen   ] <IncoherentAddNoise:addnoiseapa3> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.763] D [  main  ] configuring component: "Digitizer":"digitizer3"
+[08:50:21.763] D [  gen   ] <Digitizer:digitizer3> tag="orig3", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.763] D [  main  ] configuring component: "OmnibusSigProc":"apa3sigproc3"
+[08:50:21.767] W [sigproc ] <OmnibusSigProc:apa3sigproc3> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.768] D [sigproc ] <OmnibusSigProc:apa3sigproc3> config: internal channel map for tags: gauss:"gauss3", wiener:"wiener3", frame:"sigproc"
+	pind0 lind0 aid3 fid0 pid0 cid8080 -> cid8479, cind0 -> cind399, (n=400)
+	pind1 lind1 aid3 fid0 pid1 cid9279 -> cid8880, cind0 -> cind399, (n=400)
+	pind2 lind2 aid3 fid0 pid2 cid9760 -> cid10239, cind0 -> cind479, (n=480)
+	pind0 lind0 aid3 fid1 pid0 cid8079 -> cid7680, cind0 -> cind399, (n=800)
+	pind1 lind1 aid3 fid1 pid1 cid8480 -> cid8879, cind0 -> cind399, (n=800)
+	pind2 lind2 aid3 fid1 pid2 cid9280 -> cid9759, cind0 -> cind479, (n=960)
+ 
+[08:50:21.769] D [  main  ] configuring component: "MagnifySink":"magdecon3"
+[08:50:21.795] D [  main  ] configuring component: "DepoTransform":"depotransform4"
+[08:50:21.795] D [  gen   ] <DepoTransform:depotransform4> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.795] D [  main  ] configuring component: "Reframer":"reframer4"
+[08:50:21.795] D [  gen   ] <Reframer:reframer4> using anode: "AnodePlane:apa4" 
+[08:50:21.795] D [  main  ] configuring component: "AddNoise":"addnoiseapa4"
+[08:50:21.795] D [  gen   ] <IncoherentAddNoise:addnoiseapa4> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.795] D [  main  ] configuring component: "Digitizer":"digitizer4"
+[08:50:21.795] D [  gen   ] <Digitizer:digitizer4> tag="orig4", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.795] D [  main  ] configuring component: "OmnibusSigProc":"apa4sigproc4"
+[08:50:21.799] W [sigproc ] <OmnibusSigProc:apa4sigproc4> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.800] D [sigproc ] <OmnibusSigProc:apa4sigproc4> config: internal channel map for tags: gauss:"gauss4", wiener:"wiener4", frame:"sigproc"
+	pind0 lind0 aid4 fid0 pid0 cid11039 -> cid10640, cind0 -> cind399, (n=400)
+	pind1 lind1 aid4 fid0 pid1 cid11440 -> cid11839, cind0 -> cind399, (n=400)
+	pind2 lind2 aid4 fid0 pid2 cid12320 -> cid12799, cind0 -> cind479, (n=480)
+	pind0 lind0 aid4 fid1 pid0 cid10240 -> cid10639, cind0 -> cind399, (n=800)
+	pind1 lind1 aid4 fid1 pid1 cid11439 -> cid11040, cind0 -> cind399, (n=800)
+	pind2 lind2 aid4 fid1 pid2 cid11840 -> cid12319, cind0 -> cind479, (n=960)
+ 
+[08:50:21.801] D [  main  ] configuring component: "MagnifySink":"magdecon4"
+[08:50:21.828] D [  main  ] configuring component: "DepoTransform":"depotransform5"
+[08:50:21.828] D [  gen   ] <DepoTransform:depotransform5> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.828] D [  main  ] configuring component: "Reframer":"reframer5"
+[08:50:21.828] D [  gen   ] <Reframer:reframer5> using anode: "AnodePlane:apa5" 
+[08:50:21.828] D [  main  ] configuring component: "AddNoise":"addnoiseapa5"
+[08:50:21.828] D [  gen   ] <IncoherentAddNoise:addnoiseapa5> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.828] D [  main  ] configuring component: "Digitizer":"digitizer5"
+[08:50:21.828] D [  gen   ] <Digitizer:digitizer5> tag="orig5", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.828] D [  main  ] configuring component: "OmnibusSigProc":"apa5sigproc5"
+[08:50:21.832] W [sigproc ] <OmnibusSigProc:apa5sigproc5> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.833] D [sigproc ] <OmnibusSigProc:apa5sigproc5> config: internal channel map for tags: gauss:"gauss5", wiener:"wiener5", frame:"sigproc"
+	pind0 lind0 aid5 fid0 pid0 cid13200 -> cid13599, cind0 -> cind399, (n=400)
+	pind1 lind1 aid5 fid0 pid1 cid14399 -> cid14000, cind0 -> cind399, (n=400)
+	pind2 lind2 aid5 fid0 pid2 cid14880 -> cid15359, cind0 -> cind479, (n=480)
+	pind0 lind0 aid5 fid1 pid0 cid13199 -> cid12800, cind0 -> cind399, (n=800)
+	pind1 lind1 aid5 fid1 pid1 cid13600 -> cid13999, cind0 -> cind399, (n=800)
+	pind2 lind2 aid5 fid1 pid2 cid14400 -> cid14879, cind0 -> cind479, (n=960)
+ 
+[08:50:21.834] D [  main  ] configuring component: "MagnifySink":"magdecon5"
+[08:50:21.875] D [  main  ] configuring component: "DepoTransform":"depotransform6"
+[08:50:21.875] D [  gen   ] <DepoTransform:depotransform6> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:21.875] D [  main  ] configuring component: "Reframer":"reframer6"
+[08:50:21.875] D [  gen   ] <Reframer:reframer6> using anode: "AnodePlane:apa6" 
+[08:50:21.875] D [  main  ] configuring component: "AddNoise":"addnoiseapa6"
+[08:50:21.875] D [  gen   ] <IncoherentAddNoise:addnoiseapa6> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:21.875] D [  main  ] configuring component: "Digitizer":"digitizer6"
+[08:50:21.876] D [  gen   ] <Digitizer:digitizer6> tag="orig6", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:21.876] D [  main  ] configuring component: "OmnibusSigProc":"apa6sigproc6"
+[08:50:21.879] W [sigproc ] <OmnibusSigProc:apa6sigproc6> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:21.881] D [sigproc ] <OmnibusSigProc:apa6sigproc6> config: internal channel map for tags: gauss:"gauss6", wiener:"wiener6", frame:"sigproc"
+	pind0 lind0 aid6 fid0 pid0 cid16159 -> cid15760, cind0 -> cind399, (n=400)
+	pind1 lind1 aid6 fid0 pid1 cid16560 -> cid16959, cind0 -> cind399, (n=400)
+	pind2 lind2 aid6 fid0 pid2 cid17440 -> cid17919, cind0 -> cind479, (n=480)
+	pind0 lind0 aid6 fid1 pid0 cid15360 -> cid15759, cind0 -> cind399, (n=800)
+	pind1 lind1 aid6 fid1 pid1 cid16559 -> cid16160, cind0 -> cind399, (n=800)
+	pind2 lind2 aid6 fid1 pid2 cid16960 -> cid17439, cind0 -> cind479, (n=960)
+ 
+[08:50:21.881] D [  main  ] configuring component: "MagnifySink":"magdecon6"
+[08:50:22.007] D [  main  ] configuring component: "DepoTransform":"depotransform7"
+[08:50:22.007] D [  gen   ] <DepoTransform:depotransform7> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:22.007] D [  main  ] configuring component: "Reframer":"reframer7"
+[08:50:22.007] D [  gen   ] <Reframer:reframer7> using anode: "AnodePlane:apa7" 
+[08:50:22.007] D [  main  ] configuring component: "AddNoise":"addnoiseapa7"
+[08:50:22.007] D [  gen   ] <IncoherentAddNoise:addnoiseapa7> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:22.007] D [  main  ] configuring component: "Digitizer":"digitizer7"
+[08:50:22.007] D [  gen   ] <Digitizer:digitizer7> tag="orig7", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:22.008] D [  main  ] configuring component: "OmnibusSigProc":"apa7sigproc7"
+[08:50:22.011] W [sigproc ] <OmnibusSigProc:apa7sigproc7> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:22.012] D [sigproc ] <OmnibusSigProc:apa7sigproc7> config: internal channel map for tags: gauss:"gauss7", wiener:"wiener7", frame:"sigproc"
+	pind0 lind0 aid7 fid0 pid0 cid18320 -> cid18719, cind0 -> cind399, (n=400)
+	pind1 lind1 aid7 fid0 pid1 cid19519 -> cid19120, cind0 -> cind399, (n=400)
+	pind2 lind2 aid7 fid0 pid2 cid20000 -> cid20479, cind0 -> cind479, (n=480)
+	pind0 lind0 aid7 fid1 pid0 cid18319 -> cid17920, cind0 -> cind399, (n=800)
+	pind1 lind1 aid7 fid1 pid1 cid18720 -> cid19119, cind0 -> cind399, (n=800)
+	pind2 lind2 aid7 fid1 pid2 cid19520 -> cid19999, cind0 -> cind479, (n=960)
+ 
+[08:50:22.013] D [  main  ] configuring component: "MagnifySink":"magdecon7"
+[08:50:22.175] D [  main  ] configuring component: "DepoTransform":"depotransform8"
+[08:50:22.175] D [  gen   ] <DepoTransform:depotransform8> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:22.175] D [  main  ] configuring component: "Reframer":"reframer8"
+[08:50:22.175] D [  gen   ] <Reframer:reframer8> using anode: "AnodePlane:apa8" 
+[08:50:22.175] D [  main  ] configuring component: "AddNoise":"addnoiseapa8"
+[08:50:22.175] D [  gen   ] <IncoherentAddNoise:addnoiseapa8> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:22.175] D [  main  ] configuring component: "Digitizer":"digitizer8"
+[08:50:22.176] D [  gen   ] <Digitizer:digitizer8> tag="orig8", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:22.176] D [  main  ] configuring component: "OmnibusSigProc":"apa8sigproc8"
+[08:50:22.179] W [sigproc ] <OmnibusSigProc:apa8sigproc8> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:22.181] D [sigproc ] <OmnibusSigProc:apa8sigproc8> config: internal channel map for tags: gauss:"gauss8", wiener:"wiener8", frame:"sigproc"
+	pind0 lind0 aid8 fid0 pid0 cid21279 -> cid20880, cind0 -> cind399, (n=400)
+	pind1 lind1 aid8 fid0 pid1 cid21680 -> cid22079, cind0 -> cind399, (n=400)
+	pind2 lind2 aid8 fid0 pid2 cid22560 -> cid23039, cind0 -> cind479, (n=480)
+	pind0 lind0 aid8 fid1 pid0 cid20480 -> cid20879, cind0 -> cind399, (n=800)
+	pind1 lind1 aid8 fid1 pid1 cid21679 -> cid21280, cind0 -> cind399, (n=800)
+	pind2 lind2 aid8 fid1 pid2 cid22080 -> cid22559, cind0 -> cind479, (n=960)
+ 
+[08:50:22.181] D [  main  ] configuring component: "MagnifySink":"magdecon8"
+[08:50:22.215] D [  main  ] configuring component: "DepoTransform":"depotransform9"
+[08:50:22.215] D [  gen   ] <DepoTransform:depotransform9> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:22.215] D [  main  ] configuring component: "Reframer":"reframer9"
+[08:50:22.215] D [  gen   ] <Reframer:reframer9> using anode: "AnodePlane:apa9" 
+[08:50:22.215] D [  main  ] configuring component: "AddNoise":"addnoiseapa9"
+[08:50:22.215] D [  gen   ] <IncoherentAddNoise:addnoiseapa9> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:22.215] D [  main  ] configuring component: "Digitizer":"digitizer9"
+[08:50:22.215] D [  gen   ] <Digitizer:digitizer9> tag="orig9", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:22.215] D [  main  ] configuring component: "OmnibusSigProc":"apa9sigproc9"
+[08:50:22.219] W [sigproc ] <OmnibusSigProc:apa9sigproc9> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:22.220] D [sigproc ] <OmnibusSigProc:apa9sigproc9> config: internal channel map for tags: gauss:"gauss9", wiener:"wiener9", frame:"sigproc"
+	pind0 lind0 aid9 fid0 pid0 cid23440 -> cid23839, cind0 -> cind399, (n=400)
+	pind1 lind1 aid9 fid0 pid1 cid24639 -> cid24240, cind0 -> cind399, (n=400)
+	pind2 lind2 aid9 fid0 pid2 cid25120 -> cid25599, cind0 -> cind479, (n=480)
+	pind0 lind0 aid9 fid1 pid0 cid23439 -> cid23040, cind0 -> cind399, (n=800)
+	pind1 lind1 aid9 fid1 pid1 cid23840 -> cid24239, cind0 -> cind399, (n=800)
+	pind2 lind2 aid9 fid1 pid2 cid24640 -> cid25119, cind0 -> cind479, (n=960)
+ 
+[08:50:22.221] D [  main  ] configuring component: "MagnifySink":"magdecon9"
+[08:50:22.236] D [  main  ] configuring component: "DepoTransform":"depotransform10"
+[08:50:22.237] D [  gen   ] <DepoTransform:depotransform10> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:22.237] D [  main  ] configuring component: "Reframer":"reframer10"
+[08:50:22.237] D [  gen   ] <Reframer:reframer10> using anode: "AnodePlane:apa10" 
+[08:50:22.237] D [  main  ] configuring component: "AddNoise":"addnoiseapa10"
+[08:50:22.237] D [  gen   ] <IncoherentAddNoise:addnoiseapa10> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:22.237] D [  main  ] configuring component: "Digitizer":"digitizer10"
+[08:50:22.237] D [  gen   ] <Digitizer:digitizer10> tag="orig10", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:22.237] D [  main  ] configuring component: "OmnibusSigProc":"apa10sigproc10"
+[08:50:22.240] W [sigproc ] <OmnibusSigProc:apa10sigproc10> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:22.242] D [sigproc ] <OmnibusSigProc:apa10sigproc10> config: internal channel map for tags: gauss:"gauss10", wiener:"wiener10", frame:"sigproc"
+	pind0 lind0 aid10 fid0 pid0 cid26399 -> cid26000, cind0 -> cind399, (n=400)
+	pind1 lind1 aid10 fid0 pid1 cid26800 -> cid27199, cind0 -> cind399, (n=400)
+	pind2 lind2 aid10 fid0 pid2 cid27680 -> cid28159, cind0 -> cind479, (n=480)
+	pind0 lind0 aid10 fid1 pid0 cid25600 -> cid25999, cind0 -> cind399, (n=800)
+	pind1 lind1 aid10 fid1 pid1 cid26799 -> cid26400, cind0 -> cind399, (n=800)
+	pind2 lind2 aid10 fid1 pid2 cid27200 -> cid27679, cind0 -> cind479, (n=960)
+ 
+[08:50:22.243] D [  main  ] configuring component: "MagnifySink":"magdecon10"
+[08:50:22.351] D [  main  ] configuring component: "DepoTransform":"depotransform11"
+[08:50:22.352] D [  gen   ] <DepoTransform:depotransform11> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[08:50:22.352] D [  main  ] configuring component: "Reframer":"reframer11"
+[08:50:22.352] D [  gen   ] <Reframer:reframer11> using anode: "AnodePlane:apa11" 
+[08:50:22.352] D [  main  ] configuring component: "AddNoise":"addnoiseapa11"
+[08:50:22.352] D [  gen   ] <IncoherentAddNoise:addnoiseapa11> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[08:50:22.352] D [  main  ] configuring component: "Digitizer":"digitizer11"
+[08:50:22.352] D [  gen   ] <Digitizer:digitizer11> tag="orig11", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[08:50:22.352] D [  main  ] configuring component: "OmnibusSigProc":"apa11sigproc11"
+[08:50:22.356] W [sigproc ] <OmnibusSigProc:apa11sigproc11> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[08:50:22.357] D [sigproc ] <OmnibusSigProc:apa11sigproc11> config: internal channel map for tags: gauss:"gauss11", wiener:"wiener11", frame:"sigproc"
+	pind0 lind0 aid11 fid0 pid0 cid28560 -> cid28959, cind0 -> cind399, (n=400)
+	pind1 lind1 aid11 fid0 pid1 cid29759 -> cid29360, cind0 -> cind399, (n=400)
+	pind2 lind2 aid11 fid0 pid2 cid30240 -> cid30719, cind0 -> cind479, (n=480)
+	pind0 lind0 aid11 fid1 pid0 cid28559 -> cid28160, cind0 -> cind399, (n=800)
+	pind1 lind1 aid11 fid1 pid1 cid28960 -> cid29359, cind0 -> cind399, (n=800)
+	pind2 lind2 aid11 fid1 pid2 cid29760 -> cid30239, cind0 -> cind479, (n=960)
+ 
+[08:50:22.358] D [  main  ] configuring component: "MagnifySink":"magdecon11"
+[08:50:22.414] D [  main  ] configuring component: "Retagger":""
+[08:50:22.415] D [  main  ] configuring component: "wclsFrameSaver":"spsignals"
+[08:50:22.437] D [  main  ] configuring component: "DumpFrames":""
+[08:50:22.439] D [  main  ] configuring component: "TbbFlow":""
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connecting graph with 95 edges 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer0 ( 0 -> 0 ) OmnibusSigProc:apa0sigproc0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa0sigproc0 ( 0 -> 0 ) MagnifySink:magdecon0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer0 ( 0 -> 0 ) AddNoise:addnoiseapa0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa0 ( 0 -> 0 ) Digitizer:digitizer0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer1 ( 0 -> 0 ) OmnibusSigProc:apa1sigproc1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa1sigproc1 ( 0 -> 0 ) MagnifySink:magdecon1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer1 ( 0 -> 0 ) AddNoise:addnoiseapa1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa1 ( 0 -> 0 ) Digitizer:digitizer1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer2 ( 0 -> 0 ) OmnibusSigProc:apa2sigproc2 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa2sigproc2 ( 0 -> 0 ) MagnifySink:magdecon2 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer2 ( 0 -> 0 ) AddNoise:addnoiseapa2 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa2 ( 0 -> 0 ) Digitizer:digitizer2 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer3 ( 0 -> 0 ) OmnibusSigProc:apa3sigproc3 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa3sigproc3 ( 0 -> 0 ) MagnifySink:magdecon3 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer3 ( 0 -> 0 ) AddNoise:addnoiseapa3 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa3 ( 0 -> 0 ) Digitizer:digitizer3 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer4 ( 0 -> 0 ) OmnibusSigProc:apa4sigproc4 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa4sigproc4 ( 0 -> 0 ) MagnifySink:magdecon4 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer4 ( 0 -> 0 ) AddNoise:addnoiseapa4 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa4 ( 0 -> 0 ) Digitizer:digitizer4 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_0_0 ( 0 -> 0 ) DepoSetFanout:sn_mag_nf_fout_1_0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_0_0 ( 1 -> 0 ) DepoSetFanout:sn_mag_nf_fout_1_1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: FrameFanin:sn_mag_nf_fin_0_0 ( 0 -> 0 ) Retagger: 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: Retagger: ( 0 -> 0 ) wclsFrameSaver:spsignals 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: wclsFrameSaver:spsignals ( 0 -> 0 ) DumpFrames: 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 0 -> 0 ) DepoTransform:depotransform0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 1 -> 0 ) DepoTransform:depotransform1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 2 -> 0 ) DepoTransform:depotransform2 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 3 -> 0 ) DepoTransform:depotransform3 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 4 -> 0 ) DepoTransform:depotransform4 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 5 -> 0 ) DepoTransform:depotransform5 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform0 ( 0 -> 0 ) Reframer:reframer0 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform1 ( 0 -> 0 ) Reframer:reframer1 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform2 ( 0 -> 0 ) Reframer:reframer2 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform3 ( 0 -> 0 ) Reframer:reframer3 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform4 ( 0 -> 0 ) Reframer:reframer4 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform5 ( 0 -> 0 ) Reframer:reframer5 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_1 ( 0 -> 0 ) DepoTransform:depotransform6 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_1 ( 1 -> 0 ) DepoTransform:depotransform7 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_1 ( 2 -> 0 ) DepoTransform:depotransform8 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_1 ( 3 -> 0 ) DepoTransform:depotransform9 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_1 ( 4 -> 0 ) DepoTransform:depotransform10 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_1 ( 5 -> 0 ) DepoTransform:depotransform11 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform6 ( 0 -> 0 ) Reframer:reframer6 
+[08:50:22.450] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform7 ( 0 -> 0 ) Reframer:reframer7 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform8 ( 0 -> 0 ) Reframer:reframer8 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform9 ( 0 -> 0 ) Reframer:reframer9 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform10 ( 0 -> 0 ) Reframer:reframer10 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform11 ( 0 -> 0 ) Reframer:reframer11 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon0 ( 0 -> 0 ) FrameFanin:sn_mag_nf_fin_1_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: FrameFanin:sn_mag_nf_fin_1_0 ( 0 -> 0 ) FrameFanin:sn_mag_nf_fin_0_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon1 ( 0 -> 1 ) FrameFanin:sn_mag_nf_fin_1_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon2 ( 0 -> 2 ) FrameFanin:sn_mag_nf_fin_1_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon3 ( 0 -> 3 ) FrameFanin:sn_mag_nf_fin_1_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon4 ( 0 -> 4 ) FrameFanin:sn_mag_nf_fin_1_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon5 ( 0 -> 5 ) FrameFanin:sn_mag_nf_fin_1_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon6 ( 0 -> 0 ) FrameFanin:sn_mag_nf_fin_1_1 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: FrameFanin:sn_mag_nf_fin_1_1 ( 0 -> 1 ) FrameFanin:sn_mag_nf_fin_0_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon7 ( 0 -> 1 ) FrameFanin:sn_mag_nf_fin_1_1 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon8 ( 0 -> 2 ) FrameFanin:sn_mag_nf_fin_1_1 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon9 ( 0 -> 3 ) FrameFanin:sn_mag_nf_fin_1_1 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon10 ( 0 -> 4 ) FrameFanin:sn_mag_nf_fin_1_1 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon11 ( 0 -> 5 ) FrameFanin:sn_mag_nf_fin_1_1 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa11 ( 0 -> 0 ) Digitizer:digitizer11 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: wclsSimDepoSource: ( 0 -> 0 ) Drifter: 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Drifter: ( 0 -> 0 ) wclsSimChannelSink:postdrift 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: wclsSimChannelSink:postdrift ( 0 -> 0 ) DepoBagger:bagger 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: DepoBagger:bagger ( 0 -> 0 ) DepoSetFanout:sn_mag_nf_fout_0_0 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer5 ( 0 -> 0 ) OmnibusSigProc:apa5sigproc5 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa5sigproc5 ( 0 -> 0 ) MagnifySink:magdecon5 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer5 ( 0 -> 0 ) AddNoise:addnoiseapa5 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa5 ( 0 -> 0 ) Digitizer:digitizer5 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer6 ( 0 -> 0 ) OmnibusSigProc:apa6sigproc6 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa6sigproc6 ( 0 -> 0 ) MagnifySink:magdecon6 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer6 ( 0 -> 0 ) AddNoise:addnoiseapa6 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa6 ( 0 -> 0 ) Digitizer:digitizer6 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer7 ( 0 -> 0 ) OmnibusSigProc:apa7sigproc7 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa7sigproc7 ( 0 -> 0 ) MagnifySink:magdecon7 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer7 ( 0 -> 0 ) AddNoise:addnoiseapa7 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa7 ( 0 -> 0 ) Digitizer:digitizer7 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer8 ( 0 -> 0 ) OmnibusSigProc:apa8sigproc8 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa8sigproc8 ( 0 -> 0 ) MagnifySink:magdecon8 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer8 ( 0 -> 0 ) AddNoise:addnoiseapa8 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa8 ( 0 -> 0 ) Digitizer:digitizer8 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer9 ( 0 -> 0 ) OmnibusSigProc:apa9sigproc9 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa9sigproc9 ( 0 -> 0 ) MagnifySink:magdecon9 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer9 ( 0 -> 0 ) AddNoise:addnoiseapa9 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa9 ( 0 -> 0 ) Digitizer:digitizer9 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer10 ( 0 -> 0 ) OmnibusSigProc:apa10sigproc10 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa10sigproc10 ( 0 -> 0 ) MagnifySink:magdecon10 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer10 ( 0 -> 0 ) AddNoise:addnoiseapa10 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa10 ( 0 -> 0 ) Digitizer:digitizer10 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer11 ( 0 -> 0 ) OmnibusSigProc:apa11sigproc11 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa11sigproc11 ( 0 -> 0 ) MagnifySink:magdecon11 
+[08:50:22.451] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer11 ( 0 -> 0 ) AddNoise:addnoiseapa11 
+Inputer: "wclsSimDepoSource:"
+Outputer: "wclsSimChannelSink:postdrift"
+Outputer: "wclsFrameSaver:spsignals"
+wclsFrameSaver: promising to produce recob::Wires named "gauss"
+wclsFrameSaver: promising to produce recob::Wires named "wiener"
+wclsFrameSaver: promising to produce recob::Wires named "dnnsp"
+13-Nov-2025 08:50:22 CST  Initiating request to open input file "g4.root"
+13-Nov-2025 08:50:22 CST  Opened input file "g4.root"
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 13-Nov-2025 08:50:22 CST
+SimDepoSource got 33548 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSource: ready with 33548 depos spanning: [6.73305e-07, 2.1752]us
+[08:50:22.839] D [  main  ] executing 1 apps, thread limit 0:
+[08:50:22.839] D [  main  ] executing 1 apps, thread limit 0:
+[08:50:22.839] D [  main  ] executing app: "TbbFlow"
+[08:50:22.839] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[08:50:22.943] D [  gen   ] <Drifter:> see EOS, ( dropped:148 + drifted:33400 ) / total:33548 depos from stream, outside of all 2 drift xregions 
+[08:50:23.076] D [  gen   ] <DepoBagger:bagger> send bag #0 with 33400 depos followed by EOS 
+[08:50:23.077] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=0 fanout depo set 0 with 33400 
+[08:50:23.078] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=0 fanout depo set 0 with 33400 
+[08:50:23.101] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=0 total traces=0 
+[08:50:23.121] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=0 total traces=0 
+[08:50:23.136] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=0 total traces=0 
+[08:50:23.158] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=0 total traces=0 
+[08:50:23.177] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=0 total traces=0 
+[08:50:23.192] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=0 total traces=0 
+[08:50:23.192] D [  gen   ] <DepoTransform:depotransform0> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:50:23.192] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:23.211] D [  gen   ] <Reframer:reframer0> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:23.211] D [  gen   ] <Reframer:reframer0> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:23.212] W [  gen   ] <IncoherentAddNoise:addnoiseapa0> model EmpiricalNoiseModel:empericalnoisemeganodes produced 6174 samples instead of expected 6000, future warnings muted 
+[08:50:23.446] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=0 frame=100 2560 traces 
+[08:50:23.446] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:23.446] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:24.179] D [  gen   ] <Digitizer:digitizer0> call=0 traces=2560 frame=100 totadc=110991020301 outtag="orig0" 
+[08:50:24.179] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:24.179] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:24.180] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:24.189] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:50:24.189] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge window from 6000 to 6200 
+[08:50:24.189] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:50:24.189] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:50:24.189] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:50:24.211] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:50:24.249] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:50:27.348] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:50:27.385] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:50:30.541] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:50:30.596] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:50:32.511] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 0, Qtot=244362 Qloss=-2831, 34 indices spanning [0,33] "wiener" 
+[08:50:32.790] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 0, Qtot=163458 Qloss=-2835, 34 indices spanning [34,67] "gauss" 
+[08:50:33.131] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 1, Qtot=476561 Qloss=-3421, 75 indices spanning [68,142] "wiener" 
+[08:50:33.410] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 1, Qtot=303848 Qloss=-3787, 75 indices spanning [143,217] "gauss" 
+[08:50:33.883] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 wiener save plane index: 2 empty 
+[08:50:34.306] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 gauss save plane index: 2 empty 
+[08:50:34.306] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 produce 218 traces: 109 wiener0, 0 decon_charge, 109 gauss0, frame tag: sigproc 
+[08:50:34.306] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 218 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss0":109 [0] "wiener0":109 [109] ] cmm:[ ] 
+[08:50:34.309] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:50:34.310] D [magnify ] MagnifySink: tag: "wiener0" with 109 traces
+[wgu] plane: 2 has not traces. 
+[08:50:34.310] D [magnify ] MagnifySink: cbin:762[1.5,763.5] tbin:5811[89,5900]
+[08:50:34.313] D [magnify ] MagnifySink: cbin:794[800.5,1594.5] tbin:5811[89,5900]
+[08:50:34.314] D [magnify ] MagnifySink: tag: "gauss0" with 109 traces
+[wgu] plane: 2 has not traces. 
+[08:50:34.314] D [magnify ] MagnifySink: cbin:762[1.5,763.5] tbin:5810[90,5900]
+[08:50:34.315] D [magnify ] MagnifySink: cbin:794[800.5,1594.5] tbin:5810[90,5900]
+[08:50:34.609] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 333395 bytes
+[08:50:34.700] D [  gen   ] <DepoTransform:depotransform1> plane=0 face=0 depos=0 total traces=0 
+[08:50:34.720] D [  gen   ] <DepoTransform:depotransform1> plane=1 face=0 depos=0 total traces=0 
+[08:50:34.735] D [  gen   ] <DepoTransform:depotransform1> plane=2 face=0 depos=0 total traces=0 
+[08:50:34.757] D [  gen   ] <DepoTransform:depotransform1> plane=0 face=1 depos=0 total traces=0 
+[08:50:34.780] D [  gen   ] <DepoTransform:depotransform1> plane=1 face=1 depos=0 total traces=0 
+[08:50:34.796] D [  gen   ] <DepoTransform:depotransform1> plane=2 face=1 depos=0 total traces=0 
+[08:50:34.796] D [  gen   ] <DepoTransform:depotransform1> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:50:34.796] D [  gen   ] <DepoTransform:depotransform1> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:34.814] D [  gen   ] <Reframer:reframer1> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:34.814] D [  gen   ] <Reframer:reframer1> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:35.050] D [  gen   ] <IncoherentAddNoise:addnoiseapa1> call=0 frame=100 2560 traces 
+[08:50:35.050] D [  gen   ] <IncoherentAddNoise:addnoiseapa1> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:35.050] D [  gen   ] <IncoherentAddNoise:addnoiseapa1> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:35.800] D [  gen   ] <Digitizer:digitizer1> call=0 traces=2560 frame=100 totadc=110990924476 outtag="orig1" 
+[08:50:35.800] D [  gen   ] <Digitizer:digitizer1> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:35.800] D [  gen   ] <Digitizer:digitizer1> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig1" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:35.801] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig1" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:35.809] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:50:35.809] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 init enlarge window from 6000 to 6200 
+[08:50:35.809] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:50:35.809] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:50:35.809] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:50:35.829] D [sigproc ] <OmnibusSigProc:apa1sigproc1> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:50:35.867] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:50:38.974] D [sigproc ] <OmnibusSigProc:apa1sigproc1> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:50:39.012] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:50:42.121] D [sigproc ] <OmnibusSigProc:apa1sigproc1> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:50:42.172] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:50:44.041] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 save plane index: 0, Qtot=155377 Qloss=-11902, 26 indices spanning [0,25] "wiener" 
+[08:50:44.279] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 save plane index: 0, Qtot=105469 Qloss=-6348, 29 indices spanning [26,54] "gauss" 
+[08:50:44.622] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 save plane index: 1, Qtot=400490 Qloss=-3396, 63 indices spanning [55,117] "wiener" 
+[08:50:44.904] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 save plane index: 1, Qtot=246837 Qloss=-2336, 63 indices spanning [118,180] "gauss" 
+[08:50:45.434] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 wiener save plane index: 2 empty 
+[08:50:45.921] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 gauss save plane index: 2 empty 
+[08:50:45.921] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 produce 181 traces: 89 wiener1, 0 decon_charge, 92 gauss1, frame tag: sigproc 
+[08:50:45.921] D [sigproc ] <OmnibusSigProc:apa1sigproc1> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 181 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss1":92 [0] "wiener1":89 [89] ] cmm:[ ] 
+[08:50:45.925] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:50:45.926] D [magnify ] MagnifySink: tag: "wiener1" with 89 traces
+[wgu] plane: 2 has not traces. 
+[08:50:45.926] D [magnify ] MagnifySink: cbin:637[2638.5,3275.5] tbin:5877[50,5927]
+[08:50:45.927] D [magnify ] MagnifySink: cbin:788[3364.5,4152.5] tbin:5877[50,5927]
+[08:50:45.928] D [magnify ] MagnifySink: tag: "gauss1" with 92 traces
+[wgu] plane: 2 has not traces. 
+[08:50:45.929] D [magnify ] MagnifySink: cbin:637[2638.5,3275.5] tbin:5876[50,5926]
+[08:50:45.930] D [magnify ] MagnifySink: cbin:788[3364.5,4152.5] tbin:5876[50,5926]
+[08:50:46.466] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 306235 bytes
+[08:50:46.649] D [  gen   ] <DepoTransform:depotransform2> plane=0 face=0 depos=0 total traces=0 
+[08:50:46.669] D [  gen   ] <DepoTransform:depotransform2> plane=1 face=0 depos=0 total traces=0 
+[08:50:46.684] D [  gen   ] <DepoTransform:depotransform2> plane=2 face=0 depos=0 total traces=0 
+[08:50:46.706] D [  gen   ] <DepoTransform:depotransform2> plane=0 face=1 depos=0 total traces=0 
+[08:50:46.726] D [  gen   ] <DepoTransform:depotransform2> plane=1 face=1 depos=0 total traces=0 
+[08:50:46.741] D [  gen   ] <DepoTransform:depotransform2> plane=2 face=1 depos=0 total traces=0 
+[08:50:46.741] D [  gen   ] <DepoTransform:depotransform2> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:50:46.741] D [  gen   ] <DepoTransform:depotransform2> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:46.761] D [  gen   ] <Reframer:reframer2> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:46.761] D [  gen   ] <Reframer:reframer2> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:46.999] D [  gen   ] <IncoherentAddNoise:addnoiseapa2> call=0 frame=100 2560 traces 
+[08:50:46.999] D [  gen   ] <IncoherentAddNoise:addnoiseapa2> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:46.999] D [  gen   ] <IncoherentAddNoise:addnoiseapa2> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:47.763] D [  gen   ] <Digitizer:digitizer2> call=0 traces=2560 frame=100 totadc=110990919928 outtag="orig2" 
+[08:50:47.763] D [  gen   ] <Digitizer:digitizer2> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:47.763] D [  gen   ] <Digitizer:digitizer2> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig2" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:47.764] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig2" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:47.772] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:50:47.772] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 init enlarge window from 6000 to 6200 
+[08:50:47.772] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:50:47.772] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:50:47.772] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:50:47.793] D [sigproc ] <OmnibusSigProc:apa2sigproc2> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:50:47.830] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:50:50.927] D [sigproc ] <OmnibusSigProc:apa2sigproc2> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:50:50.965] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:50:54.059] D [sigproc ] <OmnibusSigProc:apa2sigproc2> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:50:54.110] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:50:55.985] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 save plane index: 0, Qtot=160542 Qloss=-12590, 27 indices spanning [0,26] "wiener" 
+[08:50:56.220] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 save plane index: 0, Qtot=114547 Qloss=-4782, 28 indices spanning [27,54] "gauss" 
+[08:50:56.569] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 save plane index: 1, Qtot=287905 Qloss=-6278, 46 indices spanning [55,100] "wiener" 
+[08:50:56.851] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 save plane index: 1, Qtot=179300 Qloss=-5402, 48 indices spanning [101,148] "gauss" 
+[08:50:57.378] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 wiener save plane index: 2 empty 
+[08:50:57.854] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 gauss save plane index: 2 empty 
+[08:50:57.854] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 produce 149 traces: 73 wiener2, 0 decon_charge, 76 gauss2, frame tag: sigproc 
+[08:50:57.854] D [sigproc ] <OmnibusSigProc:apa2sigproc2> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 149 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss2":76 [0] "wiener2":73 [73] ] cmm:[ ] 
+[08:50:57.857] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:50:57.858] D [magnify ] MagnifySink: tag: "wiener2" with 73 traces
+[wgu] plane: 2 has not traces. 
+[08:50:57.858] D [magnify ] MagnifySink: cbin:771[5127.5,5898.5] tbin:5290[658,5948]
+[08:50:57.860] D [magnify ] MagnifySink: cbin:768[5940.5,6708.5] tbin:5290[658,5948]
+[08:50:57.861] D [magnify ] MagnifySink: tag: "gauss2" with 76 traces
+[wgu] plane: 2 has not traces. 
+[08:50:57.861] D [magnify ] MagnifySink: cbin:771[5127.5,5898.5] tbin:5287[659,5946]
+[08:50:57.862] D [magnify ] MagnifySink: cbin:768[5940.5,6708.5] tbin:5287[659,5946]
+[08:50:58.276] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 296035 bytes
+[08:50:58.321] D [  gen   ] <DepoTransform:depotransform3> plane=0 face=0 depos=0 total traces=0 
+[08:50:58.342] D [  gen   ] <DepoTransform:depotransform3> plane=1 face=0 depos=0 total traces=0 
+[08:50:58.357] D [  gen   ] <DepoTransform:depotransform3> plane=2 face=0 depos=0 total traces=0 
+[08:50:58.393] D [  gen   ] <DepoTransform:depotransform3> plane=0 face=1 depos=11 total traces=96 
+[08:50:58.426] D [  gen   ] <DepoTransform:depotransform3> plane=1 face=1 depos=11 total traces=166 
+[08:50:58.449] D [  gen   ] <DepoTransform:depotransform3> plane=2 face=1 depos=11 total traces=192 
+[08:50:58.449] D [  gen   ] <DepoTransform:depotransform3> call=0 count=100 ndepos_in=33400 ndepos_used=11 
+[08:50:58.449] D [  gen   ] <DepoTransform:depotransform3> output: frame: ident=100 time=-62280.8 tick=500 with 192 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:58.469] D [  gen   ] <Reframer:reframer3> input : frame: ident=100 time=-62280.8 tick=500 with 192 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:58.469] D [  gen   ] <Reframer:reframer3> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:58.712] D [  gen   ] <IncoherentAddNoise:addnoiseapa3> call=0 frame=100 2560 traces 
+[08:50:58.712] D [  gen   ] <IncoherentAddNoise:addnoiseapa3> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:58.712] D [  gen   ] <IncoherentAddNoise:addnoiseapa3> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:59.457] D [  gen   ] <Digitizer:digitizer3> call=0 traces=2560 frame=100 totadc=110990999141 outtag="orig3" 
+[08:50:59.457] D [  gen   ] <Digitizer:digitizer3> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:59.457] D [  gen   ] <Digitizer:digitizer3> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig3" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:59.458] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig3" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:50:59.466] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:50:59.466] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 init enlarge window from 6000 to 6200 
+[08:50:59.466] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:50:59.466] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:50:59.466] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:50:59.487] D [sigproc ] <OmnibusSigProc:apa3sigproc3> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:50:59.524] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:51:02.694] D [sigproc ] <OmnibusSigProc:apa3sigproc3> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:51:02.732] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:51:05.818] D [sigproc ] <OmnibusSigProc:apa3sigproc3> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:51:05.870] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:51:07.647] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 save plane index: 0, Qtot=230905 Qloss=-4662, 35 indices spanning [0,34] "wiener" 
+[08:51:07.861] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 save plane index: 0, Qtot=158776 Qloss=-4560, 37 indices spanning [35,71] "gauss" 
+[08:51:08.156] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 save plane index: 1, Qtot=329480 Qloss=-1658, 50 indices spanning [72,121] "wiener" 
+[08:51:08.405] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 save plane index: 1, Qtot=202957 Qloss=-1143, 51 indices spanning [122,172] "gauss" 
+[08:51:08.876] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 save plane index: 2, Qtot=10843 Qloss=-1325, 2 indices spanning [173,174] "wiener" 
+[08:51:09.294] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 save plane index: 2, Qtot=9690 Qloss=-382, 2 indices spanning [175,176] "gauss" 
+[08:51:09.294] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 produce 177 traces: 87 wiener3, 0 decon_charge, 90 gauss3, frame tag: sigproc 
+[08:51:09.294] D [sigproc ] <OmnibusSigProc:apa3sigproc3> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 177 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss3":90 [0] "wiener3":87 [87] ] cmm:[ ] 
+[08:51:09.297] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:51:09.298] D [magnify ] MagnifySink: tag: "wiener3" with 87 traces
+[08:51:09.298] D [magnify ] MagnifySink: cbin:763[7698.5,8461.5] tbin:5902[90,5992]
+[08:51:09.300] D [magnify ] MagnifySink: cbin:784[8492.5,9276.5] tbin:5902[90,5992]
+[08:51:09.301] D [magnify ] MagnifySink: cbin:2[9754.5,9756.5] tbin:5902[90,5992]
+[08:51:09.301] D [magnify ] MagnifySink: tag: "gauss3" with 90 traces
+[08:51:09.301] D [magnify ] MagnifySink: cbin:763[7698.5,8461.5] tbin:5902[90,5992]
+[08:51:09.303] D [magnify ] MagnifySink: cbin:784[8492.5,9276.5] tbin:5902[90,5992]
+[08:51:09.304] D [magnify ] MagnifySink: cbin:2[9754.5,9756.5] tbin:5902[90,5992]
+[08:51:09.630] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 334388 bytes
+[08:51:09.725] D [  gen   ] <DepoTransform:depotransform4> plane=0 face=0 depos=0 total traces=0 
+[08:51:09.745] D [  gen   ] <DepoTransform:depotransform4> plane=1 face=0 depos=0 total traces=0 
+[08:51:09.759] D [  gen   ] <DepoTransform:depotransform4> plane=2 face=0 depos=0 total traces=0 
+[08:51:09.780] D [  gen   ] <DepoTransform:depotransform4> plane=0 face=1 depos=0 total traces=0 
+[08:51:09.800] D [  gen   ] <DepoTransform:depotransform4> plane=1 face=1 depos=0 total traces=0 
+[08:51:09.814] D [  gen   ] <DepoTransform:depotransform4> plane=2 face=1 depos=0 total traces=0 
+[08:51:09.814] D [  gen   ] <DepoTransform:depotransform4> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:51:09.814] D [  gen   ] <DepoTransform:depotransform4> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:09.834] D [  gen   ] <Reframer:reframer4> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:09.834] D [  gen   ] <Reframer:reframer4> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:10.079] D [  gen   ] <IncoherentAddNoise:addnoiseapa4> call=0 frame=100 2560 traces 
+[08:51:10.079] D [  gen   ] <IncoherentAddNoise:addnoiseapa4> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:10.079] D [  gen   ] <IncoherentAddNoise:addnoiseapa4> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:10.842] D [  gen   ] <Digitizer:digitizer4> call=0 traces=2560 frame=100 totadc=110990949625 outtag="orig4" 
+[08:51:10.842] D [  gen   ] <Digitizer:digitizer4> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:10.842] D [  gen   ] <Digitizer:digitizer4> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig4" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:10.843] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig4" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:10.851] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:51:10.851] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 init enlarge window from 6000 to 6200 
+[08:51:10.851] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:51:10.851] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:51:10.851] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:51:10.872] D [sigproc ] <OmnibusSigProc:apa4sigproc4> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:51:10.909] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:51:14.009] D [sigproc ] <OmnibusSigProc:apa4sigproc4> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:51:14.046] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:51:17.140] D [sigproc ] <OmnibusSigProc:apa4sigproc4> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:51:17.192] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:51:19.060] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 save plane index: 0, Qtot=228887 Qloss=-10903, 37 indices spanning [0,36] "wiener" 
+[08:51:19.301] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 save plane index: 0, Qtot=142215 Qloss=-5014, 38 indices spanning [37,74] "gauss" 
+[08:51:19.771] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 save plane index: 1, Qtot=315702 Qloss=-2525, 48 indices spanning [75,122] "wiener" 
+[08:51:20.052] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 save plane index: 1, Qtot=202297 Qloss=-2485, 48 indices spanning [123,170] "gauss" 
+[08:51:20.581] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 wiener save plane index: 2 empty 
+[08:51:21.056] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 gauss save plane index: 2 empty 
+[08:51:21.056] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 produce 171 traces: 85 wiener4, 0 decon_charge, 86 gauss4, frame tag: sigproc 
+[08:51:21.056] D [sigproc ] <OmnibusSigProc:apa4sigproc4> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 171 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss4":86 [0] "wiener4":85 [85] ] cmm:[ ] 
+[08:51:21.059] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:51:21.060] D [magnify ] MagnifySink: tag: "wiener4" with 85 traces
+[wgu] plane: 2 has not traces. 
+[08:51:21.060] D [magnify ] MagnifySink: cbin:789[10244.5,11033.5] tbin:5921[55,5976]
+[08:51:21.062] D [magnify ] MagnifySink: cbin:779[11059.5,11838.5] tbin:5921[55,5976]
+[08:51:21.063] D [magnify ] MagnifySink: tag: "gauss4" with 86 traces
+[wgu] plane: 2 has not traces. 
+[08:51:21.063] D [magnify ] MagnifySink: cbin:789[10244.5,11033.5] tbin:5921[55,5976]
+[08:51:21.065] D [magnify ] MagnifySink: cbin:779[11059.5,11838.5] tbin:5921[55,5976]
+[08:51:21.360] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 338082 bytes
+[08:51:21.669] D [  gen   ] <DepoTransform:depotransform5> plane=0 face=0 depos=192 total traces=512 
+[08:51:22.212] D [  gen   ] <DepoTransform:depotransform5> plane=1 face=0 depos=192 total traces=1536 
+[08:51:22.464] D [  gen   ] <DepoTransform:depotransform5> plane=2 face=0 depos=192 total traces=1984 
+[08:51:24.211] D [  gen   ] <DepoTransform:depotransform5> plane=0 face=1 depos=31656 total traces=2670 
+[08:51:26.100] D [  gen   ] <DepoTransform:depotransform5> plane=1 face=1 depos=31656 total traces=3438 
+[08:51:27.719] D [  gen   ] <DepoTransform:depotransform5> plane=2 face=1 depos=31656 total traces=3918 
+[08:51:27.723] D [  gen   ] <DepoTransform:depotransform5> call=0 count=100 ndepos_in=33400 ndepos_used=31848 
+[08:51:27.723] D [  gen   ] <DepoTransform:depotransform5> output: frame: ident=100 time=-62280.8 tick=500 with 3918 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:27.749] D [  gen   ] <Reframer:reframer5> input : frame: ident=100 time=-62280.8 tick=500 with 3918 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:27.749] D [  gen   ] <Reframer:reframer5> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:27.992] D [  gen   ] <IncoherentAddNoise:addnoiseapa5> call=0 frame=100 2560 traces 
+[08:51:27.992] D [  gen   ] <IncoherentAddNoise:addnoiseapa5> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:27.992] D [  gen   ] <IncoherentAddNoise:addnoiseapa5> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:27.993] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_1> call=0 fanout depo set 0 with 33400 
+[08:51:28.079] D [  gen   ] <DepoTransform:depotransform7> plane=0 face=0 depos=62 total traces=320 
+[08:51:28.250] D [  gen   ] <DepoTransform:depotransform7> plane=1 face=0 depos=62 total traces=960 
+[08:51:28.328] D [  gen   ] <DepoTransform:depotransform7> plane=2 face=0 depos=62 total traces=1261 
+[08:51:29.093] D [  gen   ] <DepoTransform:depotransform7> plane=0 face=1 depos=1363 total traces=2029 
+[08:51:29.582] D [  gen   ] <DepoTransform:depotransform7> plane=1 face=1 depos=1363 total traces=2541 
+[08:51:30.094] D [  gen   ] <DepoTransform:depotransform7> plane=2 face=1 depos=1363 total traces=3021 
+[08:51:30.094] D [  gen   ] <DepoTransform:depotransform7> call=0 count=100 ndepos_in=33400 ndepos_used=1425 
+[08:51:30.094] D [  gen   ] <DepoTransform:depotransform7> output: frame: ident=100 time=-62280.8 tick=500 with 3021 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:30.119] D [  gen   ] <Reframer:reframer7> input : frame: ident=100 time=-62280.8 tick=500 with 3021 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:30.119] D [  gen   ] <Reframer:reframer7> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:30.361] D [  gen   ] <IncoherentAddNoise:addnoiseapa7> call=0 frame=100 2560 traces 
+[08:51:30.361] D [  gen   ] <IncoherentAddNoise:addnoiseapa7> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:30.361] D [  gen   ] <IncoherentAddNoise:addnoiseapa7> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:31.096] D [  gen   ] <Digitizer:digitizer7> call=0 traces=2560 frame=100 totadc=110991366785 outtag="orig7" 
+[08:51:31.096] D [  gen   ] <Digitizer:digitizer7> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:31.096] D [  gen   ] <Digitizer:digitizer7> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig7" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:31.098] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig7" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:31.105] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:51:31.106] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 init enlarge window from 6000 to 6200 
+[08:51:31.106] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:51:31.106] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:51:31.106] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:51:31.126] D [sigproc ] <OmnibusSigProc:apa7sigproc7> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:51:31.164] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:51:34.254] D [sigproc ] <OmnibusSigProc:apa7sigproc7> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:51:34.292] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:51:37.356] D [sigproc ] <OmnibusSigProc:apa7sigproc7> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:51:37.408] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:51:39.196] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 save plane index: 0, Qtot=2664337 Qloss=-278313, 252 indices spanning [0,251] "wiener" 
+[08:51:39.431] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 save plane index: 0, Qtot=2361846 Qloss=-94566, 209 indices spanning [252,460] "gauss" 
+[08:51:39.731] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 save plane index: 1, Qtot=2818656 Qloss=-303192, 310 indices spanning [461,770] "wiener" 
+[08:51:39.966] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 save plane index: 1, Qtot=2433151 Qloss=-93090, 262 indices spanning [771,1032] "gauss" 
+[08:51:40.441] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 save plane index: 2, Qtot=2561765 Qloss=-195524, 160 indices spanning [1033,1192] "wiener" 
+[08:51:40.866] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 save plane index: 2, Qtot=2406897 Qloss=-25211, 111 indices spanning [1193,1303] "gauss" 
+[08:51:40.867] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 produce 1304 traces: 722 wiener7, 0 decon_charge, 582 gauss7, frame tag: sigproc 
+[08:51:40.867] D [sigproc ] <OmnibusSigProc:apa7sigproc7> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 1304 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss7":582 [0] "wiener7":722 [722] ] cmm:[ ] 
+[08:51:40.891] D [  gen   ] <DepoTransform:depotransform8> plane=0 face=0 depos=0 total traces=0 
+[08:51:40.909] D [  gen   ] <DepoTransform:depotransform8> plane=1 face=0 depos=0 total traces=0 
+[08:51:40.924] D [  gen   ] <DepoTransform:depotransform8> plane=2 face=0 depos=0 total traces=0 
+[08:51:40.943] D [  gen   ] <DepoTransform:depotransform8> plane=0 face=1 depos=0 total traces=0 
+[08:51:40.962] D [  gen   ] <DepoTransform:depotransform8> plane=1 face=1 depos=0 total traces=0 
+[08:51:40.977] D [  gen   ] <DepoTransform:depotransform8> plane=2 face=1 depos=0 total traces=0 
+[08:51:40.977] D [  gen   ] <DepoTransform:depotransform8> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:51:40.977] D [  gen   ] <DepoTransform:depotransform8> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:40.999] D [  gen   ] <Reframer:reframer8> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:40.999] D [  gen   ] <Reframer:reframer8> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.019] D [  gen   ] <DepoTransform:depotransform9> plane=0 face=0 depos=0 total traces=0 
+[08:51:41.037] D [  gen   ] <DepoTransform:depotransform9> plane=1 face=0 depos=0 total traces=0 
+[08:51:41.051] D [  gen   ] <DepoTransform:depotransform9> plane=2 face=0 depos=0 total traces=0 
+[08:51:41.206] D [  gen   ] <DepoTransform:depotransform9> plane=0 face=1 depos=83 total traces=280 
+[08:51:41.275] D [  gen   ] <DepoTransform:depotransform9> plane=1 face=1 depos=83 total traces=392 
+[08:51:41.397] D [  gen   ] <DepoTransform:depotransform9> plane=2 face=1 depos=83 total traces=599 
+[08:51:41.397] D [  gen   ] <DepoTransform:depotransform9> call=0 count=100 ndepos_in=33400 ndepos_used=83 
+[08:51:41.397] D [  gen   ] <DepoTransform:depotransform9> output: frame: ident=100 time=-62280.8 tick=500 with 599 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.417] D [  gen   ] <DepoTransform:depotransform10> plane=0 face=0 depos=0 total traces=0 
+[08:51:41.436] D [  gen   ] <DepoTransform:depotransform10> plane=1 face=0 depos=0 total traces=0 
+[08:51:41.451] D [  gen   ] <DepoTransform:depotransform10> plane=2 face=0 depos=0 total traces=0 
+[08:51:41.470] D [  gen   ] <DepoTransform:depotransform10> plane=0 face=1 depos=0 total traces=0 
+[08:51:41.488] D [  gen   ] <DepoTransform:depotransform10> plane=1 face=1 depos=0 total traces=0 
+[08:51:41.502] D [  gen   ] <DepoTransform:depotransform10> plane=2 face=1 depos=0 total traces=0 
+[08:51:41.502] D [  gen   ] <DepoTransform:depotransform10> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:51:41.502] D [  gen   ] <DepoTransform:depotransform10> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.522] D [  gen   ] <DepoTransform:depotransform11> plane=0 face=0 depos=0 total traces=0 
+[08:51:41.541] D [  gen   ] <DepoTransform:depotransform11> plane=1 face=0 depos=0 total traces=0 
+[08:51:41.557] D [  gen   ] <DepoTransform:depotransform11> plane=2 face=0 depos=0 total traces=0 
+[08:51:41.578] D [  gen   ] <DepoTransform:depotransform11> plane=0 face=1 depos=0 total traces=0 
+[08:51:41.599] D [  gen   ] <DepoTransform:depotransform11> plane=1 face=1 depos=0 total traces=0 
+[08:51:41.615] D [  gen   ] <DepoTransform:depotransform11> plane=2 face=1 depos=0 total traces=0 
+[08:51:41.615] D [  gen   ] <DepoTransform:depotransform11> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:51:41.615] D [  gen   ] <DepoTransform:depotransform11> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.634] D [  gen   ] <Reframer:reframer11> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.634] D [  gen   ] <Reframer:reframer11> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.634] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> EOS at call=1 
+[08:51:41.634] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> EOS at call=1 
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform0> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer0> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Digitizer:digitizer0> see EOS at call=1 
+[08:51:41.634] D [sigproc ] <OmnibusSigProc:apa0sigproc0> EOS at call=1 anode=0 
+[08:51:41.634] D [magnify ] MagnifySink: EOS
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform1> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer1> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa1> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Digitizer:digitizer1> see EOS at call=1 
+[08:51:41.634] D [sigproc ] <OmnibusSigProc:apa1sigproc1> EOS at call=1 anode=1 
+[08:51:41.634] D [magnify ] MagnifySink: EOS
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform2> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer2> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa2> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Digitizer:digitizer2> see EOS at call=1 
+[08:51:41.634] D [sigproc ] <OmnibusSigProc:apa2sigproc2> EOS at call=1 anode=2 
+[08:51:41.634] D [magnify ] MagnifySink: EOS
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform3> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer3> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa3> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Digitizer:digitizer3> see EOS at call=1 
+[08:51:41.634] D [sigproc ] <OmnibusSigProc:apa3sigproc3> EOS at call=1 anode=3 
+[08:51:41.634] D [magnify ] MagnifySink: EOS
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform4> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer4> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa4> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Digitizer:digitizer4> see EOS at call=1 
+[08:51:41.634] D [sigproc ] <OmnibusSigProc:apa4sigproc4> EOS at call=1 anode=4 
+[08:51:41.634] D [magnify ] MagnifySink: EOS
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform5> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer5> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa5> EOS at call=1 
+[08:51:41.634] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_1> EOS at call=1 
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform7> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer7> EOS at call=1 
+[08:51:41.634] D [  gen   ] <IncoherentAddNoise:addnoiseapa7> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Digitizer:digitizer7> see EOS at call=1 
+[08:51:41.634] D [sigproc ] <OmnibusSigProc:apa7sigproc7> EOS at call=1 anode=7 
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform8> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer8> EOS at call=1 
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform9> EOS at call=1 
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform10> EOS at call=1 
+[08:51:41.634] D [  gen   ] <DepoTransform:depotransform11> EOS at call=1 
+[08:51:41.634] D [  gen   ] <Reframer:reframer11> EOS at call=1 
+[08:51:41.651] D [  gen   ] <Reframer:reframer10> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.651] D [  gen   ] <Reframer:reframer10> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.896] D [  gen   ] <IncoherentAddNoise:addnoiseapa10> call=0 frame=100 2560 traces 
+[08:51:41.896] D [  gen   ] <IncoherentAddNoise:addnoiseapa10> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:41.896] D [  gen   ] <IncoherentAddNoise:addnoiseapa10> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:42.649] D [  gen   ] <Digitizer:digitizer10> call=0 traces=2560 frame=100 totadc=110990930994 outtag="orig10" 
+[08:51:42.649] D [  gen   ] <Digitizer:digitizer10> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:42.649] D [  gen   ] <Digitizer:digitizer10> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig10" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:42.654] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig10" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:42.662] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:51:42.662] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 init enlarge window from 6000 to 6200 
+[08:51:42.662] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:51:42.662] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:51:42.662] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:51:42.682] D [sigproc ] <OmnibusSigProc:apa10sigproc10> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:51:42.720] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:51:45.553] D [sigproc ] <OmnibusSigProc:apa10sigproc10> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:51:45.573] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:51:48.280] D [sigproc ] <OmnibusSigProc:apa10sigproc10> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:51:48.303] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:51:50.018] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 save plane index: 0, Qtot=167784 Qloss=-381, 24 indices spanning [0,23] "wiener" 
+[08:51:50.233] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 save plane index: 0, Qtot=106682 Qloss=-627, 25 indices spanning [24,48] "gauss" 
+[08:51:50.503] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 save plane index: 1, Qtot=355029 Qloss=-4889, 56 indices spanning [49,104] "wiener" 
+[08:51:50.713] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 save plane index: 1, Qtot=217496 Qloss=-3320, 57 indices spanning [105,161] "gauss" 
+[08:51:51.141] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 wiener save plane index: 2 empty 
+[08:51:51.518] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 gauss save plane index: 2 empty 
+[08:51:51.519] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 produce 162 traces: 80 wiener10, 0 decon_charge, 82 gauss10, frame tag: sigproc 
+[08:51:51.519] D [sigproc ] <OmnibusSigProc:apa10sigproc10> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 162 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss10":82 [0] "wiener10":80 [80] ] cmm:[ ] 
+[08:51:51.521] D [  gen   ] <Reframer:reframer10> EOS at call=1 
+[08:51:51.521] D [  gen   ] <IncoherentAddNoise:addnoiseapa10> EOS at call=1 
+[08:51:51.521] D [  gen   ] <Digitizer:digitizer10> see EOS at call=1 
+[08:51:51.521] D [sigproc ] <OmnibusSigProc:apa10sigproc10> EOS at call=1 anode=10 
+[08:51:51.542] D [  gen   ] <Reframer:reframer9> input : frame: ident=100 time=-62280.8 tick=500 with 599 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:51.542] D [  gen   ] <Reframer:reframer9> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:51.543] D [  gen   ] <Reframer:reframer9> EOS at call=1 
+[08:51:52.301] D [  gen   ] <Digitizer:digitizer5> call=0 traces=2560 frame=100 totadc=111000880765 outtag="orig5" 
+[08:51:52.301] D [  gen   ] <Digitizer:digitizer5> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:52.301] D [  gen   ] <Digitizer:digitizer5> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig5" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:52.306] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig5" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:51:52.314] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:51:52.314] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 init enlarge window from 6000 to 6200 
+[08:51:52.314] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:51:52.314] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:51:52.314] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:51:52.329] D [sigproc ] <OmnibusSigProc:apa5sigproc5> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:51:52.348] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:51:55.056] D [sigproc ] <OmnibusSigProc:apa5sigproc5> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:51:55.076] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:51:57.791] D [sigproc ] <OmnibusSigProc:apa5sigproc5> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:51:57.816] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:51:59.593] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 save plane index: 0, Qtot=64599146 Qloss=-3151056, 2598 indices spanning [0,2597] "wiener" 
+[08:51:59.800] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 save plane index: 0, Qtot=56319133 Qloss=-1435664, 2068 indices spanning [2598,4665] "gauss" 
+[08:52:00.129] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 save plane index: 1, Qtot=57823959 Qloss=-2910666, 2023 indices spanning [4666,6688] "wiener" 
+[08:52:00.334] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 save plane index: 1, Qtot=50024881 Qloss=-1694944, 1655 indices spanning [6689,8343] "gauss" 
+[08:52:00.774] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 save plane index: 2, Qtot=65845646 Qloss=-3420909, 2316 indices spanning [8344,10659] "wiener" 
+[08:52:01.156] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 save plane index: 2, Qtot=63013126 Qloss=-500669, 1463 indices spanning [10660,12122] "gauss" 
+[08:52:01.157] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 produce 12123 traces: 6937 wiener5, 0 decon_charge, 5186 gauss5, frame tag: sigproc 
+[08:52:01.157] D [sigproc ] <OmnibusSigProc:apa5sigproc5> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 12123 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss5":5186 [0] "wiener5":6937 [6937] ] cmm:[ ] 
+[08:52:01.162] D [  gen   ] <Digitizer:digitizer5> see EOS at call=1 
+[08:52:01.162] D [sigproc ] <OmnibusSigProc:apa5sigproc5> EOS at call=1 anode=5 
+[08:52:01.183] D [  gen   ] <DepoTransform:depotransform6> plane=0 face=0 depos=0 total traces=0 
+[08:52:01.202] D [  gen   ] <DepoTransform:depotransform6> plane=1 face=0 depos=0 total traces=0 
+[08:52:01.216] D [  gen   ] <DepoTransform:depotransform6> plane=2 face=0 depos=0 total traces=0 
+[08:52:01.235] D [  gen   ] <DepoTransform:depotransform6> plane=0 face=1 depos=0 total traces=0 
+[08:52:01.254] D [  gen   ] <DepoTransform:depotransform6> plane=1 face=1 depos=0 total traces=0 
+[08:52:01.268] D [  gen   ] <DepoTransform:depotransform6> plane=2 face=1 depos=0 total traces=0 
+[08:52:01.268] D [  gen   ] <DepoTransform:depotransform6> call=0 count=100 ndepos_in=33400 ndepos_used=0 
+[08:52:01.268] D [  gen   ] <DepoTransform:depotransform6> output: frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:01.298] D [  gen   ] <Reframer:reframer6> input : frame: ident=100 time=-62280.8 tick=500 with 0 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:01.298] D [  gen   ] <Reframer:reframer6> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:01.539] D [  gen   ] <IncoherentAddNoise:addnoiseapa6> call=0 frame=100 2560 traces 
+[08:52:01.539] D [  gen   ] <IncoherentAddNoise:addnoiseapa6> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:01.539] D [  gen   ] <IncoherentAddNoise:addnoiseapa6> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:02.304] D [  gen   ] <Digitizer:digitizer6> call=0 traces=2560 frame=100 totadc=110990953300 outtag="orig6" 
+[08:52:02.304] D [  gen   ] <Digitizer:digitizer6> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:02.304] D [  gen   ] <Digitizer:digitizer6> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig6" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:02.309] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig6" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:02.317] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:52:02.317] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 init enlarge window from 6000 to 6200 
+[08:52:02.317] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:52:02.317] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:52:02.317] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:52:02.331] D [sigproc ] <OmnibusSigProc:apa6sigproc6> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:52:02.352] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:52:05.084] D [sigproc ] <OmnibusSigProc:apa6sigproc6> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:52:05.104] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:52:07.835] D [sigproc ] <OmnibusSigProc:apa6sigproc6> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:52:07.859] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:52:09.561] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 save plane index: 0, Qtot=195256 Qloss=-4025, 30 indices spanning [0,29] "wiener" 
+[08:52:09.768] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 save plane index: 0, Qtot=123980 Qloss=-2405, 30 indices spanning [30,59] "gauss" 
+[08:52:10.034] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 save plane index: 1, Qtot=358556 Qloss=-1337, 55 indices spanning [60,114] "wiener" 
+[08:52:10.241] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 save plane index: 1, Qtot=231601 Qloss=-2257, 55 indices spanning [115,169] "gauss" 
+[08:52:10.677] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 wiener save plane index: 2 empty 
+[08:52:11.059] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 gauss save plane index: 2 empty 
+[08:52:11.059] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 produce 170 traces: 85 wiener6, 0 decon_charge, 85 gauss6, frame tag: sigproc 
+[08:52:11.059] D [sigproc ] <OmnibusSigProc:apa6sigproc6> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 170 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss6":85 [0] "wiener6":85 [85] ] cmm:[ ] 
+[08:52:11.062] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:11.063] D [magnify ] MagnifySink: tag: "wiener6" with 85 traces
+[wgu] plane: 2 has not traces. 
+[08:52:11.063] D [magnify ] MagnifySink: cbin:730[15419.5,16149.5] tbin:5922[22,5944]
+[08:52:11.064] D [magnify ] MagnifySink: cbin:789[16162.5,16951.5] tbin:5922[22,5944]
+[08:52:11.066] D [magnify ] MagnifySink: tag: "gauss6" with 85 traces
+[wgu] plane: 2 has not traces. 
+[08:52:11.066] D [magnify ] MagnifySink: cbin:730[15419.5,16149.5] tbin:5922[22,5944]
+[08:52:11.067] D [magnify ] MagnifySink: cbin:789[16162.5,16951.5] tbin:5922[22,5944]
+[08:52:11.291] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 328202 bytes
+[08:52:11.299] D [  gen   ] <DepoTransform:depotransform6> EOS at call=1 
+[08:52:11.299] D [  gen   ] <Reframer:reframer6> EOS at call=1 
+[08:52:11.299] D [  gen   ] <IncoherentAddNoise:addnoiseapa6> EOS at call=1 
+[08:52:11.299] D [  gen   ] <Digitizer:digitizer6> see EOS at call=1 
+[08:52:11.299] D [sigproc ] <OmnibusSigProc:apa6sigproc6> EOS at call=1 anode=6 
+[08:52:11.299] D [magnify ] MagnifySink: EOS
+[08:52:11.543] D [  gen   ] <IncoherentAddNoise:addnoiseapa8> call=0 frame=100 2560 traces 
+[08:52:11.543] D [  gen   ] <IncoherentAddNoise:addnoiseapa8> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:11.543] D [  gen   ] <IncoherentAddNoise:addnoiseapa8> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:11.544] D [  gen   ] <IncoherentAddNoise:addnoiseapa8> EOS at call=1 
+[08:52:11.544] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:11.545] D [magnify ] MagnifySink: tag: "wiener5" with 6937 traces
+[08:52:11.546] D [magnify ] MagnifySink: cbin:781[12799.5,13580.5] tbin:5982[1,5983]
+[08:52:11.548] D [magnify ] MagnifySink: cbin:800[13599.5,14399.5] tbin:5982[1,5983]
+[08:52:11.551] D [magnify ] MagnifySink: cbin:888[14403.5,15291.5] tbin:5982[1,5983]
+[08:52:11.554] D [magnify ] MagnifySink: tag: "gauss5" with 5186 traces
+[08:52:11.555] D [magnify ] MagnifySink: cbin:781[12799.5,13580.5] tbin:5982[1,5983]
+[08:52:11.558] D [magnify ] MagnifySink: cbin:800[13599.5,14399.5] tbin:5982[1,5983]
+[08:52:11.561] D [magnify ] MagnifySink: cbin:888[14403.5,15291.5] tbin:5982[1,5983]
+[08:52:11.928] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 1162608 bytes
+[08:52:11.937] D [magnify ] MagnifySink: EOS
+[08:52:11.937] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:11.937] D [magnify ] MagnifySink: tag: "wiener7" with 722 traces
+[08:52:11.937] D [magnify ] MagnifySink: cbin:800[17919.5,18719.5] tbin:5956[12,5968]
+[08:52:11.939] D [magnify ] MagnifySink: cbin:793[18719.5,19512.5] tbin:5956[12,5968]
+[08:52:11.941] D [magnify ] MagnifySink: cbin:540[19521.5,20061.5] tbin:5956[12,5968]
+[08:52:11.942] D [magnify ] MagnifySink: tag: "gauss7" with 582 traces
+[08:52:11.942] D [magnify ] MagnifySink: cbin:800[17919.5,18719.5] tbin:5956[12,5968]
+[08:52:11.945] D [magnify ] MagnifySink: cbin:793[18719.5,19512.5] tbin:5956[12,5968]
+[08:52:11.947] D [magnify ] MagnifySink: cbin:540[19521.5,20061.5] tbin:5956[12,5968]
+[08:52:12.335] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 518618 bytes
+[08:52:12.463] D [magnify ] MagnifySink: EOS
+[08:52:12.465] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=0 input 0: frame: ident=100 time=219.151 tick=500 with 218 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss0":109 [0] "wiener0":109 [109] ] cmm:[ ] input 1: frame: ident=100 time=219.151 tick=500 with 181 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss1":92 [0] "wiener1":89 [89] ] cmm:[ ] input 2: frame: ident=100 time=219.151 tick=500 with 149 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss2":76 [0] "wiener2":73 [73] ] cmm:[ ] input 3: frame: ident=100 time=219.151 tick=500 with 177 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss3":90 [0] "wiener3":87 [87] ] cmm:[ ] input 4: frame: ident=100 time=219.151 tick=500 with 171 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss4":86 [0] "wiener4":85 [85] ] cmm:[ ] input 5: frame: ident=100 time=219.151 tick=500 with 12123 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss5":5186 [0] "wiener5":6937 [6937] ] cmm:[ ] output: frame: ident=100 time=219.151 tick=500 with 13019 traces.  frame tags:[ "framefanin" ] 12 tagged trace sets:[ "gauss0":109 [0] "gauss1":92 [0] "gauss2":76 [0] "gauss3":90 [0] "gauss4":86 [0] "gauss5":5186 [0] "wiener0":109 [109] "wiener1":89 [89] "wiener2":73 [73] "wiener3":87 [87] "wiener4":85 [85] "wiener5":6937 [6937] ] cmm:[ ] 
+[08:52:12.465] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> EOS at call=1 with 6 
+[08:52:13.209] D [  gen   ] <Digitizer:digitizer8> call=0 traces=2560 frame=100 totadc=110990832881 outtag="orig8" 
+[08:52:13.209] D [  gen   ] <Digitizer:digitizer8> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:13.209] D [  gen   ] <Digitizer:digitizer8> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig8" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:13.213] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig8" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:13.221] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:52:13.221] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 init enlarge window from 6000 to 6200 
+[08:52:13.221] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:52:13.221] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:52:13.221] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:52:13.242] D [sigproc ] <OmnibusSigProc:apa8sigproc8> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:52:13.279] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:52:15.558] D [sigproc ] <OmnibusSigProc:apa8sigproc8> 10 empty rows out of size=(800,6000) 
+[08:52:16.031] D [sigproc ] <OmnibusSigProc:apa8sigproc8> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:52:16.070] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:52:18.857] D [sigproc ] <OmnibusSigProc:apa8sigproc8> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:52:18.881] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:52:20.588] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 save plane index: 0, Qtot=116291 Qloss=-225, 16 indices spanning [0,15] "wiener" 
+[08:52:20.800] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 save plane index: 0, Qtot=77082 Qloss=-291, 16 indices spanning [16,31] "gauss" 
+[08:52:21.075] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 save plane index: 1, Qtot=330867 Qloss=-2159, 52 indices spanning [32,83] "wiener" 
+[08:52:21.288] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 save plane index: 1, Qtot=205802 Qloss=-1703, 54 indices spanning [84,137] "gauss" 
+[08:52:21.718] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 wiener save plane index: 2 empty 
+[08:52:22.097] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 gauss save plane index: 2 empty 
+[08:52:22.098] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 produce 138 traces: 68 wiener8, 0 decon_charge, 70 gauss8, frame tag: sigproc 
+[08:52:22.098] D [sigproc ] <OmnibusSigProc:apa8sigproc8> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 138 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss8":70 [0] "wiener8":68 [68] ] cmm:[ ] 
+[08:52:22.101] D [  gen   ] <Digitizer:digitizer8> see EOS at call=1 
+[08:52:22.101] D [sigproc ] <OmnibusSigProc:apa8sigproc8> EOS at call=1 anode=8 
+[08:52:22.346] D [  gen   ] <IncoherentAddNoise:addnoiseapa9> call=0 frame=100 2560 traces 
+[08:52:22.346] D [  gen   ] <IncoherentAddNoise:addnoiseapa9> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:22.346] D [  gen   ] <IncoherentAddNoise:addnoiseapa9> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:23.080] D [  gen   ] <Digitizer:digitizer9> call=0 traces=2560 frame=100 totadc=110990999487 outtag="orig9" 
+[08:52:23.080] D [  gen   ] <Digitizer:digitizer9> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:23.080] D [  gen   ] <Digitizer:digitizer9> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig9" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:23.084] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig9" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:23.092] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:52:23.092] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 init enlarge window from 6000 to 6200 
+[08:52:23.092] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:52:23.092] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:52:23.092] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:52:23.112] D [sigproc ] <OmnibusSigProc:apa9sigproc9> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:52:23.150] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:52:25.921] D [sigproc ] <OmnibusSigProc:apa9sigproc9> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:52:25.958] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:52:28.795] D [sigproc ] <OmnibusSigProc:apa9sigproc9> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:52:28.847] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:52:30.588] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 save plane index: 0, Qtot=287031 Qloss=-9850, 42 indices spanning [0,41] "wiener" 
+[08:52:30.806] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 save plane index: 0, Qtot=214211 Qloss=-3191, 40 indices spanning [42,81] "gauss" 
+[08:52:31.086] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 save plane index: 1, Qtot=427443 Qloss=-26804, 60 indices spanning [82,141] "wiener" 
+[08:52:31.300] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 save plane index: 1, Qtot=303840 Qloss=-9733, 65 indices spanning [142,206] "gauss" 
+[08:52:31.748] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 save plane index: 2, Qtot=130463 Qloss=-11036, 15 indices spanning [207,221] "wiener" 
+[08:52:32.143] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 save plane index: 2, Qtot=121558 Qloss=-1999, 13 indices spanning [222,234] "gauss" 
+[08:52:32.143] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 produce 235 traces: 117 wiener9, 0 decon_charge, 118 gauss9, frame tag: sigproc 
+[08:52:32.143] D [sigproc ] <OmnibusSigProc:apa9sigproc9> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 235 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss9":118 [0] "wiener9":117 [117] ] cmm:[ ] 
+[08:52:32.146] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:32.147] D [magnify ] MagnifySink: tag: "wiener9" with 117 traces
+[08:52:32.147] D [magnify ] MagnifySink: cbin:755[23054.5,23809.5] tbin:5893[24,5917]
+[08:52:32.148] D [magnify ] MagnifySink: cbin:725[23910.5,24635.5] tbin:5893[24,5917]
+[08:52:32.150] D [magnify ] MagnifySink: cbin:47[24777.5,24824.5] tbin:5893[24,5917]
+[08:52:32.150] D [magnify ] MagnifySink: tag: "gauss9" with 118 traces
+[08:52:32.150] D [magnify ] MagnifySink: cbin:755[23054.5,23809.5] tbin:5892[24,5916]
+[08:52:32.152] D [magnify ] MagnifySink: cbin:725[23910.5,24635.5] tbin:5892[24,5916]
+[08:52:32.153] D [magnify ] MagnifySink: cbin:47[24777.5,24824.5] tbin:5892[24,5916]
+[08:52:32.626] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 332342 bytes
+[08:52:32.699] D [  gen   ] <IncoherentAddNoise:addnoiseapa9> EOS at call=1 
+[08:52:32.699] D [  gen   ] <Digitizer:digitizer9> see EOS at call=1 
+[08:52:32.699] D [sigproc ] <OmnibusSigProc:apa9sigproc9> EOS at call=1 anode=9 
+[08:52:32.699] D [magnify ] MagnifySink: EOS
+[08:52:32.699] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:32.699] D [magnify ] MagnifySink: tag: "wiener10" with 80 traces
+[wgu] plane: 2 has not traces. 
+[08:52:32.700] D [magnify ] MagnifySink: cbin:738[25633.5,26371.5] tbin:5897[58,5955]
+[08:52:32.701] D [magnify ] MagnifySink: cbin:747[26412.5,27159.5] tbin:5897[58,5955]
+[08:52:32.702] D [magnify ] MagnifySink: tag: "gauss10" with 82 traces
+[wgu] plane: 2 has not traces. 
+[08:52:32.703] D [magnify ] MagnifySink: cbin:738[25633.5,26371.5] tbin:5897[58,5955]
+[08:52:32.704] D [magnify ] MagnifySink: cbin:747[26412.5,27159.5] tbin:5897[58,5955]
+[08:52:32.999] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 319079 bytes
+[08:52:33.121] D [magnify ] MagnifySink: EOS
+[08:52:33.366] D [  gen   ] <IncoherentAddNoise:addnoiseapa11> call=0 frame=100 2560 traces 
+[08:52:33.366] D [  gen   ] <IncoherentAddNoise:addnoiseapa11> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:33.366] D [  gen   ] <IncoherentAddNoise:addnoiseapa11> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:34.110] D [  gen   ] <Digitizer:digitizer11> call=0 traces=2560 frame=100 totadc=110990902231 outtag="orig11" 
+[08:52:34.110] D [  gen   ] <Digitizer:digitizer11> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:34.110] D [  gen   ] <Digitizer:digitizer11> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig11" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:34.114] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig11" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[08:52:34.122] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[08:52:34.122] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 init enlarge window from 6000 to 6200 
+[08:52:34.122] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[08:52:34.122] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[08:52:34.122] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[08:52:34.143] D [sigproc ] <OmnibusSigProc:apa11sigproc11> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[08:52:34.180] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[08:52:36.967] D [sigproc ] <OmnibusSigProc:apa11sigproc11> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[08:52:37.004] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[08:52:39.813] D [sigproc ] <OmnibusSigProc:apa11sigproc11> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[08:52:39.865] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[08:52:41.612] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 save plane index: 0, Qtot=200961 Qloss=-4721, 32 indices spanning [0,31] "wiener" 
+[08:52:41.830] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 save plane index: 0, Qtot=121329 Qloss=-2883, 31 indices spanning [32,62] "gauss" 
+[08:52:42.114] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 save plane index: 1, Qtot=287963 Qloss=-12830, 44 indices spanning [63,106] "wiener" 
+[08:52:42.336] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 save plane index: 1, Qtot=194726 Qloss=-7228, 45 indices spanning [107,151] "gauss" 
+[08:52:42.791] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 wiener save plane index: 2 empty 
+[08:52:43.188] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 gauss save plane index: 2 empty 
+[08:52:43.188] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 produce 152 traces: 76 wiener11, 0 decon_charge, 76 gauss11, frame tag: sigproc 
+[08:52:43.188] D [sigproc ] <OmnibusSigProc:apa11sigproc11> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 152 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss11":76 [0] "wiener11":76 [76] ] cmm:[ ] 
+[08:52:43.191] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:43.192] D [magnify ] MagnifySink: tag: "wiener11" with 76 traces
+[wgu] plane: 2 has not traces. 
+[08:52:43.192] D [magnify ] MagnifySink: cbin:744[28159.5,28903.5] tbin:5837[4,5841]
+[08:52:43.193] D [magnify ] MagnifySink: cbin:776[28962.5,29738.5] tbin:5837[4,5841]
+[08:52:43.195] D [magnify ] MagnifySink: tag: "gauss11" with 76 traces
+[wgu] plane: 2 has not traces. 
+[08:52:43.195] D [magnify ] MagnifySink: cbin:744[28159.5,28903.5] tbin:5837[4,5841]
+[08:52:43.196] D [magnify ] MagnifySink: cbin:776[28962.5,29738.5] tbin:5837[4,5841]
+[08:52:43.449] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 322468 bytes
+[08:52:43.487] D [  gen   ] <IncoherentAddNoise:addnoiseapa11> EOS at call=1 
+[08:52:43.487] D [  gen   ] <Digitizer:digitizer11> see EOS at call=1 
+[08:52:43.487] D [sigproc ] <OmnibusSigProc:apa11sigproc11> EOS at call=1 anode=11 
+[08:52:43.487] D [magnify ] MagnifySink: EOS
+[08:52:43.487] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[08:52:43.487] D [magnify ] MagnifySink: tag: "wiener8" with 68 traces
+[wgu] plane: 2 has not traces. 
+[08:52:43.487] D [magnify ] MagnifySink: cbin:667[20570.5,21237.5] tbin:5776[37,5813]
+[08:52:43.488] D [magnify ] MagnifySink: cbin:752[21318.5,22070.5] tbin:5776[37,5813]
+[08:52:43.490] D [magnify ] MagnifySink: tag: "gauss8" with 70 traces
+[wgu] plane: 2 has not traces. 
+[08:52:43.490] D [magnify ] MagnifySink: cbin:667[20570.5,21237.5] tbin:5776[37,5813]
+[08:52:43.491] D [magnify ] MagnifySink: cbin:752[21318.5,22070.5] tbin:5776[37,5813]
+[08:52:43.714] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 298060 bytes
+[08:52:43.757] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_1> call=0 input 0: frame: ident=100 time=219.151 tick=500 with 170 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss6":85 [0] "wiener6":85 [85] ] cmm:[ ] input 1: frame: ident=100 time=219.151 tick=500 with 1304 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss7":582 [0] "wiener7":722 [722] ] cmm:[ ] input 2: frame: ident=100 time=219.151 tick=500 with 138 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss8":70 [0] "wiener8":68 [68] ] cmm:[ ] input 3: frame: ident=100 time=219.151 tick=500 with 235 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss9":118 [0] "wiener9":117 [117] ] cmm:[ ] input 4: frame: ident=100 time=219.151 tick=500 with 162 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss10":82 [0] "wiener10":80 [80] ] cmm:[ ] input 5: frame: ident=100 time=219.151 tick=500 with 152 traces.  frame tags:[ "sigproc" ] 2 tagged trace sets:[ "gauss11":76 [0] "wiener11":76 [76] ] cmm:[ ] output: frame: ident=100 time=219.151 tick=500 with 2161 traces.  frame tags:[ "framefanin" ] 12 tagged trace sets:[ "gauss10":82 [0] "gauss11":76 [0] "gauss6":85 [0] "gauss7":582 [0] "gauss8":70 [0] "gauss9":118 [0] "wiener10":80 [80] "wiener11":76 [76] "wiener6":85 [85] "wiener7":722 [722] "wiener8":68 [68] "wiener9":117 [117] ] cmm:[ ] 
+[08:52:43.759] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=0 input 0: frame: ident=100 time=219.151 tick=500 with 13019 traces.  frame tags:[ "framefanin" ] 12 tagged trace sets:[ "gauss0":109 [0] "gauss1":92 [0] "gauss2":76 [0] "gauss3":90 [0] "gauss4":86 [0] "gauss5":5186 [0] "wiener0":109 [109] "wiener1":89 [89] "wiener2":73 [73] "wiener3":87 [87] "wiener4":85 [85] "wiener5":6937 [6937] ] cmm:[ ] input 1: frame: ident=100 time=219.151 tick=500 with 2161 traces.  frame tags:[ "framefanin" ] 12 tagged trace sets:[ "gauss10":82 [0] "gauss11":76 [0] "gauss6":85 [0] "gauss7":582 [0] "gauss8":70 [0] "gauss9":118 [0] "wiener10":80 [80] "wiener11":76 [76] "wiener6":85 [85] "wiener7":722 [722] "wiener8":68 [68] "wiener9":117 [117] ] cmm:[ ] output: frame: ident=100 time=219.151 tick=500 with 15180 traces.  frame tags:[ "framefanin" ] 24 tagged trace sets:[ "gauss0":109 [0] "gauss1":92 [0] "gauss10":82 [0] "gauss11":76 [0] "gauss2":76 [0] "gauss3":90 [0] "gauss4":86 [0] "gauss5":5186 [0] "gauss6":85 [0] "gauss7":582 [0] "gauss8":70 [0] "gauss9":118 [0] "wiener0":109 [109] "wiener1":89 [89] "wiener10":80 [80] "wiener11":76 [76] "wiener2":73 [73] "wiener3":87 [87] "wiener4":85 [85] "wiener5":6937 [6937] "wiener6":85 [85] "wiener7":722 [722] "wiener8":68 [68] "wiener9":117 [117] ] cmm:[ ] 
+Retagger: tagging trace set: wiener with 8528 traces, 8528 summary
+Retagger: tagging trace set: gauss with 6652 traces, 0 summary
+[08:52:43.760] D [  glue  ] sink frame: #100 @0.000219151 with 15180 traces, frame tags:[retagger], trace tags:[gauss, wiener]
+[08:52:43.760] D [magnify ] MagnifySink: EOS
+[08:52:43.760] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_1> EOS at call=1 with 6 
+[08:52:43.760] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> EOS at call=1 with 2 
+[08:52:43.760] D [  glue  ] frame sink sees EOS
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa4sigproc4" calls=2 time=10214 mean=5107 max=10214 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=2 time=10127 mean=5063.5 max=10127 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa1sigproc1" calls=2 time=10121 mean=5060.5 max=10121 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa2sigproc2" calls=2 time=10091 mean=5045.5 max=10091 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa3sigproc3" calls=2 time=9837 mean=4918.5 max=9837 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa7sigproc7" calls=2 time=9770 mean=4885 max=9770 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa11sigproc11" calls=2 time=9075 mean=4537.5 max=9075 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa9sigproc9" calls=2 time=9060 mean=4530 max=9060 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa8sigproc8" calls=2 time=8886 mean=4443 max=8886 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa10sigproc10" calls=2 time=8866 mean=4433 max=8866 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa5sigproc5" calls=2 time=8855 mean=4427.5 max=8855 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "apa6sigproc6" calls=2 time=8752 mean=4376 max=8752 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform5" calls=2 time=6329 mean=3164.5 max=6329 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform7" calls=2 time=2101 mean=1050.5 max=2101 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer6" calls=2 time=767 mean=383.5 max=767 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer2" calls=2 time=763 mean=381.5 max=763 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer4" calls=2 time=762 mean=381 max=762 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer5" calls=2 time=761 mean=380.5 max=761 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer10" calls=2 time=755 mean=377.5 max=755 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer1" calls=2 time=748 mean=374 max=748 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer8" calls=2 time=747 mean=373.5 max=747 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer11" calls=2 time=745 mean=372.5 max=745 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer3" calls=2 time=744 mean=372 max=744 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer9" calls=2 time=736 mean=368 max=736 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer7" calls=2 time=734 mean=367 max=734 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=2 time=732 mean=366 max=732 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=701 mean=350.5 max=701 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=552 mean=276 max=552 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=526 mean=263 max=526 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=440 mean=220 max=440 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=422 mean=211 max=422 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=404 mean=202 max=404 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform9" calls=2 time=397 mean=198.5 max=397 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=392 mean=196 max=392 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=367 mean=183.5 max=367 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=334 mean=167 max=334 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=295 mean=147.5 max=295 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=269 mean=134.5 max=269 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa11" calls=2 time=245 mean=122.5 max=245 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa4" calls=2 time=244 mean=122 max=244 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa9" calls=2 time=244 mean=122 max=244 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa10" calls=2 time=244 mean=122 max=244 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa8" calls=2 time=243 mean=121.5 max=243 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa3" calls=2 time=242 mean=121 max=242 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa6" calls=2 time=241 mean=120.5 max=241 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa5" calls=2 time=241 mean=120.5 max=241 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa7" calls=2 time=240 mean=120 max=240 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa2" calls=2 time=238 mean=119 max=238 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=237 mean=118.5 max=237 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa1" calls=2 time=235 mean=117.5 max=235 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=2 time=234 mean=117 max=234 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform3" calls=2 time=151 mean=75.5 max=151 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform1" calls=2 time=119 mean=59.5 max=119 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform2" calls=2 time=114 mean=57 max=114 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=2 time=114 mean=57 max=114 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform11" calls=2 time=112 mean=56 max=112 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform4" calls=2 time=112 mean=56 max=112 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform8" calls=2 time=106 mean=53 max=106 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform6" calls=2 time=105 mean=52.5 max=105 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFramer "depotransform10" calls=2 time=105 mean=52.5 max=105 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDrifter "" calls=33549 time=64 mean=0.00190766 max=19 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoFilter "(unknown)" calls=33401 time=59 mean=0.00176641 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer5" calls=2 time=26 mean=13 max=26 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer7" calls=2 time=24 mean=12 max=24 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer8" calls=2 time=22 mean=11 max=22 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer6" calls=2 time=21 mean=10.5 max=21 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer9" calls=2 time=21 mean=10.5 max=21 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer2" calls=2 time=20 mean=10 max=20 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer3" calls=2 time=19 mean=9.5 max=19 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer4" calls=2 time=19 mean=9.5 max=19 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=2 time=18 mean=9 max=18 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer1" calls=2 time=18 mean=9 max=18 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer11" calls=2 time=18 mean=9 max=18 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "reframer10" calls=2 time=17 mean=8.5 max=17 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoCollector "bagger" calls=33401 time=6 mean=0.000179635 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoSource "(unknown)" calls=33550 time=3 mean=8.94188e-05 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=2 time=1 mean=0.5 max=1 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=2 time=1 mean=0.5 max=1 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=2 time=0 mean=0 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_1" calls=2 time=0 mean=0 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=2 time=0 mean=0 max=0 [ms]
+[08:52:43.760] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: saving 6652 traces tagged "gauss"
+FrameSaver: q=901534 n=104053 tag=gauss
+wclsFrameSaver: saving 8528 traces tagged "wiener"
+FrameSaver: q=1.01006e+06 n=92019 tag=wiener
+wclsFrameSaver: no traces tagged "dnnsp"
+FrameSaver: q=0 n=0 tag=dnnsp
+13-Nov-2025 08:52:43 CST  Opened output file with pattern "sp.root"
+13-Nov-2025 08:52:44 CST  Closed output file "sp.root"
+13-Nov-2025 08:52:44 CST  Closed input file "g4.root"
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                      141.05        141.05        141.05        141.05           0            1     
+--------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                        0.000335009   0.000335009   0.000335009   0.000335009        0            1     
+simulate:tpcrawdecoder:WireCellToolkit          140.989       140.989       140.989       140.989          0            1     
+[art]:TriggerResults:TriggerResultInserter    0.000197096   0.000197096   0.000197096   0.000197096        0            1     
+end_path:out1:RootOutput                      1.3085e-05    1.3085e-05    1.3085e-05    1.3085e-05         0            1     
+end_path:out1:RootOutput(write)                0.0602622     0.0602622     0.0602622     0.0602622         0            1     
+================================================================================================================================
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 3116.55 MB
+  Peak resident set size usage (VmHWM): 1312.96 MB
+====================================================================================================
+Art has completed and will exit with status 0.
+
+real    2m40.245s
+user    2m33.426s
+sys     0m2.370s

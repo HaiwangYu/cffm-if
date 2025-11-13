@@ -1,0 +1,434 @@
+%MSG-i MF_INIT_OK:  Early 13-Nov-2025 08:22:42 CST JobSetup
+Messagelogger initialization complete.
+%MSG
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 1149
+Info in <TGeoManager::CloseGeometry>: 67545 nodes/ 3831 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+%MSG-i AuxDetGeometryCore:  Early 13-Nov-2025 08:22:46 CST JobSetup
+New detector geometry loaded from
+	/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+%MSG
+%MSG-i GeometryCore:  Early 13-Nov-2025 08:22:46 CST JobSetup
+Sorting volumes...
+%MSG
+%MSG-i GeometryCore:  Early 13-Nov-2025 08:22:46 CST JobSetup
+New detector geometry loaded from
+	/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v6_refactored_1x2x6.gdml
+%MSG
+%MSG-i DuneApaWireReadoutGeom:  Early 13-Nov-2025 08:22:46 CST JobSetup
+Initializing wire readout...
+%MSG
+Cryostat 0:
+  30720 total channels
+  12 APAs
+  For all identical APA:
+    Number of channels per APA = 2560
+    U channels per APA = 800
+    V channels per APA = 800
+    Z channels per APA = 960
+    Pitch in U Plane = 0.4667
+    Pitch in V Plane = 0.4667
+    Pitch in Z Plane = 0.479
+GeoApaChannelGroupService::ctor: Group 0 (apa00) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 1 (apa01) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 2 (apa02) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 3 (apa03) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 4 (apa04) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 5 (apa05) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 6 (apa06) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 7 (apa07) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 8 (apa08) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 9 (apa09) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 10 (apa10) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 11 (apa11) has 2560 channels from 4/4 readout planes.
+%MSG-i SimpleChannelStatusService:  Early 13-Nov-2025 08:22:46 CST JobSetup
+Loaded from configuration:
+  - 0 bad channels
+  - 0 noisy channels
+  - largest channel ID: 30719, largest present: 30719
+%MSG
+%MSG-i setupProvider<DetectorPropertiesStandard>:  Early  13-Nov-2025 08:22:46 CST JobSetup
+Asked to ignore 1 keys: 'InheritNumberTimeSamples'
+%MSG
+IFDH constructor, got keys:
+service_type, 
+IFDH: didn't find a base uri...
+
+%MSG-i SignalShapingServiceDUNE:  Early 13-Nov-2025 08:22:46 CST JobSetup
+Getting Filter from .fcl file
+%MSG
+%MSG-i SignalShapingServiceDUNE:  Early 13-Nov-2025 08:22:46 CST JobSetup
+ using the field response provided from a .root file 
+%MSG
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+Init HelperRandom with seed 0
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+ExpandFluxPaths initially: "/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/"
+             final result: "/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/"
+                    using: "DIRECT" method
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+ExpandFluxFilePatternsDirect initially found 249 files for user patterns:
+	gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_*root
+  using FluxSearchPaths of: 
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/
+list of 249 will be randomized and pared down to 2000 MB or 9999 files
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+StartGENIEMessenger ProdMode=yes read from: Messenger_whisper.xml
+%MSG
+
+
+*****************************************************************************************************************
+*                                                                                                               *
+*                                                   .oooooo.    oooooooooooo ooooo      ooo ooooo oooooooooooo  *
+*                                                  d8P'  `Y8b   `888'     `8 `888b.     `8' `888' `888'     `8  *
+*                                                 888            888          8 `88b.    8   888   888          * 
+*                        Ndyooym          dN      888            888oooo8     8   `88b.  8   888   888oooo8     *
+*                     Nds//+sdmoy       d+m       888     ooooo  888    "     8     `88b.8   888   888    "     * 
+*                   Nh+//ohN  m+s      N//syyN    `88.    .88'   888       o  8       `888   888   888       o  *
+*                 Ny+//od   Nh+oN       o///+      `Y8bood8P'   o888ooooood8 o8o        `8  o888o o888ooooood8  *
+*               Nh+//om   Nh+/yN       o///s                                                                    *
+*              d+//+d   my+/smmyhN    m///h                                      NEUTRINO MONTE CARLO GENERATOR *   
+*            Ns///yN NdyoshNNs///d   h////yN                                                                    *
+*           mo//om        ms///+m   d///////oyhmN                                               Version 3.04.02 *
+*          N+//yN       ms////+N    h////////////oym                                                            *
+*          s//h       ho/+///sN     N///////////////od                                  http://www.genie-mc.org *
+*         N+/h     my++yh+//y       s/////////////////oN                                                        *
+*         Ns/m Nmy++ymNh//+d        s//////////////////+m                                                       *
+*          NhssoshN  Ny//sN         m///////////////////+                                                       *
+*                  Nmo/+ohdmN        mo//////////////////h            NmmN                                      *
+*              ms/+s//o/-----:+sdN     mhso+ooys/////////o      mhs+/------/ohN                                 *
+*    Nhd     N+-/o+/o+------------/shN     Ndy+//////////+ mhs+:---------------om                               *
+*  mo/sN    m:/oo/oo:-----------------:://////////////////-----------------------y                              *
+*  y//d    Noo++o+:----------:------------:://///////////:-------:/+osyso/:-------h                             *
+*  Nyo+syysooo+/--------------::--------------:://///////:----::////+ossyso/------:                             *
+*     NNNNNs--------------------:/::-------------:://///:-:://////////oosyo+:------                             *
+*          y---------------------:////:::-----------:////////////////+o++++/:-----/                             *
+*          m-----------------------://////////////////////////////+so/--:---------y                             *
+*           +------------------------://////////////////////////+yy:---+oh/--:y+-/N                             *
+*           N/-------------------------://////////////////////ohy/-------yy--os-/m                              *
+*            No--------------------------://///////////////+shs/---------/d++/-oN                               *
+*              mo--------------------------:////////////+shyo:------------sy/sm                                 *
+*                Ny+:------------------------::://///oyhyo:--------------/sd                                    *
+*                    mhso+/:------------------:/+oyhyo/----------:/+syhm                                        *
+*                           NmddhyyyssssyyyhdmmNNNmhhhyyyyhhddmN                                                *
+*                                                                                                               *
+*                                                             Copyright (c) 2003-2023, The GENIE Collaboration  *
+*                                                                                                               *
+*                                                                                                               *
+* Luis Alvarez-Ruso [6], Costas Andreopoulos [9], Adi Ashkenazi [13], Joshua Barrow (10,13), Steve Dytman [12], * 
+*      Hugh Gallagher [14], Alfonso Andres Garcia Soto [5,6], Steven Gardiner [4], Matan Goldenberg [13],       * 
+*  Robert Hatcher [4], Or Hen [10], Igor Kakorin [8], Konstantin Kuzmin [7,8], Weijun Li [11], Xianguo Lu [15], *
+*          Anselmo Meregaglia [2], Vadim Naumov [8], Afroditi Papadopoulou [1], Gabriel Perdue [3],             *
+*   Komninos-John Plows [11], Marco Roda [9], Alon Sportes [13], Noah Steinberg [4], Vladyslav Syrotenko [14],  *
+*                         Júlia Tena Vidal [13], Jeremy Wolcott [14], and Qiyu Yan [3,15]                       *
+*                                                                                                               *
+*                                            (The GENIE Collaboration)                                          *
+*                                                                                                               *
+*                                      [1] Argonne National Laboratory (ANL)                                    *
+*                                 [2] CENBG, Université de Bordeaux, CNRS/IN2P3                                 *
+*                             [3] University of the Chinese Academy of Sciences (UCAS)                          *
+*                                 [4] Fermi National Accelerator Laboratory (FNAL)                              *
+*                                      [5] Harvard University, Dept. of Physics                                 *   
+*                                     [6] Instituto de Física Corpuscular (IFIC)                                *
+*      [7] Alikhanov Institute for Theoretical and Experimental Physics (ITEP) of NRC "Kurchatov Institute"     *
+*                                  [8] Joint Institute for Nuclear Research (JINR)                              *
+*                                   [9] University of Liverpool, Dept. of Physics                               *
+*                         [10] Massachusetts Institute of Technology (MIT), Dept. of Physics                    *
+*                                    [11] University of Oxford, Dept. of Physics                                *
+*                            [12] University of Pittsburgh, Dept. of Physics and Astronomy                      *
+*                              [13] Tel Aviv University, School of Physics and Astronomy                        *
+*                                [14] Tufts University, Dept. of Physics and Astronomy                          *
+*                                     [15] Warwick University, Dept. of Physics                                 *
+*                                                                                                               *
+*  Corresponding Author:                                                                                        *
+*  -                                                                                                            *
+*  Professor Costas Andreopoulos                                                                                *
+*  University of Liverpool, Department of Physics                                                               *
+*  Oliver Lodge Lab 316, Liverpool L69 7ZE, UK                                                                  *
+*  E-Mail: c.andreopoulos \at cern.ch                                                                           *
+*  Tel: +44-(0)1517-943201                                                                                      *
+*****************************************************************************************************************
+
+
+1763043766 NOTICE Messenger : [s] <SetPrioritiesFromXmlFile (136)> : Reading msg stream priorities from XML file: /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config/Messenger.xml
+1763043766 NOTICE Messenger : [s] <SetPrioritiesFromXmlFile (136)> : Reading msg stream priorities from XML file: /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config/Messenger_whisper.xml
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+Init genie::utils::app_init::RandGen() with seed 0
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+Generating flux with the following flavors:  12 14 -12 -14
+and these file patterns: 
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00148_00146.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00016_00015.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00082_00081.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00101_00100.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00033_00032.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00143_00141.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00103_00102.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00150_00148.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00144_00142.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00047_00046.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00195_00193.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00185_00183.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00211_00209.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00080_00079.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00035_00034.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00117_00116.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00005_00004.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00145_00143.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00085_00084.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00174_00172.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00141_00140.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00097_00096.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00022_00021.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00218_00216.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00073_00072.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00070_00069.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00243_00241.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00203_00201.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00013_00012.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00087_00086.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00237_00235.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00180_00178.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00011_00010.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00168_00166.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00149_00147.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00129_00128.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00173_00171.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00202_00200.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00055_00054.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00095_00094.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00084_00083.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00140_00139.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00067_00066.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00118_00117.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00058_00057.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00210_00208.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00191_00189.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00192_00190.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00112_00111.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00226_00224.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00169_00167.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00184_00182.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00114_00113.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00001_00000.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00021_00020.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00061_00060.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00216_00214.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00120_00119.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00138_00137.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00249_00247.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00196_00194.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00146_00144.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00049_00048.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00096_00095.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00050_00049.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00048_00047.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00213_00211.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00099_00098.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00031_00030.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00075_00074.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00088_00087.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00134_00133.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00012_00011.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00010_00009.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00241_00239.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00236_00234.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00250_00248.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00043_00042.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00039_00038.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00199_00197.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00246_00244.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00205_00203.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00152_00150.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00232_00230.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00024_00023.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00109_00108.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00014_00013.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00198_00196.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00046_00045.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00115_00114.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00127_00126.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00123_00122.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00079_00078.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00204_00202.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00208_00206.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00068_00067.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00248_00246.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00162_00160.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00178_00176.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00223_00221.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00186_00184.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00036_00035.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00110_00109.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00130_00129.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00231_00229.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00105_00104.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00181_00179.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00137_00136.root
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+Generating 1 events for each spill
+%MSG
+%MSG-i GeneratedEventTimestamp:   TriggerResultInserter:TriggerResults@Construction 13-Nov-2025 08:22:46 CST  ModuleConstruction
+Timestamp plugin: timestamp from local clock time in nanoseconds
+%MSG
+1763043766 INFO GENIE : Trigger GENIE banner
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:22:46 CST  ModuleBeginJob
+GENIE EventGeneratorList using "Default"
+%MSG
+%MSG-i GENIE2ART:  GENIEGen:generator@BeginJob 13-Nov-2025 08:22:46 CST  ModuleBeginJob
+TuneName started as '${GENIE_XSEC_TUNE}'  converted to AR23_20i_00_000
+%MSG
+%MSG-i GENIE2ART:  GENIEGen:generator@BeginJob 13-Nov-2025 08:22:46 CST  ModuleBeginJob
+Configuring GENIE tune "AR23_20i_00_000"
+%MSG
+1763043766 INFO TuneId : [n] <TuneId.cxx::Build (132)> : AR23_20i_00_000 Tune configured 
+1763043766 INFO RunOpt : [n] <RunOpt.cxx::BuildTune (94)> : Building tune AR23_20i_00_000
+1763043766 INFO TuneId : [n] <TuneId.cxx::Build (132)> : AR23_20i_00_000 Tune configured 
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:22:46 CST  ModuleBeginJob
+Custom GENIE tune: AR23_20i_00_000
+ - Prefix ............... : AR
+ - Year ................. : 23
+ - Major model ID ....... : 20
+ - Minor model ID ....... : i
+ - Tuned param set ID ... : 00
+ - Fit dataset ID ....... : 000
+ - Tune directory ....... : /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config/AR23_20i
+ - Base directory ....... : /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config
+ - Custom directory ..... : /cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/v3_04_00/NULL/AR2320i00000-k250-e1000/data
+
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:22:46 CST  ModuleBeginJob
+ TuneName name changed from "${GENIE_XSEC_TUNE}" to "AR23_20i_00_000" by evgb::SetEventGeneratorListAndTune
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:22:46 CST  ModuleBeginJob
+XSecTable/GSPLOAD full path "/cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/v3_04_00/NULL/AR2320i00000-k250-e1000/data/gxspl-FNALsmall.xml"
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:23:09 CST  ModuleBeginJob
+Time to read GENIE XSecTable:  Real 23.0895 s, CPU 21.56 s from /cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/v3_04_00/NULL/AR2320i00000-k250-e1000/data/gxspl-FNALsmall.xml
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:23:10 CST  ModuleBeginJob
+GENIEHelper::InitializeGeometry using TopVolume 'volCryostat'
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:23:10 CST  ModuleBeginJob
+fiducial cut: mbox:-380,-620,-20,380,620,1420
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 13-Nov-2025 08:23:10 CST  ModuleBeginJob
+Convert fiducial volume from master to topvol coords
+%MSG
+1763043814 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 0 < A < 12 -> using MagFF_RT_A = 0
+1763043814 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 11 < A < 420 -> using MagFF_RT_A = 5.19
+1763043814 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 0 < A < 12 -> using MagFF_RT_B = 1
+1763043814 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 11 < A < 420 -> using MagFF_RT_B = 0.376
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 13-Nov-2025 08:23:53 CST
+%MSG-w ParticleInventory:  ProcessEvent 13-Nov-2025 08:23:53 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 13-Nov-2025 08:23:53 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 13-Nov-2025 08:23:53 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 13-Nov-2025 08:23:53 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 13-Nov-2025 08:23:53 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  13-Nov-2025 08:23:53 CST run: 20000001 subRun: 0 event: 1
+Random seed for this event, engine 'generator': 62966408
+%MSG
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_2_4.txt
+
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_6_12.txt
+
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_20_40.txt
+
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_26_56.txt
+
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_50_120.txt
+
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_92_238.txt
+
+1763043837 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::getAvgCorrection (306)> : Nucleon Corr interpolation files read in successfully
+13-Nov-2025 08:23:57 CST  Opened output file with pattern "gen.root"
+%MSG-i Root_Information:  PostProcessEvent TClass::Init()  13-Nov-2025 08:23:57 CST run: 20000001 subRun: 0 event: 1
+no dictionary for class sim::IDE is available
+ROOT severity: 2000
+%MSG
+%MSG-w FastCloning:  PostProcessEvent 13-Nov-2025 08:23:58 CST  run: 20000001 subRun: 0 event: 1
+Fast cloning has been deactivated for the following reasons:
+ - Input source does not read art/ROOT files.
+%MSG
+13-Nov-2025 08:23:58 CST  Closed output file "gen.root"
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                      4.2413        4.2413        4.2413        4.2413           0            1     
+--------------------------------------------------------------------------------------------------------------------------------
+source:EmptyEvent(read)                       0.000211533   0.000211533   0.000211533   0.000211533        0            1     
+simulate:rns:RandomNumberSaver                0.000203289   0.000203289   0.000203289   0.000203289        0            1     
+simulate:generator:GENIEGen                     4.23831       4.23831       4.23831       4.23831          0            1     
+[art]:TriggerResults:TriggerResultInserter    3.6846e-05    3.6846e-05    3.6846e-05    3.6846e-05         0            1     
+end_path:out1:RootOutput                      1.0189e-05    1.0189e-05    1.0189e-05    1.0189e-05         0            1     
+end_path:out1:RootOutput(write)                0.002085      0.002085      0.002085      0.002085          0            1     
+================================================================================================================================
+%MSG-i NuRandomService:  RootOutput:out1@EndJob 13-Nov-2025 08:23:58 CST  ModuleEndJob
+
+Summary of seeds computed by the NuRandomService
+Random policy: 'perEvent'
+  algorithm version: EventTimestamp_v1
+   Configured value          Last value   ModuleLabel.InstanceName
+        (per event)            62966408   generator
+
+%MSG
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 5218.07 MB
+  Peak resident set size usage (VmHWM): 1087.08 MB
+====================================================================================================
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 1 passed = 1 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport          1          1          0 out1
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 42.301908 Real = 71.899777
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 5218.07 VmHWM = 1087.08
+
+%MSG-i GENIEHelper:  PostEndJob 13-Nov-2025 08:23:58 CST ModuleEndJob
+ Total Exposure 1.0442e+17 GMCJDriver GlobProbScale 8.62857e-09 FluxDriver base pots 9.00992e+08 corrected POTS 1.0442e+17
+%MSG
+%MSG-i GENIEProductionTime:  PostEndJob 13-Nov-2025 08:23:58 CST ModuleEndJob
+real time to produce file: 71.9895
+%MSG
+Art has completed and will exit with status 0.
+
+real    1m20.073s
+user    0m46.900s
+sys     0m0.953s

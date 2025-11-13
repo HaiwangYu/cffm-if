@@ -1,0 +1,203 @@
+The following module labels are either not assigned to any path,
+or they have been assigned to ignored path(s):
+  anglerecohits
+  anglereconue
+  anglereconuepfps
+  anglereconumu
+  anglereconumupfps
+  blurredcluster
+  caldata
+  cvneva
+  cvnmap
+  emshower
+  emtrkmichelid
+  energyrecnc
+  energyrecnue
+  energyrecnumu
+  energyrecnumumcs
+  energyrecnumurange
+  gaushit
+  hitfd
+  linecluster
+  opdec
+  opflash
+  ophitspe
+  opslicer
+  pandora
+  pandoraShower
+  pandoraTrack
+  pandoracalo
+  pandorapid
+  pmtrack
+  pmtrackcalo
+  pmtrackpid
+  pmtracktc
+  pmtracktccalo
+  pmtracktcpid
+  pmtrajfit
+  pmtrajfitcalo
+  pmtrajfitpid
+  pmtrajfittc
+  pmtrajfittccalo
+  pmtrajfittcpid
+  rns
+  solarflash
+  spsolve
+  trajcluster
+  trkshowersplit
+DuneDeconvolutionService::ctor: DuneDeconvolutionService:
+DuneDeconvolutionService::ctor:                LogLevel: 1
+DuneRoiBuildingService::ctor: DuneRoiBuildingService:
+DuneRoiBuildingService::ctor:     LogLevel: 1
+DuneRoiBuildingService::ctor:  NSigmaStart: 3
+DuneRoiBuildingService::ctor:    NSigmaEnd: 1
+DuneRoiBuildingService::ctor:       PadLow: 50
+DuneRoiBuildingService::ctor:      PadHigh: 50
+StandardAdcWireBuildingService::ctor: StandardAdcWireBuildingService:
+StandardAdcWireBuildingService::ctor:     LogLevel: 1
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 1149
+Info in <TGeoManager::CloseGeometry>: 67545 nodes/ 3831 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+GeoApaChannelGroupService::ctor: Group 0 (apa00) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 1 (apa01) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 2 (apa02) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 3 (apa03) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 4 (apa04) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 5 (apa05) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 6 (apa06) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 7 (apa07) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 8 (apa08) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 9 (apa09) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 10 (apa10) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 11 (apa11) has 2560 channels from 4/4 readout planes.
+DuneToolManager::fclFilename: Taking fcl name from command line: lar -n 1 -c wcls-labelling2d.fcl -s sp.root --no-output
+AcdDigitReader::ctor:     LogLevel: 1
+DuneToolManager::getPrivate: ERROR: Tool name is blank
+StandardRawDigitExtractService::ctor: Retrieved digit read tool digitReader
+StandardRawDigitExtractService::ctor: StandardRawDigitExtractService:
+StandardRawDigitExtractService::ctor:         LogLevel: 1
+StandardRawDigitExtractService::ctor:    DigitReadTool: digitReader
+StandardRawDigitExtractService::ctor:   PedestalOption: 1
+StandardRawDigitExtractService::ctor:     FlagStuckOff: 0
+StandardRawDigitExtractService::ctor:      FlagStuckOn: 0
+StandardRawDigitPrepService::ctor: Fetching extract service.
+StandardRawDigitPrepService::ctor: Fetching channel status provider.
+StandardRawDigitPrepService::ctor:   Channel status provider: @0x40ca6d0
+StandardRawDigitPrepService::ctor:   Extract service: @0x41c4d00
+StandardRawDigitPrepService::ctor: Fetching deconvolution service.
+StandardRawDigitPrepService::ctor:   Deconvolution service: @0x11dd350
+StandardRawDigitPrepService::ctor: Fetching ROI building service.
+StandardRawDigitPrepService::ctor:   ROI building service: @0x11dc430
+StandardRawDigitPrepService::ctor: Fetching wire building service.
+StandardRawDigitPrepService::ctor:   Wire building service: @0x11dc400
+StandardRawDigitPrepService::ctor: StandardRawDigitPrepService:
+StandardRawDigitPrepService::ctor:              LogLevel: 1
+StandardRawDigitPrepService::ctor:               SkipBad: 1
+StandardRawDigitPrepService::ctor:             SkipNoisy: 0
+StandardRawDigitPrepService::ctor:   ChannelStatusOnline: 0
+StandardRawDigitPrepService::ctor:          DoMitigation: 0
+StandardRawDigitPrepService::ctor:  DoEarlySignalFinding: 0
+StandardRawDigitPrepService::ctor:        DoNoiseRemoval: 0
+StandardRawDigitPrepService::ctor:       DoDeconvolution: 1
+StandardRawDigitPrepService::ctor:  DoPedestalAdjustment: 0
+StandardRawDigitPrepService::ctor:                 DoROI: 1
+StandardRawDigitPrepService::ctor:               DoWires: 1
+StandardRawDigitPrepService::ctor:                DoDump: 0
+StandardRawDigitPrepService::ctor:  DoIntermediateStates: 0
+StandardRawDigitPrepService::ctor: No display tools.
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+[09:29:22.148] D [  main  ] configuring component: "wclsCookedFrameSource":"sigs"
+[09:29:22.149] D [  main  ] configuring component: "HDF5FrameTap":"hio_rec_all"
+[09:29:22.149] W [  hio   ] <HDF5FrameTap:hio_rec_all> The parameter "anode" is ignored, consider fixing your config 
+[09:29:22.150] D [  hio   ] <HDF5FrameTap:hio_rec_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
+[09:29:22.154] D [  hio   ] <HDF5FrameTap:hio_rec_all> created file g4-rec.h5 
+[09:29:22.154] D [  main  ] configuring component: "Labelling2D":"all"
+[09:29:22.154] D [  main  ] configuring component: "HDF5FrameTap":"hio_tru_all"
+[09:29:22.154] W [  hio   ] <HDF5FrameTap:hio_tru_all> The parameter "anode" is ignored, consider fixing your config 
+[09:29:22.154] D [  hio   ] <HDF5FrameTap:hio_tru_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
+[09:29:22.157] D [  hio   ] <HDF5FrameTap:hio_tru_all> created file g4-tru.h5 
+[09:29:22.157] D [  main  ] configuring component: "DumpFrames":""
+[09:29:22.157] D [  main  ] configuring component: "Pgrapher":""
+[09:29:22.157] D [ pgraph ] <Pgrapher:> connecting: 4 edges 
+[09:29:22.157] D [ pgraph ] connect <Node  type:wcls::CookedFrameSource cat:1 sig:WireCell::ISourceNode<WireCell::IFrame> inputs:[ ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[09:29:22.157] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[09:29:22.157] D [ pgraph ] connect <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[09:29:22.157] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Gen::DumpFrames cat:2 sig:WireCell::IFrameSink inputs:[ WireCell::IFrame ] outputs:[ ](WireCell::IFrame:0)
+Inputer: "wclsCookedFrameSource:sigs"
+Inputer: "Labelling2D:all"
+13-Nov-2025 09:29:22 CST  Initiating request to open input file "sp.root"
+13-Nov-2025 09:29:22 CST  Opened input file "sp.root"
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 13-Nov-2025 09:29:22 CST
+[09:29:22.606] D [   io   ] CookedFrameSource::visit: event: 1
+[09:29:22.615] D [   io   ] wcls::CookedFrameSource: got 30720 tpcrawdecoder:gauss recob::Wire objects
+[09:29:23.359] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 1 
+[09:29:23.362] D [  aiml  ] <Labelling2D:all> Labelling2D cached 30720 SimChannels and 0 track->pid entries 
+[09:29:23.362] D [  main  ] executing 2 apps, thread limit 0:
+[09:29:23.362] D [  main  ] executing 2 apps, thread limit 0:
+[09:29:23.362] D [  main  ] executing app: "Pgrapher"
+[09:29:23.362] D [ pgraph ] <Pgrapher:> executing graph 
+[09:29:23.362] D [ pgraph ] executing with 5 nodes
+[09:29:23.362] D [   io   ] CookedFrameSource output frame: ident=1 time=0 tick=500 with 30720 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "gauss":30720 [0] ] cmm:[ ]
+[09:29:23.362] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #1 with 30720 traces with frame tags: "orig" and trace tags: "gauss" looking for tags: "gauss" 
+[09:29:26.925] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[09:29:30.795] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /1/frame_gauss with 30720 channels 6000 ticks @t=0 ms qtot=901533.4 
+[09:29:31.562] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=1 time=0 tick=500 with 61440 traces.  frame tags:[ "truth" ] 2 tagged trace sets:[ "pid":30720 [0] "trackid":30720 [0] ] cmm:[ ] 
+[09:29:31.571] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #1 with 61440 traces with frame tags: "truth" and trace tags: "pid" "trackid" looking for tags: "trackid" "pid" 
+[09:29:35.128] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[09:29:38.949] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_trackid with 30720 channels 6000 ticks @t=0 ms qtot=0 
+[09:29:42.502] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[09:29:46.411] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_pid with 30720 channels 6000 ticks @t=0 ms qtot=0 
+[09:29:46.413] D [  glue  ] sink frame: #1 @0 with 61440 traces, frame tags:[truth], trace tags:[pid, trackid]
+[09:29:46.491] D [   io   ] CookedFrameSource output (null frame pointer)
+[09:29:46.491] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=1 
+[09:29:46.491] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=1 
+[09:29:46.491] D [  glue  ] frame sink sees EOS
+[09:29:46.491] D [ pgraph ] <Pgrapher:> graph execution complete 
+[09:29:46.491] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 14.75 sec
+[09:29:46.491] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 7.42 sec
+[09:29:46.491] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.77 sec
+[09:29:46.491] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.08 sec
+[09:29:46.491] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[09:29:46.492] I [ timer  ] Timer: Total node execution : 23.02000005543232 sec
+[09:29:46.492] D [  main  ] executing app: "Pgrapher"
+[09:29:46.492] D [ pgraph ] <Pgrapher:> executing graph 
+[09:29:46.492] D [ pgraph ] executing with 5 nodes
+[09:29:46.492] D [ pgraph ] <Pgrapher:> graph execution complete 
+[09:29:46.492] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[09:29:46.492] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[09:29:46.492] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[09:29:46.492] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[09:29:46.492] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[09:29:46.492] I [ timer  ] Timer: Total node execution : 0 sec
+13-Nov-2025 09:29:46 CST  Closed input file "sp.root"
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                      23.8867       23.8867       23.8867       23.8867          0            1     
+--------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                        0.000339761   0.000339761   0.000339761   0.000339761        0            1     
+reco:wclsmcnfsp:WireCellToolkit                 23.8859       23.8859       23.8859       23.8859          0            1     
+[art]:TriggerResults:TriggerResultInserter    8.0041e-05    8.0041e-05    8.0041e-05    8.0041e-05         0            1     
+================================================================================================================================
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 5712.98 MB
+  Peak resident set size usage (VmHWM): 4166.66 MB
+====================================================================================================
+[09:29:46.501] D [  main  ] finalizing component: "HDF5FrameTap":"hio_rec_all"
+[09:29:46.502] D [  main  ] finalizing component: "HDF5FrameTap":"hio_tru_all"
+Art has completed and will exit with status 0.

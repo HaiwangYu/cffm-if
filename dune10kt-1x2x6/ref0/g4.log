@@ -1,0 +1,1490 @@
+%MSG-i MF_INIT_OK:  Early 13-Nov-2025 08:24:55 CST JobSetup
+Messagelogger initialization complete.
+%MSG
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 1149
+Info in <TGeoManager::CloseGeometry>: 67545 nodes/ 3831 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+%MSG-i AuxDetGeometryCore:  Early 13-Nov-2025 08:24:57 CST JobSetup
+New detector geometry loaded from
+	/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+%MSG
+%MSG-i GeometryCore:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Sorting volumes...
+%MSG
+%MSG-i GeometryCore:  Early 13-Nov-2025 08:24:57 CST JobSetup
+New detector geometry loaded from
+	/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v6_refactored_1x2x6.gdml
+%MSG
+%MSG-i DuneApaWireReadoutGeom:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Initializing wire readout...
+%MSG
+Cryostat 0:
+  30720 total channels
+  12 APAs
+  For all identical APA:
+    Number of channels per APA = 2560
+    U channels per APA = 800
+    V channels per APA = 800
+    Z channels per APA = 960
+    Pitch in U Plane = 0.4667
+    Pitch in V Plane = 0.4667
+    Pitch in Z Plane = 0.479
+%MSG-i SimpleChannelStatusService:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Loaded from configuration:
+  - 0 bad channels
+  - 0 noisy channels
+  - largest channel ID: 30719, largest present: 30719
+%MSG
+%MSG-i setupProvider<DetectorPropertiesStandard>:  Early  13-Nov-2025 08:24:57 CST JobSetup
+Asked to ignore 1 keys: 'InheritNumberTimeSamples'
+%MSG
+%MSG-i LArG4DetectorService::Ctr:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Reading stepLimit(s) from the configuration file, for volume(s):
+%MSG
+%MSG-i LArG4DetectorService::Ctr:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Volume: volTPCActiveInner0, stepLimit: 0.4
+%MSG
+%MSG-i LArG4DetectorService::Ctr:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Volume: volTPCActiveInner1, stepLimit: 0.4
+%MSG
+%MSG-i LArG4DetectorService::Ctr:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Volume: volTPCActiveOuter, stepLimit: 0.4
+%MSG
+registering to  primaryGeneratorActionsMap_
+registering to   eventActionsMap_
+registering to   trackingActionsMap_
+registering to  steppingActionsMap_
+%MSG-i ParticleListActionService:  Early 13-Nov-2025 08:24:57 CST JobSetup
+The full tracking information will not be stored for particles resulting from the following processes: 
+{ "conv" "LowEnConversion" "Pair" "compt" "Compt" "Brem" "phot" "Photo" "Ion" "annihil" }
+
+%MSG
+%MSG-i ParticleListActionService:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Trajectory sparsification enabled with SparsifyMargin : 0.015
+
+%MSG
+%MSG-i SignalShapingServiceDUNE:  Early 13-Nov-2025 08:24:57 CST JobSetup
+Getting Filter from .fcl file
+%MSG
+%MSG-i SignalShapingServiceDUNE:  Early 13-Nov-2025 08:24:57 CST JobSetup
+ using the field response provided from a .root file 
+%MSG
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+%MSG-i RANDOM:  IonAndScint:IonAndScint@Construction 13-Nov-2025 08:24:58 CST  ModuleConstruction
+Instantiated HepJamesRandom engine "IonAndScint:0:ISCalcAlg" with seed 0.
+%MSG
+%MSG-i NuRandomService:  IonAndScint:IonAndScint@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Seeding HepJamesRandom engine "IonAndScint:ISCalcAlg" with seed 0.
+%MSG
+IonAndScint Module Construct
+Produce SimEnergyDeposit in volumes: 
+ - LArG4DetectorServicevolTPCInner
+ - LArG4DetectorServicevolTPCPlaneVInner
+ - LArG4DetectorServicevolTPCActiveOuter
+ - LArG4DetectorServicevolTPCPlaneUInner
+ - LArG4DetectorServicevolTPCPlaneZInner
+ - LArG4DetectorServicevolTPCActiveInner
+ - LArG4DetectorServicevolTPCActive,LArG4DetectorServicevolTPCInner0
+ - LArG4DetectorServicevolTPCPlaneVInner0
+ - LArG4DetectorServicevolTPCPlaneUInner0
+ - LArG4DetectorServicevolTPCPlaneZInner0
+ - LArG4DetectorServicevolTPCActiveInner0
+ - LArG4DetectorServicevolTPCActive0
+ - LArG4DetectorServicevolTPCInner1
+ - LArG4DetectorServicevolTPCPlaneVInner1
+ - LArG4DetectorServicevolTPCPlaneUInner1
+ - LArG4DetectorServicevolTPCPlaneZInner1
+ - LArG4DetectorServicevolTPCActiveInner1
+ - LArG4DetectorServicevolTPCActive1
+%MSG-i RANDOM:  PDFastSimPAR:PDFastSim@Construction 13-Nov-2025 08:24:58 CST  ModuleConstruction
+Instantiated HepJamesRandom engine "PDFastSim:0:photon" with seed 0.
+%MSG
+%MSG-i NuRandomService:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Seeding HepJamesRandom engine "PDFastSim:photon" with seed 0.
+%MSG
+%MSG-i RANDOM:  PDFastSimPAR:PDFastSim@Construction 13-Nov-2025 08:24:58 CST  ModuleConstruction
+Instantiated HepJamesRandom engine "PDFastSim:0:scinttime" with seed 0.
+%MSG
+%MSG-i NuRandomService:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Seeding HepJamesRandom engine "PDFastSim:scinttime" with seed 0.
+%MSG
+ScintTimeLAr Tool configure:
+Fast rising time: 0, Fast decay time: 6, Slow rising time: 0, Slow decay time: 1600
+%MSG-i PDFastSimPAR:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Initializing PDFastSimPAR.
+%MSG
+%MSG-i SemiAnalyticalModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Initializing Semi-analytical model.
+%MSG
+%MSG-i SemiAnalyticalModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Using VUV visibility parameterization
+%MSG
+%MSG-i SemiAnalyticalModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Setting absorption length to: 2000
+%MSG
+%MSG-i SemiAnalyticalModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Semi-analytical model initialized.
+%MSG
+%MSG-i PropagationTimeModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Initializing Photon propagation time model.
+%MSG
+%MSG-i PropagationTimeModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Using VUV timing parameterization
+%MSG
+%MSG-i PropagationTimeModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:24:58 CST ModuleConstruction
+Generating VUV parameters
+%MSG
+%MSG-i PropagationTimeModel:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:27:37 CST ModuleConstruction
+Photon propagation time model initalized.
+%MSG
+%MSG-i PDFastSimPAR:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:27:37 CST ModuleConstruction
+Using Lite Photons
+%MSG
+%MSG-i PDFastSimPAR:  PDFastSimPAR:PDFastSim@Construction  13-Nov-2025 08:27:37 CST ModuleConstruction
+PDFastSimPAR Initialization finish.
+Simulate using semi-analytic model for number of hits.
+%MSG
+G4GDML: Reading '/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v6_refactored_1x2x6.gdml'...
+ ColorReaderReading GDML extension...
+ColorReader: Reading new GDML extension...
+G4GDML: Reading definitions...
+G4GDML: Reading materials...
+G4GDML: Reading solids...
+G4GDML: Reading structure...
+G4GDML: Reading setup...
+G4GDML: Reading '/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v6_refactored_1x2x6.gdml' done!
+Stripping off GDML names of materials, solids and volumes ...
+%MSG-i LArG4DetectorService::doBuildLVs:  larg4Main:largeant@Construction  13-Nov-2025 08:27:38 CST ModuleConstruction
+(0,0,0)
+
+Found World:  volWorld_PV
+World LV:  volWorld
+Found 5439 logical volumes.
+
+Found 9144 physical volumes.
+
+Found 15 volume(s) with auxiliary information.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%MSG
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCActiveInner0
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneUInner0
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneUInner1
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneVInner0
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneVInner1
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneZInner0
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCActiveInner1
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCInner0
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneZInner1
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCInner1
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCActiveOuter
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneUOuter
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneVOuter
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCPlaneZOuter
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Attaching sensitive Detector: SimEnergyDeposit to Volume:  volTPCOuter
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+ Unit parsed = mm from unit category: Length
+%MSG
+%MSG-i AuxUnit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Valid StepLimit unit category obtained: Length
+%MSG
+%MSG-i fStepLimit:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+fStepLimit:  0.4  0.04 cm
+
+%MSG
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%MSG-w LArG4DetectorService::setStepLimits:  larg4Main:largeant@Construction  13-Nov-2025 08:27:38 CST ModuleConstruction LArG4Detector.cc:336
+Setting step limits from configuration file. This will OVERRIDE redundant stepLimit(s) set in the GDML file. Note that stepLimits are only active if enabled in the physicsListService via the appropriate parameter.
+%MSG
+%MSG-w LArG4DetectorService::setStepLimits:  larg4Main:largeant@Construction  13-Nov-2025 08:27:38 CST ModuleConstruction LArG4Detector.cc:372
+New stepLimit matches previously set stepLimit from the GDML file for volume : volTPCActiveInner0 stepLimit : 0.4 mm. Nothing will be changed.
+%MSG
+%MSG-w LArG4DetectorService::setStepLimits:  larg4Main:largeant@Construction  13-Nov-2025 08:27:38 CST ModuleConstruction LArG4Detector.cc:372
+New stepLimit matches previously set stepLimit from the GDML file for volume : volTPCActiveInner1 stepLimit : 0.4 mm. Nothing will be changed.
+%MSG
+%MSG-w LArG4DetectorService::setStepLimits:  larg4Main:largeant@Construction  13-Nov-2025 08:27:38 CST ModuleConstruction LArG4Detector.cc:372
+New stepLimit matches previously set stepLimit from the GDML file for volume : volTPCActiveOuter stepLimit : 0.4 mm. Nothing will be changed.
+%MSG
+List SD Tree: 
+Volume volTPCActiveInner0 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneUInner0 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneUInner1 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneVInner0 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneVInner1 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneZInner0 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCActiveInner1 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCInner0 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneZInner1 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCInner1 has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCActiveOuter has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneUOuter has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneVOuter has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCPlaneZOuter has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+Volume volTPCOuter has the following list of auxiliary information: 
+--> Type: SensDet Value: SimEnergyDeposit
+--> Type: StepLimit Value: 0.4
+/
+/volTPCActiveInner0_SimEnergyDeposit   *** Active 
+/volTPCPlaneUInner0_SimEnergyDeposit   *** Active 
+/volTPCPlaneUInner1_SimEnergyDeposit   *** Active 
+/volTPCPlaneVInner0_SimEnergyDeposit   *** Active 
+/volTPCPlaneVInner1_SimEnergyDeposit   *** Active 
+/volTPCPlaneZInner0_SimEnergyDeposit   *** Active 
+/volTPCActiveInner1_SimEnergyDeposit   *** Active 
+/volTPCInner0_SimEnergyDeposit   *** Active 
+/volTPCPlaneZInner1_SimEnergyDeposit   *** Active 
+/volTPCInner1_SimEnergyDeposit   *** Active 
+/volTPCActiveOuter_SimEnergyDeposit   *** Active 
+/volTPCPlaneUOuter_SimEnergyDeposit   *** Active 
+/volTPCPlaneVOuter_SimEnergyDeposit   *** Active 
+/volTPCPlaneZOuter_SimEnergyDeposit   *** Active 
+/volTPCOuter_SimEnergyDeposit   *** Active 
+ Collection Capacity:  0
+==================================================
+nr of LV ======================:  1
+%MSG-i RANDOM:  larg4Main:largeant@Construction 13-Nov-2025 08:27:38 CST  ModuleConstruction
+Instantiated G4Engine engine "largeant:0:" with seed 0.
+%MSG
+%MSG-i NuRandomService:  larg4Main:largeant@Construction  13-Nov-2025 08:27:38 CST ModuleConstruction
+Seeding G4Engine engine "largeant:" with seed 0.
+%MSG
+13-Nov-2025 08:27:38 CST  Initiating request to open input file "gen.root"
+%MSG-i Root_Information:  TriggerResultInserter:TriggerResults@Construction  TClass::Init() 13-Nov-2025 08:27:38 CST ModuleConstruction
+no dictionary for class sim::IDE is available
+ROOT severity: 2000
+%MSG
+13-Nov-2025 08:27:38 CST  Opened input file "gen.root"
+IonAndScint beginJob.
+Using Correlated algorithm to calculate IS.
+%MSG-i ISCalcCorrelated:  IonAndScint:IonAndScint@BeginJob  13-Nov-2025 08:27:38 CST ModuleBeginJob ISCalcCorrelated.cxx:40
+IonizationAndScintillation/ISCalcCorrelated Initialize.
+%MSG
+
+**************************************************************
+ Geant4 version Name: geant4-10-06-patch-01    (14-February-2020)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+G4VPhysicsConstructors in G4PhysicsConstructorRegistry are:
+ [  0]  "G4ChargeExchangePhysics"
+ [  1]  "G4DecayPhysics"
+ [  2]  "G4EmDNAChemistry"
+ [  3]  "G4EmDNAChemistry_option1"
+ [  4]  "G4EmDNAChemistry_option2"
+ [  5]  "G4EmDNAPhysics"
+ [  6]  "G4EmDNAPhysics_option1"
+ [  7]  "G4EmDNAPhysics_option2"
+ [  8]  "G4EmDNAPhysics_option3"
+ [  9]  "G4EmDNAPhysics_option4"
+ [ 10]  "G4EmDNAPhysics_option5"
+ [ 11]  "G4EmDNAPhysics_option6"
+ [ 12]  "G4EmDNAPhysics_option7"
+ [ 13]  "G4EmDNAPhysics_option8"
+ [ 14]  "G4EmDNAPhysics_stationary"
+ [ 15]  "G4EmDNAPhysics_stationary_option2"
+ [ 16]  "G4EmDNAPhysics_stationary_option4"
+ [ 17]  "G4EmDNAPhysics_stationary_option6"
+ [ 18]  "G4EmExtraPhysics"
+ [ 19]  "G4EmLivermorePhysics"
+ [ 20]  "G4EmLivermorePolarizedPhysics"
+ [ 21]  "G4EmLowEPPhysics"
+ [ 22]  "G4EmPenelopePhysics"
+ [ 23]  "G4EmStandardPhysics"
+ [ 24]  "G4EmStandardPhysicsGS"
+ [ 25]  "G4EmStandardPhysicsSS"
+ [ 26]  "G4EmStandardPhysicsWVI"
+ [ 27]  "G4EmStandardPhysics_option1"
+ [ 28]  "G4EmStandardPhysics_option2"
+ [ 29]  "G4EmStandardPhysics_option3"
+ [ 30]  "G4EmStandardPhysics_option4"
+ [ 31]  "G4EmStandardPhysics_pseudoLaser"
+ [ 32]  "G4FastSimulationPhysics"
+ [ 33]  "G4GenericBiasingPhysics"
+ [ 34]  "G4HadronDElasticPhysics"
+ [ 35]  "G4HadronElasticPhysics"
+ [ 36]  "G4HadronElasticPhysicsHP"
+ [ 37]  "G4HadronElasticPhysicsLEND"
+ [ 38]  "G4HadronElasticPhysicsPHP"
+ [ 39]  "G4HadronElasticPhysicsXS"
+ [ 40]  "G4HadronHElasticPhysics"
+ [ 41]  "G4HadronInelasticQBBC"
+ [ 42]  "G4HadronPhysicsFTFP_BERT"
+ [ 43]  "G4HadronPhysicsFTFP_BERT_ATL"
+ [ 44]  "G4HadronPhysicsFTFP_BERT_HP"
+ [ 45]  "G4HadronPhysicsFTFP_BERT_TRV"
+ [ 46]  "G4HadronPhysicsFTFQGSP_BERT"
+ [ 47]  "G4HadronPhysicsFTF_BIC"
+ [ 48]  "G4HadronPhysicsINCLXX"
+ [ 49]  "G4HadronPhysicsNuBeam"
+ [ 50]  "G4HadronPhysicsQGSP_BERT"
+ [ 51]  "G4HadronPhysicsQGSP_BERT_HP"
+ [ 52]  "G4HadronPhysicsQGSP_BIC"
+ [ 53]  "G4HadronPhysicsQGSP_BIC_AllHP"
+ [ 54]  "G4HadronPhysicsQGSP_BIC_HP"
+ [ 55]  "G4HadronPhysicsQGSP_FTFP_BERT"
+ [ 56]  "G4HadronPhysicsQGS_BIC"
+ [ 57]  "G4HadronPhysicsShielding"
+ [ 58]  "G4HadronPhysicsShieldingLEND"
+ [ 59]  "G4ImportanceBiasing"
+ [ 60]  "G4IonBinaryCascadePhysics"
+ [ 61]  "G4IonElasticPhysics"
+ [ 62]  "G4IonINCLXXPhysics"
+ [ 63]  "G4IonPhysics"
+ [ 64]  "G4IonPhysicsPHP"
+ [ 65]  "G4IonPhysicsXS"
+ [ 66]  "G4IonQMDPhysics"
+ [ 67]  "G4MuonicAtomDecayPhysics"
+ [ 68]  "G4NeutronCrossSectionXS"
+ [ 69]  "G4NeutronTrackingCut"
+ [ 70]  "G4OpticalPhysics"
+ [ 71]  "G4ParallelWorldPhysics"
+ [ 72]  "G4RadioactiveDecayPhysics"
+ [ 73]  "G4SpinDecayPhysics"
+ [ 74]  "G4StepLimiterPhysics"
+ [ 75]  "G4StoppingPhysics"
+ [ 76]  "G4StoppingPhysicsFritiofWithBinaryCascade"
+ [ 77]  "G4UnknownDecayPhysics"
+ [ 78]  "G4WeightWindowBiasing"
+ [ 79]  "MyG4DecayPhysics"
+ [ 80]  "MyG4HadronPhysicsQGSP_BERT_ArHP"
+ [ 81]  "MyG4HadronPhysicsQGSP_BERT_HP_NeutronXSBias"
+Base G4VModularPhysicsLists in G4PhysListRegistry are:
+ [  0]  "FTFP_BERT"
+ [  1]  "FTFP_BERT_ATL"
+ [  2]  "FTFP_BERT_HP"
+ [  3]  "FTFP_BERT_TRV"
+ [  4]  "FTFP_INCLXX"
+ [  5]  "FTFP_INCLXX_HP"
+ [  6]  "FTFQGSP_BERT"
+ [  7]  "FTF_BIC"
+ [  8]  "G4GenericPhysicsList"
+ [  9]  "LBE"
+ [ 10]  "MyQGSP_BERT_ArHP"
+ [ 11]  "MyQGSP_BERT_HP_NeutronXSBias"
+ [ 12]  "MyQGSP_BERT_LASER"
+ [ 13]  "NuBeam"
+ [ 14]  "QBBC"
+ [ 15]  "QGSP_BERT"
+ [ 16]  "QGSP_BERT_HP"
+ [ 17]  "QGSP_BIC"
+ [ 18]  "QGSP_BIC_AllHP"
+ [ 19]  "QGSP_BIC_HP"
+ [ 20]  "QGSP_FTFP_BERT"
+ [ 21]  "QGSP_INCLXX"
+ [ 22]  "QGSP_INCLXX_HP"
+ [ 23]  "QGS_BIC"
+ [ 24]  "Shielding"
+ [ 25]  "ShieldingLEND"
+ [ 26]  "ShieldingM"
+Replacement mappings in G4PhysListRegistry are:
+           EM0 =>            G4EmStandardPhysics 
+           EMV =>    G4EmStandardPhysics_option1 
+           EMX =>    G4EmStandardPhysics_option2 
+           EMY =>    G4EmStandardPhysics_option3 
+           EMZ =>    G4EmStandardPhysics_option4 
+            GS =>          G4EmStandardPhysicsGS 
+           LIV =>           G4EmLivermorePhysics 
+    NEUTRONLIMIT =>           G4NeutronTrackingCut 
+       OPTICAL =>               G4OpticalPhysics 
+           PEN =>            G4EmPenelopePhysics 
+            SS =>          G4EmStandardPhysicsSS 
+     STEPLIMIT =>           G4StepLimiterPhysics 
+           _GS =>          G4EmStandardPhysicsGS 
+           _SS =>          G4EmStandardPhysicsSS 
+Use these mapping to extend physics list; append with _EXT or +EXT
+   to use ReplacePhysics() ("_") or RegisterPhysics() ("+").
+ Name of Physics list: QGSP_BERT+STEPLIMIT
+G4PhysListRegistry::GetModularPhysicsList <QGSP_BERT+STEPLIMIT>, as "QGSP_BERT" with extensions "+STEPLIMIT"
+<<< Geant4 Physics List simulation engine: QGSP_BERT
+
+<<< RegisterPhysics with G4StepLimiterPhysics "STEPLIMIT"
+<<< Reference Physics List QGSP_BERT+STEPLIMIT is built
+
+.
+
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+%MSG-i larg4Main:  larg4Main:largeant@BeginRun 13-Nov-2025 08:27:38 CST  run: 20000001
+Finding path for vis.mac...
+Search unsuccessful and path is: 
+
+%MSG
+%MSG-i larg4Main:  larg4Main:largeant@BeginRun 13-Nov-2025 08:27:38 CST  run: 20000001
+Unable to find vis.mac in the path(s) .:./macros
+%MSG
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      RangeFactor= 0.04, stepLimType: 1, latDisp: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+
+eIoni:  for e-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e-, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      RangeFactor= 0.04, stepLimType: 1, latDisp: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+
+eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+
+ionIoni:  for GenericIon  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+msc:  for alpha  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+ionIoni:  for alpha  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for anti_proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for anti_proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for anti_proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for kaon+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for kaon+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for kaon+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for kaon-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for kaon-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for kaon-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0, polarAngLim(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+muIoni:  for mu+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV
+
+muPairProd:  for mu+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for mu+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0, polarAngLim(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+muIoni:  for mu-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV
+
+muPairProd:  for mu-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for mu-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for pi+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for pi+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for pi+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for pi-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for pi-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for pi-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1e+12
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Electron internal conversion ID                     2
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+Upload data before 1st event for                Z < 9
+=======================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : DUSEL_Rock
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.91497 keV    e-  492.397 keV    e+  472.939 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : Air
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : foam_protoDUNE_RPUF_assayedSample
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  63.4129 keV    e+  62.9882 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : AirSteelMixture
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.93858 keV    e-  59.6913 keV    e+  59.2915 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes
+ Material : LAr
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.20596 keV    e-  274.415 keV    e+  267.137 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes
+ Material : ArGas
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes
+ Material : Delrin
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.73103 keV    e-  337.972 keV    e+  326.805 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 7     used in the geometry : Yes
+ Material : ALUMINUM_Al
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.85564 keV    e-  460.395 keV    e+  442.201 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 8     used in the geometry : Yes
+ Material : STEEL_STAINLESS_Fe7Cr2Ni
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  17.2183 keV    e-  957.736 keV    e+  907.607 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 9     used in the geometry : Yes
+ Material : FR4SussexAPA
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.31198 keV    e-  356.639 keV    e+  344.855 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 10     used in the geometry : Yes
+ Material : Copper_Beryllium_alloy25
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  19.5633 keV    e-  977.24 keV    e+  926.09 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 13-Nov-2025 08:27:51 CST
+%MSG-w ParticleInventory:  ProcessEvent 13-Nov-2025 08:27:51 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 13-Nov-2025 08:27:51 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 13-Nov-2025 08:27:51 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 13-Nov-2025 08:27:51 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 13-Nov-2025 08:27:51 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  larg4Main:largeant@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1
+Random seed for this event, engine 'largeant': 512751876
+%MSG
+%MSG-i generatePrimaries:  larg4Main:largeant@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1 MCTruthEventAction.cc:112
+Generating 17 particles
+%MSG
+%MSG-i ParticleListActionService:  larg4Main:largeant@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1
+Not Stored Process summary:
+	Ion : 426
+	compt : 2276
+	phot : 701
+	Brem : 527
+	annihil : 100
+	conv : 100
+%MSG
+%MSG-i endOfEventAction:  larg4Main:largeant@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1 ParticleListAction.cc:817
+MCTruth Handles Size: 1
+%MSG
+%MSG-i endOfEventAction:  larg4Main:largeant@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1 ParticleListAction.cc:827
+mclistHandle Size: 1
+%MSG
+%MSG-i endOfEventAction:  larg4Main:largeant@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1 ParticleListAction.cc:830
+Found 17 particles
+%MSG
+%MSG-i NuRandomService:  IonAndScint:IonAndScint@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1
+Random seed for this event, engine 'IonAndScint.ISCalcAlg': 707481050
+%MSG
+IonAndScint Module Producer
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCPlaneVInner0
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCPlaneZInner0
+Skip SimEnergyDeposit in: LArG4DetectorServicevolTPCOuter
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCInner1
+Skip SimEnergyDeposit in: LArG4DetectorServicevolTPCInner0
+Skip SimEnergyDeposit in: LArG4DetectorServicevolTPCPlaneZOuter
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCPlaneZInner1
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCPlaneVInner1
+Skip SimEnergyDeposit in: LArG4DetectorServicevolTPCPlaneVOuter
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCActiveInner0
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCActiveInner1
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCPlaneUInner0
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCPlaneUInner1
+Skip SimEnergyDeposit in: LArG4DetectorServicevolTPCPlaneUOuter
+SimEnergyDeposit input module: largeant, instance name: LArG4DetectorServicevolTPCActiveOuter
+%MSG-i NuRandomService:  PDFastSimPAR:PDFastSim@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1
+Random seed for this event, engine 'PDFastSim.photon': 36457934
+%MSG
+%MSG-i NuRandomService:  PDFastSimPAR:PDFastSim@BeginModule  13-Nov-2025 08:27:51 CST run: 20000001 subRun: 0 event: 1
+Random seed for this event, engine 'PDFastSim.scinttime': 406191338
+%MSG
+13-Nov-2025 08:27:55 CST  Opened output file with pattern "g4.root"
+%MSG-i FastCloning:  PostProcessEvent 13-Nov-2025 08:27:55 CST  run: 20000001 subRun: 0 event: 1
+Fast cloning event data products from input file.
+%MSG
+13-Nov-2025 08:27:57 CST  Closed output file "g4.root"
+13-Nov-2025 08:27:57 CST  Closed input file "gen.root"
+IonAndScint endJob.
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                      4.80389       4.80389       4.80389       4.80389          0            1     
+--------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                        0.000509913   0.000509913   0.000509913   0.000509913        0            1     
+simulate:rns:RandomNumberSaver                0.00018261    0.00018261    0.00018261    0.00018261         0            1     
+simulate:largeant:larg4Main                    0.146153      0.146153      0.146153      0.146153          0            1     
+simulate:IonAndScint:IonAndScint               0.0172199     0.0172199     0.0172199     0.0172199         0            1     
+simulate:PDFastSim:PDFastSimPAR                 4.23844       4.23844       4.23844       4.23844          0            1     
+[art]:TriggerResults:TriggerResultInserter    3.4904e-05    3.4904e-05    3.4904e-05    3.4904e-05         0            1     
+end_path:out1:RootOutput                       1.367e-05     1.367e-05     1.367e-05     1.367e-05         0            1     
+end_path:out1:RootOutput(write)                 0.40052       0.40052       0.40052       0.40052          0            1     
+================================================================================================================================
+%MSG-i NuRandomService:  RootOutput:out1@EndJob 13-Nov-2025 08:27:57 CST  ModuleEndJob
+
+Summary of seeds computed by the NuRandomService
+Random policy: 'perEvent'
+  algorithm version: EventTimestamp_v1
+   Configured value          Last value   ModuleLabel.InstanceName
+        (per event)           707481050   IonAndScint.ISCalcAlg
+        (per event)            36457934   PDFastSim.photon
+        (per event)           406191338   PDFastSim.scinttime
+        (per event)           512751876   largeant
+
+%MSG
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 1824.32 MB
+  Peak resident set size usage (VmHWM): 1080.07 MB
+====================================================================================================
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 1 passed = 1 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport          1          1          0 out1
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 18.111794 Real = 18.605404
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 1824.32 VmHWM = 1080.07
+
+Art has completed and will exit with status 0.
+
+real    3m5.621s
+user    3m3.029s
+sys     0m0.624s
