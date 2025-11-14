@@ -57,6 +57,10 @@ local labelling2d = g.pnode({
         nticks: params.daq.nticks,
         reco_tag: "gauss", # input
         simchannel_label: "tpcrawdecoder:simpleSC",
+        save_extended_labels: true,
+        // rebin_enabled:1,
+        // rebin_time:2,
+        // rebin_channel:2,
     },
 }, nin=1, nout=1);
 
@@ -76,7 +80,12 @@ local hio_tru = g.pnode({
     name: 'hio_tru_all',
     data: {
         anode: wc.tn(mega_anode),
-        trace_tags: ['trackid', 'pid'], 
+        trace_tags: [
+            // 'trackid', 'pid',
+            'orig_trackid_1st', 
+            'orig_pid_1st', 'current_pid_1st', 'charge_1st',
+            'orig_trackid_2nd', 'orig_pid_2nd', 'current_pid_2nd', 'charge_2nd'
+        ],
         filename: "g4-tru.h5",
         gzip: 2,
     },

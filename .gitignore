@@ -3,3 +3,7 @@
 *.db
 *.h5
 .tmp
+*.png
+*.pdf
+*/a.json
+*/log.txt
