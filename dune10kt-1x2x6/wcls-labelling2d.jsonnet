@@ -58,7 +58,7 @@ local labelling2d = g.pnode({
     type: 'Labelling2D',
     name: 'all',
     data: {
-        min_charge: -1,
+        min_charge: 0,
         reco_tag: sp_trace_tag,
         simchannel_label: "tpcrawdecoder:simpleSC",
     },

@@ -102,9 +102,6 @@ physics: {
                "wclsDepoFluxWriter:postdrift",
                "wclsFrameSaver:spsignals"
             ]
-            params: {
-               engine: "TbbFlow"
-            }
             plugins: [
                "WireCellPgraph",
                "WireCellGen",
@@ -114,12 +111,18 @@ physics: {
                "WireCellTbb"
                , "WireCellPytorch"
             ]
+            params: {
+               engine: "TbbFlow"
+               dnn_model: "ts-model/CP49_mobilenetv3.ts"
+            }
             structs: {
                DL: 4e-9
                DT: 8.8e-9
                G4RefTime: 0
                driftSpeed: 1.60563
                lifetime: 10400
+               use_hydra: true
+               use_dnnroi: true
             }
             tool_type: "WCLS"
          }
