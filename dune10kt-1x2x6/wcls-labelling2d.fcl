@@ -1948,14 +1948,10 @@ physics: {
             outputers: [
             ]
             params: {
-               epoch: "after"
-               raw_input_label: "tpcrawdecoder:daq"
-               reality: "data"
-               signal_output_form: "sparse"
             }
             structs: {
-               recobwire_tags: "[\"tpcrawdecoder:gauss\"]"
-               trace_tags: "[\"gauss\"]"
+               recobwire_tags: "[\"tpcrawdecoder:dnnsp\"]"
+               trace_tags: "[\"dnnsp\"]"
                summary_tags: "[\"\"]"
                input_mask_tags: "[]"
                output_mask_tags: "[]"

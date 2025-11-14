@@ -5,6 +5,7 @@ local wc = import "wirecell.jsonnet";
 local tools_maker = import 'pgrapher/common/tools.jsonnet';
 
 local params_maker = import 'pgrapher/experiment/dune10kt-1x2x6/simparams.jsonnet';
+local sp_trace_tag = "dnnsp"; // gauss, dnnsp
 local fcl_params = {
     G4RefTime: std.extVar('G4RefTime') * wc.us,
 };
@@ -57,8 +58,8 @@ local labelling2d = g.pnode({
     type: 'Labelling2D',
     name: 'all',
     data: {
-        nticks: params.daq.nticks,
-        reco_tag: "gauss", # input
+        min_charge: -1,
+        reco_tag: sp_trace_tag,
         simchannel_label: "tpcrawdecoder:simpleSC",
     },
 }, nin=1, nout=1);
@@ -68,7 +69,7 @@ local hio_rec = g.pnode({
     name: 'hio_rec_all',
     data: {
         anode: wc.tn(mega_anode),
-        trace_tags: ['gauss'], 
+        trace_tags: [sp_trace_tag], 
         filename: "g4-rec.h5",
         gzip: 2,
     },

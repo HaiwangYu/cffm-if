@@ -88,17 +88,18 @@ physics: {
             configs: [
                "pgrapher/experiment/dune10kt-1x2x6/wcls-sim-drift-simchannel-nf-sp.jsonnet"
             ]
-            inputers: [
-               "wclsSimDepoSource:"
-            ]
             loglevels: [
                "debug"
             ]
             logsinks: [
                "stdout"
             ]
+            inputers: [
+               "wclsSimDepoSetSource:"
+            ]
             outputers: [
-               "wclsSimChannelSink:postdrift",
+               # "wclsSimChannelSink:postdrift",
+               "wclsDepoFluxWriter:postdrift",
                "wclsFrameSaver:spsignals"
             ]
             params: {
@@ -111,6 +112,7 @@ physics: {
                "WireCellRoot",
                "WireCellLarsoft",
                "WireCellTbb"
+               , "WireCellPytorch"
             ]
             structs: {
                DL: 4e-9

@@ -20,8 +20,9 @@ if __name__ == '__main__':
     exit()
   frame = np.array(f)
   print(frame.shape)
-  frame = frame[2560*(iapa-1):2560*iapa,:]
+  frame = frame[2560*(iapa):2560*(iapa+1),:]
   print(frame.shape)
+  frame=np.transpose(frame)
   frame_ma = np.ma.array(frame)
 
   plt.gca().set_title(key)
@@ -34,13 +35,6 @@ if __name__ == '__main__':
   # , aspect=0.8/4.7
   # , aspect=0.1
   )
-  # plt.colorbar()
-  # plt.xlim([10240, 12800])
-  # plt.xlim([0, 800]) # U
-  # plt.xlim([800, 1600]) # V
-  # plt.clim([0,1])
-  # plt.clim([2300,2400]) # orig U, V
-  # plt.clim([885,915]) # orig W
   plt.clim([-1,1])
 
   plt.grid() 
