@@ -1,0 +1,1468 @@
+The following module labels are either not assigned to any path,
+or they have been assigned to ignored path(s):
+  opdigi
+  rns
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 1149
+Info in <TGeoManager::CloseGeometry>: 67545 nodes/ 3831 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+registering to  primaryGeneratorActionsMap_
+registering to   eventActionsMap_
+registering to   trackingActionsMap_
+registering to  steppingActionsMap_
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+[13:35:05.444] D [  main  ] configuring component: "wclsSimDepoSetSource":""
+[13:35:05.446] D [  main  ] configuring component: "Random":""
+[13:35:05.446] D [  main  ] configuring component: "Drifter":""
+[13:35:05.447] D [  gen   ] <Drifter:> time offset: 0 ms, drift speed: 1.60563 mm/us 
+[13:35:05.447] D [  main  ] configuring component: "DepoSetDrifter":""
+[13:35:05.447] D [  main  ] configuring component: "WireSchemaFile":""
+[13:35:05.447] I [  wct   ] loading compressed json file: /exp/dune/app/users/yuhw/wire-cell-data/dune10kt-1x2x6-wires-larsoft-v1.json.bz2
+[13:35:15.428] D [  main  ] configuring component: "AnodePlane":"apa0"
+[13:35:15.428] D [  geom  ] <AnodePlane:apa0> X planes: "cathode"@ 3.6291625m, "response"@0.1300155m, "anode"@0.0395355m, dirx=1 
+[13:35:15.429] D [  geom  ] <AnodePlane:apa0> face:0, plane:0, origin:(130.016 -3005.57 1153.19) mm, wpid:[WirePlaneId "a0f0pU" ident=1 ind:0 layer:U apa:0 face:0 valid] 
+[13:35:15.430] D [  geom  ] <AnodePlane:apa0> face:0, plane:1, origin:(130.016 -3006.65 1153.19) mm, wpid:[WirePlaneId "a0f0pV" ident=2 ind:1 layer:V apa:0 face:0 valid] 
+[13:35:15.431] D [  geom  ] <AnodePlane:apa0> face:0, plane:2, origin:(130.016 -3008.24 1153.19) mm, wpid:[WirePlaneId "a0f0pW" ident=4 ind:2 layer:W apa:0 face:0 valid] 
+[13:35:15.431] D [  geom  ] <AnodePlane:apa0> face:0 with 3 planes and sensvol: [(39.5355 -6000.19 3.58606) --> (3629.16 -16.2875 2302.78)] 
+[13:35:15.431] D [  geom  ] <AnodePlane:apa0> X planes: "cathode"@ -3.6291625m, "response"@-0.1300155m, "anode"@-0.0395355m, dirx=-1 
+[13:35:15.431] D [  geom  ] <AnodePlane:apa0> face:1, plane:0, origin:(-130.016 -3005.57 1153.19) mm, wpid:[WirePlaneId "a0f1pU" ident=9 ind:0 layer:U apa:0 face:1 valid] 
+[13:35:15.432] D [  geom  ] <AnodePlane:apa0> face:1, plane:1, origin:(-130.016 -3006.65 1153.19) mm, wpid:[WirePlaneId "a0f1pV" ident=10 ind:1 layer:V apa:0 face:1 valid] 
+[13:35:15.432] D [  geom  ] <AnodePlane:apa0> face:1, plane:2, origin:(-130.016 -3008.24 1153.19) mm, wpid:[WirePlaneId "a0f1pW" ident=12 ind:2 layer:W apa:0 face:1 valid] 
+[13:35:15.433] D [  geom  ] <AnodePlane:apa0> face:1 with 3 planes and sensvol: [(-3629.16 -6000.19 3.58626) --> (-39.5355 -16.2875 2302.78)] 
+[13:35:15.433] D [  main  ] configuring component: "FieldResponse":"field0"
+[13:35:15.433] I [  wct   ] loading compressed json file: /exp/dune/app/users/yuhw/larsoft/v10_04_03d01/localProducts_larsoft_v10_04_03_e26_prof/dunereco/v10_04_04d00/wire-cell-cfg/dune-garfield-1d60563.json.bz2
+[13:35:17.871] D [  main  ] configuring component: "wclsDepoFluxWriter":"postdrift"
+[13:35:17.871] D [  main  ] configuring component: "DepoSetFanout":"sn_mag_nf_fout_0_0"
+[13:35:17.871] D [  main  ] configuring component: "DepoSetFanout":"sn_mag_nf_fout_1_0"
+[13:35:17.871] D [  main  ] configuring component: "FrameFanin":"sn_mag_nf_fin_1_0"
+[13:35:17.872] D [  main  ] configuring component: "FrameFanin":"sn_mag_nf_fin_0_0"
+[13:35:17.872] D [  main  ] configuring component: "FftwDFT":""
+[13:35:17.872] D [  main  ] configuring component: "ColdElecResponse":""
+[13:35:17.872] D [  main  ] configuring component: "RCResponse":""
+[13:35:17.873] D [  main  ] configuring component: "ResponseSys":""
+[13:35:17.873] D [  main  ] configuring component: "PlaneImpactResponse":"PIRfield0plane0"
+[13:35:17.873] D [  gen   ] <PlaneImpactResponse:PIRfield0plane0> short response ColdElecResponse has different number of samples (6125) than expected (200) 
+[13:35:17.874] D [  gen   ] <PlaneImpactResponse:PIRfield0plane0> Nfr=1000 Nfr_slow=200 Nfr_ext=2000 Ner=200 Nfrxer=400 Tfr=100 Ter=500 FieldResponse:field0 
+[13:35:17.883] D [  gen   ] <PlaneImpactResponse:PIRfield0plane0> fr=FieldResponse:field0 plane=0 short=100000 long=1500000 tick=500 nticks=6125 
+[13:35:17.884] D [  main  ] configuring component: "PlaneImpactResponse":"PIRfield0plane1"
+[13:35:17.884] D [  gen   ] <PlaneImpactResponse:PIRfield0plane1> short response ColdElecResponse has different number of samples (6125) than expected (200) 
+[13:35:17.884] D [  gen   ] <PlaneImpactResponse:PIRfield0plane1> Nfr=1000 Nfr_slow=200 Nfr_ext=2000 Ner=200 Nfrxer=400 Tfr=100 Ter=500 FieldResponse:field0 
+[13:35:17.892] D [  gen   ] <PlaneImpactResponse:PIRfield0plane1> fr=FieldResponse:field0 plane=1 short=100000 long=1500000 tick=500 nticks=6125 
+[13:35:17.892] D [  main  ] configuring component: "PlaneImpactResponse":"PIRfield0plane2"
+[13:35:17.892] D [  gen   ] <PlaneImpactResponse:PIRfield0plane2> short response ColdElecResponse has different number of samples (6125) than expected (200) 
+[13:35:17.892] D [  gen   ] <PlaneImpactResponse:PIRfield0plane2> Nfr=1000 Nfr_slow=200 Nfr_ext=2000 Ner=200 Nfrxer=400 Tfr=100 Ter=500 FieldResponse:field0 
+[13:35:17.901] D [  gen   ] <PlaneImpactResponse:PIRfield0plane2> fr=FieldResponse:field0 plane=2 short=100000 long=1500000 tick=500 nticks=6125 
+[13:35:17.901] D [  main  ] configuring component: "DepoTransform":"depotransform0"
+[13:35:17.901] D [  gen   ] <DepoTransform:depotransform0> tick=0.5 us, start=-62.280849261660535 us, readin=3062.5 us, drift_speed=1.60563 mm/us 
+[13:35:17.901] D [  main  ] configuring component: "Reframer":"reframer0"
+[13:35:17.901] D [  gen   ] <Reframer:reframer0> using anode: "AnodePlane:apa0" 
+[13:35:17.902] D [  main  ] configuring component: "MegaAnodePlane":"meganodes"
+[13:35:17.902] D [  main  ] configuring component: "EmpiricalNoiseModel":"empericalnoisemeganodes"
+[13:35:17.902] D [  gen   ] <EmpiricalNoiseModel:empericalnoisemeganodes> using anode MegaAnodePlane:meganodes, chanstat  
+[13:35:17.902] I [  wct   ] loading compressed json file: /exp/dune/app/users/yuhw/wire-cell-data/protodune-noise-spectra-v1.json.bz2
+[13:35:17.909] D [  main  ] configuring component: "AddNoise":"addnoiseapa0"
+[13:35:17.909] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> using noise model: "EmpiricalNoiseModel:empericalnoisemeganodes" 
+[13:35:17.910] D [  main  ] configuring component: "Digitizer":"digitizer0"
+[13:35:17.910] D [  gen   ] <Digitizer:digitizer0> tag="orig0", resolution=14 bits, maxvalue=16384 counts, gain=1, fullscale=[200,1600] mV, baselines=[1003.4,1003.4,507.7] mV round=0 
+[13:35:17.910] D [  main  ] configuring component: "LfFilter":"ROI_tight_lf"
+[13:35:17.910] D [  main  ] configuring component: "LfFilter":"ROI_tighter_lf"
+[13:35:17.910] D [  main  ] configuring component: "LfFilter":"ROI_loose_lf"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Gaus_tight"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Gaus_wide"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Wiener_tight_U"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Wiener_tight_V"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Wiener_tight_W"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Wiener_wide_U"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Wiener_wide_V"
+[13:35:17.910] D [  main  ] configuring component: "HfFilter":"Wiener_wide_W"
+[13:35:17.911] D [  main  ] configuring component: "HfFilter":"Wire_ind"
+[13:35:17.911] D [  main  ] configuring component: "HfFilter":"Wire_col"
+[13:35:17.911] D [  main  ] configuring component: "OmnibusSigProc":"apa0sigproc0"
+[13:35:17.914] W [sigproc ] <OmnibusSigProc:apa0sigproc0> The 'wiener_threshold_tag' is obsolete, thresholds in summary on 'wiener' tagged traces 
+[13:35:17.916] D [sigproc ] <OmnibusSigProc:apa0sigproc0> config: internal channel map for tags: gauss:"gauss0", wiener:"wiener0", frame:"sigproc"
+	pind0 lind0 aid0 fid0 pid0 cid799 -> cid400, cind0 -> cind399, (n=400)
+	pind1 lind1 aid0 fid0 pid1 cid1200 -> cid1599, cind0 -> cind399, (n=400)
+	pind2 lind2 aid0 fid0 pid2 cid2080 -> cid2559, cind0 -> cind479, (n=480)
+	pind0 lind0 aid0 fid1 pid0 cid0 -> cid399, cind0 -> cind399, (n=800)
+	pind1 lind1 aid0 fid1 pid1 cid1199 -> cid800, cind0 -> cind399, (n=800)
+	pind2 lind2 aid0 fid1 pid2 cid1600 -> cid2079, cind0 -> cind479, (n=960)
+ 
+[13:35:17.916] D [  main  ] configuring component: "MagnifySink":"magdecon0"
+[13:35:18.149] D [  main  ] configuring component: "FrameFanout":"dnnroi0"
+[13:35:18.149] D [  glue  ] <FrameFanout:dnnroi0> trivial 3-way fanout 
+[13:35:18.149] D [  main  ] configuring component: "Retagger":"dnnroi0"
+[13:35:18.150] D [  main  ] configuring component: "TorchService":"dnnroi"
+[13:35:18.463] D [ torch  ] <TorchService:dnnroi> loaded model "/exp/dune/app/users/yuhw/cffm-if/dune10kt-1x2x6/ts-model/CP49_mobilenetv3.ts" to device "cpu" 
+[13:35:18.463] D [  main  ] configuring component: "DNNROIFinding":"dnnroi0u"
+[13:35:18.463] D [ torch  ] <DNNROIFinding:dnnroi0u> anode=AnodePlane:apa0 plane=0 nchans=800 in=[0,799] 
+[13:35:18.464] D [  main  ] configuring component: "DNNROIFinding":"dnnroi0v"
+[13:35:18.464] D [ torch  ] <DNNROIFinding:dnnroi0v> anode=AnodePlane:apa0 plane=1 nchans=800 in=[800,1599] 
+[13:35:18.465] D [  main  ] configuring component: "PlaneSelector":"dnnroi0w"
+[13:35:18.465] D [  glue  ] <PlaneSelector:dnnroi0w> anode=AnodePlane:apa0 plane=2 nchans=960 in=[1600,2559] 
+[13:35:18.465] D [  main  ] configuring component: "FrameFanin":"dnnroi0"
+[13:35:18.465] D [  main  ] configuring component: "MagnifySink":"magdnnroi0"
+[13:35:18.523] D [  main  ] configuring component: "Retagger":""
+[13:35:18.523] D [  main  ] configuring component: "wclsFrameSaver":"spsignals"
+[13:35:18.525] D [  main  ] configuring component: "DumpFrames":""
+[13:35:18.525] D [  main  ] configuring component: "TbbFlow":""
+[13:35:18.533] D [  tbb   ] <TbbFlow:> connecting graph with 24 edges 
+[13:35:18.533] D [  tbb   ] <TbbFlow:> connect: wclsSimDepoSetSource: ( 0 -> 0 ) DepoSetDrifter: 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: DepoSetDrifter: ( 0 -> 0 ) wclsDepoFluxWriter:postdrift 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: wclsDepoFluxWriter:postdrift ( 0 -> 0 ) DepoSetFanout:sn_mag_nf_fout_0_0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_0_0 ( 0 -> 0 ) DepoSetFanout:sn_mag_nf_fout_1_0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: FrameFanin:sn_mag_nf_fin_0_0 ( 0 -> 0 ) Retagger: 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: Retagger: ( 0 -> 0 ) wclsFrameSaver:spsignals 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: wclsFrameSaver:spsignals ( 0 -> 0 ) DumpFrames: 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: DepoSetFanout:sn_mag_nf_fout_1_0 ( 0 -> 0 ) DepoTransform:depotransform0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: DepoTransform:depotransform0 ( 0 -> 0 ) Reframer:reframer0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdnnroi0 ( 0 -> 0 ) FrameFanin:sn_mag_nf_fin_1_0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: FrameFanin:sn_mag_nf_fin_1_0 ( 0 -> 0 ) FrameFanin:sn_mag_nf_fin_0_0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: Digitizer:digitizer0 ( 0 -> 0 ) OmnibusSigProc:apa0sigproc0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: OmnibusSigProc:apa0sigproc0 ( 0 -> 0 ) MagnifySink:magdecon0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: MagnifySink:magdecon0 ( 0 -> 0 ) FrameFanout:dnnroi0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: FrameFanout:dnnroi0 ( 0 -> 0 ) DNNROIFinding:dnnroi0u 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: FrameFanout:dnnroi0 ( 1 -> 0 ) DNNROIFinding:dnnroi0v 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: FrameFanout:dnnroi0 ( 2 -> 0 ) PlaneSelector:dnnroi0w 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: Retagger:dnnroi0 ( 0 -> 0 ) MagnifySink:magdnnroi0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: Reframer:reframer0 ( 0 -> 0 ) AddNoise:addnoiseapa0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: AddNoise:addnoiseapa0 ( 0 -> 0 ) Digitizer:digitizer0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: DNNROIFinding:dnnroi0u ( 0 -> 0 ) FrameFanin:dnnroi0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: DNNROIFinding:dnnroi0v ( 0 -> 1 ) FrameFanin:dnnroi0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: PlaneSelector:dnnroi0w ( 0 -> 2 ) FrameFanin:dnnroi0 
+[13:35:18.534] D [  tbb   ] <TbbFlow:> connect: FrameFanin:dnnroi0 ( 0 -> 0 ) Retagger:dnnroi0 
+Inputer: "wclsSimDepoSetSource:"
+Outputer: "wclsDepoFluxWriter:postdrift"
+Outputer: "wclsFrameSaver:spsignals"
+wclsFrameSaver: promising to produce recob::Wires named "gauss"
+wclsFrameSaver: promising to produce recob::Wires named "wiener"
+wclsFrameSaver: promising to produce recob::Wires named "dnnsp"
+19-Nov-2025 13:35:18 CST  Initiating request to open input file "g4.root"
+19-Nov-2025 13:35:18 CST  Opened input file "g4.root"
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 19-Nov-2025 13:35:18 CST
+SimDepoSetSource got 83269 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 83269 depos spanning: [6.67159e-07, 9.55444]us
+[13:35:18.877] D [  main  ] executing 1 apps, thread limit 0:
+[13:35:18.877] D [  main  ] executing 1 apps, thread limit 0:
+[13:35:18.877] D [  main  ] executing app: "TbbFlow"
+[13:35:18.877] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:35:19.019] D [  gen   ] <Drifter:> see EOS, ( dropped:56 + drifted:83213 ) / total:83269 depos from stream, outside of all 2 drift xregions 
+[13:35:19.025] D [  gen   ] <DepoSetDrifter:> call=0 drifted ndepos=83213 Qout=-165299428 (91.60980064214093%) 
+[13:35:19.034] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=0 fanout depo set 0 with 83213 
+[13:35:19.035] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=0 fanout depo set 0 with 83213 
+[13:35:19.061] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=0 total traces=0 
+[13:35:19.082] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=0 total traces=0 
+[13:35:19.097] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=0 total traces=0 
+[13:35:22.124] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=37888 total traces=896 
+[13:35:24.796] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=37888 total traces=1536 
+[13:35:27.387] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=37888 total traces=2016 
+[13:35:27.391] D [  gen   ] <DepoTransform:depotransform0> call=0 count=100 ndepos_in=83213 ndepos_used=37888 
+[13:35:27.391] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=100 time=-62280.8 tick=500 with 2016 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:27.416] D [  gen   ] <Reframer:reframer0> input : frame: ident=100 time=-62280.8 tick=500 with 2016 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:27.416] D [  gen   ] <Reframer:reframer0> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:27.418] W [  gen   ] <IncoherentAddNoise:addnoiseapa0> model EmpiricalNoiseModel:empericalnoisemeganodes produced 6174 samples instead of expected 6000, future warnings muted 
+[13:35:27.652] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=0 frame=100 2560 traces 
+[13:35:27.652] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:27.652] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:28.382] D [  gen   ] <Digitizer:digitizer0> call=0 traces=2560 frame=100 totadc=111002857439 outtag="orig0" 
+[13:35:28.382] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:28.382] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:28.383] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 input frame: frame: ident=100 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:35:28.392] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:35:28.392] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge window from 6000 to 6200 
+[13:35:28.392] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge wire number in plane 0 from 800 to 820 
+[13:35:28.392] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge wire number in plane 1 from 800 to 820 
+[13:35:28.392] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 init enlarge wire number in plane 2 from 960 to 980 
+[13:35:28.414] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:35:28.452] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:35:31.026] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 0, Qtot=26099235.13667518 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:35:31.916] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:35:31.954] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:35:34.441] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 1, Qtot=43203480.358239435 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:35:35.281] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:35:35.332] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:35:36.838] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 2, Qtot=76786554.46372655 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:35:38.160] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 0, Qtot=78055100 Qloss=-3704509, 800 indices spanning [7680,8479] "wiener" 
+[13:35:38.359] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 0, Qtot=1663891.8656094978 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:35:38.410] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 0, Qtot=69861069 Qloss=-2050170, 800 indices spanning [9280,10079] "gauss" 
+[13:35:38.760] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 1, Qtot=81013560 Qloss=-4150324, 800 indices spanning [10080,10879] "wiener" 
+[13:35:38.965] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 1, Qtot=383404.6095632734 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:35:39.019] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 1, Qtot=72777878 Qloss=-1919335, 800 indices spanning [11680,12479] "gauss" 
+[13:35:39.466] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 2, Qtot=79017777 Qloss=-3650709, 960 indices spanning [12480,13439] "wiener" 
+[13:35:39.832] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 2, Qtot=75189907.3445557 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:35:39.910] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 save plane index: 2, Qtot=75832087 Qloss=-334950, 960 indices spanning [14400,15359] "gauss" 
+[13:35:39.910] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:35:39.910] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:35:40.046] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:35:40.051] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:35:40.052] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:35:40.165] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:35:40.277] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:35:40.412] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:35:40.413] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:35:40.524] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:35:40.635] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:35:41.253] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 1195195 bytes
+[13:35:41.358] D [  glue  ] <FrameFanout:dnnroi0> call=0: input->output x3: frame: ident=100 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:35:41.382] D [ torch  ] <DNNROIFinding:dnnroi0u> call=0 tag=loose_lf0 ntraces=2560 
+[13:35:41.408] D [ torch  ] <DNNROIFinding:dnnroi0u> call=0 tag=mp2_roi0 ntraces=2560 
+[13:35:41.434] D [ torch  ] <DNNROIFinding:dnnroi0u> call=0 tag=mp3_roi0 ntraces=2560 
+[13:35:41.441] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 82 ms (this: 82 ms) call=0 calling model "TorchService:dnnroi" with 1 chunks  
+[13:35:41.442] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:35:43.207] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1848 ms (this: 1766 ms) call=0 inference done 
+[13:35:43.219] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1860 ms (this: 11 ms) call=0 tensor2eigen 
+[13:35:43.242] D [ torch  ] <DNNROIFinding:dnnroi0u> call=0 tag=decon_charge0 ntraces=2560 
+[13:35:43.295] D [ torch  ] <DNNROIFinding:dnnroi0u> call=0 getting summary for tag wiener0 
+[13:35:43.296] D [ torch  ] <DNNROIFinding:dnnroi0u> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 713 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":713 [713] ] cmm:[ ] 
+[13:35:43.296] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1937 ms (this: 77 ms) call=0 finish 
+[13:35:43.320] D [ torch  ] <DNNROIFinding:dnnroi0v> call=0 tag=loose_lf0 ntraces=2560 
+[13:35:43.346] D [ torch  ] <DNNROIFinding:dnnroi0v> call=0 tag=mp2_roi0 ntraces=2560 
+[13:35:43.370] D [ torch  ] <DNNROIFinding:dnnroi0v> call=0 tag=mp3_roi0 ntraces=2560 
+[13:35:43.377] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 80 ms (this: 80 ms) call=0 calling model "TorchService:dnnroi" with 1 chunks  
+[13:35:43.378] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:35:45.083] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1787 ms (this: 1706 ms) call=0 inference done 
+[13:35:45.096] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1799 ms (this: 12 ms) call=0 tensor2eigen 
+[13:35:45.120] D [ torch  ] <DNNROIFinding:dnnroi0v> call=0 tag=decon_charge0 ntraces=2560 
+[13:35:45.177] D [ torch  ] <DNNROIFinding:dnnroi0v> call=0 getting summary for tag wiener0 
+[13:35:45.177] D [ torch  ] <DNNROIFinding:dnnroi0v> call=0 output frame: frame: ident=100 time=219.151 tick=500 with 936 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":936 [936] ] cmm:[ ] 
+[13:35:45.177] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1880 ms (this: 81 ms) call=0 finish 
+[13:35:45.178] D [  glue  ] <PlaneSelector:dnnroi0w> call=0 input frame: ident=100 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:35:45.178] D [  glue  ] <PlaneSelector:dnnroi0w> call=0 output frame: ident=100 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:35:45.186] D [  glue  ] <FrameFanin:dnnroi0> call=0 input 0: frame: ident=100 time=219.151 tick=500 with 713 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":713 [713] ] cmm:[ ] input 1: frame: ident=100 time=219.151 tick=500 with 936 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":936 [936] ] cmm:[ ] input 2: frame: ident=100 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=100 time=219.151 tick=500 with 2609 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":713 [713] "dnnsp0v":936 [936] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 2609 traces, 1649 summary
+[13:35:45.187] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:35:45.187] D [magnify ] MagnifySink: tag: "dnnsp0" with 2609 traces
+[13:35:45.187] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:35:45.191] D [magnify ] MagnifySink: cbin:707[878.5,1585.5] tbin:6000[0,6000]
+[13:35:45.194] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:35:45.584] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 778433 bytes
+[13:35:45.628] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=0 input 0: frame: ident=100 time=219.151 tick=500 with 2609 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":2609 [1649] ] cmm:[ ] output: frame: ident=100 time=219.151 tick=500 with 2609 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2609 [1649] ] cmm:[ ] 
+[13:35:45.628] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=0 input 0: frame: ident=100 time=219.151 tick=500 with 2609 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2609 [1649] ] cmm:[ ] output: frame: ident=100 time=219.151 tick=500 with 2609 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2609 [1649] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 2609 traces, 1649 summary
+[13:35:45.628] D [  glue  ] sink frame: #100 @0.000219151 with 2609 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=1 time=11661 mean=11661 max=11661 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=1 time=8356 mean=8356 max=8356 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=1 time=1937 mean=1937 max=1937 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=1 time=1880 mean=1880 max=1880 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=1 time=1312 mean=1312 max=1312 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=1 time=728 mean=728 max=728 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=1 time=440 mean=440 max=440 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=1 time=235 mean=235 max=235 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IDepoSetFilter "" calls=1 time=148 mean=148 max=148 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=1 time=23 mean=23 max=23 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=2 time=3 mean=1.5 max=3 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=1 time=2 mean=2 max=2 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=1 time=1 mean=1 max=1 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=1 time=0 mean=0 max=0 [ms]
+[13:35:45.628] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=1 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 2609 traces tagged "dnnsp"
+FrameSaver: q=1.16967e+06 n=123165 tag=dnnsp
+19-Nov-2025 13:35:45 CST  Opened output file with pattern "sp.root"
+Begin processing the 2nd record. run: 20000001 subRun: 0 event: 2 at 19-Nov-2025 13:35:46 CST
+SimDepoSetSource got 252982 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 252982 depos spanning: [6.67149e-07, 6.8568]us
+[13:35:46.669] D [  main  ] executing 1 apps, thread limit 0:
+[13:35:46.669] D [  main  ] executing 1 apps, thread limit 0:
+[13:35:46.669] D [  main  ] executing app: "TbbFlow"
+[13:35:46.669] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:35:47.271] D [  gen   ] <Drifter:> see EOS, ( dropped:334 + drifted:252648 ) / total:252982 depos from stream, outside of all 2 drift xregions 
+[13:35:47.312] D [  gen   ] <DepoSetDrifter:> call=1 drifted ndepos=252648 Qout=-457469432 (86.55229199805008%) 
+[13:35:47.336] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=1 fanout depo set 1 with 252648 
+[13:35:47.336] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=1 fanout depo set 1 with 252648 
+[13:35:47.508] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=402 total traces=280 
+[13:35:47.667] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=402 total traces=600 
+[13:35:47.798] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=402 total traces=880 
+[13:35:55.963] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=87405 total traces=1520 
+[13:36:04.178] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=87405 total traces=2160 
+[13:36:12.094] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=87405 total traces=2589 
+[13:36:12.104] D [  gen   ] <DepoTransform:depotransform0> call=1 count=101 ndepos_in=252648 ndepos_used=87807 
+[13:36:12.105] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=101 time=-62280.8 tick=500 with 2589 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:12.138] D [  gen   ] <Reframer:reframer0> input : frame: ident=101 time=-62280.8 tick=500 with 2589 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:12.138] D [  gen   ] <Reframer:reframer0> output: frame: ident=101 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:12.340] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=1 frame=101 2560 traces 
+[13:36:12.340] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=101 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:12.340] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=101 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:13.112] D [  gen   ] <Digitizer:digitizer0> call=1 traces=2560 frame=101 totadc=111015666320 outtag="orig0" 
+[13:36:13.112] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=101 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:13.112] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=101 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:13.116] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 input frame: frame: ident=101 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:13.124] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:36:13.124] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 init enlarge window from 6000 to 6200 
+[13:36:13.124] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 init enlarge wire number in plane 0 from 800 to 820 
+[13:36:13.124] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 init enlarge wire number in plane 1 from 800 to 820 
+[13:36:13.124] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 init enlarge wire number in plane 2 from 960 to 980 
+[13:36:13.145] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:36:13.182] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:36:15.505] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 0, Qtot=33208156.5031846 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:36:16.267] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:36:16.304] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:36:18.632] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 1, Qtot=41025684.09977405 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:36:19.402] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:36:19.454] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:36:20.908] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 2, Qtot=158552732.56025702 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:36:22.957] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 0, Qtot=150355607 Qloss=-3623079, 800 indices spanning [7680,8479] "wiener" 
+[13:36:23.158] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 0, Qtot=5106539.812749649 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:36:23.210] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 0, Qtot=142035177 Qloss=-2379458, 800 indices spanning [9280,10079] "gauss" 
+[13:36:23.557] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 1, Qtot=154918792 Qloss=-2981579, 800 indices spanning [10080,10879] "wiener" 
+[13:36:23.754] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 1, Qtot=3311869.438752246 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:36:23.808] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 1, Qtot=150329214 Qloss=-1266014, 800 indices spanning [11680,12479] "gauss" 
+[13:36:24.246] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 2, Qtot=159230509 Qloss=-2094724, 960 indices spanning [12480,13439] "wiener" 
+[13:36:24.596] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 2, Qtot=157087886.8416046 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:36:24.669] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 save plane index: 2, Qtot=157430088 Qloss=-259483, 960 indices spanning [14400,15359] "gauss" 
+[13:36:24.669] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:36:24.669] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=1 output frame: frame: ident=101 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:36:24.845] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:36:24.866] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:36:24.867] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:36:24.977] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:36:25.083] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:36:25.215] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:36:25.215] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:36:25.324] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:36:25.435] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:36:26.068] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 1346542 bytes
+[13:36:26.098] D [  glue  ] <FrameFanout:dnnroi0> call=1: input->output x3: frame: ident=101 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:36:26.117] D [ torch  ] <DNNROIFinding:dnnroi0u> call=1 tag=loose_lf0 ntraces=2560 
+[13:36:26.139] D [ torch  ] <DNNROIFinding:dnnroi0u> call=1 tag=mp2_roi0 ntraces=2560 
+[13:36:26.160] D [ torch  ] <DNNROIFinding:dnnroi0u> call=1 tag=mp3_roi0 ntraces=2560 
+[13:36:26.166] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 67 ms (this: 67 ms) call=1 calling model "TorchService:dnnroi" with 1 chunks  
+[13:36:26.167] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:36:27.651] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1552 ms (this: 1485 ms) call=1 inference done 
+[13:36:27.662] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1563 ms (this: 10 ms) call=1 tensor2eigen 
+[13:36:27.689] D [ torch  ] <DNNROIFinding:dnnroi0u> call=1 tag=decon_charge0 ntraces=2560 
+[13:36:27.744] D [ torch  ] <DNNROIFinding:dnnroi0u> call=1 getting summary for tag wiener0 
+[13:36:27.744] D [ torch  ] <DNNROIFinding:dnnroi0u> call=1 output frame: frame: ident=101 time=219.151 tick=500 with 957 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":957 [957] ] cmm:[ ] 
+[13:36:27.744] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1645 ms (this: 82 ms) call=1 finish 
+[13:36:27.765] D [ torch  ] <DNNROIFinding:dnnroi0v> call=1 tag=loose_lf0 ntraces=2560 
+[13:36:27.786] D [ torch  ] <DNNROIFinding:dnnroi0v> call=1 tag=mp2_roi0 ntraces=2560 
+[13:36:27.808] D [ torch  ] <DNNROIFinding:dnnroi0v> call=1 tag=mp3_roi0 ntraces=2560 
+[13:36:27.814] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 68 ms (this: 68 ms) call=1 calling model "TorchService:dnnroi" with 1 chunks  
+[13:36:27.815] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:36:29.299] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1553 ms (this: 1484 ms) call=1 inference done 
+[13:36:29.309] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1563 ms (this: 10 ms) call=1 tensor2eigen 
+[13:36:29.336] D [ torch  ] <DNNROIFinding:dnnroi0v> call=1 tag=decon_charge0 ntraces=2560 
+[13:36:29.391] D [ torch  ] <DNNROIFinding:dnnroi0v> call=1 getting summary for tag wiener0 
+[13:36:29.391] D [ torch  ] <DNNROIFinding:dnnroi0v> call=1 output frame: frame: ident=101 time=219.151 tick=500 with 991 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":991 [991] ] cmm:[ ] 
+[13:36:29.391] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1645 ms (this: 82 ms) call=1 finish 
+[13:36:29.393] D [  glue  ] <PlaneSelector:dnnroi0w> call=1 input frame: ident=101 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:36:29.393] D [  glue  ] <PlaneSelector:dnnroi0w> call=1 output frame: ident=101 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:36:29.402] D [  glue  ] <FrameFanin:dnnroi0> call=1 input 0: frame: ident=101 time=219.151 tick=500 with 957 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":957 [957] ] cmm:[ ] input 1: frame: ident=101 time=219.151 tick=500 with 991 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":991 [991] ] cmm:[ ] input 2: frame: ident=101 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=101 time=219.151 tick=500 with 2908 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":957 [957] "dnnsp0v":991 [991] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 2908 traces, 1948 summary
+[13:36:29.402] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:36:29.403] D [magnify ] MagnifySink: tag: "dnnsp0" with 2908 traces
+[13:36:29.403] D [magnify ] MagnifySink: cbin:766[6.5,772.5] tbin:6000[0,6000]
+[13:36:29.407] D [magnify ] MagnifySink: cbin:646[953.5,1599.5] tbin:6000[0,6000]
+[13:36:29.410] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:36:29.790] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 875121 bytes
+[13:36:29.861] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=1 input 0: frame: ident=101 time=219.151 tick=500 with 2908 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":2908 [1948] ] cmm:[ ] output: frame: ident=101 time=219.151 tick=500 with 2908 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2908 [1948] ] cmm:[ ] 
+[13:36:29.861] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=1 input 0: frame: ident=101 time=219.151 tick=500 with 2908 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2908 [1948] ] cmm:[ ] output: frame: ident=101 time=219.151 tick=500 with 2908 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2908 [1948] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 2908 traces, 1948 summary
+[13:36:29.861] D [  glue  ] sink frame: #101 @0.000219151 with 2908 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:36:29.866] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=2 time=33124 mean=16562 max=24768 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=2 time=23388 mean=11694 max=11727 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=2 time=3584 mean=1792 max=1937 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=2 time=3527 mean=1763.5 max=1880 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=2566 mean=1283 max=1312 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=2 time=1502 mean=751 max=773 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=898 mean=449 max=457 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IDepoSetFilter "" calls=2 time=790 mean=395 max=641 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=2 time=436 mean=218 max=235 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=2 time=51 mean=25.5 max=27 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=4 time=21 mean=5.25 max=18 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=2 time=10 mean=5 max=7 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=2 time=3 mean=1.5 max=1 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+[13:36:29.866] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=2 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 2908 traces tagged "dnnsp"
+FrameSaver: q=2.38529e+06 n=145355 tag=dnnsp
+Begin processing the 3rd record. run: 20000001 subRun: 0 event: 3 at 19-Nov-2025 13:36:31 CST
+SimDepoSetSource got 464 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 464 depos spanning: [0.000321944, 0.107078]us
+[13:36:31.397] D [  main  ] executing 1 apps, thread limit 0:
+[13:36:31.397] D [  main  ] executing 1 apps, thread limit 0:
+[13:36:31.397] D [  main  ] executing app: "TbbFlow"
+[13:36:31.397] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:36:31.398] D [  gen   ] <Drifter:> see EOS, ( dropped:4 + drifted:460 ) / total:464 depos from stream, outside of all 2 drift xregions 
+[13:36:31.398] D [  gen   ] <DepoSetDrifter:> call=2 drifted ndepos=460 Qout=-599941 (91.42710409694665%) 
+[13:36:31.398] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=2 fanout depo set 2 with 460 
+[13:36:31.398] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=2 fanout depo set 2 with 460 
+[13:36:31.419] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=0 total traces=0 
+[13:36:31.439] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=0 total traces=0 
+[13:36:31.453] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=0 total traces=0 
+[13:36:31.756] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=460 total traces=400 
+[13:36:31.983] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=460 total traces=656 
+[13:36:32.250] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=460 total traces=976 
+[13:36:32.251] D [  gen   ] <DepoTransform:depotransform0> call=2 count=102 ndepos_in=460 ndepos_used=460 
+[13:36:32.251] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=102 time=-62280.8 tick=500 with 976 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:32.276] D [  gen   ] <Reframer:reframer0> input : frame: ident=102 time=-62280.8 tick=500 with 976 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:32.276] D [  gen   ] <Reframer:reframer0> output: frame: ident=102 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:32.479] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=2 frame=102 2560 traces 
+[13:36:32.479] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=102 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:32.479] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=102 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:33.213] D [  gen   ] <Digitizer:digitizer0> call=2 traces=2560 frame=102 totadc=110991011721 outtag="orig0" 
+[13:36:33.213] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=102 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:33.213] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=102 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:33.217] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 input frame: frame: ident=102 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:33.226] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:36:33.226] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 init enlarge window from 6000 to 6200 
+[13:36:33.226] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 init enlarge wire number in plane 0 from 800 to 820 
+[13:36:33.226] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 init enlarge wire number in plane 1 from 800 to 820 
+[13:36:33.226] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 init enlarge wire number in plane 2 from 960 to 980 
+[13:36:33.247] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:36:33.284] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:36:35.705] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 0, Qtot=-59563.702182851266 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:36:36.503] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:36:36.540] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:36:38.957] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 1, Qtot=898871.9776668698 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:36:39.747] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:36:39.781] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:36:41.265] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 2, Qtot=360472.28784646094 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:36:41.637] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 0, Qtot=620816 Qloss=-81661, 800 indices spanning [7680,8479] "wiener" 
+[13:36:41.834] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 0, Qtot=478914.4845207711 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:36:41.884] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 0, Qtot=547241 Qloss=-23005, 800 indices spanning [9280,10079] "gauss" 
+[13:36:42.164] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 1, Qtot=892434 Qloss=-84258, 800 indices spanning [10080,10879] "wiener" 
+[13:36:42.359] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 1, Qtot=1672455.7918724306 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:36:42.411] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 1, Qtot=707481 Qloss=-30573, 800 indices spanning [11680,12479] "gauss" 
+[13:36:42.846] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 2, Qtot=515828 Qloss=-46565, 960 indices spanning [12480,13439] "wiener" 
+[13:36:43.203] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 2, Qtot=570905.9644395583 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:36:43.275] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 save plane index: 2, Qtot=480033 Qloss=-7612, 960 indices spanning [14400,15359] "gauss" 
+[13:36:43.276] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:36:43.276] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=2 output frame: frame: ident=102 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:36:43.279] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:36:43.280] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:36:43.281] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:36:43.392] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:36:43.503] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:36:43.635] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:36:43.635] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:36:43.744] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:36:43.855] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:36:44.355] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 569412 bytes
+[13:36:44.416] D [  glue  ] <FrameFanout:dnnroi0> call=2: input->output x3: frame: ident=102 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:36:44.436] D [ torch  ] <DNNROIFinding:dnnroi0u> call=2 tag=loose_lf0 ntraces=2560 
+[13:36:44.458] D [ torch  ] <DNNROIFinding:dnnroi0u> call=2 tag=mp2_roi0 ntraces=2560 
+[13:36:44.479] D [ torch  ] <DNNROIFinding:dnnroi0u> call=2 tag=mp3_roi0 ntraces=2560 
+[13:36:44.485] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 69 ms (this: 69 ms) call=2 calling model "TorchService:dnnroi" with 1 chunks  
+[13:36:44.486] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:36:46.047] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1630 ms (this: 1561 ms) call=2 inference done 
+[13:36:46.057] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1641 ms (this: 10 ms) call=2 tensor2eigen 
+[13:36:46.076] D [ torch  ] <DNNROIFinding:dnnroi0u> call=2 tag=decon_charge0 ntraces=2560 
+[13:36:46.116] D [ torch  ] <DNNROIFinding:dnnroi0u> call=2 getting summary for tag wiener0 
+[13:36:46.117] D [ torch  ] <DNNROIFinding:dnnroi0u> call=2 output frame: frame: ident=102 time=219.151 tick=500 with 62 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":62 [62] ] cmm:[ ] 
+[13:36:46.117] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1701 ms (this: 60 ms) call=2 finish 
+[13:36:46.137] D [ torch  ] <DNNROIFinding:dnnroi0v> call=2 tag=loose_lf0 ntraces=2560 
+[13:36:46.158] D [ torch  ] <DNNROIFinding:dnnroi0v> call=2 tag=mp2_roi0 ntraces=2560 
+[13:36:46.180] D [ torch  ] <DNNROIFinding:dnnroi0v> call=2 tag=mp3_roi0 ntraces=2560 
+[13:36:46.186] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 68 ms (this: 68 ms) call=2 calling model "TorchService:dnnroi" with 1 chunks  
+[13:36:46.187] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:36:47.678] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1560 ms (this: 1491 ms) call=2 inference done 
+[13:36:47.688] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1570 ms (this: 10 ms) call=2 tensor2eigen 
+[13:36:47.707] D [ torch  ] <DNNROIFinding:dnnroi0v> call=2 tag=decon_charge0 ntraces=2560 
+[13:36:47.748] D [ torch  ] <DNNROIFinding:dnnroi0v> call=2 getting summary for tag wiener0 
+[13:36:47.748] D [ torch  ] <DNNROIFinding:dnnroi0v> call=2 output frame: frame: ident=102 time=219.151 tick=500 with 54 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":54 [54] ] cmm:[ ] 
+[13:36:47.748] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1630 ms (this: 60 ms) call=2 finish 
+[13:36:47.749] D [  glue  ] <PlaneSelector:dnnroi0w> call=2 input frame: ident=102 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:36:47.749] D [  glue  ] <PlaneSelector:dnnroi0w> call=2 output frame: ident=102 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:36:47.757] D [  glue  ] <FrameFanin:dnnroi0> call=2 input 0: frame: ident=102 time=219.151 tick=500 with 62 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":62 [62] ] cmm:[ ] input 1: frame: ident=102 time=219.151 tick=500 with 54 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":54 [54] ] cmm:[ ] input 2: frame: ident=102 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=102 time=219.151 tick=500 with 1076 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":62 [62] "dnnsp0v":54 [54] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 1076 traces, 116 summary
+[13:36:47.757] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:36:47.758] D [magnify ] MagnifySink: tag: "dnnsp0" with 1076 traces
+[13:36:47.758] D [magnify ] MagnifySink: cbin:792[-0.5,791.5] tbin:6000[0,6000]
+[13:36:47.759] D [magnify ] MagnifySink: cbin:795[801.5,1596.5] tbin:6000[0,6000]
+[13:36:47.761] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:36:48.090] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 280749 bytes
+[13:36:48.234] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=2 input 0: frame: ident=102 time=219.151 tick=500 with 1076 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":1076 [116] ] cmm:[ ] output: frame: ident=102 time=219.151 tick=500 with 1076 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1076 [116] ] cmm:[ ] 
+[13:36:48.234] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=2 input 0: frame: ident=102 time=219.151 tick=500 with 1076 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1076 [116] ] cmm:[ ] output: frame: ident=102 time=219.151 tick=500 with 1076 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1076 [116] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 1076 traces, 116 summary
+[13:36:48.234] D [  glue  ] sink frame: #102 @0.000219151 with 1076 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:36:48.234] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=3 time=33977 mean=11325.7 max=24768 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=3 time=33449 mean=11149.7 max=11727 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=3 time=5286 mean=1762 max=1937 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=3 time=5159 mean=1719.67 max=1880 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=3 time=3702 mean=1234 max=1312 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=3 time=2239 mean=746.333 max=773 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=3 time=1374 mean=458 max=476 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IDepoSetFilter "" calls=3 time=791 mean=263.667 max=641 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=3 time=639 mean=213 max=235 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=3 time=76 mean=25.3333 max=27 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=6 time=21 mean=3.5 max=18 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=3 time=10 mean=3.33333 max=7 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=3 time=4 mean=1.33333 max=1 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=3 time=1 mean=0.333333 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=3 time=0 mean=0 max=0 [ms]
+[13:36:48.234] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=3 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 1076 traces tagged "dnnsp"
+FrameSaver: q=6723.44 n=2176 tag=dnnsp
+Begin processing the 4th record. run: 20000001 subRun: 0 event: 4 at 19-Nov-2025 13:36:48 CST
+SimDepoSetSource got 18550 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 18550 depos spanning: [6.94897e-07, 2.93764]us
+[13:36:48.285] D [  main  ] executing 1 apps, thread limit 0:
+[13:36:48.285] D [  main  ] executing 1 apps, thread limit 0:
+[13:36:48.285] D [  main  ] executing app: "TbbFlow"
+[13:36:48.285] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:36:48.318] D [  gen   ] <Drifter:> see EOS, ( dropped:29 + drifted:18521 ) / total:18550 depos from stream, outside of all 2 drift xregions 
+[13:36:48.319] D [  gen   ] <DepoSetDrifter:> call=3 drifted ndepos=18521 Qout=-51367565 (89.37552654371918%) 
+[13:36:48.320] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=3 fanout depo set 3 with 18521 
+[13:36:48.320] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=3 fanout depo set 3 with 18521 
+[13:36:48.341] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=0 total traces=0 
+[13:36:48.361] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=0 total traces=0 
+[13:36:48.375] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=0 total traces=0 
+[13:36:49.908] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=8113 total traces=800 
+[13:36:51.560] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=8113 total traces=1568 
+[13:36:52.839] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=8113 total traces=2042 
+[13:36:52.842] D [  gen   ] <DepoTransform:depotransform0> call=3 count=103 ndepos_in=18521 ndepos_used=8113 
+[13:36:52.842] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=103 time=-62280.8 tick=500 with 2042 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:52.873] D [  gen   ] <Reframer:reframer0> input : frame: ident=103 time=-62280.8 tick=500 with 2042 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:52.873] D [  gen   ] <Reframer:reframer0> output: frame: ident=103 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:53.077] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=3 frame=103 2560 traces 
+[13:36:53.077] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=103 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:53.077] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=103 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:53.833] D [  gen   ] <Digitizer:digitizer0> call=3 traces=2560 frame=103 totadc=110994447698 outtag="orig0" 
+[13:36:53.833] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=103 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:53.833] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=103 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:53.837] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 input frame: frame: ident=103 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:36:53.846] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:36:53.846] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 init enlarge window from 6000 to 6200 
+[13:36:53.846] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 init enlarge wire number in plane 0 from 800 to 820 
+[13:36:53.846] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 init enlarge wire number in plane 1 from 800 to 820 
+[13:36:53.846] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 init enlarge wire number in plane 2 from 960 to 980 
+[13:36:53.866] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:36:53.903] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:36:56.329] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 0, Qtot=14463243.079147741 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:36:57.125] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:36:57.164] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:36:59.584] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 1, Qtot=12044403.304128766 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:37:00.379] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:37:00.413] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:37:01.920] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 2, Qtot=22443498.055536993 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:37:02.379] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 0, Qtot=23057716 Qloss=-1178840, 800 indices spanning [7680,8479] "wiener" 
+[13:37:02.580] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 0, Qtot=1694141.5178311896 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:37:02.631] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 0, Qtot=21844520 Qloss=-353676, 800 indices spanning [9280,10079] "gauss" 
+[13:37:02.945] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 1, Qtot=23270745 Qloss=-1231317, 800 indices spanning [10080,10879] "wiener" 
+[13:37:03.145] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 1, Qtot=3067346.3555311384 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:37:03.197] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 1, Qtot=21948118 Qloss=-371246, 800 indices spanning [11680,12479] "gauss" 
+[13:37:03.636] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 2, Qtot=22864325 Qloss=-1266003, 960 indices spanning [12480,13439] "wiener" 
+[13:37:04.006] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 2, Qtot=21897311.254270874 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:37:04.081] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 save plane index: 2, Qtot=21833304 Qloss=-163309, 960 indices spanning [14400,15359] "gauss" 
+[13:37:04.081] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:37:04.081] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=3 output frame: frame: ident=103 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:04.097] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:04.098] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:37:04.099] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:04.211] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:04.317] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:04.449] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:37:04.449] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:04.558] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:04.668] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:05.188] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 797852 bytes
+[13:37:05.326] D [  glue  ] <FrameFanout:dnnroi0> call=3: input->output x3: frame: ident=103 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:05.345] D [ torch  ] <DNNROIFinding:dnnroi0u> call=3 tag=loose_lf0 ntraces=2560 
+[13:37:05.366] D [ torch  ] <DNNROIFinding:dnnroi0u> call=3 tag=mp2_roi0 ntraces=2560 
+[13:37:05.387] D [ torch  ] <DNNROIFinding:dnnroi0u> call=3 tag=mp3_roi0 ntraces=2560 
+[13:37:05.393] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 67 ms (this: 67 ms) call=3 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:05.394] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:37:06.898] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1572 ms (this: 1504 ms) call=3 inference done 
+[13:37:06.908] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1582 ms (this: 10 ms) call=3 tensor2eigen 
+[13:37:06.928] D [ torch  ] <DNNROIFinding:dnnroi0u> call=3 tag=decon_charge0 ntraces=2560 
+[13:37:06.968] D [ torch  ] <DNNROIFinding:dnnroi0u> call=3 getting summary for tag wiener0 
+[13:37:06.969] D [ torch  ] <DNNROIFinding:dnnroi0u> call=3 output frame: frame: ident=103 time=219.151 tick=500 with 470 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":470 [470] ] cmm:[ ] 
+[13:37:06.969] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1642 ms (this: 60 ms) call=3 finish 
+[13:37:06.988] D [ torch  ] <DNNROIFinding:dnnroi0v> call=3 tag=loose_lf0 ntraces=2560 
+[13:37:07.010] D [ torch  ] <DNNROIFinding:dnnroi0v> call=3 tag=mp2_roi0 ntraces=2560 
+[13:37:07.032] D [ torch  ] <DNNROIFinding:dnnroi0v> call=3 tag=mp3_roi0 ntraces=2560 
+[13:37:07.038] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 68 ms (this: 68 ms) call=3 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:07.039] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:37:08.539] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1570 ms (this: 1501 ms) call=3 inference done 
+[13:37:08.549] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1580 ms (this: 10 ms) call=3 tensor2eigen 
+[13:37:08.569] D [ torch  ] <DNNROIFinding:dnnroi0v> call=3 tag=decon_charge0 ntraces=2560 
+[13:37:08.609] D [ torch  ] <DNNROIFinding:dnnroi0v> call=3 getting summary for tag wiener0 
+[13:37:08.610] D [ torch  ] <DNNROIFinding:dnnroi0v> call=3 output frame: frame: ident=103 time=219.151 tick=500 with 560 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":560 [560] ] cmm:[ ] 
+[13:37:08.610] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1640 ms (this: 60 ms) call=3 finish 
+[13:37:08.611] D [  glue  ] <PlaneSelector:dnnroi0w> call=3 input frame: ident=103 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:08.611] D [  glue  ] <PlaneSelector:dnnroi0w> call=3 output frame: ident=103 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:37:08.618] D [  glue  ] <FrameFanin:dnnroi0> call=3 input 0: frame: ident=103 time=219.151 tick=500 with 470 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":470 [470] ] cmm:[ ] input 1: frame: ident=103 time=219.151 tick=500 with 560 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":560 [560] ] cmm:[ ] input 2: frame: ident=103 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=103 time=219.151 tick=500 with 1990 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":470 [470] "dnnsp0v":560 [560] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 1990 traces, 1030 summary
+[13:37:08.618] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:08.618] D [magnify ] MagnifySink: tag: "dnnsp0" with 1990 traces
+[13:37:08.618] D [magnify ] MagnifySink: cbin:768[-0.5,767.5] tbin:6000[0,6000]
+[13:37:08.620] D [magnify ] MagnifySink: cbin:687[912.5,1599.5] tbin:6000[0,6000]
+[13:37:08.622] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:08.928] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 419914 bytes
+[13:37:08.934] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=3 input 0: frame: ident=103 time=219.151 tick=500 with 1990 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":1990 [1030] ] cmm:[ ] output: frame: ident=103 time=219.151 tick=500 with 1990 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1990 [1030] ] cmm:[ ] 
+[13:37:08.934] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=3 input 0: frame: ident=103 time=219.151 tick=500 with 1990 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1990 [1030] ] cmm:[ ] output: frame: ident=103 time=219.151 tick=500 with 1990 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1990 [1030] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 1990 traces, 1030 summary
+[13:37:08.934] D [  glue  ] sink frame: #103 @0.000219151 with 1990 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=4 time=43708 mean=10927 max=11727 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=4 time=38498 mean=9624.5 max=24768 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=4 time=6929 mean=1732.25 max=1937 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=4 time=6800 mean=1700 max=1880 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=4 time=4931 mean=1232.75 max=1312 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=4 time=2997 mean=749.25 max=773 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=4 time=1690 mean=422.5 max=476 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=4 time=841 mean=210.25 max=235 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IDepoSetFilter "" calls=4 time=824 mean=206 max=641 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=4 time=107 mean=26.75 max=31 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=8 time=22 mean=2.75 max=18 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=4 time=10 mean=2.5 max=7 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=4 time=4 mean=1 max=1 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=4 time=1 mean=0.25 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=4 time=1 mean=0.25 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=4 time=0 mean=0 max=0 [ms]
+[13:37:08.935] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=4 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 1990 traces tagged "dnnsp"
+FrameSaver: q=328588 n=36074 tag=dnnsp
+Begin processing the 5th record. run: 20000001 subRun: 0 event: 5 at 19-Nov-2025 13:37:09 CST
+SimDepoSetSource got 18378 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 18378 depos spanning: [1.70622e-06, 1.15524]us
+[13:37:09.081] D [  main  ] executing 1 apps, thread limit 0:
+[13:37:09.081] D [  main  ] executing 1 apps, thread limit 0:
+[13:37:09.081] D [  main  ] executing app: "TbbFlow"
+[13:37:09.081] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:37:09.115] D [  gen   ] <Drifter:> see EOS, ( dropped:25 + drifted:18353 ) / total:18378 depos from stream, outside of all 2 drift xregions 
+[13:37:09.116] D [  gen   ] <DepoSetDrifter:> call=4 drifted ndepos=18353 Qout=-36972603 (97.10809752549112%) 
+[13:37:09.118] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=4 fanout depo set 4 with 18353 
+[13:37:09.118] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=4 fanout depo set 4 with 18353 
+[13:37:09.140] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=77 total traces=40 
+[13:37:09.160] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=77 total traces=80 
+[13:37:09.174] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=77 total traces=107 
+[13:37:09.881] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=17802 total traces=555 
+[13:37:10.593] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=17802 total traces=1003 
+[13:37:11.221] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=17802 total traces=1351 
+[13:37:11.226] D [  gen   ] <DepoTransform:depotransform0> call=4 count=104 ndepos_in=18353 ndepos_used=17879 
+[13:37:11.226] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=104 time=-62280.8 tick=500 with 1351 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:11.252] D [  gen   ] <Reframer:reframer0> input : frame: ident=104 time=-62280.8 tick=500 with 1351 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:11.252] D [  gen   ] <Reframer:reframer0> output: frame: ident=104 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:11.454] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=4 frame=104 2560 traces 
+[13:37:11.454] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=104 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:11.454] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=104 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:12.237] D [  gen   ] <Digitizer:digitizer0> call=4 traces=2560 frame=104 totadc=110996513197 outtag="orig0" 
+[13:37:12.237] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=104 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:12.237] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=104 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:12.240] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 input frame: frame: ident=104 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:12.249] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:37:12.249] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 init enlarge window from 6000 to 6200 
+[13:37:12.249] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 init enlarge wire number in plane 0 from 800 to 820 
+[13:37:12.249] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 init enlarge wire number in plane 1 from 800 to 820 
+[13:37:12.249] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 init enlarge wire number in plane 2 from 960 to 980 
+[13:37:12.270] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:37:12.307] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:37:14.737] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 0, Qtot=17637360.41742861 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:37:15.536] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:37:15.574] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:37:18.003] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 1, Qtot=21545716.5812008 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:37:18.796] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:37:18.830] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:37:20.312] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 2, Qtot=36410249.10104486 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:37:20.967] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 0, Qtot=36599040 Qloss=-1674743, 800 indices spanning [7680,8479] "wiener" 
+[13:37:21.173] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 0, Qtot=2147955.1563398214 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:37:21.223] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 0, Qtot=34537779 Qloss=-796523, 800 indices spanning [9280,10079] "gauss" 
+[13:37:21.531] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 1, Qtot=37974296 Qloss=-2443679, 800 indices spanning [10080,10879] "wiener" 
+[13:37:21.729] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 1, Qtot=426582.9405692322 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:37:21.780] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 1, Qtot=34195285 Qloss=-1216224, 800 indices spanning [11680,12479] "gauss" 
+[13:37:22.221] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 2, Qtot=37345820 Qloss=-1781451, 960 indices spanning [12480,13439] "wiener" 
+[13:37:22.579] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 2, Qtot=35697198.90493158 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:37:22.655] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 save plane index: 2, Qtot=35820955 Qloss=-170187, 960 indices spanning [14400,15359] "gauss" 
+[13:37:22.655] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:37:22.655] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=4 output frame: frame: ident=104 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:22.701] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:22.703] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:37:22.703] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:22.820] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:22.933] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:23.066] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:37:23.066] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:23.175] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:23.281] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:23.767] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 867517 bytes
+[13:37:23.773] D [  glue  ] <FrameFanout:dnnroi0> call=4: input->output x3: frame: ident=104 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:23.793] D [ torch  ] <DNNROIFinding:dnnroi0u> call=4 tag=loose_lf0 ntraces=2560 
+[13:37:23.813] D [ torch  ] <DNNROIFinding:dnnroi0u> call=4 tag=mp2_roi0 ntraces=2560 
+[13:37:23.835] D [ torch  ] <DNNROIFinding:dnnroi0u> call=4 tag=mp3_roi0 ntraces=2560 
+[13:37:23.841] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 67 ms (this: 67 ms) call=4 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:23.842] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:37:25.413] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1639 ms (this: 1572 ms) call=4 inference done 
+[13:37:25.424] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1649 ms (this: 10 ms) call=4 tensor2eigen 
+[13:37:25.444] D [ torch  ] <DNNROIFinding:dnnroi0u> call=4 tag=decon_charge0 ntraces=2560 
+[13:37:25.488] D [ torch  ] <DNNROIFinding:dnnroi0u> call=4 getting summary for tag wiener0 
+[13:37:25.489] D [ torch  ] <DNNROIFinding:dnnroi0u> call=4 output frame: frame: ident=104 time=219.151 tick=500 with 420 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":420 [420] ] cmm:[ ] 
+[13:37:25.489] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1715 ms (this: 65 ms) call=4 finish 
+[13:37:25.508] D [ torch  ] <DNNROIFinding:dnnroi0v> call=4 tag=loose_lf0 ntraces=2560 
+[13:37:25.529] D [ torch  ] <DNNROIFinding:dnnroi0v> call=4 tag=mp2_roi0 ntraces=2560 
+[13:37:25.550] D [ torch  ] <DNNROIFinding:dnnroi0v> call=4 tag=mp3_roi0 ntraces=2560 
+[13:37:25.556] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 66 ms (this: 66 ms) call=4 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:25.557] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:37:27.065] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1575 ms (this: 1509 ms) call=4 inference done 
+[13:37:27.076] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1586 ms (this: 10 ms) call=4 tensor2eigen 
+[13:37:27.096] D [ torch  ] <DNNROIFinding:dnnroi0v> call=4 tag=decon_charge0 ntraces=2560 
+[13:37:27.136] D [ torch  ] <DNNROIFinding:dnnroi0v> call=4 getting summary for tag wiener0 
+[13:37:27.136] D [ torch  ] <DNNROIFinding:dnnroi0v> call=4 output frame: frame: ident=104 time=219.151 tick=500 with 529 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":529 [529] ] cmm:[ ] 
+[13:37:27.136] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1646 ms (this: 60 ms) call=4 finish 
+[13:37:27.137] D [  glue  ] <PlaneSelector:dnnroi0w> call=4 input frame: ident=104 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:27.137] D [  glue  ] <PlaneSelector:dnnroi0w> call=4 output frame: ident=104 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:37:27.144] D [  glue  ] <FrameFanin:dnnroi0> call=4 input 0: frame: ident=104 time=219.151 tick=500 with 420 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":420 [420] ] cmm:[ ] input 1: frame: ident=104 time=219.151 tick=500 with 529 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":529 [529] ] cmm:[ ] input 2: frame: ident=104 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=104 time=219.151 tick=500 with 1909 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":420 [420] "dnnsp0v":529 [529] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 1909 traces, 949 summary
+[13:37:27.144] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:27.144] D [magnify ] MagnifySink: tag: "dnnsp0" with 1909 traces
+[13:37:27.145] D [magnify ] MagnifySink: cbin:786[3.5,789.5] tbin:6000[0,6000]
+[13:37:27.147] D [magnify ] MagnifySink: cbin:525[1074.5,1599.5] tbin:6000[0,6000]
+[13:37:27.149] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:27.513] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 499114 bytes
+[13:37:27.524] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=4 input 0: frame: ident=104 time=219.151 tick=500 with 1909 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":1909 [949] ] cmm:[ ] output: frame: ident=104 time=219.151 tick=500 with 1909 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1909 [949] ] cmm:[ ] 
+[13:37:27.524] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=4 input 0: frame: ident=104 time=219.151 tick=500 with 1909 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1909 [949] ] cmm:[ ] output: frame: ident=104 time=219.151 tick=500 with 1909 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1909 [949] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 1909 traces, 949 summary
+[13:37:27.524] D [  glue  ] sink frame: #104 @0.000219151 with 1909 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=5 time=54167 mean=10833.4 max=11727 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=5 time=40606 mean=8121.2 max=24768 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=5 time=8645 mean=1729 max=1937 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=5 time=8447 mean=1689.4 max=1880 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=5 time=6004 mean=1200.8 max=1312 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=5 time=3782 mean=756.4 max=784 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=5 time=2070 mean=414 max=476 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=5 time=1043 mean=208.6 max=235 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IDepoSetFilter "" calls=5 time=859 mean=171.8 max=641 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=5 time=133 mean=26.6 max=31 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=10 time=23 mean=2.3 max=18 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=5 time=11 mean=2.2 max=7 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=5 time=5 mean=1 max=1 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=5 time=2 mean=0.4 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=5 time=1 mean=0.2 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=5 time=0 mean=0 max=0 [ms]
+[13:37:27.524] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=5 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 1909 traces tagged "dnnsp"
+FrameSaver: q=551789 n=58670 tag=dnnsp
+Begin processing the 6th record. run: 20000001 subRun: 0 event: 6 at 19-Nov-2025 13:37:27 CST
+SimDepoSetSource got 14817 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 14817 depos spanning: [6.67959e-07, 4.55348]us
+[13:37:27.725] D [  main  ] executing 1 apps, thread limit 0:
+[13:37:27.725] D [  main  ] executing 1 apps, thread limit 0:
+[13:37:27.725] D [  main  ] executing app: "TbbFlow"
+[13:37:27.725] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:37:27.755] D [  gen   ] <Drifter:> see EOS, ( dropped:31 + drifted:14786 ) / total:14817 depos from stream, outside of all 2 drift xregions 
+[13:37:27.756] D [  gen   ] <DepoSetDrifter:> call=5 drifted ndepos=14786 Qout=-38402387 (93.82902848157052%) 
+[13:37:27.757] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=5 fanout depo set 5 with 14786 
+[13:37:27.757] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=5 fanout depo set 5 with 14786 
+[13:37:27.777] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=35 total traces=40 
+[13:37:27.802] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=35 total traces=136 
+[13:37:27.819] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=35 total traces=198 
+[13:37:28.543] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=2688 total traces=884 
+[13:37:29.145] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=2688 total traces=1444 
+[13:37:29.551] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=2688 total traces=1803 
+[13:37:29.552] D [  gen   ] <DepoTransform:depotransform0> call=5 count=105 ndepos_in=14786 ndepos_used=2723 
+[13:37:29.552] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=105 time=-62280.8 tick=500 with 1803 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:29.581] D [  gen   ] <Reframer:reframer0> input : frame: ident=105 time=-62280.8 tick=500 with 1803 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:29.581] D [  gen   ] <Reframer:reframer0> output: frame: ident=105 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:29.783] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=5 frame=105 2560 traces 
+[13:37:29.783] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=105 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:29.783] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=105 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:30.594] D [  gen   ] <Digitizer:digitizer0> call=5 traces=2560 frame=105 totadc=110991810626 outtag="orig0" 
+[13:37:30.594] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=105 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:30.594] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=105 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:30.599] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 input frame: frame: ident=105 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:30.607] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:37:30.607] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 init enlarge window from 6000 to 6200 
+[13:37:30.607] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 init enlarge wire number in plane 0 from 800 to 820 
+[13:37:30.607] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 init enlarge wire number in plane 1 from 800 to 820 
+[13:37:30.607] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 init enlarge wire number in plane 2 from 960 to 980 
+[13:37:30.627] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:37:30.665] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:37:33.118] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 0, Qtot=3612345.451846171 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:37:33.930] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:37:33.967] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:37:36.432] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 1, Qtot=3382838.023765035 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:37:37.237] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:37:37.271] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:37:38.770] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 2, Qtot=5669490.745042369 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:37:39.186] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 0, Qtot=6170681 Qloss=-695256, 800 indices spanning [7680,8479] "wiener" 
+[13:37:39.391] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 0, Qtot=-110550.08807190089 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:37:39.440] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 0, Qtot=5610568 Qloss=-183246, 800 indices spanning [9280,10079] "gauss" 
+[13:37:39.735] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 1, Qtot=6369588 Qloss=-501017, 800 indices spanning [10080,10879] "wiener" 
+[13:37:39.942] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 1, Qtot=758406.4171152655 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:37:39.993] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 1, Qtot=5759634 Qloss=-127980, 800 indices spanning [11680,12479] "gauss" 
+[13:37:40.435] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 2, Qtot=5960965 Qloss=-499604, 960 indices spanning [12480,13439] "wiener" 
+[13:37:40.791] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 2, Qtot=5333388.869798268 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:37:40.863] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 save plane index: 2, Qtot=5541776 Qloss=-45346, 960 indices spanning [14400,15359] "gauss" 
+[13:37:40.864] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:37:40.864] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=5 output frame: frame: ident=105 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:40.872] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:40.873] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:37:40.874] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:40.984] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:41.094] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:41.225] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:37:41.225] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:41.334] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:41.443] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:41.946] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 638803 bytes
+[13:37:42.090] D [  glue  ] <FrameFanout:dnnroi0> call=5: input->output x3: frame: ident=105 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:42.109] D [ torch  ] <DNNROIFinding:dnnroi0u> call=5 tag=loose_lf0 ntraces=2560 
+[13:37:42.130] D [ torch  ] <DNNROIFinding:dnnroi0u> call=5 tag=mp2_roi0 ntraces=2560 
+[13:37:42.151] D [ torch  ] <DNNROIFinding:dnnroi0u> call=5 tag=mp3_roi0 ntraces=2560 
+[13:37:42.157] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 66 ms (this: 66 ms) call=5 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:42.158] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:37:43.653] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1563 ms (this: 1496 ms) call=5 inference done 
+[13:37:43.664] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1573 ms (this: 10 ms) call=5 tensor2eigen 
+[13:37:43.683] D [ torch  ] <DNNROIFinding:dnnroi0u> call=5 tag=decon_charge0 ntraces=2560 
+[13:37:43.723] D [ torch  ] <DNNROIFinding:dnnroi0u> call=5 getting summary for tag wiener0 
+[13:37:43.724] D [ torch  ] <DNNROIFinding:dnnroi0u> call=5 output frame: frame: ident=105 time=219.151 tick=500 with 201 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":201 [201] ] cmm:[ ] 
+[13:37:43.724] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1633 ms (this: 59 ms) call=5 finish 
+[13:37:43.744] D [ torch  ] <DNNROIFinding:dnnroi0v> call=5 tag=loose_lf0 ntraces=2560 
+[13:37:43.765] D [ torch  ] <DNNROIFinding:dnnroi0v> call=5 tag=mp2_roi0 ntraces=2560 
+[13:37:43.786] D [ torch  ] <DNNROIFinding:dnnroi0v> call=5 tag=mp3_roi0 ntraces=2560 
+[13:37:43.792] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 67 ms (this: 67 ms) call=5 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:43.793] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:37:45.316] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1591 ms (this: 1524 ms) call=5 inference done 
+[13:37:45.327] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1602 ms (this: 10 ms) call=5 tensor2eigen 
+[13:37:45.347] D [ torch  ] <DNNROIFinding:dnnroi0v> call=5 tag=decon_charge0 ntraces=2560 
+[13:37:45.391] D [ torch  ] <DNNROIFinding:dnnroi0v> call=5 getting summary for tag wiener0 
+[13:37:45.392] D [ torch  ] <DNNROIFinding:dnnroi0v> call=5 output frame: frame: ident=105 time=219.151 tick=500 with 161 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":161 [161] ] cmm:[ ] 
+[13:37:45.392] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1667 ms (this: 65 ms) call=5 finish 
+[13:37:45.393] D [  glue  ] <PlaneSelector:dnnroi0w> call=5 input frame: ident=105 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:45.393] D [  glue  ] <PlaneSelector:dnnroi0w> call=5 output frame: ident=105 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:37:45.400] D [  glue  ] <FrameFanin:dnnroi0> call=5 input 0: frame: ident=105 time=219.151 tick=500 with 201 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":201 [201] ] cmm:[ ] input 1: frame: ident=105 time=219.151 tick=500 with 161 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":161 [161] ] cmm:[ ] input 2: frame: ident=105 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=105 time=219.151 tick=500 with 1322 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":201 [201] "dnnsp0v":161 [161] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 1322 traces, 362 summary
+[13:37:45.400] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:45.400] D [magnify ] MagnifySink: tag: "dnnsp0" with 1322 traces
+[13:37:45.401] D [magnify ] MagnifySink: cbin:622[28.5,650.5] tbin:6000[0,6000]
+[13:37:45.402] D [magnify ] MagnifySink: cbin:485[870.5,1355.5] tbin:6000[0,6000]
+[13:37:45.403] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:45.808] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 273079 bytes
+[13:37:45.860] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=5 input 0: frame: ident=105 time=219.151 tick=500 with 1322 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":1322 [362] ] cmm:[ ] output: frame: ident=105 time=219.151 tick=500 with 1322 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1322 [362] ] cmm:[ ] 
+[13:37:45.860] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=5 input 0: frame: ident=105 time=219.151 tick=500 with 1322 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1322 [362] ] cmm:[ ] output: frame: ident=105 time=219.151 tick=500 with 1322 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1322 [362] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 1322 traces, 362 summary
+[13:37:45.860] D [  glue  ] sink frame: #105 @0.000219151 with 1322 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=6 time=64439 mean=10739.8 max=11727 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=6 time=42402 mean=7067 max=24768 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=6 time=10279 mean=1713.17 max=1937 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=6 time=10116 mean=1686 max=1880 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=6 time=7222 mean=1203.67 max=1312 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=6 time=4595 mean=765.833 max=813 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=6 time=2529 mean=421.5 max=476 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=6 time=1245 mean=207.5 max=235 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IDepoSetFilter "" calls=6 time=890 mean=148.333 max=641 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=6 time=161 mean=26.8333 max=31 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=12 time=24 mean=2 max=18 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=6 time=11 mean=1.83333 max=7 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=6 time=6 mean=1 max=1 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=6 time=2 mean=0.333333 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=6 time=1 mean=0.166667 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=6 time=0 mean=0 max=0 [ms]
+[13:37:45.861] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=6 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 1322 traces tagged "dnnsp"
+FrameSaver: q=82184.8 n=11945 tag=dnnsp
+Begin processing the 7th record. run: 20000001 subRun: 0 event: 7 at 19-Nov-2025 13:37:45 CST
+SimDepoSetSource got 21519 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 21519 depos spanning: [6.68885e-07, 0.746698]us
+[13:37:45.938] D [  main  ] executing 1 apps, thread limit 0:
+[13:37:45.938] D [  main  ] executing 1 apps, thread limit 0:
+[13:37:45.938] D [  main  ] executing app: "TbbFlow"
+[13:37:45.939] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:37:45.977] D [  gen   ] <Drifter:> see EOS, ( dropped:5 + drifted:21514 ) / total:21519 depos from stream, outside of all 2 drift xregions 
+[13:37:45.979] D [  gen   ] <DepoSetDrifter:> call=6 drifted ndepos=21514 Qout=-44116182 (90.37853795146445%) 
+[13:37:45.980] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=6 fanout depo set 6 with 21514 
+[13:37:45.980] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=6 fanout depo set 6 with 21514 
+[13:37:46.007] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=10 total traces=140 
+[13:37:46.033] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=10 total traces=260 
+[13:37:46.053] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=10 total traces=400 
+[13:37:46.429] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=5692 total traces=800 
+[13:37:46.792] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=5692 total traces=1120 
+[13:37:47.132] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=5692 total traces=1377 
+[13:37:47.134] D [  gen   ] <DepoTransform:depotransform0> call=6 count=106 ndepos_in=21514 ndepos_used=5702 
+[13:37:47.134] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=106 time=-62280.8 tick=500 with 1377 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:47.160] D [  gen   ] <Reframer:reframer0> input : frame: ident=106 time=-62280.8 tick=500 with 1377 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:47.160] D [  gen   ] <Reframer:reframer0> output: frame: ident=106 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:47.360] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=6 frame=106 2560 traces 
+[13:37:47.360] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=106 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:47.360] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=106 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:48.117] D [  gen   ] <Digitizer:digitizer0> call=6 traces=2560 frame=106 totadc=110993034073 outtag="orig0" 
+[13:37:48.117] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=106 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:48.117] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=106 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:48.121] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 input frame: frame: ident=106 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:37:48.129] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:37:48.129] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 init enlarge window from 6000 to 6200 
+[13:37:48.129] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 init enlarge wire number in plane 0 from 800 to 820 
+[13:37:48.129] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 init enlarge wire number in plane 1 from 800 to 820 
+[13:37:48.129] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 init enlarge wire number in plane 2 from 960 to 980 
+[13:37:48.150] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:37:48.188] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:37:50.614] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 0, Qtot=12220008.674168302 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:37:51.412] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:37:51.449] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:37:53.875] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 1, Qtot=5058035.315427378 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:37:54.667] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:37:54.701] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:37:56.180] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 2, Qtot=14039384.309500707 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:37:56.605] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 0, Qtot=14863430 Qloss=-833442, 800 indices spanning [7680,8479] "wiener" 
+[13:37:56.811] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 0, Qtot=174421.53445508936 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:37:56.861] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 0, Qtot=14220792 Qloss=-327968, 800 indices spanning [9280,10079] "gauss" 
+[13:37:57.158] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 1, Qtot=14473798 Qloss=-718836, 800 indices spanning [10080,10879] "wiener" 
+[13:37:57.361] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 1, Qtot=502489.7131212661 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:37:57.412] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 1, Qtot=13918655 Qloss=-437340, 800 indices spanning [11680,12479] "gauss" 
+[13:37:57.851] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 2, Qtot=14757303 Qloss=-756076, 960 indices spanning [12480,13439] "wiener" 
+[13:37:58.214] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 2, Qtot=13488795.82082463 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:37:58.286] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 save plane index: 2, Qtot=14171235 Qloss=-147661, 960 indices spanning [14400,15359] "gauss" 
+[13:37:58.286] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:37:58.286] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=6 output frame: frame: ident=106 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:58.296] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:37:58.297] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:37:58.297] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:58.409] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:58.520] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:58.651] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:37:58.651] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:37:58.761] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:37:58.866] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:37:59.378] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 714953 bytes
+[13:37:59.384] D [  glue  ] <FrameFanout:dnnroi0> call=6: input->output x3: frame: ident=106 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:37:59.404] D [ torch  ] <DNNROIFinding:dnnroi0u> call=6 tag=loose_lf0 ntraces=2560 
+[13:37:59.425] D [ torch  ] <DNNROIFinding:dnnroi0u> call=6 tag=mp2_roi0 ntraces=2560 
+[13:37:59.447] D [ torch  ] <DNNROIFinding:dnnroi0u> call=6 tag=mp3_roi0 ntraces=2560 
+[13:37:59.453] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 68 ms (this: 68 ms) call=6 calling model "TorchService:dnnroi" with 1 chunks  
+[13:37:59.454] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:38:00.941] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1556 ms (this: 1487 ms) call=6 inference done 
+[13:38:00.951] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1566 ms (this: 10 ms) call=6 tensor2eigen 
+[13:38:00.970] D [ torch  ] <DNNROIFinding:dnnroi0u> call=6 tag=decon_charge0 ntraces=2560 
+[13:38:01.010] D [ torch  ] <DNNROIFinding:dnnroi0u> call=6 getting summary for tag wiener0 
+[13:38:01.010] D [ torch  ] <DNNROIFinding:dnnroi0u> call=6 output frame: frame: ident=106 time=219.151 tick=500 with 288 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":288 [288] ] cmm:[ ] 
+[13:38:01.010] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1625 ms (this: 59 ms) call=6 finish 
+[13:38:01.030] D [ torch  ] <DNNROIFinding:dnnroi0v> call=6 tag=loose_lf0 ntraces=2560 
+[13:38:01.051] D [ torch  ] <DNNROIFinding:dnnroi0v> call=6 tag=mp2_roi0 ntraces=2560 
+[13:38:01.072] D [ torch  ] <DNNROIFinding:dnnroi0v> call=6 tag=mp3_roi0 ntraces=2560 
+[13:38:01.079] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 67 ms (this: 67 ms) call=6 calling model "TorchService:dnnroi" with 1 chunks  
+[13:38:01.080] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:38:02.601] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1590 ms (this: 1522 ms) call=6 inference done 
+[13:38:02.612] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1600 ms (this: 10 ms) call=6 tensor2eigen 
+[13:38:02.631] D [ torch  ] <DNNROIFinding:dnnroi0v> call=6 tag=decon_charge0 ntraces=2560 
+[13:38:02.672] D [ torch  ] <DNNROIFinding:dnnroi0v> call=6 getting summary for tag wiener0 
+[13:38:02.672] D [ torch  ] <DNNROIFinding:dnnroi0v> call=6 output frame: frame: ident=106 time=219.151 tick=500 with 198 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":198 [198] ] cmm:[ ] 
+[13:38:02.672] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1661 ms (this: 60 ms) call=6 finish 
+[13:38:02.673] D [  glue  ] <PlaneSelector:dnnroi0w> call=6 input frame: ident=106 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:02.673] D [  glue  ] <PlaneSelector:dnnroi0w> call=6 output frame: ident=106 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:38:02.681] D [  glue  ] <FrameFanin:dnnroi0> call=6 input 0: frame: ident=106 time=219.151 tick=500 with 288 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":288 [288] ] cmm:[ ] input 1: frame: ident=106 time=219.151 tick=500 with 198 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":198 [198] ] cmm:[ ] input 2: frame: ident=106 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=106 time=219.151 tick=500 with 1446 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":288 [288] "dnnsp0v":198 [198] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 1446 traces, 486 summary
+[13:38:02.681] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:38:02.681] D [magnify ] MagnifySink: tag: "dnnsp0" with 1446 traces
+[13:38:02.681] D [magnify ] MagnifySink: cbin:497[-0.5,496.5] tbin:6000[0,6000]
+[13:38:02.682] D [magnify ] MagnifySink: cbin:750[827.5,1577.5] tbin:6000[0,6000]
+[13:38:02.684] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:03.069] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 336411 bytes
+[13:38:03.075] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=6 input 0: frame: ident=106 time=219.151 tick=500 with 1446 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":1446 [486] ] cmm:[ ] output: frame: ident=106 time=219.151 tick=500 with 1446 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1446 [486] ] cmm:[ ] 
+[13:38:03.075] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=6 input 0: frame: ident=106 time=219.151 tick=500 with 1446 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1446 [486] ] cmm:[ ] output: frame: ident=106 time=219.151 tick=500 with 1446 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1446 [486] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 1446 traces, 486 summary
+[13:38:03.075] D [  glue  ] sink frame: #106 @0.000219151 with 1446 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=7 time=74610 mean=10658.6 max=11727 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=7 time=43555 mean=6222.14 max=24768 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=7 time=11906 mean=1700.86 max=1937 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=7 time=11778 mean=1682.57 max=1880 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=7 time=8311 mean=1187.29 max=1312 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=7 time=5353 mean=764.714 max=813 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=7 time=2923 mean=417.571 max=476 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=7 time=1446 mean=206.571 max=235 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IDepoSetFilter "" calls=7 time=930 mean=132.857 max=641 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=7 time=186 mean=26.5714 max=31 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=14 time=25 mean=1.78571 max=18 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=7 time=11 mean=1.57143 max=7 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=7 time=7 mean=1 max=1 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=7 time=2 mean=0.285714 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=7 time=1 mean=0.142857 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=7 time=0 mean=0 max=0 [ms]
+[13:38:03.076] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=7 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 1446 traces tagged "dnnsp"
+FrameSaver: q=212964 n=22829 tag=dnnsp
+Begin processing the 8th record. run: 20000001 subRun: 0 event: 8 at 19-Nov-2025 13:38:03 CST
+SimDepoSetSource got 29987 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 29987 depos spanning: [7.939e-07, 3.06681]us
+[13:38:03.185] D [  main  ] executing 1 apps, thread limit 0:
+[13:38:03.185] D [  main  ] executing 1 apps, thread limit 0:
+[13:38:03.185] D [  main  ] executing app: "TbbFlow"
+[13:38:03.185] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:38:03.238] D [  gen   ] <Drifter:> see EOS, ( dropped:36 + drifted:29951 ) / total:29987 depos from stream, outside of all 2 drift xregions 
+[13:38:03.241] D [  gen   ] <DepoSetDrifter:> call=7 drifted ndepos=29951 Qout=-59285692 (91.98750331343544%) 
+[13:38:03.243] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=7 fanout depo set 7 with 29951 
+[13:38:03.243] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=7 fanout depo set 7 with 29951 
+[13:38:03.264] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=1 total traces=40 
+[13:38:03.286] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=1 total traces=80 
+[13:38:03.301] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=1 total traces=120 
+[13:38:05.922] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=28955 total traces=888 
+[13:38:08.337] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=28955 total traces=1574 
+[13:38:10.539] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=28955 total traces=2054 
+[13:38:10.545] D [  gen   ] <DepoTransform:depotransform0> call=7 count=107 ndepos_in=29951 ndepos_used=28956 
+[13:38:10.545] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=107 time=-62280.8 tick=500 with 2054 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:10.575] D [  gen   ] <Reframer:reframer0> input : frame: ident=107 time=-62280.8 tick=500 with 2054 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:10.575] D [  gen   ] <Reframer:reframer0> output: frame: ident=107 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:10.778] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=7 frame=107 2560 traces 
+[13:38:10.778] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=107 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:10.778] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=107 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:11.539] D [  gen   ] <Digitizer:digitizer0> call=7 traces=2560 frame=107 totadc=110999836436 outtag="orig0" 
+[13:38:11.539] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=107 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:11.539] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=107 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:11.543] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 input frame: frame: ident=107 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:11.551] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:38:11.551] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 init enlarge window from 6000 to 6200 
+[13:38:11.551] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 init enlarge wire number in plane 0 from 800 to 820 
+[13:38:11.551] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 init enlarge wire number in plane 1 from 800 to 820 
+[13:38:11.551] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 init enlarge wire number in plane 2 from 960 to 980 
+[13:38:11.571] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:38:11.609] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:38:14.042] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 0, Qtot=31765641.6387094 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:38:14.842] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:38:14.880] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:38:17.297] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 1, Qtot=29009041.50494569 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:38:18.095] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:38:18.129] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:38:19.616] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 2, Qtot=57159619.21753229 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:38:20.472] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 0, Qtot=59061200 Qloss=-3319533, 800 indices spanning [7680,8479] "wiener" 
+[13:38:20.672] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 0, Qtot=2153967.7922394043 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:38:20.723] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 0, Qtot=54329189 Qloss=-1712698, 800 indices spanning [9280,10079] "gauss" 
+[13:38:21.048] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 1, Qtot=58336489 Qloss=-2890172, 800 indices spanning [10080,10879] "wiener" 
+[13:38:21.244] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 1, Qtot=1219128.6734141828 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:38:21.295] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 1, Qtot=53517879 Qloss=-1651574, 800 indices spanning [11680,12479] "gauss" 
+[13:38:21.735] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 2, Qtot=58970055 Qloss=-2638504, 960 indices spanning [12480,13439] "wiener" 
+[13:38:22.091] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 2, Qtot=56273382.86760749 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:38:22.162] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 save plane index: 2, Qtot=56719017 Qloss=-301631, 960 indices spanning [14400,15359] "gauss" 
+[13:38:22.162] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:38:22.162] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=7 output frame: frame: ident=107 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:22.231] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:38:22.233] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:38:22.234] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:38:22.348] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:38:22.457] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:22.589] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:38:22.589] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:38:22.698] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:38:22.803] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:23.332] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 1142479 bytes
+[13:38:23.343] D [  glue  ] <FrameFanout:dnnroi0> call=7: input->output x3: frame: ident=107 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:23.363] D [ torch  ] <DNNROIFinding:dnnroi0u> call=7 tag=loose_lf0 ntraces=2560 
+[13:38:23.383] D [ torch  ] <DNNROIFinding:dnnroi0u> call=7 tag=mp2_roi0 ntraces=2560 
+[13:38:23.404] D [ torch  ] <DNNROIFinding:dnnroi0u> call=7 tag=mp3_roi0 ntraces=2560 
+[13:38:23.410] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 66 ms (this: 66 ms) call=7 calling model "TorchService:dnnroi" with 1 chunks  
+[13:38:23.411] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:38:24.896] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1552 ms (this: 1486 ms) call=7 inference done 
+[13:38:24.906] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1562 ms (this: 10 ms) call=7 tensor2eigen 
+[13:38:24.925] D [ torch  ] <DNNROIFinding:dnnroi0u> call=7 tag=decon_charge0 ntraces=2560 
+[13:38:24.966] D [ torch  ] <DNNROIFinding:dnnroi0u> call=7 getting summary for tag wiener0 
+[13:38:24.966] D [ torch  ] <DNNROIFinding:dnnroi0u> call=7 output frame: frame: ident=107 time=219.151 tick=500 with 848 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":848 [848] ] cmm:[ ] 
+[13:38:24.966] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1622 ms (this: 60 ms) call=7 finish 
+[13:38:24.986] D [ torch  ] <DNNROIFinding:dnnroi0v> call=7 tag=loose_lf0 ntraces=2560 
+[13:38:25.007] D [ torch  ] <DNNROIFinding:dnnroi0v> call=7 tag=mp2_roi0 ntraces=2560 
+[13:38:25.028] D [ torch  ] <DNNROIFinding:dnnroi0v> call=7 tag=mp3_roi0 ntraces=2560 
+[13:38:25.034] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 66 ms (this: 66 ms) call=7 calling model "TorchService:dnnroi" with 1 chunks  
+[13:38:25.035] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:38:26.521] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1554 ms (this: 1487 ms) call=7 inference done 
+[13:38:26.531] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1564 ms (this: 10 ms) call=7 tensor2eigen 
+[13:38:26.551] D [ torch  ] <DNNROIFinding:dnnroi0v> call=7 tag=decon_charge0 ntraces=2560 
+[13:38:26.591] D [ torch  ] <DNNROIFinding:dnnroi0v> call=7 getting summary for tag wiener0 
+[13:38:26.591] D [ torch  ] <DNNROIFinding:dnnroi0v> call=7 output frame: frame: ident=107 time=219.151 tick=500 with 736 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":736 [736] ] cmm:[ ] 
+[13:38:26.591] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1624 ms (this: 59 ms) call=7 finish 
+[13:38:26.592] D [  glue  ] <PlaneSelector:dnnroi0w> call=7 input frame: ident=107 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:26.592] D [  glue  ] <PlaneSelector:dnnroi0w> call=7 output frame: ident=107 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:38:26.600] D [  glue  ] <FrameFanin:dnnroi0> call=7 input 0: frame: ident=107 time=219.151 tick=500 with 848 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":848 [848] ] cmm:[ ] input 1: frame: ident=107 time=219.151 tick=500 with 736 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":736 [736] ] cmm:[ ] input 2: frame: ident=107 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=107 time=219.151 tick=500 with 2544 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":848 [848] "dnnsp0v":736 [736] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 2544 traces, 1584 summary
+[13:38:26.600] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:38:26.600] D [magnify ] MagnifySink: tag: "dnnsp0" with 2544 traces
+[13:38:26.600] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:38:26.603] D [magnify ] MagnifySink: cbin:791[800.5,1591.5] tbin:6000[0,6000]
+[13:38:26.606] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:27.167] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 705644 bytes
+[13:38:27.185] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=7 input 0: frame: ident=107 time=219.151 tick=500 with 2544 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":2544 [1584] ] cmm:[ ] output: frame: ident=107 time=219.151 tick=500 with 2544 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2544 [1584] ] cmm:[ ] 
+[13:38:27.185] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=7 input 0: frame: ident=107 time=219.151 tick=500 with 2544 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2544 [1584] ] cmm:[ ] output: frame: ident=107 time=219.151 tick=500 with 2544 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":2544 [1584] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 2544 traces, 1584 summary
+[13:38:27.185] D [  glue  ] sink frame: #107 @0.000219151 with 2544 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=8 time=85265 mean=10658.1 max=11727 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=8 time=50857 mean=6357.12 max=24768 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=8 time=13529 mean=1691.12 max=1937 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=8 time=13403 mean=1675.38 max=1880 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=8 time=9423 mean=1177.88 max=1312 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=8 time=6115 mean=764.375 max=813 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=8 time=3508 mean=438.5 max=584 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=8 time=1648 mean=206 max=235 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IDepoSetFilter "" calls=8 time=986 mean=123.25 max=641 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=8 time=216 mean=27 max=31 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=16 time=27 mean=1.6875 max=18 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=8 time=12 mean=1.5 max=7 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=8 time=8 mean=1 max=1 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=8 time=3 mean=0.375 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=8 time=2 mean=0.25 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=8 time=0 mean=0 max=0 [ms]
+[13:38:27.186] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=8 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 2544 traces tagged "dnnsp"
+FrameSaver: q=870757 n=99161 tag=dnnsp
+Begin processing the 9th record. run: 20000001 subRun: 0 event: 9 at 19-Nov-2025 13:38:27 CST
+SimDepoSetSource got 29035 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 29035 depos spanning: [6.67937e-07, 1.21588]us
+[13:38:27.587] D [  main  ] executing 1 apps, thread limit 0:
+[13:38:27.587] D [  main  ] executing 1 apps, thread limit 0:
+[13:38:27.587] D [  main  ] executing app: "TbbFlow"
+[13:38:27.587] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:38:27.638] D [  gen   ] <Drifter:> see EOS, ( dropped:9 + drifted:29026 ) / total:29035 depos from stream, outside of all 2 drift xregions 
+[13:38:27.641] D [  gen   ] <DepoSetDrifter:> call=8 drifted ndepos=29026 Qout=-55777910 (87.6377897813682%) 
+[13:38:27.643] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=8 fanout depo set 8 with 29026 
+[13:38:27.643] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=8 fanout depo set 8 with 29026 
+[13:38:27.663] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=0 total traces=0 
+[13:38:27.683] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=0 total traces=0 
+[13:38:27.697] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=0 total traces=0 
+[13:38:28.593] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=6308 total traces=686 
+[13:38:29.335] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=6308 total traces=1134 
+[13:38:30.090] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=6308 total traces=1614 
+[13:38:30.092] D [  gen   ] <DepoTransform:depotransform0> call=8 count=108 ndepos_in=29026 ndepos_used=6308 
+[13:38:30.092] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=108 time=-62280.8 tick=500 with 1614 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:30.120] D [  gen   ] <Reframer:reframer0> input : frame: ident=108 time=-62280.8 tick=500 with 1614 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:30.120] D [  gen   ] <Reframer:reframer0> output: frame: ident=108 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:30.324] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=8 frame=108 2560 traces 
+[13:38:30.324] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=108 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:30.324] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=108 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:31.068] D [  gen   ] <Digitizer:digitizer0> call=8 traces=2560 frame=108 totadc=110992970198 outtag="orig0" 
+[13:38:31.068] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=108 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:31.068] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=108 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:31.072] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 input frame: frame: ident=108 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:38:31.080] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:38:31.080] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 init enlarge window from 6000 to 6200 
+[13:38:31.080] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 init enlarge wire number in plane 0 from 800 to 820 
+[13:38:31.080] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 init enlarge wire number in plane 1 from 800 to 820 
+[13:38:31.080] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 init enlarge wire number in plane 2 from 960 to 980 
+[13:38:31.101] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:38:31.139] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:38:33.565] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 0, Qtot=14474674.226432763 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:38:34.373] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:38:34.410] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:38:36.835] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 1, Qtot=7564358.538206048 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:38:37.631] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:38:37.666] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:38:39.162] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 2, Qtot=13114787.788078414 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:38:39.794] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 0, Qtot=14283264 Qloss=-946250, 800 indices spanning [7680,8479] "wiener" 
+[13:38:39.993] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 0, Qtot=1597112.954777142 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:38:40.044] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 0, Qtot=13245448 Qloss=-210961, 800 indices spanning [9280,10079] "gauss" 
+[13:38:40.337] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 1, Qtot=13241167 Qloss=-936524, 800 indices spanning [10080,10879] "wiener" 
+[13:38:40.533] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 1, Qtot=823795.4002812095 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:38:40.584] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 1, Qtot=11821422 Qloss=-230525, 800 indices spanning [11680,12479] "gauss" 
+[13:38:41.018] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 2, Qtot=13822270 Qloss=-836400, 960 indices spanning [12480,13439] "wiener" 
+[13:38:41.376] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 2, Qtot=12503422.698940597 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:38:41.451] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 save plane index: 2, Qtot=13139396 Qloss=-82369, 960 indices spanning [14400,15359] "gauss" 
+[13:38:41.451] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:38:41.451] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=8 output frame: frame: ident=108 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:41.493] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:38:41.495] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:38:41.496] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:38:41.609] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:38:41.718] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:41.848] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:38:41.849] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:38:41.957] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:38:42.066] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:42.581] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 699391 bytes
+[13:38:42.626] D [  glue  ] <FrameFanout:dnnroi0> call=8: input->output x3: frame: ident=108 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:42.645] D [ torch  ] <DNNROIFinding:dnnroi0u> call=8 tag=loose_lf0 ntraces=2560 
+[13:38:42.666] D [ torch  ] <DNNROIFinding:dnnroi0u> call=8 tag=mp2_roi0 ntraces=2560 
+[13:38:42.687] D [ torch  ] <DNNROIFinding:dnnroi0u> call=8 tag=mp3_roi0 ntraces=2560 
+[13:38:42.693] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 66 ms (this: 66 ms) call=8 calling model "TorchService:dnnroi" with 1 chunks  
+[13:38:42.694] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:38:44.187] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1560 ms (this: 1494 ms) call=8 inference done 
+[13:38:44.197] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1570 ms (this: 10 ms) call=8 tensor2eigen 
+[13:38:44.226] D [ torch  ] <DNNROIFinding:dnnroi0u> call=8 tag=decon_charge0 ntraces=2560 
+[13:38:44.279] D [ torch  ] <DNNROIFinding:dnnroi0u> call=8 getting summary for tag wiener0 
+[13:38:44.280] D [ torch  ] <DNNROIFinding:dnnroi0u> call=8 output frame: frame: ident=108 time=219.151 tick=500 with 306 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":306 [306] ] cmm:[ ] 
+[13:38:44.280] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1653 ms (this: 82 ms) call=8 finish 
+[13:38:44.300] D [ torch  ] <DNNROIFinding:dnnroi0v> call=8 tag=loose_lf0 ntraces=2560 
+[13:38:44.322] D [ torch  ] <DNNROIFinding:dnnroi0v> call=8 tag=mp2_roi0 ntraces=2560 
+[13:38:44.343] D [ torch  ] <DNNROIFinding:dnnroi0v> call=8 tag=mp3_roi0 ntraces=2560 
+[13:38:44.349] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 67 ms (this: 67 ms) call=8 calling model "TorchService:dnnroi" with 1 chunks  
+[13:38:44.350] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:38:45.903] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1621 ms (this: 1553 ms) call=8 inference done 
+[13:38:45.913] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1631 ms (this: 10 ms) call=8 tensor2eigen 
+[13:38:45.940] D [ torch  ] <DNNROIFinding:dnnroi0v> call=8 tag=decon_charge0 ntraces=2560 
+[13:38:45.994] D [ torch  ] <DNNROIFinding:dnnroi0v> call=8 getting summary for tag wiener0 
+[13:38:45.994] D [ torch  ] <DNNROIFinding:dnnroi0v> call=8 output frame: frame: ident=108 time=219.151 tick=500 with 286 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":286 [286] ] cmm:[ ] 
+[13:38:45.994] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1713 ms (this: 81 ms) call=8 finish 
+[13:38:45.996] D [  glue  ] <PlaneSelector:dnnroi0w> call=8 input frame: ident=108 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:38:45.996] D [  glue  ] <PlaneSelector:dnnroi0w> call=8 output frame: ident=108 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:38:46.004] D [  glue  ] <FrameFanin:dnnroi0> call=8 input 0: frame: ident=108 time=219.151 tick=500 with 306 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":306 [306] ] cmm:[ ] input 1: frame: ident=108 time=219.151 tick=500 with 286 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":286 [286] ] cmm:[ ] input 2: frame: ident=108 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=108 time=219.151 tick=500 with 1552 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":306 [306] "dnnsp0v":286 [286] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 1552 traces, 592 summary
+[13:38:46.004] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:38:46.004] D [magnify ] MagnifySink: tag: "dnnsp0" with 1552 traces
+[13:38:46.005] D [magnify ] MagnifySink: cbin:343[401.5,744.5] tbin:6000[0,6000]
+[13:38:46.006] D [magnify ] MagnifySink: cbin:462[1137.5,1599.5] tbin:6000[0,6000]
+[13:38:46.007] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:38:46.312] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 286413 bytes
+[13:38:46.318] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=8 input 0: frame: ident=108 time=219.151 tick=500 with 1552 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":1552 [592] ] cmm:[ ] output: frame: ident=108 time=219.151 tick=500 with 1552 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1552 [592] ] cmm:[ ] 
+[13:38:46.318] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=8 input 0: frame: ident=108 time=219.151 tick=500 with 1552 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1552 [592] ] cmm:[ ] output: frame: ident=108 time=219.151 tick=500 with 1552 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":1552 [592] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 1552 traces, 592 summary
+[13:38:46.318] D [  glue  ] sink frame: #108 @0.000219151 with 1552 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=9 time=95685 mean=10631.7 max=11727 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=9 time=53307 mean=5923 max=24768 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=9 time=15183 mean=1687 max=1937 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=9 time=15117 mean=1679.67 max=1880 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=9 time=10557 mean=1173 max=1312 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=9 time=6861 mean=762.333 max=813 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=9 time=3821 mean=424.556 max=584 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=9 time=1852 mean=205.778 max=235 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IDepoSetFilter "" calls=9 time=1040 mean=115.556 max=641 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=9 time=243 mean=27 max=31 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=18 time=28 mean=1.55556 max=18 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=9 time=12 mean=1.33333 max=7 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=9 time=9 mean=1 max=1 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=9 time=3 mean=0.333333 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=9 time=2 mean=0.222222 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=9 time=0 mean=0 max=0 [ms]
+[13:38:46.319] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=9 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 1552 traces tagged "dnnsp"
+FrameSaver: q=197903 n=23807 tag=dnnsp
+Begin processing the 10th record. run: 20000001 subRun: 0 event: 10 at 19-Nov-2025 13:38:46 CST
+SimDepoSetSource got 56017 depos from art tag "InputTag: label = 'IonAndScint', instance = ''" returns: okay
+SimDepoSetSource: ready with 56017 depos spanning: [6.67458e-07, 7.6757]us
+[13:38:46.501] D [  main  ] executing 1 apps, thread limit 0:
+[13:38:46.501] D [  main  ] executing 1 apps, thread limit 0:
+[13:38:46.501] D [  main  ] executing app: "TbbFlow"
+[13:38:46.501] D [  tbb   ] <TbbFlow:> TbbFlow: run:  
+[13:38:46.604] D [  gen   ] <Drifter:> see EOS, ( dropped:112 + drifted:55905 ) / total:56017 depos from stream, outside of all 2 drift xregions 
+[13:38:46.608] D [  gen   ] <DepoSetDrifter:> call=9 drifted ndepos=55905 Qout=-115388322 (85.61021711924457%) 
+[13:38:46.612] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_0_0> call=9 fanout depo set 9 with 55905 
+[13:38:46.612] D [  glue  ] <DepoSetFanout:sn_mag_nf_fout_1_0> call=9 fanout depo set 9 with 55905 
+[13:38:46.639] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=0 depos=45 total traces=56 
+[13:38:46.662] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=0 depos=45 total traces=112 
+[13:38:46.679] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=0 depos=45 total traces=176 
+[13:38:52.438] D [  gen   ] <DepoTransform:depotransform0> plane=0 face=1 depos=53679 total traces=944 
+[13:38:57.965] D [  gen   ] <DepoTransform:depotransform0> plane=1 face=1 depos=53679 total traces=1503 
+[13:39:03.371] D [  gen   ] <DepoTransform:depotransform0> plane=2 face=1 depos=53679 total traces=1983 
+[13:39:03.377] D [  gen   ] <DepoTransform:depotransform0> call=9 count=109 ndepos_in=55905 ndepos_used=53724 
+[13:39:03.378] D [  gen   ] <DepoTransform:depotransform0> output: frame: ident=109 time=-62280.8 tick=500 with 1983 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:03.408] D [  gen   ] <Reframer:reframer0> input : frame: ident=109 time=-62280.8 tick=500 with 1983 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:03.408] D [  gen   ] <Reframer:reframer0> output: frame: ident=109 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:03.611] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> call=9 frame=109 2560 traces 
+[13:39:03.611] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> input : frame: ident=109 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:03.611] D [  gen   ] <IncoherentAddNoise:addnoiseapa0> output: frame: ident=109 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:04.379] D [  gen   ] <Digitizer:digitizer0> call=9 traces=2560 frame=109 totadc=111008408277 outtag="orig0" 
+[13:39:04.379] D [  gen   ] <Digitizer:digitizer0> input : frame: ident=109 time=219.151 tick=500 with 2560 traces.  frame tags:[ ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:04.379] D [  gen   ] <Digitizer:digitizer0> output: frame: ident=109 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:04.383] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 input frame: frame: ident=109 time=219.151 tick=500 with 2560 traces.  frame tags:[ "orig0" ] 0 tagged trace sets:[ ] cmm:[ ] 
+[13:39:04.391] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 init nticks=6000 tbinmin=0 tbinmax=6000 
+[13:39:04.391] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 init enlarge window from 6000 to 6200 
+[13:39:04.391] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 init enlarge wire number in plane 0 from 800 to 820 
+[13:39:04.391] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 init enlarge wire number in plane 1 from 800 to 820 
+[13:39:04.391] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 init enlarge wire number in plane 2 from 960 to 980 
+[13:39:04.412] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 0 with m_rebase_nbins = 200 
+[13:39:04.450] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 load plane index: 0, ntraces=2560, input bad regions: 0 
+[13:39:06.899] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 0, Qtot=51789946.98175472 Qloss=0, 800 indices spanning [0,799] "loose_lf" 
+[13:39:07.712] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 1 with m_rebase_nbins = 200 
+[13:39:07.749] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 load plane index: 1, ntraces=2560, input bad regions: 0 
+[13:39:10.201] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 1, Qtot=40510042.23933724 Qloss=0, 1600 indices spanning [0,1599] "loose_lf" 
+[13:39:11.012] D [sigproc ] <OmnibusSigProc:apa0sigproc0> rebase_waveform for plane 2 with m_rebase_nbins = 200 
+[13:39:11.046] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 load plane index: 2, ntraces=2560, input bad regions: 0 
+[13:39:12.546] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 2, Qtot=111490776.66571331 Qloss=0, 2560 indices spanning [0,2559] "loose_lf" 
+[13:39:14.815] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 0, Qtot=113892393 Qloss=-4675867, 800 indices spanning [7680,8479] "wiener" 
+[13:39:15.015] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 0, Qtot=2991256.175540137 Qloss=0, 800 indices spanning [8480,9279] "decon" 
+[13:39:15.065] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 0, Qtot=107404784 Qloss=-2288178, 800 indices spanning [9280,10079] "gauss" 
+[13:39:15.440] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 1, Qtot=109780887 Qloss=-3807327, 800 indices spanning [10080,10879] "wiener" 
+[13:39:15.646] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 1, Qtot=3142478.6886116955 Qloss=0, 1600 indices spanning [8480,11679] "decon" 
+[13:39:15.698] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 1, Qtot=103967605 Qloss=-2182215, 800 indices spanning [11680,12479] "gauss" 
+[13:39:16.141] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 2, Qtot=113373299 Qloss=-3409871, 960 indices spanning [12480,13439] "wiener" 
+[13:39:16.502] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 2, Qtot=109703999.46051326 Qloss=0, 2560 indices spanning [8480,14399] "decon" 
+[13:39:16.575] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 save plane index: 2, Qtot=110651946 Qloss=-595190, 960 indices spanning [14400,15359] "gauss" 
+[13:39:16.576] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 produce 15360 traces: 2560 wiener0, 2560 decon_charge0, 2560 gauss0, frame tag: sigproc 
+[13:39:16.576] D [sigproc ] <OmnibusSigProc:apa0sigproc0> call=9 output frame: frame: ident=109 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:39:16.774] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:39:16.777] D [magnify ] MagnifySink: tag: "wiener0" with 2560 traces
+[13:39:16.778] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:39:16.893] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:39:16.997] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:39:17.128] D [magnify ] MagnifySink: tag: "gauss0" with 2560 traces
+[13:39:17.129] D [magnify ] MagnifySink: cbin:800[-0.5,799.5] tbin:6000[0,6000]
+[13:39:17.239] D [magnify ] MagnifySink: cbin:800[799.5,1599.5] tbin:6000[0,6000]
+[13:39:17.347] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:39:18.022] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 1607094 bytes
+[13:39:18.176] D [  glue  ] <FrameFanout:dnnroi0> call=9: input->output x3: frame: ident=109 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:39:18.195] D [ torch  ] <DNNROIFinding:dnnroi0u> call=9 tag=loose_lf0 ntraces=2560 
+[13:39:18.215] D [ torch  ] <DNNROIFinding:dnnroi0u> call=9 tag=mp2_roi0 ntraces=2560 
+[13:39:18.236] D [ torch  ] <DNNROIFinding:dnnroi0u> call=9 tag=mp3_roi0 ntraces=2560 
+[13:39:18.242] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 65 ms (this: 65 ms) call=9 calling model "TorchService:dnnroi" with 1 chunks  
+[13:39:18.243] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:39:19.731] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1555 ms (this: 1489 ms) call=9 inference done 
+[13:39:19.742] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1565 ms (this: 10 ms) call=9 tensor2eigen 
+[13:39:19.762] D [ torch  ] <DNNROIFinding:dnnroi0u> call=9 tag=decon_charge0 ntraces=2560 
+[13:39:19.804] D [ torch  ] <DNNROIFinding:dnnroi0u> call=9 getting summary for tag wiener0 
+[13:39:19.804] D [ torch  ] <DNNROIFinding:dnnroi0u> call=9 output frame: frame: ident=109 time=219.151 tick=500 with 1639 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":1639 [1639] ] cmm:[ ] 
+[13:39:19.804] D [ torch  ] <DNNROIFinding:dnnroi0u> TICK: 1628 ms (this: 62 ms) call=9 finish 
+[13:39:19.824] D [ torch  ] <DNNROIFinding:dnnroi0v> call=9 tag=loose_lf0 ntraces=2560 
+[13:39:19.845] D [ torch  ] <DNNROIFinding:dnnroi0v> call=9 tag=mp2_roi0 ntraces=2560 
+[13:39:19.866] D [ torch  ] <DNNROIFinding:dnnroi0v> call=9 tag=mp3_roi0 ntraces=2560 
+[13:39:19.872] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 67 ms (this: 67 ms) call=9 calling model "TorchService:dnnroi" with 1 chunks  
+[13:39:19.874] D [ torch  ] <TorchService:dnnroi> running model on device: "cpu" 
+[13:39:21.368] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1562 ms (this: 1495 ms) call=9 inference done 
+[13:39:21.378] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1573 ms (this: 10 ms) call=9 tensor2eigen 
+[13:39:21.398] D [ torch  ] <DNNROIFinding:dnnroi0v> call=9 tag=decon_charge0 ntraces=2560 
+[13:39:21.438] D [ torch  ] <DNNROIFinding:dnnroi0v> call=9 getting summary for tag wiener0 
+[13:39:21.439] D [ torch  ] <DNNROIFinding:dnnroi0v> call=9 output frame: frame: ident=109 time=219.151 tick=500 with 1345 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":1345 [1345] ] cmm:[ ] 
+[13:39:21.439] D [ torch  ] <DNNROIFinding:dnnroi0v> TICK: 1633 ms (this: 60 ms) call=9 finish 
+[13:39:21.440] D [  glue  ] <PlaneSelector:dnnroi0w> call=9 input frame: ident=109 time=219.151 tick=500 with 15360 traces.  frame tags:[ "sigproc" ] 6 tagged trace sets:[ "decon_charge0":2560 [0] "gauss0":2560 [0] "loose_lf0":2560 [0] "mp2_roi0":2560 [0] "mp3_roi0":2560 [0] "wiener0":2560 [2560] ] cmm:[ ] 
+[13:39:21.440] D [  glue  ] <PlaneSelector:dnnroi0w> call=9 output frame: ident=109 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] 
+[13:39:21.449] D [  glue  ] <FrameFanin:dnnroi0> call=9 input 0: frame: ident=109 time=219.151 tick=500 with 1639 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0u":1639 [1639] ] cmm:[ ] input 1: frame: ident=109 time=219.151 tick=500 with 1345 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0v":1345 [1345] ] cmm:[ ] input 2: frame: ident=109 time=219.151 tick=500 with 960 traces.  frame tags:[ "DNNROIFinding" ] 1 tagged trace sets:[ "dnnsp0w":960 [0] ] cmm:[ ] output: frame: ident=109 time=219.151 tick=500 with 3944 traces.  frame tags:[ "dnnsp0w" "dnnsp0v" "dnnsp0u" ] 3 tagged trace sets:[ "dnnsp0u":1639 [1639] "dnnsp0v":1345 [1345] "dnnsp0w":960 [0] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp0 with 3944 traces, 2984 summary
+[13:39:21.449] D [magnify ] MagnifySink: opening for output: protodune-data-check.root with mode UPDATE
+[13:39:21.449] D [magnify ] MagnifySink: tag: "dnnsp0" with 3944 traces
+[13:39:21.450] D [magnify ] MagnifySink: cbin:609[-0.5,608.5] tbin:6000[0,6000]
+[13:39:21.454] D [magnify ] MagnifySink: cbin:673[861.5,1534.5] tbin:6000[0,6000]
+[13:39:21.458] D [magnify ] MagnifySink: cbin:960[1599.5,2559.5] tbin:6000[0,6000]
+[13:39:21.786] D [magnify ] MagnifySink: closing output file protodune-data-check.root, wrote 1032340 bytes
+[13:39:21.834] D [  glue  ] <FrameFanin:sn_mag_nf_fin_1_0> call=9 input 0: frame: ident=109 time=219.151 tick=500 with 3944 traces.  frame tags:[ "dnnsp0" ] 1 tagged trace sets:[ "dnnsp0":3944 [2984] ] cmm:[ ] output: frame: ident=109 time=219.151 tick=500 with 3944 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":3944 [2984] ] cmm:[ ] 
+[13:39:21.834] D [  glue  ] <FrameFanin:sn_mag_nf_fin_0_0> call=9 input 0: frame: ident=109 time=219.151 tick=500 with 3944 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":3944 [2984] ] cmm:[ ] output: frame: ident=109 time=219.151 tick=500 with 3944 traces.  frame tags:[ "framefanin" ] 1 tagged trace sets:[ "dnnsp0":3944 [2984] ] cmm:[ ] 
+Retagger: tagging trace set: dnnsp with 3944 traces, 2984 summary
+[13:39:21.835] D [  glue  ] sink frame: #109 @0.000219151 with 3944 traces, frame tags:[retagger], trace tags:[dnnsp]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "apa0sigproc0" calls=10 time=108075 mean=10807.5 max=12390 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IDepoFramer "depotransform0" calls=10 time=70072 mean=7007.2 max=24768 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "dnnroi0u" calls=10 time=16812 mean=1681.2 max=1937 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "dnnroi0v" calls=10 time=16752 mean=1675.2 max=1880 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=10 time=11959 mean=1195.9 max=1401 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "digitizer0" calls=10 time=7631 mean=763.1 max=813 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=10 time=4206 mean=420.6 max=584 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "addnoiseapa0" calls=10 time=2054 mean=205.4 max=235 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IDepoSetFilter "" calls=10 time=1146 mean=114.6 max=641 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "reframer0" calls=10 time=273 mean=27.3 max=31 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IDepoSetSource "(unknown)" calls=20 time=31 mean=1.55 max=18 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IDepoSetFilter "(unknown)" calls=10 time=13 mean=1.3 max=7 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=10 time=10 mean=1 max=1 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "dnnroi0w" calls=10 time=3 mean=0.3 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=10 time=2 mean=0.2 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFanin "(unknown)" calls=10 time=1 mean=0.1 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFanout "dnnroi0" calls=10 time=0 mean=0 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=10 time=0 mean=0 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_0_0" calls=10 time=0 mean=0 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=10 time=0 mean=0 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameSink "(unknown)" calls=10 time=0 mean=0 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IDepoSetFanout "sn_mag_nf_fout_1_0" calls=10 time=0 mean=0 max=0 [ms]
+[13:39:21.836] D [  tbb   ] WireCell::IFrameFilter "(unknown)" calls=10 time=0 mean=0 max=0 [ms]
+wclsFrameSaver: no traces tagged "gauss"
+FrameSaver: q=0 n=0 tag=gauss
+wclsFrameSaver: no traces tagged "wiener"
+FrameSaver: q=0 n=0 tag=wiener
+wclsFrameSaver: saving 3944 traces tagged "dnnsp"
+FrameSaver: q=1.68893e+06 n=182375 tag=dnnsp
+19-Nov-2025 13:39:23 CST  Closed output file "sp.root"
+19-Nov-2025 13:39:23 CST  Closed input file "g4.root"
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                      16.8595       24.3465       44.9705       19.8258       8.91936        10     
+--------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                        0.000230603   0.000703541   0.00127907    0.000587271   0.000355896      10     
+simulate:tpcrawdecoder:WireCellToolkit          16.8505        24.22        44.5196       19.7876       8.77698        10     
+[art]:TriggerResults:TriggerResultInserter    1.1397e-05    1.75447e-05   4.9414e-05    1.26235e-05   1.12477e-05      10     
+end_path:out1:RootOutput                       2.438e-06    3.6534e-06    1.2446e-05    2.7195e-06    2.93464e-06      10     
+end_path:out1:RootOutput(write)               0.00777387     0.125638      0.449511      0.0527871     0.142978        10     
+================================================================================================================================
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 7091.95 MB
+  Peak resident set size usage (VmHWM): 1803.33 MB
+====================================================================================================
+Art has completed and will exit with status 0.
+
+real    4m22.582s
+user    4m14.383s
+sys     0m3.932s

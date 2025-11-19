@@ -1,0 +1,58 @@
+%MSG-i MF_INIT_OK:  Early 18-Nov-2025 22:48:43 CST JobSetup
+Messagelogger initialization complete.
+%MSG
+18-Nov-2025 22:48:44 CST  Initiating request to open input file "g4.root"
+%MSG-i Root_Information:  FileDumperOutput:out1@Construction TClass::Init()  18-Nov-2025 22:48:44 CST ModuleConstruction
+no dictionary for class sim::IDE is available
+ROOT severity: 2000
+%MSG
+18-Nov-2025 22:48:44 CST  Opened input file "g4.root"
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 18-Nov-2025 22:48:44 CST
+PRINCIPAL TYPE: Event
+PROCESS NAME | MODULE LABEL.. | PRODUCT INSTANCE NAME | DATA PRODUCT TYPE.................................................... | SIZE
+GenieGen.... | generator..... | ..................... | std::vector<simb::GTruth>............................................ | ...1
+GenieGen.... | TriggerResults | ..................... | art::TriggerResults.................................................. | ...1
+GenieGen.... | generator..... | ..................... | std::vector<sim::BeamGateInfo>....................................... | ...1
+GenieGen.... | rns........... | ..................... | std::vector<art::RNGsnapshot>........................................ | ...0
+GenieGen.... | generator..... | ..................... | std::vector<simb::MCTruth>........................................... | ...1
+GenieGen.... | generator..... | ..................... | art::Assns<simb::MCTruth,simb::MCFlux,void>.......................... | ...1
+GenieGen.... | generator..... | ..................... | std::vector<simb::MCFlux>............................................ | ...1
+GenieGen.... | generator..... | ..................... | art::Assns<simb::MCTruth,simb::GTruth,void>.......................... | ...1
+G4.......... | rns........... | ..................... | std::vector<art::RNGsnapshot>........................................ | ...2
+G4.......... | TriggerResults | ..................... | art::TriggerResults.................................................. | ...1
+G4.......... | largeant...... | ..................... | std::vector<simb::MCParticle>........................................ | .305
+G4.......... | largeant...... | ..................... | sim::ParticleAncestryMap............................................. | ...-
+G4.......... | largeant...... | ..................... | art::Assns<simb::MCTruth,simb::MCParticle,sim::GeneratedParticleInfo> | .305
+
+Total products (present, not present): 13 (13, 0).
+
+PRINCIPAL TYPE: SubRun
+PROCESS NAME | MODULE LABEL | PRODUCT INSTANCE NAME | DATA PRODUCT TYPE.. | SIZE
+GenieGen.... | generator... | ..................... | sumdata::POTSummary | ...-
+
+Total products (present, not present): 1 (1, 0).
+
+PRINCIPAL TYPE: Run
+PROCESS NAME | MODULE LABEL............... | PRODUCT INSTANCE NAME | DATA PRODUCT TYPE................. | SIZE
+GenieGen.... | generator.................. | ..................... | sumdata::RunData.................. | ...-
+GenieGen.... | GeometryConfigurationWriter | ..................... | sumdata::GeometryConfigurationInfo | ...-
+G4.......... | GeometryConfigurationWriter | ..................... | sumdata::GeometryConfigurationInfo | ...-
+
+Total products (present, not present): 3 (3, 0).
+
+18-Nov-2025 22:48:44 CST  Closed input file "g4.root"
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 1 passed = 1 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport          1          1          0 out1
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 0.016573 Real = 0.017327
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 891.929 VmHWM = 342.225
+
+Art has completed and will exit with status 0.

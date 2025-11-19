@@ -1,0 +1,79 @@
+%MSG-i MF_INIT_OK:  Early 19-Nov-2025 13:00:27 CST JobSetup
+Messagelogger initialization complete.
+%MSG
+19-Nov-2025 13:00:28 CST  Initiating request to open input file "sp.root"
+%MSG-i Root_Information:  FileDumperOutput:out1@Construction TClass::Init()  19-Nov-2025 13:00:28 CST ModuleConstruction
+no dictionary for class sim::IDE is available
+ROOT severity: 2000
+%MSG
+19-Nov-2025 13:00:28 CST  Opened input file "sp.root"
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 19-Nov-2025 13:00:28 CST
+PRINCIPAL TYPE: Event
+PROCESS NAME | MODULE LABEL.. | PRODUCT INSTANCE NAME................. | DATA PRODUCT TYPE.................................................... | .SIZE
+GenieGen.... | generator..... | ...................................... | std::vector<simb::GTruth>............................................ | ....1
+GenieGen.... | TriggerResults | ...................................... | art::TriggerResults.................................................. | ....1
+GenieGen.... | generator..... | ...................................... | std::vector<sim::BeamGateInfo>....................................... | ....1
+GenieGen.... | rns........... | ...................................... | std::vector<art::RNGsnapshot>........................................ | ....0
+GenieGen.... | generator..... | ...................................... | std::vector<simb::MCTruth>........................................... | ....1
+GenieGen.... | generator..... | ...................................... | art::Assns<simb::MCTruth,simb::MCFlux,void>.......................... | ....1
+GenieGen.... | generator..... | ...................................... | std::vector<simb::MCFlux>............................................ | ....1
+GenieGen.... | generator..... | ...................................... | art::Assns<simb::MCTruth,simb::GTruth,void>.......................... | ....1
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneVInner0 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneZInner0 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCOuter....... | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCInner1...... | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCInner0...... | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneZOuter. | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneZInner1 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneVInner1 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneVOuter. | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | rns........... | ...................................... | std::vector<art::RNGsnapshot>........................................ | ....2
+G4.......... | largeant...... | LArG4DetectorServicevolTPCActiveInner0 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | IonAndScint... | ...................................... | std::vector<sim::SimEnergyDeposit>................................... | 83269
+G4.......... | largeant...... | LArG4DetectorServicevolTPCActiveInner1 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | TriggerResults | ...................................... | art::TriggerResults.................................................. | ....1
+G4.......... | largeant...... | ...................................... | std::vector<simb::MCParticle>........................................ | ..305
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneUInner0 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneUInner1 | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | ...................................... | sim::ParticleAncestryMap............................................. | ....-
+G4.......... | largeant...... | ...................................... | art::Assns<simb::MCTruth,simb::MCParticle,sim::GeneratedParticleInfo> | ..305
+G4.......... | largeant...... | LArG4DetectorServicevolTPCPlaneUOuter. | std::vector<sim::SimEnergyDeposit>................................... | ....?
+G4.......... | largeant...... | LArG4DetectorServicevolTPCActiveOuter. | std::vector<sim::SimEnergyDeposit>................................... | ....?
+detsim...... | tpcrawdecoder. | wiener................................ | std::vector<recob::Wire>............................................. | .2560
+detsim...... | tpcrawdecoder. | dnnsp................................. | std::vector<recob::Wire>............................................. | .2560
+detsim...... | TriggerResults | ...................................... | art::TriggerResults.................................................. | ....1
+detsim...... | tpcrawdecoder. | gauss................................. | std::vector<recob::Wire>............................................. | .2560
+
+Total products (present, not present): 33 (18, 15).
+
+PRINCIPAL TYPE: SubRun
+PROCESS NAME | MODULE LABEL | PRODUCT INSTANCE NAME | DATA PRODUCT TYPE.. | SIZE
+GenieGen.... | generator... | ..................... | sumdata::POTSummary | ...-
+
+Total products (present, not present): 1 (1, 0).
+
+PRINCIPAL TYPE: Run
+PROCESS NAME | MODULE LABEL............... | PRODUCT INSTANCE NAME | DATA PRODUCT TYPE................. | SIZE
+GenieGen.... | generator.................. | ..................... | sumdata::RunData.................. | ...-
+GenieGen.... | GeometryConfigurationWriter | ..................... | sumdata::GeometryConfigurationInfo | ...-
+G4.......... | GeometryConfigurationWriter | ..................... | sumdata::GeometryConfigurationInfo | ...-
+detsim...... | GeometryConfigurationWriter | ..................... | sumdata::GeometryConfigurationInfo | ...-
+
+Total products (present, not present): 4 (4, 0).
+
+19-Nov-2025 13:00:28 CST  Closed input file "sp.root"
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 1 passed = 1 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport          1          1          0 out1
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 0.087642 Real = 0.088386
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 891.929 VmHWM = 377.303
+
+Art has completed and will exit with status 0.

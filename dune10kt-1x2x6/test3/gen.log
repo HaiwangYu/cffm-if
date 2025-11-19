@@ -1,0 +1,653 @@
+%MSG-i MF_INIT_OK:  Early 18-Nov-2025 20:53:06 CST JobSetup
+Messagelogger initialization complete.
+%MSG
+Info in <TGeoManager::Import>: Reading geometry from file: /cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+Info in <TGeoManager::TGeoManager>: Geometry GDMLImport, Geometry imported from GDML created
+Info in <TGeoManager::SetTopVolume>: Top volume is volWorld. Master volume is volWorld
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 1149
+Info in <TGeoManager::CloseGeometry>: 67545 nodes/ 3831 volume UID's in Geometry imported from GDML
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+%MSG-i AuxDetGeometryCore:  Early 18-Nov-2025 20:53:09 CST JobSetup
+New detector geometry loaded from
+	/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v4_1x2x6.gdml
+%MSG
+%MSG-i GeometryCore:  Early 18-Nov-2025 20:53:09 CST JobSetup
+Sorting volumes...
+%MSG
+%MSG-i GeometryCore:  Early 18-Nov-2025 20:53:09 CST JobSetup
+New detector geometry loaded from
+	/cvmfs/dune.opensciencegrid.org/products/dune/dunecore/v10_04_04d00/gdml/dune10kt_v6_refactored_1x2x6.gdml
+%MSG
+%MSG-i DuneApaWireReadoutGeom:  Early 18-Nov-2025 20:53:09 CST JobSetup
+Initializing wire readout...
+%MSG
+Cryostat 0:
+  30720 total channels
+  12 APAs
+  For all identical APA:
+    Number of channels per APA = 2560
+    U channels per APA = 800
+    V channels per APA = 800
+    Z channels per APA = 960
+    Pitch in U Plane = 0.4667
+    Pitch in V Plane = 0.4667
+    Pitch in Z Plane = 0.479
+GeoApaChannelGroupService::ctor: Group 0 (apa00) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 1 (apa01) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 2 (apa02) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 3 (apa03) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 4 (apa04) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 5 (apa05) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 6 (apa06) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 7 (apa07) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 8 (apa08) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 9 (apa09) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 10 (apa10) has 2560 channels from 4/4 readout planes.
+GeoApaChannelGroupService::ctor: Group 11 (apa11) has 2560 channels from 4/4 readout planes.
+%MSG-i SimpleChannelStatusService:  Early 18-Nov-2025 20:53:09 CST JobSetup
+Loaded from configuration:
+  - 0 bad channels
+  - 0 noisy channels
+  - largest channel ID: 30719, largest present: 30719
+%MSG
+%MSG-i setupProvider<DetectorPropertiesStandard>:  Early  18-Nov-2025 20:53:09 CST JobSetup
+Asked to ignore 1 keys: 'InheritNumberTimeSamples'
+%MSG
+IFDH constructor, got keys:
+service_type, 
+IFDH: didn't find a base uri...
+
+%MSG-i SignalShapingServiceDUNE:  Early 18-Nov-2025 20:53:09 CST JobSetup
+Getting Filter from .fcl file
+%MSG
+%MSG-i SignalShapingServiceDUNE:  Early 18-Nov-2025 20:53:09 CST JobSetup
+ using the field response provided from a .root file 
+%MSG
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
+Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+Init HelperRandom with seed 0
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+ExpandFluxPaths initially: "/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/"
+             final result: "/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/"
+                    using: "DIRECT" method
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+ExpandFluxFilePatternsDirect initially found 249 files for user patterns:
+	gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_*root
+  using FluxSearchPaths of: 
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/
+list of 249 will be randomized and pared down to 2000 MB or 9999 files
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+StartGENIEMessenger ProdMode=yes read from: Messenger_whisper.xml
+%MSG
+
+
+*****************************************************************************************************************
+*                                                                                                               *
+*                                                   .oooooo.    oooooooooooo ooooo      ooo ooooo oooooooooooo  *
+*                                                  d8P'  `Y8b   `888'     `8 `888b.     `8' `888' `888'     `8  *
+*                                                 888            888          8 `88b.    8   888   888          * 
+*                        Ndyooym          dN      888            888oooo8     8   `88b.  8   888   888oooo8     *
+*                     Nds//+sdmoy       d+m       888     ooooo  888    "     8     `88b.8   888   888    "     * 
+*                   Nh+//ohN  m+s      N//syyN    `88.    .88'   888       o  8       `888   888   888       o  *
+*                 Ny+//od   Nh+oN       o///+      `Y8bood8P'   o888ooooood8 o8o        `8  o888o o888ooooood8  *
+*               Nh+//om   Nh+/yN       o///s                                                                    *
+*              d+//+d   my+/smmyhN    m///h                                      NEUTRINO MONTE CARLO GENERATOR *   
+*            Ns///yN NdyoshNNs///d   h////yN                                                                    *
+*           mo//om        ms///+m   d///////oyhmN                                               Version 3.04.02 *
+*          N+//yN       ms////+N    h////////////oym                                                            *
+*          s//h       ho/+///sN     N///////////////od                                  http://www.genie-mc.org *
+*         N+/h     my++yh+//y       s/////////////////oN                                                        *
+*         Ns/m Nmy++ymNh//+d        s//////////////////+m                                                       *
+*          NhssoshN  Ny//sN         m///////////////////+                                                       *
+*                  Nmo/+ohdmN        mo//////////////////h            NmmN                                      *
+*              ms/+s//o/-----:+sdN     mhso+ooys/////////o      mhs+/------/ohN                                 *
+*    Nhd     N+-/o+/o+------------/shN     Ndy+//////////+ mhs+:---------------om                               *
+*  mo/sN    m:/oo/oo:-----------------:://////////////////-----------------------y                              *
+*  y//d    Noo++o+:----------:------------:://///////////:-------:/+osyso/:-------h                             *
+*  Nyo+syysooo+/--------------::--------------:://///////:----::////+ossyso/------:                             *
+*     NNNNNs--------------------:/::-------------:://///:-:://////////oosyo+:------                             *
+*          y---------------------:////:::-----------:////////////////+o++++/:-----/                             *
+*          m-----------------------://////////////////////////////+so/--:---------y                             *
+*           +------------------------://////////////////////////+yy:---+oh/--:y+-/N                             *
+*           N/-------------------------://////////////////////ohy/-------yy--os-/m                              *
+*            No--------------------------://///////////////+shs/---------/d++/-oN                               *
+*              mo--------------------------:////////////+shyo:------------sy/sm                                 *
+*                Ny+:------------------------::://///oyhyo:--------------/sd                                    *
+*                    mhso+/:------------------:/+oyhyo/----------:/+syhm                                        *
+*                           NmddhyyyssssyyyhdmmNNNmhhhyyyyhhddmN                                                *
+*                                                                                                               *
+*                                                             Copyright (c) 2003-2023, The GENIE Collaboration  *
+*                                                                                                               *
+*                                                                                                               *
+* Luis Alvarez-Ruso [6], Costas Andreopoulos [9], Adi Ashkenazi [13], Joshua Barrow (10,13), Steve Dytman [12], * 
+*      Hugh Gallagher [14], Alfonso Andres Garcia Soto [5,6], Steven Gardiner [4], Matan Goldenberg [13],       * 
+*  Robert Hatcher [4], Or Hen [10], Igor Kakorin [8], Konstantin Kuzmin [7,8], Weijun Li [11], Xianguo Lu [15], *
+*          Anselmo Meregaglia [2], Vadim Naumov [8], Afroditi Papadopoulou [1], Gabriel Perdue [3],             *
+*   Komninos-John Plows [11], Marco Roda [9], Alon Sportes [13], Noah Steinberg [4], Vladyslav Syrotenko [14],  *
+*                         Júlia Tena Vidal [13], Jeremy Wolcott [14], and Qiyu Yan [3,15]                       *
+*                                                                                                               *
+*                                            (The GENIE Collaboration)                                          *
+*                                                                                                               *
+*                                      [1] Argonne National Laboratory (ANL)                                    *
+*                                 [2] CENBG, Université de Bordeaux, CNRS/IN2P3                                 *
+*                             [3] University of the Chinese Academy of Sciences (UCAS)                          *
+*                                 [4] Fermi National Accelerator Laboratory (FNAL)                              *
+*                                      [5] Harvard University, Dept. of Physics                                 *   
+*                                     [6] Instituto de Física Corpuscular (IFIC)                                *
+*      [7] Alikhanov Institute for Theoretical and Experimental Physics (ITEP) of NRC "Kurchatov Institute"     *
+*                                  [8] Joint Institute for Nuclear Research (JINR)                              *
+*                                   [9] University of Liverpool, Dept. of Physics                               *
+*                         [10] Massachusetts Institute of Technology (MIT), Dept. of Physics                    *
+*                                    [11] University of Oxford, Dept. of Physics                                *
+*                            [12] University of Pittsburgh, Dept. of Physics and Astronomy                      *
+*                              [13] Tel Aviv University, School of Physics and Astronomy                        *
+*                                [14] Tufts University, Dept. of Physics and Astronomy                          *
+*                                     [15] Warwick University, Dept. of Physics                                 *
+*                                                                                                               *
+*  Corresponding Author:                                                                                        *
+*  -                                                                                                            *
+*  Professor Costas Andreopoulos                                                                                *
+*  University of Liverpool, Department of Physics                                                               *
+*  Oliver Lodge Lab 316, Liverpool L69 7ZE, UK                                                                  *
+*  E-Mail: c.andreopoulos \at cern.ch                                                                           *
+*  Tel: +44-(0)1517-943201                                                                                      *
+*****************************************************************************************************************
+
+
+1763520790 NOTICE Messenger : [s] <SetPrioritiesFromXmlFile (136)> : Reading msg stream priorities from XML file: /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config/Messenger.xml
+1763520790 NOTICE Messenger : [s] <SetPrioritiesFromXmlFile (136)> : Reading msg stream priorities from XML file: /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config/Messenger_whisper.xml
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+Init genie::utils::app_init::RandGen() with seed 0
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+Generating flux with the following flavors:  12 14 -12 -14
+and these file patterns: 
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00161_00159.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00225_00223.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00131_00130.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00247_00245.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00239_00237.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00138_00137.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00012_00011.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00093_00092.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00166_00164.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00034_00033.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00042_00041.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00243_00241.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00178_00176.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00088_00087.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00029_00028.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00194_00192.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00108_00107.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00207_00205.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00143_00141.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00198_00196.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00030_00029.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00090_00089.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00179_00177.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00221_00219.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00153_00151.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00244_00242.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00172_00170.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00154_00152.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00065_00064.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00132_00131.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00168_00166.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00109_00108.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00092_00091.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00024_00023.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00075_00074.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00041_00040.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00249_00247.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00199_00197.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00136_00135.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00098_00097.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00048_00047.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00175_00173.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00028_00027.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00018_00017.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00158_00156.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00006_00005.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00080_00079.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00097_00096.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00026_00025.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00115_00114.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00127_00126.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00074_00073.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00174_00172.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00007_00006.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00031_00030.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00022_00021.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00081_00080.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00121_00120.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00238_00236.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00054_00053.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00165_00163.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00155_00153.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00095_00094.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00119_00118.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00107_00106.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00150_00148.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00125_00124.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00104_00103.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00008_00007.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00120_00119.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00213_00211.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00020_00019.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00200_00198.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00151_00149.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00193_00191.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00017_00016.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00208_00206.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00025_00024.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00220_00218.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00211_00209.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00091_00090.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00148_00146.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00237_00235.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00173_00171.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00141_00140.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00038_00037.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00023_00022.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00058_00057.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00133_00132.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00242_00240.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00176_00174.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00076_00075.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00047_00046.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00118_00117.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00167_00165.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00099_00098.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00146_00144.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00202_00200.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00189_00187.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00052_00051.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00147_00145.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00190_00188.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00072_00071.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00223_00221.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00004_00003.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00102_00101.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00066_00065.root
+	/cvmfs/dune.osgstorage.org/pnfs/fnal.gov/usr/dune/persistent/stash/Flux/g4lbne/v3r5p4/QGSP_BERT/OptimizedEngineeredNov2017/neutrino/dune10kt_horizdrift_1x2x6/gsimple_dune10kt_v1_1x2x6_g4lbne_v3r5p4_QGSP_BERT_OptimizedEngineeredNov2017_neutrino_00069_00068.root
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+Generating 1 events for each spill
+%MSG
+%MSG-i GeneratedEventTimestamp:   TriggerResultInserter:TriggerResults@Construction 18-Nov-2025 20:53:10 CST  ModuleConstruction
+Timestamp plugin: timestamp from local clock time in nanoseconds
+%MSG
+1763520790 INFO GENIE : Trigger GENIE banner
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:10 CST  ModuleBeginJob
+GENIE EventGeneratorList using "Default"
+%MSG
+%MSG-i GENIE2ART:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:10 CST  ModuleBeginJob
+TuneName started as '${GENIE_XSEC_TUNE}'  converted to AR23_20i_00_000
+%MSG
+%MSG-i GENIE2ART:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:10 CST  ModuleBeginJob
+Configuring GENIE tune "AR23_20i_00_000"
+%MSG
+1763520790 INFO TuneId : [n] <TuneId.cxx::Build (132)> : AR23_20i_00_000 Tune configured 
+1763520790 INFO RunOpt : [n] <RunOpt.cxx::BuildTune (94)> : Building tune AR23_20i_00_000
+1763520790 INFO TuneId : [n] <TuneId.cxx::Build (132)> : AR23_20i_00_000 Tune configured 
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:10 CST  ModuleBeginJob
+Custom GENIE tune: AR23_20i_00_000
+ - Prefix ............... : AR
+ - Year ................. : 23
+ - Major model ID ....... : 20
+ - Minor model ID ....... : i
+ - Tuned param set ID ... : 00
+ - Fit dataset ID ....... : 000
+ - Tune directory ....... : /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config/AR23_20i
+ - Base directory ....... : /cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/config
+ - Custom directory ..... : /cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/v3_04_00/NULL/AR2320i00000-k250-e1000/data
+
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:10 CST  ModuleBeginJob
+ TuneName name changed from "${GENIE_XSEC_TUNE}" to "AR23_20i_00_000" by evgb::SetEventGeneratorListAndTune
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:10 CST  ModuleBeginJob
+XSecTable/GSPLOAD full path "/cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/v3_04_00/NULL/AR2320i00000-k250-e1000/data/gxspl-FNALsmall.xml"
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:32 CST  ModuleBeginJob
+Time to read GENIE XSecTable:  Real 22.2869 s, CPU 22.25 s from /cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/v3_04_00/NULL/AR2320i00000-k250-e1000/data/gxspl-FNALsmall.xml
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:32 CST  ModuleBeginJob
+GENIEHelper::InitializeGeometry using TopVolume 'volCryostat'
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:32 CST  ModuleBeginJob
+fiducial cut: mbox:-330,-570,30,-50,-50,170
+%MSG
+%MSG-i GENIEHelper:  GENIEGen:generator@BeginJob 18-Nov-2025 20:53:32 CST  ModuleBeginJob
+Convert fiducial volume from master to topvol coords
+%MSG
+1763520836 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 0 < A < 12 -> using MagFF_RT_A = 0
+1763520836 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 11 < A < 420 -> using MagFF_RT_A = 5.19
+1763520836 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 0 < A < 12 -> using MagFF_RT_B = 1
+1763520836 INFO TransverseEnhancementFFModel : [n] <ConfigIsotopeMapUtils.cxx::LoadAllNucARangesForKey (61)> : For 11 < A < 420 -> using MagFF_RT_B = 0.376
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 18-Nov-2025 20:54:14 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:14 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:14 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:14 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:14 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:14 CST  run: 20000001 subRun: 0 event: 1
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:14 CST run: 20000001 subRun: 0 event: 1
+Random seed for this event, engine 'generator': 582972374
+%MSG
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_2_4.txt
+
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_6_12.txt
+
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_20_40.txt
+
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_26_56.txt
+
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_50_120.txt
+
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::read_file (224)> : Successful open file/cvmfs/larsoft.opensciencegrid.org/products/genie/v3_04_02a/Linux64bit+3.10-2.17-e26-prof/GENIE-Generator/data/evgen/nncorr/NNCorrection_92_238.txt
+
+1763520858 NOTICE INukeNucleonCorr : [n] <INukeNucleonCorr.cxx::getAvgCorrection (306)> : Nucleon Corr interpolation files read in successfully
+18-Nov-2025 20:54:18 CST  Opened output file with pattern "gen.root"
+%MSG-i Root_Information:  PostProcessEvent TClass::Init()  18-Nov-2025 20:54:18 CST run: 20000001 subRun: 0 event: 1
+no dictionary for class sim::IDE is available
+ROOT severity: 2000
+%MSG
+%MSG-w FastCloning:  PostProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 1
+Fast cloning has been deactivated for the following reasons:
+ - Input source does not read art/ROOT files.
+%MSG
+Begin processing the 2nd record. run: 20000001 subRun: 0 event: 2 at 18-Nov-2025 20:54:18 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 2
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 2
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 2
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 2
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 2
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:18 CST run: 20000001 subRun: 0 event: 2
+Random seed for this event, engine 'generator': 463024810
+%MSG
+Begin processing the 3rd record. run: 20000001 subRun: 0 event: 3 at 18-Nov-2025 20:54:18 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 3
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 3
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 3
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 3
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 3
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:18 CST run: 20000001 subRun: 0 event: 3
+Random seed for this event, engine 'generator': 817220200
+%MSG
+Begin processing the 4th record. run: 20000001 subRun: 0 event: 4 at 18-Nov-2025 20:54:18 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 4
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 4
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 4
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 4
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 4
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:18 CST run: 20000001 subRun: 0 event: 4
+Random seed for this event, engine 'generator': 277113888
+%MSG
+Begin processing the 5th record. run: 20000001 subRun: 0 event: 5 at 18-Nov-2025 20:54:18 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 5
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 5
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 5
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 5
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:18 CST  run: 20000001 subRun: 0 event: 5
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:18 CST run: 20000001 subRun: 0 event: 5
+Random seed for this event, engine 'generator': 880238041
+%MSG
+Begin processing the 6th record. run: 20000001 subRun: 0 event: 6 at 18-Nov-2025 20:54:19 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 6
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 6
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 6
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 6
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 6
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:19 CST run: 20000001 subRun: 0 event: 6
+Random seed for this event, engine 'generator': 360262933
+%MSG
+Begin processing the 7th record. run: 20000001 subRun: 0 event: 7 at 18-Nov-2025 20:54:19 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 7
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 7
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 7
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 7
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 7
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:19 CST run: 20000001 subRun: 0 event: 7
+Random seed for this event, engine 'generator': 291611454
+%MSG
+Begin processing the 8th record. run: 20000001 subRun: 0 event: 8 at 18-Nov-2025 20:54:19 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 8
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 8
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 8
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 8
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 8
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:19 CST run: 20000001 subRun: 0 event: 8
+Random seed for this event, engine 'generator': 351199764
+%MSG
+Begin processing the 9th record. run: 20000001 subRun: 0 event: 9 at 18-Nov-2025 20:54:19 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 9
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 9
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 9
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 9
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 9
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:19 CST run: 20000001 subRun: 0 event: 9
+Random seed for this event, engine 'generator': 348290833
+%MSG
+Begin processing the 10th record. run: 20000001 subRun: 0 event: 10 at 18-Nov-2025 20:54:19 CST
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 10
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 10
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w ParticleInventory:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 10
+Rebuild failed to get the MCParticles. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w BackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 10
+Rebuild failed to get the SimChannels. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-w PhotonBackTrackerService:  ProcessEvent 18-Nov-2025 20:54:19 CST  run: 20000001 subRun: 0 event: 10
+Rebuild failed to get the OpDetBTRs. This is expected when running on a generation or simulation step.
+%MSG
+%MSG-i NuRandomService:  GENIEGen:generator@BeginModule  18-Nov-2025 20:54:19 CST run: 20000001 subRun: 0 event: 10
+Random seed for this event, engine 'generator': 379314672
+%MSG
+18-Nov-2025 20:54:19 CST  Closed output file "gen.root"
+
+================================================================================================================================
+TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
+================================================================================================================================
+Full event                                    0.00729267     0.456947       4.10428      0.0361788      1.21685        10     
+--------------------------------------------------------------------------------------------------------------------------------
+source:EmptyEvent(read)                       4.1843e-05    7.08319e-05   0.000230055   5.42535e-05   5.36942e-05      10     
+simulate:rns:RandomNumberSaver                 9.545e-06    3.35607e-05   0.000222099   1.1896e-05    6.2899e-05       10     
+simulate:generator:GENIEGen                   0.00705843     0.456287       4.10098      0.0358626      1.21597        10     
+[art]:TriggerResults:TriggerResultInserter     5.91e-06     9.7087e-06    3.5439e-05    6.6875e-06    8.60659e-06      10     
+end_path:out1:RootOutput                       1.022e-06    2.3946e-06    1.0887e-05    1.2665e-06    2.86675e-06      10     
+end_path:out1:RootOutput(write)               7.9841e-05    0.000412639   0.00233609    0.000251109   0.000647547      10     
+================================================================================================================================
+%MSG-i NuRandomService:  RootOutput:out1@EndJob 18-Nov-2025 20:54:19 CST  ModuleEndJob
+
+Summary of seeds computed by the NuRandomService
+Random policy: 'perEvent'
+  algorithm version: EventTimestamp_v1
+   Configured value          Last value   ModuleLabel.InstanceName
+        (per event)           379314672   generator
+
+%MSG
+
+====================================================================================================
+MemoryTracker summary (base-10 MB units used)
+
+  Peak virtual memory usage (VmPeak)  : 5146.05 MB
+  Peak resident set size usage (VmHWM): 1071.08 MB
+====================================================================================================
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 10 passed = 10 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport         10         10          0 out1
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 43.114791 Real = 69.700738
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 5146.05 VmHWM = 1071.08
+
+%MSG-i GENIEHelper:  PostEndJob 18-Nov-2025 20:54:19 CST ModuleEndJob
+ Total Exposure 1.06245e+21 GMCJDriver GlobProbScale 5.10742e-10 FluxDriver base pots 5.42637e+11 corrected POTS 1.06245e+21
+%MSG
+%MSG-i GENIEProductionTime:  PostEndJob 18-Nov-2025 20:54:19 CST ModuleEndJob
+real time to produce file: 69.7878
+%MSG
+Art has completed and will exit with status 0.
+1                                                                              
+ ******************************************************************************
+ ******************************************************************************
+ **                                                                          **
+ **                                                                          **
+ **              *......*                  Welcome to the Lund Monte Carlo!  **
+ **         *:::!!:::::::::::*                                               **
+ **      *::::::!!::::::::::::::*          PPP  Y   Y TTTTT H   H III   A    **
+ **    *::::::::!!::::::::::::::::*        P  P  Y Y    T   H   H  I   A A   **
+ **   *:::::::::!!:::::::::::::::::*       PPP    Y     T   HHHHH  I  AAAAA  **
+ **   *:::::::::!!:::::::::::::::::*       P      Y     T   H   H  I  A   A  **
+ **    *::::::::!!::::::::::::::::*!       P      Y     T   H   H III A   A  **
+ **      *::::::!!::::::::::::::* !!                                         **
+ **      !! *:::!!:::::::::::*    !!       This is PYTHIA version 6.428      **
+ **      !!     !* -><- *         !!       Last date of change:  5 Sep 2013  **
+ **      !!     !!                !!                                         **
+ **      !!     !!                !!       Now is 18 Nov 2025 at 20:54:18    **
+ **      !!                       !!                                         **
+ **      !!        lh             !!       Disclaimer: this program comes    **
+ **      !!                       !!       without any guarantees. Beware    **
+ **      !!                 hh    !!       of errors and use common sense    **
+ **      !!    ll                 !!       when interpreting results.        **
+ **      !!                       !!                                         **
+ **      !!                                Copyright T. Sjostrand (2011)     **
+ **                                                                          **
+ ** An archive of program versions and documentation is found on the web:    **
+ ** http://www.thep.lu.se/~torbjorn/Pythia.html                              **
+ **                                                                          **
+ ** When you cite this program, the official reference is to the 6.4 manual: **
+ ** T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026                 **
+ ** (LU TP 06-13, FERMILAB-PUB-06-052-CD-T) [hep-ph/0603175].                **
+ **                                                                          **
+ ** Also remember that the program, to a large extent, represents original   **
+ ** physics research. Other publications of special relevance to your        **
+ ** studies may therefore deserve separate mention.                          **
+ **                                                                          **
+ ** Main author: Torbjorn Sjostrand; Department of Theoretical Physics,      **
+ **   Lund University, Solvegatan 14A, S-223 62 Lund, Sweden;                **
+ **   phone: + 46 - 46 - 222 48 16; e-mail: torbjorn@thep.lu.se              **
+ ** Author: Stephen Mrenna; Computing Division, GDS Group,                   **
+ **   Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA; **
+ **   phone: + 1 - 630 - 840 - 2556; e-mail: mrenna@fnal.gov                 **
+ ** Author: Peter Skands; CERN/PH-TH, CH-1211 Geneva, Switzerland            **
+ **   phone: + 41 - 22 - 767 24 47; e-mail: peter.skands@cern.ch             **
+ **                                                                          **
+ **                                                                          **
+ ******************************************************************************
+ ******************************************************************************
+
+real    1m14.030s
+user    0m44.378s
+sys     0m0.898s
