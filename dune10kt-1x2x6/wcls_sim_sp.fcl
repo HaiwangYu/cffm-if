@@ -35,6 +35,11 @@ outputs: {
       dataTier: "detector-simulated"
       fileName: "%ifb_detsim.root"
       module_type: "RootOutput"
+      outputCommands :   [
+         "keep *_*_*_*"
+         , "drop sim::SimEnergyDeposits_*_*_*"
+         # , "drop sim::SimChannels_tpcrawdecoder_*_*"
+      ]
    }
 }
 physics: {
@@ -86,7 +91,7 @@ physics: {
                "TbbFlow"
             ]
             configs: [
-               "pgrapher/experiment/dune10kt-1x2x6/wcls-sim-drift-simchannel-nf-sp.jsonnet"
+               "wcls-sim-drift-simchannel-nf-sp.jsonnet"
             ]
             loglevels: [
                "debug"
@@ -114,6 +119,7 @@ physics: {
             params: {
                engine: "TbbFlow"
                dnn_model: "ts-model/CP49_mobilenetv3.ts"
+               apa_sparsity: "apa0" # apa0, all, hydra
             }
             structs: {
                DL: 4e-9
@@ -121,7 +127,6 @@ physics: {
                G4RefTime: 0
                driftSpeed: 1.60563
                lifetime: 10400
-               use_hydra: true
                use_dnnroi: true
             }
             tool_type: "WCLS"

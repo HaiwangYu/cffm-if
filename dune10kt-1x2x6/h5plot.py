@@ -28,16 +28,17 @@ if __name__ == '__main__':
   plt.gca().set_title(key)
   # plt.imshow(np.ma.masked_where(frame_ma<=0,frame_ma), cmap="rainbow", interpolation="none"
   # plt.imshow(frame_ma>0, cmap="viridis", interpolation="none"
-  plt.imshow(frame_ma, cmap="viridis", interpolation="none"
+  plt.imshow(frame_ma, cmap="rainbow", interpolation="none"
   # , extent = [0 , 2560, 0 , 6000]
   , origin='lower'
   , aspect='auto'
   # , aspect=0.8/4.7
   # , aspect=0.1
   )
-  plt.clim([-1,1])
+  plt.clim([-100,100])
 
   plt.grid() 
   plt.show()
+
 
 
