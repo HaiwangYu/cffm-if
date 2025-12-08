@@ -61,7 +61,8 @@ local labelling2d = g.pnode({
         min_charge: 0,
         reco_tag: sp_trace_tag,
         simchannel_label: "tpcrawdecoder:simpleSC",
-        save_extended_labels: true,
+        // save_extended_labels: true,
+        rebin_time_tick: 4,
     },
 }, nin=1, nout=1);
 
@@ -71,6 +72,7 @@ local hio_rec = g.pnode({
     data: {
         anode: wc.tn(mega_anode),
         trace_tags: [sp_trace_tag], 
+        // trace_tags: ["rebinned_reco"], 
         filename: "g4-rec.h5",
         gzip: 2,
     },
@@ -82,10 +84,11 @@ local hio_tru = g.pnode({
     data: {
         anode: wc.tn(mega_anode),
         trace_tags: [
-            'trackid', 'pid',
-            'orig_trackid_1st', 
-            'orig_pid_1st', 'current_pid_1st', 'charge_1st',
-            'orig_trackid_2nd', 'orig_pid_2nd', 'current_pid_2nd', 'charge_2nd'], 
+            // 'trackid', 'pid',
+            'rebinned_reco',
+            'trackid_1st', 
+            'pid_1st', 
+            'trackid_2nd', 'pid_2nd'], 
         filename: "g4-tru.h5",
         gzip: 2,
     },
