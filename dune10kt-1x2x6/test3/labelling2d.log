@@ -79,7 +79,7 @@ GeoApaChannelGroupService::ctor: Group 8 (apa08) has 2560 channels from 4/4 read
 GeoApaChannelGroupService::ctor: Group 9 (apa09) has 2560 channels from 4/4 readout planes.
 GeoApaChannelGroupService::ctor: Group 10 (apa10) has 2560 channels from 4/4 readout planes.
 GeoApaChannelGroupService::ctor: Group 11 (apa11) has 2560 channels from 4/4 readout planes.
-DuneToolManager::fclFilename: Taking fcl name from command line: lar -n 10 -c wcls-labelling2d.fcl -s sp.root --no-output
+DuneToolManager::fclFilename: Taking fcl name from command line: lar -n 10 -c wcls-labelling2d.fcl -s test3/sp.root --no-output
 AcdDigitReader::ctor:     LogLevel: 1
 DuneToolManager::getPrivate: ERROR: Tool name is blank
 StandardRawDigitExtractService::ctor: Retrieved digit read tool digitReader
@@ -91,14 +91,14 @@ StandardRawDigitExtractService::ctor:     FlagStuckOff: 0
 StandardRawDigitExtractService::ctor:      FlagStuckOn: 0
 StandardRawDigitPrepService::ctor: Fetching extract service.
 StandardRawDigitPrepService::ctor: Fetching channel status provider.
-StandardRawDigitPrepService::ctor:   Channel status provider: @0x457eb50
-StandardRawDigitPrepService::ctor:   Extract service: @0x46783a0
+StandardRawDigitPrepService::ctor:   Channel status provider: @0x4224d70
+StandardRawDigitPrepService::ctor:   Extract service: @0x42cc350
 StandardRawDigitPrepService::ctor: Fetching deconvolution service.
-StandardRawDigitPrepService::ctor:   Deconvolution service: @0x1771230
+StandardRawDigitPrepService::ctor:   Deconvolution service: @0x12d5510
 StandardRawDigitPrepService::ctor: Fetching ROI building service.
-StandardRawDigitPrepService::ctor:   ROI building service: @0x172a040
+StandardRawDigitPrepService::ctor:   ROI building service: @0x12d5c90
 StandardRawDigitPrepService::ctor: Fetching wire building service.
-StandardRawDigitPrepService::ctor:   Wire building service: @0x172bbb0
+StandardRawDigitPrepService::ctor:   Wire building service: @0x13c5d40
 StandardRawDigitPrepService::ctor: StandardRawDigitPrepService:
 StandardRawDigitPrepService::ctor:              LogLevel: 1
 StandardRawDigitPrepService::ctor:               SkipBad: 1
@@ -117,629 +117,548 @@ StandardRawDigitPrepService::ctor: No display tools.
 Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_U (Potential memory leak).
 Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_V (Potential memory leak).
 Warning in <TFile::Append>: Replacing existing TH1: FieldResponse_Y (Potential memory leak).
-[13:39:25.851] D [  main  ] configuring component: "wclsCookedFrameSource":"sigs"
-[13:39:25.852] D [  main  ] configuring component: "HDF5FrameTap":"hio_rec_all"
-[13:39:25.852] W [  hio   ] <HDF5FrameTap:hio_rec_all> The parameter "anode" is ignored, consider fixing your config 
-[13:39:25.852] D [  hio   ] <HDF5FrameTap:hio_rec_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
-[13:39:25.856] D [  hio   ] <HDF5FrameTap:hio_rec_all> created file g4-rec.h5 
-[13:39:25.856] D [  main  ] configuring component: "Labelling2D":"all"
-[13:39:25.857] D [  main  ] configuring component: "HDF5FrameTap":"hio_tru_all"
-[13:39:25.857] W [  hio   ] <HDF5FrameTap:hio_tru_all> The parameter "anode" is ignored, consider fixing your config 
-[13:39:25.857] D [  hio   ] <HDF5FrameTap:hio_tru_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
-[13:39:25.860] D [  hio   ] <HDF5FrameTap:hio_tru_all> created file g4-tru.h5 
-[13:39:25.860] D [  main  ] configuring component: "DumpFrames":""
-[13:39:25.860] D [  main  ] configuring component: "Pgrapher":""
-[13:39:25.860] D [ pgraph ] <Pgrapher:> connecting: 4 edges 
-[13:39:25.860] D [ pgraph ] connect <Node  type:wcls::CookedFrameSource cat:1 sig:WireCell::ISourceNode<WireCell::IFrame> inputs:[ ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
-[13:39:25.860] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
-[13:39:25.861] D [ pgraph ] connect <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
-[13:39:25.861] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Gen::DumpFrames cat:2 sig:WireCell::IFrameSink inputs:[ WireCell::IFrame ] outputs:[ ](WireCell::IFrame:0)
+[15:13:44.770] D [  main  ] configuring component: "wclsCookedFrameSource":"sigs"
+[15:13:44.771] D [  main  ] configuring component: "Truth2h5":"all"
+[15:13:44.771] D [  main  ] configuring component: "Labelling2D":"all"
+[15:13:44.771] D [  main  ] configuring component: "HDF5FrameTap":"hio_rec_all"
+[15:13:44.771] W [  hio   ] <HDF5FrameTap:hio_rec_all> The parameter "anode" is ignored, consider fixing your config 
+[15:13:44.772] D [  hio   ] <HDF5FrameTap:hio_rec_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
+[15:13:44.777] D [  hio   ] <HDF5FrameTap:hio_rec_all> created file g4-rec.h5 
+[15:13:44.777] D [  main  ] configuring component: "HDF5FrameTap":"hio_tru_all"
+[15:13:44.777] W [  hio   ] <HDF5FrameTap:hio_tru_all> The parameter "anode" is ignored, consider fixing your config 
+[15:13:44.777] D [  hio   ] <HDF5FrameTap:hio_tru_all> digitize=false baseline=0 scale=1 offset=0 gzip=2 chunking:[256,256] 
+[15:13:44.779] D [  hio   ] <HDF5FrameTap:hio_tru_all> created file g4-tru.h5 
+[15:13:44.779] D [  main  ] configuring component: "DumpFrames":""
+[15:13:44.780] D [  main  ] configuring component: "Pgrapher":""
+[15:13:44.780] D [ pgraph ] <Pgrapher:> connecting: 5 edges 
+[15:13:44.780] D [ pgraph ] connect <Node  type:wcls::CookedFrameSource cat:1 sig:WireCell::ISourceNode<WireCell::IFrame> inputs:[ ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::AIML::Truth2h5 cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[15:13:44.780] D [ pgraph ] connect <Node  type:WireCell::AIML::Truth2h5 cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[15:13:44.780] D [ pgraph ] connect <Node  type:WireCell::AIML::Labelling2D cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[15:13:44.780] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ](WireCell::IFrame:0)
+[15:13:44.780] D [ pgraph ] connect <Node  type:WireCell::Hio::HDF5FrameTap cat:3 sig:WireCell::IFrameFilter inputs:[ WireCell::IFrame ] outputs:[ WireCell::IFrame ]:(WireCell::IFrame:0) -> <Node  type:WireCell::Gen::DumpFrames cat:2 sig:WireCell::IFrameSink inputs:[ WireCell::IFrame ] outputs:[ ](WireCell::IFrame:0)
 Inputer: "wclsCookedFrameSource:sigs"
+Inputer: "Truth2h5:all"
 Inputer: "Labelling2D:all"
-19-Nov-2025 13:39:25 CST  Initiating request to open input file "sp.root"
-19-Nov-2025 13:39:26 CST  Opened input file "sp.root"
-Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 19-Nov-2025 13:39:26 CST
-[13:39:26.280] D [   io   ] CookedFrameSource::visit: event: 1
-[13:39:26.286] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:26.348] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 1 
-[13:39:26.358] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 221 track->pid entries 
-[13:39:26.358] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:26.359] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:26.359] D [  main  ] executing app: "Pgrapher"
-[13:39:26.359] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:26.359] D [ pgraph ] executing with 5 nodes
-[13:39:26.359] D [   io   ] CookedFrameSource output frame: ident=1 time=0 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:26.359] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #1 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:26.499] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:26.769] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /1/frame_dnnsp with 2560 channels 6000 ticks @t=0 ms qtot=1169671.5 
-[13:39:27.046] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=1 time=0 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:27.046] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #1 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:27.186] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:27.448] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_trackid with 2560 channels 6000 ticks @t=0 ms qtot=-97992120 
-[13:39:27.585] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:27.842] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_pid with 2560 channels 6000 ticks @t=0 ms qtot=304032380000 
-[13:39:27.979] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:28.232] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=0 ms qtot=173804770 
-[13:39:28.370] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:28.632] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_orig_pid_1st with 2560 channels 6000 ticks @t=0 ms qtot=304031920000 
-[13:39:28.766] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:29.016] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_current_pid_1st with 2560 channels 6000 ticks @t=0 ms qtot=304032380000 
-[13:39:29.155] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:29.416] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_charge_1st with 2560 channels 6000 ticks @t=0 ms qtot=430315520 
-[13:39:29.553] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:29.805] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=0 ms qtot=41773520 
-[13:39:29.945] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:30.199] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=0 ms qtot=175031710000 
-[13:39:30.335] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:30.586] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_current_pid_2nd with 2560 channels 6000 ticks @t=0 ms qtot=175031780000 
-[13:39:30.723] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:30.979] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_charge_2nd with 2560 channels 6000 ticks @t=0 ms qtot=17693720 
-[13:39:30.980] D [  glue  ] sink frame: #1 @0 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:30.987] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:30.987] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=1 
-[13:39:30.987] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=1 
-[13:39:30.987] D [  glue  ] frame sink sees EOS
-[13:39:30.987] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:30.987] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.92 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.41 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.27 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:39:30.987] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:30.987] I [ timer  ] Timer: Total node execution : 4.610000083222985 sec
-[13:39:30.987] D [  main  ] executing app: "Pgrapher"
-[13:39:30.987] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:30.987] D [ pgraph ] executing with 5 nodes
-[13:39:30.987] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:30.987] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:30.987] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:30.987] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 2nd record. run: 20000001 subRun: 0 event: 2 at 19-Nov-2025 13:39:30 CST
-[13:39:31.157] D [   io   ] CookedFrameSource::visit: event: 2
-[13:39:31.163] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:31.211] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 2 
-[13:39:31.231] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 644 track->pid entries 
-[13:39:31.231] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:31.231] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:31.231] D [  main  ] executing app: "Pgrapher"
-[13:39:31.231] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:31.231] D [ pgraph ] executing with 5 nodes
-[13:39:31.231] D [   io   ] CookedFrameSource output frame: ident=2 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:31.231] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #2 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:31.391] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:31.708] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /2/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=2385288 
-[13:39:31.890] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=2 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:31.891] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #2 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:32.030] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:32.281] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-781084000 
-[13:39:32.420] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:32.680] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=238055160000 
-[13:39:32.811] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:33.070] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=1728790300 
-[13:39:33.207] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:33.470] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=238054720000 
-[13:39:33.606] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:33.863] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=238055160000 
-[13:39:33.999] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:34.276] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=860774200 
-[13:39:34.412] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:34.668] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=735183600 
-[13:39:34.805] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:35.057] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=776132500000 
-[13:39:35.194] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:35.450] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=776135900000 
-[13:39:35.590] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:35.852] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=63553196 
-[13:39:35.853] D [  glue  ] sink frame: #2 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:35.859] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:35.859] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=3 
-[13:39:35.859] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=3 
-[13:39:35.859] D [  glue  ] frame sink sees EOS
-[13:39:35.859] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:35.859] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.95 sec
-[13:39:35.859] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.47 sec
-[13:39:35.859] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.19 sec
-[13:39:35.859] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:39:35.859] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:35.859] I [ timer  ] Timer: Total node execution : 4.62000004388392 sec
-[13:39:35.859] D [  main  ] executing app: "Pgrapher"
-[13:39:35.859] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:35.859] D [ pgraph ] executing with 5 nodes
-[13:39:35.859] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:35.859] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:35.860] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:35.860] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:35.860] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:35.860] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:35.860] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 3rd record. run: 20000001 subRun: 0 event: 3 at 19-Nov-2025 13:39:35 CST
-[13:39:35.877] D [   io   ] CookedFrameSource::visit: event: 3
-[13:39:35.877] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:35.923] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 3 
-[13:39:35.933] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 51 track->pid entries 
-[13:39:35.933] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:35.933] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:35.933] D [  main  ] executing app: "Pgrapher"
-[13:39:35.933] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:35.933] D [ pgraph ] executing with 5 nodes
-[13:39:35.933] D [   io   ] CookedFrameSource output frame: ident=3 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:35.933] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #3 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:36.092] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:36.390] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /3/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=6723.436 
-[13:39:36.474] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=3 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:36.474] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #3 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:36.615] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:36.869] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-107194 
-[13:39:37.008] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:37.265] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=3000563700 
-[13:39:37.401] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:37.654] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=160149 
-[13:39:37.791] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:38.050] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=3000541200 
-[13:39:38.183] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:38.439] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=3000563700 
-[13:39:38.576] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:38.827] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=2667214.8 
-[13:39:38.964] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:39.219] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=4345 
-[13:39:39.356] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:39.611] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=25004511000 
-[13:39:39.748] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:40.005] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=25004511000 
-[13:39:40.141] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:40.395] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=658.4788 
-[13:39:40.395] D [  glue  ] sink frame: #3 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:40.402] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:40.402] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=5 
-[13:39:40.402] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=5 
-[13:39:40.402] D [  glue  ] frame sink sees EOS
-[13:39:40.402] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:40.402] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.92 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.46 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.08 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:39:40.402] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:40.402] I [ timer  ] Timer: Total node execution : 4.470000082626939 sec
-[13:39:40.402] D [  main  ] executing app: "Pgrapher"
-[13:39:40.402] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:40.402] D [ pgraph ] executing with 5 nodes
-[13:39:40.402] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:40.402] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:40.402] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:40.402] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 4th record. run: 20000001 subRun: 0 event: 4 at 19-Nov-2025 13:39:40 CST
-[13:39:40.429] D [   io   ] CookedFrameSource::visit: event: 4
-[13:39:40.431] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:40.479] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 4 
-[13:39:40.481] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 258 track->pid entries 
-[13:39:40.482] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:40.482] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:40.482] D [  main  ] executing app: "Pgrapher"
-[13:39:40.482] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:40.482] D [ pgraph ] executing with 5 nodes
-[13:39:40.482] D [   io   ] CookedFrameSource output frame: ident=4 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:40.482] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #4 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:40.641] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:40.943] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /4/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=328588.06 
-[13:39:41.036] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=4 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:41.037] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #4 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:41.173] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:41.592] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-5091861 
-[13:39:41.730] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:41.991] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=135044450000 
-[13:39:42.128] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:42.379] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=9494789 
-[13:39:42.516] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:42.771] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=135042744000 
-[13:39:42.909] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:43.164] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=135044450000 
-[13:39:43.302] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:43.559] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=115765600 
-[13:39:43.695] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:43.949] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=4708151 
-[13:39:44.087] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:44.347] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=223035150000 
-[13:39:44.484] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:44.736] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=223041960000 
-[13:39:44.873] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:45.128] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=10359529 
-[13:39:45.129] D [  glue  ] sink frame: #4 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:45.136] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:45.136] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=7 
-[13:39:45.136] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=7 
-[13:39:45.136] D [  glue  ] frame sink sees EOS
-[13:39:45.136] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:45.136] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.92 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.47 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:39:45.136] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:45.136] I [ timer  ] Timer: Total node execution : 4.490000078454614 sec
-[13:39:45.136] D [  main  ] executing app: "Pgrapher"
-[13:39:45.136] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:45.136] D [ pgraph ] executing with 5 nodes
-[13:39:45.136] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:45.136] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:45.136] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:45.136] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 5th record. run: 20000001 subRun: 0 event: 5 at 19-Nov-2025 13:39:45 CST
-[13:39:45.159] D [   io   ] CookedFrameSource::visit: event: 5
-[13:39:45.162] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:45.209] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 5 
-[13:39:45.213] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 39 track->pid entries 
-[13:39:45.213] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:45.213] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:45.213] D [  main  ] executing app: "Pgrapher"
-[13:39:45.213] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:45.213] D [ pgraph ] executing with 5 nodes
-[13:39:45.213] D [   io   ] CookedFrameSource output frame: ident=5 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:45.213] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #5 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:45.374] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:45.680] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /5/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=551789.4 
-[13:39:45.776] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=5 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:45.776] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #5 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:45.913] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:46.164] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-2021661 
-[13:39:46.302] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:46.562] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=8003135000 
-[13:39:46.699] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:46.960] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=31002800 
-[13:39:47.096] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:47.349] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=8002757600 
-[13:39:47.486] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:47.736] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=8003135000 
-[13:39:47.874] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:48.134] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=210080670 
-[13:39:48.272] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:48.528] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=1391658 
-[13:39:48.666] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:48.924] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=32005861000 
-[13:39:49.061] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:49.316] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=32005865000 
-[13:39:49.454] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:49.708] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=2256357.5 
-[13:39:49.708] D [  glue  ] sink frame: #5 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:49.715] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:49.715] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=9 
-[13:39:49.715] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=9 
-[13:39:49.715] D [  glue  ] frame sink sees EOS
-[13:39:49.715] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:49.715] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.92 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.47 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:39:49.715] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:49.715] I [ timer  ] Timer: Total node execution : 4.490000078454614 sec
-[13:39:49.715] D [  main  ] executing app: "Pgrapher"
-[13:39:49.715] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:49.715] D [ pgraph ] executing with 5 nodes
-[13:39:49.715] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:49.715] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:49.715] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:49.715] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 6th record. run: 20000001 subRun: 0 event: 6 at 19-Nov-2025 13:39:49 CST
-[13:39:49.735] D [   io   ] CookedFrameSource::visit: event: 6
-[13:39:49.736] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:49.782] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 6 
-[13:39:49.785] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 128 track->pid entries 
-[13:39:49.785] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:49.785] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:49.785] D [  main  ] executing app: "Pgrapher"
-[13:39:49.785] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:49.785] D [ pgraph ] executing with 5 nodes
-[13:39:49.785] D [   io   ] CookedFrameSource output frame: ident=6 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:49.785] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #6 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:49.944] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:50.242] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /6/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=82184.836 
-[13:39:50.327] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=6 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:50.327] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #6 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:50.466] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:50.721] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-3720735 
-[13:39:50.861] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:51.116] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=31006675000 
-[13:39:51.252] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:51.508] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=4552437 
-[13:39:51.645] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:51.898] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=31006585000 
-[13:39:52.034] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:52.301] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=31006675000 
-[13:39:52.440] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:52.696] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=28590206 
-[13:39:52.833] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:53.089] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=435683 
-[13:39:53.226] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:53.480] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=20003860000 
-[13:39:53.609] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:53.868] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=20004024000 
-[13:39:54.006] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:54.263] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=2533112.5 
-[13:39:54.263] D [  glue  ] sink frame: #6 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:54.270] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:54.270] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=11 
-[13:39:54.270] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=11 
-[13:39:54.270] D [  glue  ] frame sink sees EOS
-[13:39:54.270] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:54.270] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.92 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.46 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:39:54.270] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:54.270] I [ timer  ] Timer: Total node execution : 4.480000087991357 sec
-[13:39:54.270] D [  main  ] executing app: "Pgrapher"
-[13:39:54.270] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:54.270] D [ pgraph ] executing with 5 nodes
-[13:39:54.270] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:54.270] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:54.270] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:54.270] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 7th record. run: 20000001 subRun: 0 event: 7 at 19-Nov-2025 13:39:54 CST
-[13:39:54.281] D [   io   ] CookedFrameSource::visit: event: 7
-[13:39:54.282] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:54.329] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 7 
-[13:39:54.330] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 21 track->pid entries 
-[13:39:54.330] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:54.330] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:54.330] D [  main  ] executing app: "Pgrapher"
-[13:39:54.330] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:54.330] D [ pgraph ] executing with 5 nodes
-[13:39:54.330] D [   io   ] CookedFrameSource output frame: ident=7 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:54.330] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #7 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:54.489] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:54.792] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /7/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=212964.4 
-[13:39:54.882] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=7 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:54.882] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #7 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:55.017] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:55.270] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=118965 
-[13:39:55.407] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:55.659] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=4937758 
-[13:39:55.795] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:56.046] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=1142744 
-[13:39:56.185] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:56.441] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=4835735 
-[13:39:56.573] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:56.830] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=4937758 
-[13:39:56.967] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:57.227] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=80129680 
-[13:39:57.365] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:57.620] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=798310 
-[13:39:57.758] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:58.009] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=322064 
-[13:39:58.141] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:58.398] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=1027096 
-[13:39:58.537] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:58.792] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=3365684.8 
-[13:39:58.792] D [  glue  ] sink frame: #7 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:39:58.799] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:39:58.799] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=13 
-[13:39:58.799] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=13 
-[13:39:58.799] D [  glue  ] frame sink sees EOS
-[13:39:58.799] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:58.799] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.91 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.45 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
-[13:39:58.799] I [ timer  ] Timer: wcls::CookedFrameSource : 0.01 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:58.799] I [ timer  ] Timer: Total node execution : 4.460000077262521 sec
-[13:39:58.799] D [  main  ] executing app: "Pgrapher"
-[13:39:58.799] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:58.799] D [ pgraph ] executing with 5 nodes
-[13:39:58.799] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:39:58.799] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:39:58.799] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:39:58.799] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 8th record. run: 20000001 subRun: 0 event: 8 at 19-Nov-2025 13:39:58 CST
-[13:39:58.850] D [   io   ] CookedFrameSource::visit: event: 8
-[13:39:58.854] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:39:58.901] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 8 
-[13:39:58.907] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 163 track->pid entries 
-[13:39:58.907] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:58.907] D [  main  ] executing 2 apps, thread limit 0:
-[13:39:58.907] D [  main  ] executing app: "Pgrapher"
-[13:39:58.907] D [ pgraph ] <Pgrapher:> executing graph 
-[13:39:58.907] D [ pgraph ] executing with 5 nodes
-[13:39:58.907] D [   io   ] CookedFrameSource output frame: ident=8 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:39:58.907] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #8 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:39:59.067] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:39:59.378] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /8/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=870756.6 
-[13:39:59.493] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=8 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:39:59.494] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #8 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:39:59.633] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:39:59.894] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-78368990 
-[13:40:00.031] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:00.285] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=81015390000 
-[13:40:00.416] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:00.681] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=108868600 
-[13:40:00.817] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:01.067] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=81015080000 
-[13:40:01.204] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:01.461] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=81015390000 
-[13:40:01.600] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:01.871] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=330318400 
-[13:40:02.008] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:02.270] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=16966022 
-[13:40:02.407] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:02.660] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=134022046000 
-[13:40:02.797] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:03.055] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=134022670000 
-[13:40:03.191] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:03.450] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=5368769.5 
-[13:40:03.450] D [  glue  ] sink frame: #8 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:40:03.457] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:40:03.457] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=15 
-[13:40:03.457] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=15 
-[13:40:03.457] D [  glue  ] frame sink sees EOS
-[13:40:03.458] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:40:03.458] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.95 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.47 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.12 sec
-[13:40:03.458] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:40:03.458] I [ timer  ] Timer: Total node execution : 4.540000043809414 sec
-[13:40:03.458] D [  main  ] executing app: "Pgrapher"
-[13:40:03.458] D [ pgraph ] <Pgrapher:> executing graph 
-[13:40:03.458] D [ pgraph ] executing with 5 nodes
-[13:40:03.458] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:40:03.458] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:40:03.458] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:40:03.458] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 9th record. run: 20000001 subRun: 0 event: 9 at 19-Nov-2025 13:40:03 CST
-[13:40:03.475] D [   io   ] CookedFrameSource::visit: event: 9
-[13:40:03.477] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:40:03.523] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 9 
-[13:40:03.529] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 97 track->pid entries 
-[13:40:03.529] D [  main  ] executing 2 apps, thread limit 0:
-[13:40:03.529] D [  main  ] executing 2 apps, thread limit 0:
-[13:40:03.529] D [  main  ] executing app: "Pgrapher"
-[13:40:03.529] D [ pgraph ] <Pgrapher:> executing graph 
-[13:40:03.529] D [ pgraph ] executing with 5 nodes
-[13:40:03.529] D [   io   ] CookedFrameSource output frame: ident=9 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:40:03.529] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #9 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:40:03.691] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:40:03.994] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /9/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=197902.67 
-[13:40:04.088] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=9 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:40:04.089] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #9 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:40:04.218] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:04.472] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-203271 
-[13:40:04.609] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:04.863] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=6003226600 
-[13:40:04.998] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:05.257] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=1986800 
-[13:40:05.394] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:05.646] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=6003156000 
-[13:40:05.775] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:06.027] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=6003226600 
-[13:40:06.164] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:06.425] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=68694160 
-[13:40:06.562] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:06.814] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=1369577 
-[13:40:06.951] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:07.214] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=17003401000 
-[13:40:07.351] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:07.609] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=17003548000 
-[13:40:07.748] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:08.004] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=8137447.5 
-[13:40:08.004] D [  glue  ] sink frame: #9 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:40:08.011] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:40:08.011] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=17 
-[13:40:08.011] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=17 
-[13:40:08.011] D [  glue  ] frame sink sees EOS
-[13:40:08.011] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:40:08.011] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.9 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.46 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:40:08.011] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:40:08.011] I [ timer  ] Timer: Total node execution : 4.460000107064843 sec
-[13:40:08.011] D [  main  ] executing app: "Pgrapher"
-[13:40:08.011] D [ pgraph ] <Pgrapher:> executing graph 
-[13:40:08.011] D [ pgraph ] executing with 5 nodes
-[13:40:08.011] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:40:08.011] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:40:08.011] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:40:08.011] I [ timer  ] Timer: Total node execution : 0 sec
-Begin processing the 10th record. run: 20000001 subRun: 0 event: 10 at 19-Nov-2025 13:40:08 CST
-[13:40:08.148] D [   io   ] CookedFrameSource::visit: event: 10
-[13:40:08.155] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
-[13:40:08.203] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 10 
-[13:40:08.219] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 680 track->pid entries 
-[13:40:08.219] D [  main  ] executing 2 apps, thread limit 0:
-[13:40:08.219] D [  main  ] executing 2 apps, thread limit 0:
-[13:40:08.219] D [  main  ] executing app: "Pgrapher"
-[13:40:08.219] D [ pgraph ] <Pgrapher:> executing graph 
-[13:40:08.219] D [ pgraph ] executing with 5 nodes
-[13:40:08.219] D [   io   ] CookedFrameSource output frame: ident=10 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
-[13:40:08.219] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #10 with 2560 traces with frame tags: "orig" and trace tags: "dnnsp" looking for tags: "dnnsp" 
-[13:40:08.380] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
-[13:40:08.699] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /10/frame_dnnsp with 2560 channels 6000 ticks @t=1e-06 ms qtot=1688931.8 
-[13:40:08.858] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=10 time=1 tick=500 with 25600 traces.  frame tags:[ "truth" ] 10 tagged trace sets:[ "charge_1st":2560 [0] "charge_2nd":2560 [0] "current_pid_1st":2560 [0] "current_pid_2nd":2560 [0] "orig_pid_1st":2560 [0] "orig_pid_2nd":2560 [0] "orig_trackid_1st":2560 [0] "orig_trackid_2nd":2560 [0] "pid":2560 [0] "trackid":2560 [0] ] cmm:[ ] 
-[13:40:08.859] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #10 with 25600 traces with frame tags: "truth" and trace tags: "charge_1st" "charge_2nd" "current_pid_1st" "current_pid_2nd" "orig_pid_1st" "orig_pid_2nd" "orig_trackid_1st" "orig_trackid_2nd" "pid" "trackid" looking for tags: "trackid" "pid" "orig_trackid_1st" "orig_pid_1st" "current_pid_1st" "charge_1st" "orig_trackid_2nd" "orig_pid_2nd" "current_pid_2nd" "charge_2nd" 
-[13:40:08.999] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:09.255] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_trackid with 2560 channels 6000 ticks @t=1e-06 ms qtot=-399500030 
-[13:40:09.392] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:09.652] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_pid with 2560 channels 6000 ticks @t=1e-06 ms qtot=817112100000 
-[13:40:09.790] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:10.049] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_orig_trackid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=608792260 
-[13:40:10.187] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:10.445] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_orig_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=817112000000 
-[13:40:10.583] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:10.840] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_current_pid_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=817112100000 
-[13:40:10.978] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:11.248] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_charge_1st with 2560 channels 6000 ticks @t=1e-06 ms qtot=628182660 
-[13:40:11.388] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:11.649] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_orig_trackid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=83779730 
-[13:40:11.791] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:12.158] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_orig_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=1152180800000 
-[13:40:12.291] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:12.550] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_current_pid_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=1152182100000 
-[13:40:12.688] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
-[13:40:12.950] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_charge_2nd with 2560 channels 6000 ticks @t=1e-06 ms qtot=22157378 
-[13:40:12.950] D [  glue  ] sink frame: #10 @1e-06 with 25600 traces, frame tags:[truth], trace tags:[charge_1st, charge_2nd, current_pid_1st, current_pid_2nd, orig_pid_1st, orig_pid_2nd, orig_trackid_1st, orig_trackid_2nd, pid, trackid]
-[13:40:12.957] D [   io   ] CookedFrameSource output (null frame pointer)
-[13:40:12.957] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=19 
-[13:40:12.957] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=19 
-[13:40:12.957] D [  glue  ] frame sink sees EOS
-[13:40:12.957] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:40:12.957] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 3.97 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.48 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.16 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
-[13:40:12.957] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:40:12.957] I [ timer  ] Timer: Total node execution : 4.620000014081597 sec
-[13:40:12.957] D [  main  ] executing app: "Pgrapher"
-[13:40:12.957] D [ pgraph ] <Pgrapher:> executing graph 
-[13:40:12.957] D [ pgraph ] executing with 5 nodes
-[13:40:12.957] D [ pgraph ] <Pgrapher:> graph execution complete 
-[13:40:12.957] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
-[13:40:12.957] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
-[13:40:12.957] I [ timer  ] Timer: Total node execution : 0 sec
-19-Nov-2025 13:40:12 CST  Closed input file "sp.root"
+08-Dec-2025 15:13:44 CST  Initiating request to open input file "test3/sp.root"
+08-Dec-2025 15:13:45 CST  Opened input file "test3/sp.root"
+Begin processing the 1st record. run: 20000001 subRun: 0 event: 1 at 08-Dec-2025 15:13:45 CST
+[15:13:45.214] D [   io   ] CookedFrameSource::visit: event: 1
+[15:13:45.220] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:45.286] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 1 
+[15:13:45.297] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 221 track->pid entries 
+[15:13:45.297] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:45.297] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:45.297] D [  main  ] executing app: "Pgrapher"
+[15:13:45.297] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:45.297] D [ pgraph ] executing with 6 nodes
+[15:13:45.297] D [   io   ] CookedFrameSource output frame: ident=1 time=0 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:45.476] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=1 time=0 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:45.477] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #1 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:45.501] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:45.563] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /1/frame_rebinned_reco with 2560 channels 1500 ticks @t=0 ms qtot=1169672.5 
+[15:13:45.564] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #1 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:45.587] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:45.649] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_rebinned_reco with 2560 channels 1500 ticks @t=0 ms qtot=1169672.5 
+[15:13:45.675] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:45.733] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_trackid_1st with 2560 channels 1500 ticks @t=0 ms qtot=-30784904 
+[15:13:45.757] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:45.815] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_pid_1st with 2560 channels 1500 ticks @t=0 ms qtot=108013310000 
+[15:13:45.840] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:45.897] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_trackid_2nd with 2560 channels 1500 ticks @t=0 ms qtot=-6316921 
+[15:13:45.921] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:45.978] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /1/frame_pid_2nd with 2560 channels 1500 ticks @t=0 ms qtot=93016590000 
+[15:13:45.979] D [  glue  ] sink frame: #1 @0 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:45.983] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:45.983] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=1 
+[15:13:45.983] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=1 
+[15:13:45.983] D [  glue  ] frame sink sees EOS
+[15:13:45.983] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:45.983] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.41 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.18 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.09 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
+[15:13:45.983] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:45.983] I [ timer  ] Timer: Total node execution : 0.69000000692904 sec
+[15:13:45.983] D [  main  ] executing app: "Pgrapher"
+[15:13:45.983] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:45.983] D [ pgraph ] executing with 6 nodes
+[15:13:45.983] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:45.983] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:45.983] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:45.983] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 2nd record. run: 20000001 subRun: 0 event: 2 at 08-Dec-2025 15:13:45 CST
+[15:13:46.163] D [   io   ] CookedFrameSource::visit: event: 2
+[15:13:46.169] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:46.219] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 2 
+[15:13:46.239] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 644 track->pid entries 
+[15:13:46.239] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:46.239] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:46.239] D [  main  ] executing app: "Pgrapher"
+[15:13:46.239] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:46.240] D [ pgraph ] executing with 6 nodes
+[15:13:46.240] D [   io   ] CookedFrameSource output frame: ident=2 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:46.419] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=2 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:46.419] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #2 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:46.443] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:46.512] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /2/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=2385288 
+[15:13:46.513] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #2 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:46.536] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:46.598] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=2385288 
+[15:13:46.623] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:46.681] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-239960540 
+[15:13:46.705] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:46.764] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=101021385000 
+[15:13:46.789] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:46.847] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=-70903230 
+[15:13:46.871] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:46.928] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /2/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=518091640000 
+[15:13:46.929] D [  glue  ] sink frame: #2 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:46.933] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:46.933] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=3 
+[15:13:46.933] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=3 
+[15:13:46.933] D [  glue  ] frame sink sees EOS
+[15:13:46.933] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:46.933] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.42 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.18 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:46.933] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:46.933] I [ timer  ] Timer: Total node execution : 0.6799999922513962 sec
+[15:13:46.933] D [  main  ] executing app: "Pgrapher"
+[15:13:46.933] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:46.933] D [ pgraph ] executing with 6 nodes
+[15:13:46.933] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:46.933] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:46.933] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:46.933] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 3rd record. run: 20000001 subRun: 0 event: 3 at 08-Dec-2025 15:13:46 CST
+[15:13:46.951] D [   io   ] CookedFrameSource::visit: event: 3
+[15:13:46.951] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:47.000] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 3 
+[15:13:47.012] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 51 track->pid entries 
+[15:13:47.012] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:47.012] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:47.012] D [  main  ] executing app: "Pgrapher"
+[15:13:47.012] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:47.012] D [ pgraph ] executing with 6 nodes
+[15:13:47.012] D [   io   ] CookedFrameSource output frame: ident=3 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:47.087] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=3 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:47.088] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #3 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:47.110] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:47.166] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /3/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=6723.4365 
+[15:13:47.167] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #3 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:47.189] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.245] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=6723.4365 
+[15:13:47.268] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.329] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-36518 
+[15:13:47.353] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.409] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=3000548900 
+[15:13:47.432] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.488] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=129 
+[15:13:47.510] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.567] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /3/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=11001984000 
+[15:13:47.567] D [  glue  ] sink frame: #3 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:47.571] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:47.571] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=5 
+[15:13:47.571] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=5 
+[15:13:47.571] D [  glue  ] frame sink sees EOS
+[15:13:47.571] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:47.571] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.4 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.08 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:47.571] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:47.571] I [ timer  ] Timer: Total node execution : 0.5600000023841858 sec
+[15:13:47.571] D [  main  ] executing app: "Pgrapher"
+[15:13:47.571] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:47.571] D [ pgraph ] executing with 6 nodes
+[15:13:47.571] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:47.571] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:47.571] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:47.571] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 4th record. run: 20000001 subRun: 0 event: 4 at 08-Dec-2025 15:13:47 CST
+[15:13:47.600] D [   io   ] CookedFrameSource::visit: event: 4
+[15:13:47.602] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:47.651] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 4 
+[15:13:47.654] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 258 track->pid entries 
+[15:13:47.654] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:47.654] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:47.654] D [  main  ] executing app: "Pgrapher"
+[15:13:47.654] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:47.654] D [ pgraph ] executing with 6 nodes
+[15:13:47.654] D [   io   ] CookedFrameSource output frame: ident=4 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:47.741] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=4 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:47.742] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #4 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:47.764] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:47.823] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /4/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=328588.16 
+[15:13:47.823] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #4 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:47.845] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.904] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=328588.16 
+[15:13:47.926] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:47.983] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-1714082 
+[15:13:48.006] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.062] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=60016255000 
+[15:13:48.085] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.142] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=-127365 
+[15:13:48.164] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.221] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /4/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=108016935000 
+[15:13:48.221] D [  glue  ] sink frame: #4 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:48.226] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:48.226] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=7 
+[15:13:48.226] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=7 
+[15:13:48.226] D [  glue  ] frame sink sees EOS
+[15:13:48.226] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:48.226] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.4 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
+[15:13:48.226] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:48.226] I [ timer  ] Timer: Total node execution : 0.5800000075250864 sec
+[15:13:48.226] D [  main  ] executing app: "Pgrapher"
+[15:13:48.226] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:48.226] D [ pgraph ] executing with 6 nodes
+[15:13:48.226] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:48.226] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:48.226] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:48.226] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 5th record. run: 20000001 subRun: 0 event: 5 at 08-Dec-2025 15:13:48 CST
+[15:13:48.250] D [   io   ] CookedFrameSource::visit: event: 5
+[15:13:48.253] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:48.302] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 5 
+[15:13:48.306] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 39 track->pid entries 
+[15:13:48.306] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:48.306] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:48.306] D [  main  ] executing app: "Pgrapher"
+[15:13:48.306] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:48.306] D [ pgraph ] executing with 6 nodes
+[15:13:48.306] D [   io   ] CookedFrameSource output frame: ident=5 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:48.399] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=5 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:48.400] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #5 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:48.424] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:48.484] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /5/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=551789.1 
+[15:13:48.485] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #5 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:48.509] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.568] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=551789.1 
+[15:13:48.592] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.650] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-692547 
+[15:13:48.674] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.731] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=5001383400 
+[15:13:48.756] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.816] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=-100471 
+[15:13:48.842] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:48.903] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /5/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=14002526000 
+[15:13:48.903] D [  glue  ] sink frame: #5 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:48.908] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:48.908] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=9 
+[15:13:48.908] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=9 
+[15:13:48.908] D [  glue  ] frame sink sees EOS
+[15:13:48.908] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:48.908] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.41 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.09 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.09 sec
+[15:13:48.908] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:48.908] I [ timer  ] Timer: Total node execution : 0.5900000035762787 sec
+[15:13:48.908] D [  main  ] executing app: "Pgrapher"
+[15:13:48.908] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:48.908] D [ pgraph ] executing with 6 nodes
+[15:13:48.908] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:48.908] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:48.908] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:48.908] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 6th record. run: 20000001 subRun: 0 event: 6 at 08-Dec-2025 15:13:48 CST
+[15:13:48.928] D [   io   ] CookedFrameSource::visit: event: 6
+[15:13:48.929] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:48.979] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 6 
+[15:13:48.981] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 128 track->pid entries 
+[15:13:48.981] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:48.981] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:48.981] D [  main  ] executing app: "Pgrapher"
+[15:13:48.981] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:48.981] D [ pgraph ] executing with 6 nodes
+[15:13:48.981] D [   io   ] CookedFrameSource output frame: ident=6 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:49.060] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=6 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:49.060] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #6 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:49.085] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:49.143] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /6/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=82184.836 
+[15:13:49.143] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #6 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:49.166] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.224] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=82184.836 
+[15:13:49.249] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.306] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-1261145 
+[15:13:49.330] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.389] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=12002518000 
+[15:13:49.413] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.470] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=-89915 
+[15:13:49.494] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.550] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /6/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=16002904000 
+[15:13:49.551] D [  glue  ] sink frame: #6 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:49.555] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:49.555] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=11 
+[15:13:49.555] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=11 
+[15:13:49.555] D [  glue  ] frame sink sees EOS
+[15:13:49.555] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:49.555] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.4 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.08 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
+[15:13:49.555] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:49.555] I [ timer  ] Timer: Total node execution : 0.5700000021606684 sec
+[15:13:49.555] D [  main  ] executing app: "Pgrapher"
+[15:13:49.555] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:49.555] D [ pgraph ] executing with 6 nodes
+[15:13:49.555] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:49.555] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:49.555] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:49.555] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 7th record. run: 20000001 subRun: 0 event: 7 at 08-Dec-2025 15:13:49 CST
+[15:13:49.566] D [   io   ] CookedFrameSource::visit: event: 7
+[15:13:49.567] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:49.616] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 7 
+[15:13:49.618] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 21 track->pid entries 
+[15:13:49.618] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:49.618] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:49.618] D [  main  ] executing app: "Pgrapher"
+[15:13:49.618] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:49.618] D [ pgraph ] executing with 6 nodes
+[15:13:49.618] D [   io   ] CookedFrameSource output frame: ident=7 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:49.699] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=7 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:49.699] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #7 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:49.724] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:49.783] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /7/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=212964.44 
+[15:13:49.783] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #7 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:49.809] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.867] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=212964.44 
+[15:13:49.891] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:49.948] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=21432 
+[15:13:49.972] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.030] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=1377311 
+[15:13:50.054] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.111] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=4573 
+[15:13:50.135] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.192] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /7/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=7001342000 
+[15:13:50.192] D [  glue  ] sink frame: #7 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:50.196] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:50.196] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=13 
+[15:13:50.196] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=13 
+[15:13:50.196] D [  glue  ] frame sink sees EOS
+[15:13:50.196] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:50.196] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.42 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.08 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:50.196] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:50.196] I [ timer  ] Timer: Total node execution : 0.5799999833106995 sec
+[15:13:50.196] D [  main  ] executing app: "Pgrapher"
+[15:13:50.196] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:50.196] D [ pgraph ] executing with 6 nodes
+[15:13:50.196] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:50.196] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:50.196] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:50.197] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:50.197] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:50.197] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 8th record. run: 20000001 subRun: 0 event: 8 at 08-Dec-2025 15:13:50 CST
+[15:13:50.250] D [   io   ] CookedFrameSource::visit: event: 8
+[15:13:50.254] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:50.304] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 8 
+[15:13:50.310] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 163 track->pid entries 
+[15:13:50.310] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:50.311] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:50.311] D [  main  ] executing app: "Pgrapher"
+[15:13:50.311] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:50.311] D [ pgraph ] executing with 6 nodes
+[15:13:50.311] D [   io   ] CookedFrameSource output frame: ident=8 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:50.419] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=8 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:50.420] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #8 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:50.443] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:50.504] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /8/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=870757.3 
+[15:13:50.505] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #8 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:50.528] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.588] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=870757.3 
+[15:13:50.612] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.669] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-24287468 
+[15:13:50.693] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.751] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=32006134000 
+[15:13:50.776] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.835] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=-3505270 
+[15:13:50.859] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:50.916] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /8/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=80010854000 
+[15:13:50.916] D [  glue  ] sink frame: #8 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:50.920] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:50.920] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=15 
+[15:13:50.920] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=15 
+[15:13:50.920] D [  glue  ] frame sink sees EOS
+[15:13:50.920] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:50.920] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.41 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.11 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:50.920] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:50.920] I [ timer  ] Timer: Total node execution : 0.5999999940395355 sec
+[15:13:50.920] D [  main  ] executing app: "Pgrapher"
+[15:13:50.920] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:50.920] D [ pgraph ] executing with 6 nodes
+[15:13:50.920] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:50.920] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:50.920] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:50.921] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:50.921] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:50.921] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 9th record. run: 20000001 subRun: 0 event: 9 at 08-Dec-2025 15:13:50 CST
+[15:13:50.938] D [   io   ] CookedFrameSource::visit: event: 9
+[15:13:50.940] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:50.989] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 9 
+[15:13:50.995] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 97 track->pid entries 
+[15:13:50.995] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:50.995] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:50.995] D [  main  ] executing app: "Pgrapher"
+[15:13:50.995] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:50.995] D [ pgraph ] executing with 6 nodes
+[15:13:50.995] D [   io   ] CookedFrameSource output frame: ident=9 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:51.078] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=9 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:51.078] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #9 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:51.103] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:51.161] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /9/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=197902.62 
+[15:13:51.161] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #9 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:51.184] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:51.242] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=197902.62 
+[15:13:51.266] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:51.323] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-70517 
+[15:13:51.347] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:51.404] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=1000773760 
+[15:13:51.428] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:51.485] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=4477 
+[15:13:51.509] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:51.566] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /9/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=18001789000 
+[15:13:51.566] D [  glue  ] sink frame: #9 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:51.570] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:51.570] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=17 
+[15:13:51.570] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=17 
+[15:13:51.570] D [  glue  ] frame sink sees EOS
+[15:13:51.570] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:51.570] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.4 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.08 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.08 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0.01 sec
+[15:13:51.570] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:51.570] I [ timer  ] Timer: Total node execution : 0.5700000021606684 sec
+[15:13:51.570] D [  main  ] executing app: "Pgrapher"
+[15:13:51.570] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:51.570] D [ pgraph ] executing with 6 nodes
+[15:13:51.570] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:51.570] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:51.570] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:51.570] I [ timer  ] Timer: Total node execution : 0 sec
+Begin processing the 10th record. run: 20000001 subRun: 0 event: 10 at 08-Dec-2025 15:13:51 CST
+[15:13:51.716] D [   io   ] CookedFrameSource::visit: event: 10
+[15:13:51.723] D [   io   ] wcls::CookedFrameSource: got 2560 tpcrawdecoder:dnnsp recob::Wire objects
+[15:13:51.774] D [  aiml  ] <Labelling2D:all> Labelling2D::visit: event: 10 
+[15:13:51.790] D [  aiml  ] <Labelling2D:all> Labelling2D cached 2560 SimChannels and 680 track->pid entries 
+[15:13:51.790] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:51.790] D [  main  ] executing 2 apps, thread limit 0:
+[15:13:51.790] D [  main  ] executing app: "Pgrapher"
+[15:13:51.790] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:51.790] D [ pgraph ] executing with 6 nodes
+[15:13:51.790] D [   io   ] CookedFrameSource output frame: ident=10 time=1 tick=500 with 2560 traces.  frame tags:[ "orig" ] 1 tagged trace sets:[ "dnnsp":2560 [0] ] cmm:[ ]
+[15:13:51.942] D [  aiml  ] <Labelling2D:all> output frame: frame: ident=10 time=1 tick=500 with 17920 traces.  frame tags:[ "truth" ] 7 tagged trace sets:[ "pid":2560 [0] "pid_1st":2560 [0] "pid_2nd":2560 [0] "rebinned_reco":2560 [0] "trackid":2560 [0] "trackid_1st":2560 [0] "trackid_2nd":2560 [0] ] cmm:[ ] 
+[15:13:51.943] D [  hio   ] <HDF5FrameTap:hio_rec_all> HDF5FrameTap: see frame #10 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" 
+[15:13:51.967] D [  hio   ] <HDF5FrameTap:hio_rec_all> gzip:2 chunks:[256,256] 
+[15:13:52.035] D [  hio   ] <HDF5FrameTap:hio_rec_all> saved /10/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=1688930.1 
+[15:13:52.035] D [  hio   ] <HDF5FrameTap:hio_tru_all> HDF5FrameTap: see frame #10 with 17920 traces with frame tags: "truth" and trace tags: "pid" "pid_1st" "pid_2nd" "rebinned_reco" "trackid" "trackid_1st" "trackid_2nd" looking for tags: "rebinned_reco" "trackid_1st" "pid_1st" "trackid_2nd" "pid_2nd" 
+[15:13:52.059] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:52.123] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_rebinned_reco with 2560 channels 1500 ticks @t=1e-06 ms qtot=1688930.1 
+[15:13:52.147] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:52.205] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_trackid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=-122152090 
+[15:13:52.229] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:52.286] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_pid_1st with 2560 channels 1500 ticks @t=1e-06 ms qtot=281043080000 
+[15:13:52.310] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:52.367] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_trackid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=-14983679 
+[15:13:52.391] D [  hio   ] <HDF5FrameTap:hio_tru_all> gzip:2 chunks:[256,256] 
+[15:13:52.447] D [  hio   ] <HDF5FrameTap:hio_tru_all> saved /10/frame_pid_2nd with 2560 channels 1500 ticks @t=1e-06 ms qtot=634094750000 
+[15:13:52.447] D [  glue  ] sink frame: #10 @1e-06 with 17920 traces, frame tags:[truth], trace tags:[pid, pid_1st, pid_2nd, rebinned_reco, trackid, trackid_1st, trackid_2nd]
+[15:13:52.452] D [   io   ] CookedFrameSource output (null frame pointer)
+[15:13:52.452] D [  hio   ] <HDF5FrameTap:hio_rec_all> EOS at call=19 
+[15:13:52.452] D [  hio   ] <HDF5FrameTap:hio_tru_all> EOS at call=19 
+[15:13:52.452] D [  glue  ] frame sink sees EOS
+[15:13:52.452] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:52.452] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.41 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0.15 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0.09 sec
+[15:13:52.452] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:52.452] I [ timer  ] Timer: Total node execution : 0.6500000059604645 sec
+[15:13:52.452] D [  main  ] executing app: "Pgrapher"
+[15:13:52.452] D [ pgraph ] <Pgrapher:> executing graph 
+[15:13:52.452] D [ pgraph ] executing with 6 nodes
+[15:13:52.452] D [ pgraph ] <Pgrapher:> graph execution complete 
+[15:13:52.452] I [ timer  ] Timer: wcls::CookedFrameSource : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::AIML::Truth2h5 : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::AIML::Labelling2D : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::Hio::HDF5FrameTap : 0 sec
+[15:13:52.452] I [ timer  ] Timer: WireCell::Gen::DumpFrames : 0 sec
+[15:13:52.452] I [ timer  ] Timer: Total node execution : 0 sec
+08-Dec-2025 15:13:52 CST  Closed input file "test3/sp.root"
 
 ================================================================================================================================
 TimeTracker printout (sec)                        Min           Avg           Max         Median          RMS         nEvts   
 ================================================================================================================================
-Full event                                      4.51843       4.62089       4.81012       4.58228      0.0978388       10     
+Full event                                     0.621236      0.674594      0.770905      0.645511      0.0579901       10     
 --------------------------------------------------------------------------------------------------------------------------------
-source:RootInput(read)                        0.00015099    0.000214955   0.00034696    0.000206607   5.48145e-05      10     
-reco:wclsmcnfsp:WireCellToolkit                 4.51811       4.62054       4.8098        4.58197      0.0978199       10     
-[art]:TriggerResults:TriggerResultInserter    2.8122e-05    3.7606e-05    7.5925e-05    2.8839e-05    1.43988e-05      10     
+source:RootInput(read)                        0.000145456   0.00019232    0.000359517   0.000173933   5.81035e-05      10     
+reco:wclsmcnfsp:WireCellToolkit                0.620939      0.674267      0.770616      0.645213      0.0579094       10     
+[art]:TriggerResults:TriggerResultInserter    2.7825e-05    3.33184e-05    7.623e-05    2.84265e-05   1.43198e-05      10     
 ================================================================================================================================
 
 ====================================================================================================
 MemoryTracker summary (base-10 MB units used)
 
-  Peak virtual memory usage (VmPeak)  : 2870.98 MB
-  Peak resident set size usage (VmHWM): 1319.32 MB
+  Peak virtual memory usage (VmPeak)  : 2350.84 MB
+  Peak resident set size usage (VmHWM): 811.004 MB
 ====================================================================================================
-[13:40:12.975] D [  main  ] finalizing component: "HDF5FrameTap":"hio_rec_all"
-[13:40:12.976] D [  main  ] finalizing component: "HDF5FrameTap":"hio_tru_all"
+[15:13:52.469] D [  main  ] finalizing component: "HDF5FrameTap":"hio_rec_all"
+[15:13:52.470] D [  main  ] finalizing component: "HDF5FrameTap":"hio_tru_all"
 Art has completed and will exit with status 0.
-
-real    0m49.465s
-user    0m46.966s
-sys     0m1.615s
