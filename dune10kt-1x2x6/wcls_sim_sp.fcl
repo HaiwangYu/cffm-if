@@ -122,6 +122,8 @@ physics: {
                apa_sparsity: "apa0" # apa0, all, hydra
             }
             structs: {
+               elecGain: 14
+               Nbit: 14
                DL: 4e-9
                DT: 8.8e-9
                G4RefTime: 0
@@ -251,83 +253,6 @@ services: {
          "volTPCActiveInner1",
          "volTPCActiveOuter"
       ]
-   }
-   LArG4Parameters: {
-      CosmogenicK0Bias: 0
-      CosmogenicXSMNBiasFactor: 1
-      CosmogenicXSMNBiasOn: 0
-      DisableWireplanes: false
-      ElectronClusterSize: 600
-      EllipsModBoxA: 9.04e-1
-      EllipsModBoxB: 2.04e-1
-      EllipsModBoxR: 1.25
-      EnabledPhysics: [
-         "Em",
-         "SynchrotronAndGN",
-         "Ion",
-         "Hadron",
-         "Decay",
-         "HadronElastic",
-         "Stopping",
-         "NeutronTrackingCut"
-      ]
-      KeepEMShowerDaughters: false
-      LarqlAlpha: 3.72e-2
-      LarqlBeta: 1.24e-2
-      LarqlChi0A: 3.38427e-3
-      LarqlChi0B: -6.57037
-      LarqlChi0C: 1.88418
-      LarqlChi0D: 1.29379e-4
-      LongitudinalDiffusion: 4e-9
-      MinNumberOfElCluster: 0
-      ModBoxA: 9.3e-1
-      ModBoxB: 2.12e-1
-      ModifyProtonCut: false
-      NewProtonCut: 0
-      OpticalParamModels: [
-         "OverlaidWireplanes"
-      ]
-      OpticalParamOrientations: [
-         0
-      ]
-      OpticalParamParameters: [
-         [
-            [
-               60,
-               3,
-               1.5e-1
-            ],
-            [
-               -60,
-               3,
-               1.5e-1
-            ],
-            [
-               0,
-               3,
-               1.5e-1
-            ]
-         ]
-      ]
-      OpticalParamVolumes: [
-         "volTPCPlaneVert_PV"
-      ]
-      OpticalSimVerbosity: 0
-      ParticleKineticEnergyCut: 1e-5
-      QAlpha: 7.2e-1
-      RecombA: 8e-1
-      Recombk: 4.86e-2
-      SkipWireSignalInTPCs: []
-      StoreTrajectories: true
-      TransverseDiffusion: 8.8e-9
-      UseCustomPhysics: false
-      UseEllipsModBoxRecomb: false
-      UseLitePhotons: true
-      UseModBoxRecomb: true
-      UseModLarqlRecomb: false
-      VisualizationEnergyCut: 1e-2
-      VisualizeNeutrals: false
-      Wph: 1.95e1
    }
    LArPropertiesService: {
       AbsLengthEnergies: [

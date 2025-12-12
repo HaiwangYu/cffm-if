@@ -20,3 +20,8 @@ lar -n 1 -c eventdump.fcl -s sp.root >& sp.log
 python h5plot.py g4-rec.h5 1/frame_dnnsp
 python h5plot.py g4-tru.h5 1/frame_current_pid_1st
 ```
+
+
+```test
+time lar -n 1 -c wcls_sim_sp.fcl -s test3/g4.root -o sp.root >& sp.log
+```
