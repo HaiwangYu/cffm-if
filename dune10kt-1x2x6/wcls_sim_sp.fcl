@@ -119,7 +119,7 @@ physics: {
             params: {
                engine: "TbbFlow"
                dnn_model: "ts-model/CP49_mobilenetv3.ts"
-               apa_sparsity: "apa0" # apa0, all, hydra
+               apa_sparsity: "hydra" # apa0, all, hydra
             }
             structs: {
                elecGain: 14

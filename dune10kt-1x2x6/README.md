@@ -25,3 +25,8 @@ python h5plot.py g4-tru.h5 1/frame_current_pid_1st
 ```test
 time lar -n 1 -c wcls_sim_sp.fcl -s test3/g4.root -o sp.root >& sp.log
 ```
+
+jay-dec-18
+```bash
+time lar -n 1 -c wcls-labelling2d.fcl -s jay-dec-18-sp/monte-carlo-011200-000477_261682_49_1_20251212T205158Z_sp.root --no-output >& labelling2d.log
+```
