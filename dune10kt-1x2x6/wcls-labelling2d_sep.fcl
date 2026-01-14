@@ -1933,8 +1933,8 @@ physics: {
                "Pgrapher"
             ]
             configs: [
-              "wcls-labelling2d.jsonnet"
-               # "wcls-labelling2d_sep.jsonnet"
+#               "wcls-labelling2d.jsonnet"
+               "wcls-labelling2d_sep.jsonnet"
             ]
             loglevels: [
                "debug"
@@ -1944,8 +1944,18 @@ physics: {
             ]
             inputers: [
                "wclsCookedFrameSource:sigs"
-               , "Truth2h5:all"
-               , "Labelling2D:all"
+               , "Labelling2D:anode0"
+               , "Labelling2D:anode1"
+               , "Labelling2D:anode2"
+               , "Labelling2D:anode3"
+               , "Labelling2D:anode4"
+               , "Labelling2D:anode5"
+               , "Labelling2D:anode6"
+               , "Labelling2D:anode7"
+               , "Labelling2D:anode8"
+               , "Labelling2D:anode9"
+               , "Labelling2D:anode10"
+               , "Labelling2D:anode11"
             ]
             outputers: [
             ]
