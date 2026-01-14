@@ -7,7 +7,7 @@ local tools_maker = import 'pgrapher/common/tools.jsonnet';
 local params_maker = import 'pgrapher/experiment/dune10kt-1x2x6/simparams.jsonnet';
 local sp_trace_tag = "dnnsp"; // gauss, dnnsp
 local fcl_params = {
-    G4RefTime: std.extVar('G4RefTime') * wc.us,
+    keep_truth: std.extVar('keep_truth'),
 };
 local params = params_maker(fcl_params) {
   lar: super.lar {
@@ -112,12 +112,14 @@ local hio_tru_nodes = [
     name: 'hio_tru_anode%d' % n,
     data: {
         anode: wc.tn(mega_anode),
-        trace_tags: [
+        trace_tags: if fcl_params.keep_truth then [
             'rebinned_reco',
             'trackid_1st',
             'pid_1st',
             'trackid_2nd',
             'pid_2nd'
+        ] else [
+            'rebinned_reco'
         ],
         filename: "g4-tru-anode%d.h5" % n,
         gzip: 2,
@@ -204,7 +206,7 @@ local fanpipe = g.intern(
 
 // local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
 // local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
-local graph = g.pipeline([wcls_input, hio_rec, fanpipe], "main");
+local graph = g.pipeline([wcls_input, fanpipe], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow

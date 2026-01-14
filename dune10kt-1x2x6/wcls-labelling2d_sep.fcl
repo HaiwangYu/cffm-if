@@ -1962,6 +1962,7 @@ physics: {
             params: {
             }
             structs: {
+               keep_truth: true
                recobwire_tags: "[\"tpcrawdecoder:dnnsp\"]"
                trace_tags: "[\"dnnsp\"]"
                summary_tags: "[\"\"]"

@@ -35,10 +35,12 @@ time lar -n 1 -c wcls-labelling2d.fcl -s jay-jan-12/monte-carlo-011334-000001_27
 python h5plot.py jay-jan-12/g4-rec.h5 1/frame_rebinned_reco 0
 ```
 
+v10_16_00d00
 ```bash
 time lar -n 1 -c gen_genie.fcl -o test-v10_16_00d00/gen.root >& test-v10_16_00d00/gen.log
 time lar -n 1 -c g4.fcl -s test-v10_16_00d00/gen.root -o test-v10_16_00d00/g4.root >& test-v10_16_00d00/g4.log
 time lar -n 1 -c wcls_sim_sp.fcl -s g4.root -o test-v10_16_00d00/sp.root >& test-v10_16_00d00/sp.log
 time lar -n 1 -c wcls-labelling2d.fcl -s test-v10_16_00d00/sp.root --no-output >& test-v10_16_00d00/labelling2d.log
+time lar -n 1 -c wcls-labelling2d_sep.fcl -s test-v10_16_00d00/sp.root --no-output >& test-v10_16_00d00/labelling2d_sep.log
 python h5plot.py test-v10_16_00d00/g4-rec.h5 1/frame_rebinned_reco 0
 ```
