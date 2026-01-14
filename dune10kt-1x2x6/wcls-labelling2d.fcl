@@ -1933,7 +1933,8 @@ physics: {
                "Pgrapher"
             ]
             configs: [
-               "wcls-labelling2d.jsonnet"
+              "wcls-labelling2d.jsonnet"
+               # "wcls-labelling2d_sep.jsonnet"
             ]
             loglevels: [
                "debug"

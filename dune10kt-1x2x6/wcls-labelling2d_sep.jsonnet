@@ -24,7 +24,12 @@ local params = params_maker(fcl_params) {
 
 
 
-local tools = tools_maker(params);
+local tools_all = tools_maker(params);
+local tools = tools_all
+//  + {
+//     anodes : [tools_all.anodes[0]]
+// }
+;
 
 local nanodes = std.length(tools.anodes);
 local anode_iota = std.range(0, nanodes - 1);
@@ -121,7 +126,8 @@ local hio_tru_nodes = [
   for n in std.range(0, std.length(tools.anodes) - 1)
 ];
 
-local dumpcap = g.pnode({ type: 'DumpFrames' }, nin=1, nout=0);
+// local dumpcap = g.pnode({ type: 'DumpFrames' }, nin=1, nout=0);
+local dumpcaps =[ g.pnode({ type: 'DumpFrames' ,name:'dump_%d'%n,}, nin=1, nout=0)for n in std.range(0, std.length(tools.anodes) - 1)];
 
 // Empty tag_rules array means no tag renaming - pass through all tags unchanged
 local fanout_tag_rules = [];
@@ -188,16 +194,17 @@ local fanin = g.pnode({
 
 local fanpipe = g.intern(
     innodes=[fanout],
-    outnodes=[fanin],
-    centernodes=labelling2d_pipes,
+    // outnodes=[],
+    centernodes=labelling2d_pipes+dumpcaps,
     edges=
         [g.edge(fanout, labelling2d_pipes[n], n, 0) for n in std.range(0, fanmult - 1)] +
-        [g.edge(labelling2d_pipes[n], fanin, 0, n) for n in std.range(0, fanmult - 1)],
+        [g.edge(labelling2d_pipes[n], dumpcaps[n], 0, 0) for n in std.range(0, fanmult - 1)],
     name='label2d'
 );
 
 // local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
-local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
+// local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
+local graph = g.pipeline([wcls_input, hio_rec, fanpipe], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow
