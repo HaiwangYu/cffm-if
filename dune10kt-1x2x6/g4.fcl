@@ -35,6 +35,9 @@ physics: {
          OnlyActiveVolume: true
          OnlyOneCryostat: false
          OpaqueCathode: true
+         OpticalPathTool: {
+            tool_type: "StandardOpticalPath"
+         }
          ScintTimeTool: {
             FastDecayTime: 6
             FastRisingTime: 0
@@ -142,6 +145,7 @@ physics: {
                ]
             ]
             MaxPDDistance: 1000
+            VerticalBorderCorrectionMode: false
             delta_angulo_vuv: 10
          }
          VUVTiming: {
@@ -471,7 +475,7 @@ physics: {
             ]
             angle_bin_timing_vuv: 45
             inflexion_point_distance: 400
-            max_d: 2500
+            max_d: 1000
             min_d: 25
             step_size: 1
             vuv_vgroup_max: 18
@@ -506,8 +510,8 @@ process_name: "G4"
 services: {
    ActionHolder: {}
    AuxDetGeometry: {
-      GDML: "dune10kt_v4_1x2x6.gdml"
-      Name: "dune10kt_v4_1x2x6"
+      GDML: "dune10kt_v6_refactored_1x2x6.gdml"
+      Name: "dune10kt_v6_1x2x6"
       SortingParameters: {
          tool_type: "AuxDetGeoObjectSorterYZX"
       }
@@ -671,7 +675,8 @@ services: {
       ]
       OpticalSimVerbosity: 0
       ParticleKineticEnergyCut: 1e-5
-      QAlpha: 7.2e-1
+      QAlpha: 4.3e-1
+      QProton: 1
       RecombA: 8e-1
       Recombk: 4.86e-2
       SkipWireSignalInTPCs: []
@@ -1164,6 +1169,7 @@ services: {
          3.75
       ]
       InputFieldRespSamplingPeriod: 100
+      Nbit: 14
       NoiseFactVec: [
          [
             1.12,
