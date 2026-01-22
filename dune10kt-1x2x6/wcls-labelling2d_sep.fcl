@@ -1944,6 +1944,7 @@ physics: {
             ]
             inputers: [
                "wclsCookedFrameSource:sigs"
+               , "Truth2h5:all"
                , "Labelling2D:anode0"
                , "Labelling2D:anode1"
                , "Labelling2D:anode2"
@@ -1963,6 +1964,7 @@ physics: {
             }
             structs: {
                keep_truth: true
+               gzip: 6
                recobwire_tags: "[\"tpcrawdecoder:dnnsp\"]"
                trace_tags: "[\"dnnsp\"]"
                summary_tags: "[\"\"]"

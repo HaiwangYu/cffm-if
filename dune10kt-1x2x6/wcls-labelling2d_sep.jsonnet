@@ -8,6 +8,7 @@ local params_maker = import 'pgrapher/experiment/dune10kt-1x2x6/simparams.jsonne
 local sp_trace_tag = "dnnsp"; // gauss, dnnsp
 local fcl_params = {
     keep_truth: std.extVar('keep_truth'),
+    gzip: std.extVar('gzip'),
 };
 local params = params_maker(fcl_params) {
   lar: super.lar {
@@ -75,6 +76,14 @@ local wcls_input = g.pnode({
     },
 }, nin=0, nout=1);
 
+local truth2h5 = g.pnode({
+    type: 'Truth2h5',
+    name: 'all',
+    data: {
+        output_file: "metadata.h5",
+    },
+}, nin=1, nout=1);
+
 local labelling2d_pipes_nodes = [
   g.pnode({
     type: 'Labelling2D',
@@ -98,7 +107,7 @@ local hio_rec = g.pnode({
         trace_tags: [sp_trace_tag], 
         // trace_tags: ["rebinned_reco"], 
         filename: "g4-rec.h5",
-        gzip: 2,
+        gzip: fcl_params.gzip,
     },
 }, nin=1, nout=1);
 
@@ -121,8 +130,8 @@ local hio_tru_nodes = [
         ] else [
             'rebinned_reco'
         ],
-        filename: "g4-tru-anode%d.h5" % n,
-        gzip: 2,
+        filename: "pixeldata-anode%d.h5" % n,
+        gzip: fcl_params.gzip,
     },
   }, nin=1, nout=1)
   for n in std.range(0, std.length(tools.anodes) - 1)
@@ -206,7 +215,7 @@ local fanpipe = g.intern(
 
 // local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
 // local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
-local graph = g.pipeline([wcls_input, fanpipe], "main");
+local graph = g.pipeline([wcls_input, truth2h5, fanpipe], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow
