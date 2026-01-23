@@ -1,7 +1,16 @@
 #!/bin/bash
 
+# source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+# setup dunesw v10_04_03d01 -q e26:prof
+# source /exp/dune/data/users/xning/larsoft/v10_04_04d00/localProducts_larsoft_v10_04_03_e26_prof/setup
+# mrbsetenv
+# #mrb i -j 8 #if want to rebuild
+# mrbslp
+
+
 name=$2
 base_name="${name%.jsonnet}"
+
 
 
 # Split $WIRECELL_PATH on colon into an array of directories
@@ -36,7 +45,11 @@ if [[ $1 == "json" || $1 == "all" ]]; then
         -o ${base_name}.json
 fi
 
+source /exp/dune/app/users/jjo/venv/bin/activate
+
 if [[ $1 == "pdf" || $1 == "all" ]]; then
     # wirecell-pgraph dotify --jpath -1 --no-services --no-params ${base_name}.json ${base_name}.pdf
     wirecell-pgraph dotify --jpath -1 ${3} ${base_name}.json ${base_name}.pdf
 fi
+
+deactivate

@@ -84,6 +84,15 @@ local truth2h5 = g.pnode({
     },
 }, nin=1, nout=1);
 
+local trackid_pid_map2h5 = g.pnode({
+    type: 'TrackIDPIDMap2h5',
+    name: 'all',
+    data: {
+        simchannel_label: "tpcrawdecoder:simpleSC",
+        output_file: "trackid_pid_map.h5",
+    },
+}, nin=1, nout=1);
+
 local labelling2d_pipes_nodes = [
   g.pnode({
     type: 'Labelling2D',
@@ -215,7 +224,7 @@ local fanpipe = g.intern(
 
 // local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
 // local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
-local graph = g.pipeline([wcls_input, truth2h5, fanpipe], "main");
+local graph = g.pipeline([wcls_input, truth2h5, trackid_pid_map2h5, fanpipe], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow

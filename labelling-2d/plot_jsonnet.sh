@@ -6,3 +6,4 @@ JSONNET_PATH=$WIRECELL_PATH jsonnet   --ext-str recobwire_tags='["sptpc2d:gauss"
 source /exp/dune/app/users/jjo/venv/bin/activate
 wirecell-pgraph dotify --jpath -1 --no-params a.json flow-simple.pdf
 deactivate
+
