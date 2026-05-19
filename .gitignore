@@ -9,3 +9,9 @@
 */log.txt
 *__pycache__/
 *.md
+dune10kt-1x2x6/clean.sh
+*.dot
+*.svg
+*.png
+*.zip
+*.json

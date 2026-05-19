@@ -30,6 +30,8 @@ if [[ $1 == "json" || $1 == "all" ]]; then
         --ext-str output="test.tar.bz2" \
         --ext-code DL=4 \
         --ext-code DT=8.8 \
+        --ext-code gzip=6 \
+        --ext-code keep_truth=true \
         --ext-code G4RefTime=0 \
         --ext-code Nbit=14 \
         --ext-code driftSpeed=1.60563 \

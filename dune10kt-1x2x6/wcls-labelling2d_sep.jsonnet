@@ -89,6 +89,7 @@ local trackid_pid_map2h5 = g.pnode({
     name: 'all',
     data: {
         simchannel_label: "tpcrawdecoder:simpleSC",
+        particle_label: "largeant",
         output_file: "trackid_pid_map.h5",
     },
 }, nin=1, nout=1);
@@ -134,8 +135,10 @@ local hio_tru_nodes = [
             'rebinned_reco',
             'trackid_1st',
             'pid_1st',
+            'energyfrac_1st',
             'trackid_2nd',
-            'pid_2nd'
+            'pid_2nd',
+            'energyfrac_2nd',
         ] else [
             'rebinned_reco'
         ],
@@ -170,10 +173,12 @@ local fanin_tag_rules = [
             },
             trace: {
                 'rebinned_reco': 'rebinned_reco_%d'%n,
-                'trackid_1st':'trackid_1st_%d'%n,
-                'pid_1st': 'pid_1st_%d'%n,
-                'trackid_2nd': 'trackid_2nd_%d'%n,
-                'pid_2nd': 'pid_2nd_%d'%n,
+                'trackid_1st':   'trackid_1st_%d'%n,
+                'pid_1st':       'pid_1st_%d'%n,
+                'trackid_2nd':   'trackid_2nd_%d'%n,
+                'pid_2nd':       'pid_2nd_%d'%n,
+                'energyfrac_1st': 'energyfrac_1st_%d'%n,
+                'energyfrac_2nd': 'energyfrac_2nd_%d'%n,
             },
 
           }
