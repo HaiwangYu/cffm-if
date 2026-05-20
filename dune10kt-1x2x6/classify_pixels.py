@@ -9,11 +9,12 @@ frame_label_1st and frame_label_2nd into the same pixeldata-anode*.h5 files.
 
 Classification label encoding:
     0 = Background (track_id == 0, i.e. no hit)
-    1 = Track      (mu, pi, K, p, n, heavy ions)
-    2 = Shower     (e+/e-, gamma, pi0)
+    1 = Track      (mu+/-, pi+/-, p/pbar)
+    2 = Shower     (e+/e-, gamma, pi0 via EM-shower process or from EM-shower parent)
     3 = Michel     (e+/e- from muon decay)
-    4 = DeltaRay   (negative track_id, or ionization e- with Track-type parent)
-    5 = Other      (neutrinos, nuclei, neutrons, etc.)
+    4 = DeltaRay   (ionization e- with Track-type parent)
+    5 = Blip       (isolated EM deposit: nCapture gamma, hadronic e-, etc.)
+    6 = Other      (neutrinos, nuclei, neutrons, etc.)
 
 Usage:
     python3 classify_pixels.py [trackid_pid_map.h5] [pixeldata-anode*.h5 ...]
@@ -38,7 +39,8 @@ LABEL_TRACK      = 1
 LABEL_SHOWER     = 2
 LABEL_MICHEL     = 3
 LABEL_DELTARAY   = 4
-LABEL_OTHER      = 5
+LABEL_BLIP       = 5
+LABEL_OTHER      = 6
 
 LABEL_NAMES = {
     LABEL_BACKGROUND: "Background",
@@ -46,25 +48,130 @@ LABEL_NAMES = {
     LABEL_SHOWER:     "Shower",
     LABEL_MICHEL:     "Michel",
     LABEL_DELTARAY:   "DeltaRay",
+    LABEL_BLIP:       "Blip",
     LABEL_OTHER:      "Other",
 }
 
-# ── PDG sets for classification (same logic as classify_and_dump_json.py) ─────
+# ── PDG sets for classification (authoritative — other scripts must match) ────
 
-_TRACK_PDGS = {13, -13, 15, -15, 211, -211, 321, -321, 2212, -2212,
-               2112, 130, 310, 3122, 3112, 3222, 3312, 3334,
-               1000010020, 1000010030, 1000020030, 1000020040}
-_IONIZATION_PROCESSES = {2, 3, 8}   # eIoni, muIoni, hIoni
+_TRACK_PDGS = {13, -13, 211, -211, 2212, -2212}
+_EM_SHOWER_PDGS       = {11, -11, 22, 111}
+_IONIZATION_PROCESSES = {2, 3, 8}       # eIoni, muIoni, hIoni
+# Substrings used to identify EM-shower processes, mirroring the default
+# fNotStoredPhysics list in ParticleListAction.cc — "Ion" excluded intentionally.
+_NOT_STORED_PHYSICS = ("conv", "LowEnConversion", "Pair", "compt", "Compt",
+                       "Brem", "phot", "Photo", "annihil")
+
+PROCESS_NAMES = {
+    0: "primary", 1: "Decay", 2: "eIoni", 3: "muIoni", 4: "eBrem",
+    5: "compt", 6: "phot", 7: "conv", 8: "hIoni", 9: "nCapture",
+    10: "muPairProd", 11: "CoulombScat", 12: "muBrems",
+    13: "LowEnConversion", 14: "annihil",
+    15: "neutronInelastic", 16: "hadElastic",
+    17: "hBertiniCaptureAtRest", 18: "muMinusCaptureAtRest",
+    19: "protonInelastic", 20: "pi+Inelastic", 21: "pi-Inelastic",
+    22: "PhotonInelastic", 23: "CHIPSNuclearCaptureAtRest",
+    -1: "unset",
+}
+
+def build_em_shower_ancestor_set(track_ids, pids, processes, children_map, children_list,
+                                 track_to_mother=None):
+    """Return the set of track IDs that are EM-shower-seeded.
+
+    Mirrors the fNotStoredPhysics logic in ParticleListAction.cc:
+    a shower root is any particle whose creator process name contains one of
+    the _NOT_STORED_PHYSICS substrings (conv, LowEnConversion, Pair, compt,
+    Compt, Brem, phot, Photo, annihil — "Ion" excluded).  No PDG filter is
+    applied, matching the C++ behaviour.  Primary EM particles (proc==0,
+    e+/e-/gamma/pi0) are also treated as shower roots.
+
+    Uses pre-built children_map and children_list (from _build_ancestry /
+    get_all_children) so no tree is rebuilt here.
+
+    Args:
+        track_ids:     array of track IDs
+        pids:          array of PDG codes (same order)
+        processes:     array of process codes (same order)
+        children_map:  dict tid -> [child tids]  (from _build_ancestry)
+        children_list: list of descendant-id lists, one per track_ids entry
+                       (from get_all_children, same order as track_ids)
+    """
+    tid_to_pid  = {int(tid): int(pids[i])      for i, tid in enumerate(track_ids)}
+    tid_to_proc = {int(tid): int(processes[i]) for i, tid in enumerate(track_ids)}
+
+    # Mirror ParticleListAction.cc logic: a particle is a shower root if its
+    # creator process name contains any _NOT_STORED_PHYSICS substring (no PDG
+    # filter — any particle born by these processes is shower-seeded).
+    # Primary EM particles (proc==0) are also shower roots, same as before.
+    shower_chain = set()
+    for i, tid_raw in enumerate(track_ids):
+        tid       = int(tid_raw)
+        proc_code = tid_to_proc.get(tid, -1)
+        proc_name = PROCESS_NAMES.get(proc_code, "")
+        is_shower_proc = any(sub in proc_name for sub in _NOT_STORED_PHYSICS)
+        is_primary_em  = (proc_code == 0 and abs(tid_to_pid.get(tid, 0)) in _EM_SHOWER_PDGS)
+        if is_shower_proc or is_primary_em:
+            print(tid)
+            # Mark this root and all its descendants as shower-seeded
+            if tid not in shower_chain:
+                shower_chain.add(tid)
+                shower_chain.update(children_list[i])
+
+    def _print_subtree(tid, indent=0, visited=None):
+        if visited is None:
+            visited = set()
+        if tid in visited:
+            return
+        visited.add(tid)
+        pid  = tid_to_pid.get(tid, 0)
+        proc = tid_to_proc.get(tid, -1)
+        marker = "* " if tid in shower_chain else "  "
+        print(f"{'  ' * indent}|- {marker}[{tid}]  pid={pid}  proc={PROCESS_NAMES.get(proc, proc)}")
+        for child in sorted(children_map.get(tid, [])):
+            _print_subtree(child, indent + 1, visited)
+
+    print(f"  [debug] shower_chain={len(shower_chain)}")
+    print(shower_chain)
+    # Print each shower-chain member with its root ancestor's full subtree
+    printed_roots = set()
+    for tid in sorted(shower_chain):
+        root = get_root_ancestor(tid, track_to_mother) if track_to_mother else tid
+        if root not in printed_roots:
+            printed_roots.add(root)
+            root_pid  = tid_to_pid.get(root, 0)
+            root_proc = tid_to_proc.get(root, -1)
+            print(f"  [root ancestor] [{root}]  pid={root_pid}"
+                  f"  proc={PROCESS_NAMES.get(root_proc, root_proc)}")
+            _print_subtree(root)
+    return shower_chain
 
 
-def classify_all(track_ids, pids, processes, mother_pids):
+def classify_all(track_ids, pids, processes, mother_ids, mother_pids,
+                 children_map=None, children_list=None):
     """Return dict tid (int) → label (int).
 
-    Priority: Michel > DeltaRay > Track > Shower > Other
+    Priority: Michel > DeltaRay > Track > Shower > Blip > Other
+
+    Shower vs Blip is decided via the ancestor map built once from the full
+    decay chain: an EM particle is Shower if any ancestor in its EM chain was
+    created by an EM-shower process; otherwise it is a Blip (isolated deposit
+    seeded by a hadronic/nuclear process — nCapture gamma, hadronic e-, etc.).
+
+    children_map / children_list: pre-built by _build_ancestry / get_all_children.
+    If not provided they are built here (backward-compatible).
     """
     tid_to_pid     = {int(tid): int(pids[i])        for i, tid in enumerate(track_ids)}
     tid_to_proc    = {int(tid): int(processes[i])   for i, tid in enumerate(track_ids)}
     tid_to_mothpid = {int(tid): int(mother_pids[i]) for i, tid in enumerate(track_ids)}
+
+    if children_map is None or children_list is None:
+        _, children_map = _build_ancestry(track_ids, pids, mother_ids)
+        children_list   = [get_all_children(tid, children_map) for tid in track_ids]
+
+    track_to_mother_local = {int(tid): int(mother_ids[i]) for i, tid in enumerate(track_ids)}
+    shower_chain = build_em_shower_ancestor_set(track_ids, pids, processes,
+                                                children_map, children_list,
+                                                track_to_mother=track_to_mother_local)
 
     result = {}
 
@@ -79,11 +186,9 @@ def classify_all(track_ids, pids, processes, mother_pids):
             result[tid] = LABEL_MICHEL
             continue
 
-        # 2. DeltaRay: negative track ID, or ionization e- with Track-type parent
-        if tid < 0:
-            result[tid] = LABEL_DELTARAY
-            continue
-        if abs(pid) == 11 and proc in _IONIZATION_PROCESSES and abs(moth_pid) in _TRACK_PDGS:
+        # 2. DeltaRay: created by an ionization process whose parent is a Track-type particle
+        proc_name = PROCESS_NAMES.get(proc, "")
+        if (proc in _IONIZATION_PROCESSES or "Ioni" in proc_name) and abs(moth_pid) in _TRACK_PDGS:
             result[tid] = LABEL_DELTARAY
             continue
 
@@ -92,14 +197,92 @@ def classify_all(track_ids, pids, processes, mother_pids):
             result[tid] = LABEL_TRACK
             continue
 
-        # 4. Shower: EM particles (e+/e-, gamma, pi0)
-        if abs(pid) in (11, 22, 111):
-            result[tid] = LABEL_SHOWER
+        # 4/5. Shower vs Blip: any EM particle whose ancestor (any depth) is
+        #      shower-seeded is itself Shower; otherwise isolated Blip
+        if abs(pid) in _EM_SHOWER_PDGS:
+            result[tid] = LABEL_SHOWER if tid in shower_chain else LABEL_BLIP
             continue
 
-        # 5. Other
+        # 6. Other
         result[tid] = LABEL_OTHER
 
+    # debug printout — all label types
+    tid_to_ancestor = {tid: get_root_ancestor(tid, track_to_mother_local)
+                       for tid in track_to_mother_local}
+    for lbl, lbl_name in sorted(LABEL_NAMES.items()):
+        if lbl == LABEL_BACKGROUND:
+            continue
+        for tid, tlbl in sorted(result.items()):
+            if tlbl != lbl:
+                continue
+            pid      = tid_to_pid.get(tid, 0)
+            proc     = tid_to_proc.get(tid, -1)
+            moth_pid = tid_to_mothpid.get(tid, 0)
+            moth_tid = track_to_mother_local.get(tid, 0)
+            anc_tid  = tid_to_ancestor.get(tid, 0)
+            print(f"  [{lbl_name:10s}] tid={tid:6d}  pid={pid:12d}"
+                  f"  proc={PROCESS_NAMES.get(proc, proc)}"
+                  f"  moth_pid={moth_pid}  moth_tid={moth_tid}  ancestor_tid={anc_tid}")
+
+    return result
+
+
+def _build_ancestry(track_ids, pids, mother_ids):
+    """Build parent/child maps from track arrays.
+
+    Returns:
+        track_to_mother: dict  tid -> mother_id
+        children_map:    dict  tid -> [child tids]
+    """
+    track_to_mother = {int(tid): int(mid) for tid, mid in zip(track_ids, mother_ids)}
+    track_to_pid    = {int(tid): int(pid) for tid, pid in zip(track_ids, pids)}
+    children_map    = defaultdict(list)
+
+    for tid in track_ids:
+        tid = int(tid)
+        if tid < 0:
+            pos = abs(tid)
+            if pos in track_to_pid:
+                children_map[pos].append(tid)
+            else:
+                mid = track_to_mother[tid]
+                if mid != 0:
+                    children_map[mid].append(tid)
+        else:
+            mid = track_to_mother[tid]
+            if mid != 0:
+                children_map[mid].append(tid)
+
+    return track_to_mother, children_map
+
+
+def get_root_ancestor(tid, track_to_mother):
+    """Walk mother_id links upward and return the root ancestor track_id."""
+    visited = set()
+    current = int(tid)
+    while True:
+        if current in visited:
+            break
+        visited.add(current)
+        mid = track_to_mother.get(current, 0)
+        if mid == 0 or mid not in track_to_mother:
+            break
+        current = mid
+    return current
+
+
+def get_all_children(tid, children_map):
+    """Return a flat list of ALL descendant track_ids (depth-first, excluding tid)."""
+    result  = []
+    stack   = list(children_map.get(int(tid), []))
+    visited = {int(tid)}
+    while stack:
+        node = stack.pop()
+        if node in visited:
+            continue
+        visited.add(node)
+        result.append(node)
+        stack.extend(children_map.get(node, []))
     return result
 
 
@@ -115,11 +298,17 @@ def load_classification_maps(truth_file):
         print(f"  Events found: {event_keys}")
         for ek in event_keys:
             mc = f[ek]['mcpart']
-            track_ids  = mc['track_ids'][:]
-            pids       = mc['pids'][:]
-            processes  = mc['processes'][:]
+            track_ids   = mc['track_ids'][:]
+            pids        = mc['pids'][:]
+            processes   = mc['processes'][:]
+            mother_ids  = mc['mother_ids'][:]
             mother_pids = mc['mother_pids'][:]
-            label_map = classify_all(track_ids, pids, processes, mother_pids)
+            track_to_mother, children_map = _build_ancestry(track_ids, pids, mother_ids)
+            ancestor_ids  = [get_root_ancestor(tid, track_to_mother) for tid in track_ids]
+            children_list = [get_all_children(tid, children_map)     for tid in track_ids]
+
+            label_map = classify_all(track_ids, pids, processes, mother_ids, mother_pids,
+                                     children_map=children_map, children_list=children_list)
             maps[ek] = label_map
             # Summary
             from collections import Counter
@@ -152,8 +341,9 @@ def build_label_frame(track_id_frame, label_map):
     nonzero_mask = tid_int != 0
     if nonzero_mask.any():
         nonzero_tids = tid_int[nonzero_mask]
-        # Vectorized dict lookup
-        nonzero_labels = np.array([label_map.get(int(t), LABEL_OTHER) for t in nonzero_tids],
+        # Negative tids are G4-dropped particles attributed to their
+        # MCParticle parent (abs(tid)) by SimChannel — inherit parent's label.
+        nonzero_labels = np.array([label_map.get(int(abs(t)), LABEL_OTHER) for t in nonzero_tids],
                                    dtype=np.int8)
         label_flat[nonzero_mask] = nonzero_labels
 

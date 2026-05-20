@@ -150,6 +150,61 @@ def build_tree(track_ids, pids, mother_ids):
     return track_to_pid, track_to_mother, children, primaries, pseudo_primaries
 
 
+def get_root_ancestor(tid, track_to_mother):
+    """Return the very first ancestor (root) of a given track_id.
+
+    Walks up mother_id links until reaching a particle with mother_id == 0
+    or a particle not present in the data.  Returns the original tid if it
+    is already a root.
+
+    Args:
+        tid:            track_id to query
+        track_to_mother: dict mapping track_id -> mother_id (from build_tree)
+
+    Returns:
+        root track_id (int)
+    """
+    visited = set()
+    current = tid
+    while True:
+        if current in visited:
+            # Cycle guard — should not happen in valid G4 output
+            break
+        visited.add(current)
+        mid = track_to_mother.get(current, 0)
+        if mid == 0 or mid not in track_to_mother:
+            break
+        current = mid
+    return current
+
+
+def get_all_children(tid, children):
+    """Return a flat list of ALL descendant track_ids of a given track_id.
+
+    Performs a depth-first traversal of the children map produced by
+    build_tree().  The returned list does NOT include tid itself.
+
+    Args:
+        tid:      track_id to query
+        children: defaultdict(list) mapping track_id -> [child track_ids]
+                  (from build_tree)
+
+    Returns:
+        list of descendant track_ids (order: depth-first)
+    """
+    result = []
+    stack = list(children.get(tid, []))
+    visited = {tid}
+    while stack:
+        node = stack.pop()
+        if node in visited:
+            continue
+        visited.add(node)
+        result.append(node)
+        stack.extend(children.get(node, []))
+    return result
+
+
 def print_tree(tid, track_to_pid, children, indent=0, visited=None, max_depth=10):
     """Recursively print the decay tree."""
     if visited is None:
@@ -388,6 +443,15 @@ PROCESS_NAMES = {
     12: "muBrems",
     13: "LowEnConversion",
     14: "annihil",
+    15: "neutronInelastic",
+    16: "hadElastic",
+    17: "hBertiniCaptureAtRest",
+    18: "muMinusCaptureAtRest",
+    19: "protonInelastic",
+    20: "pi+Inelastic",
+    21: "pi-Inelastic",
+    22: "PhotonInelastic",
+    23: "CHIPSNuclearCaptureAtRest",
     -1: "unset",
 }
 
@@ -446,10 +510,23 @@ def generate_graphviz_compact(track_ids, pids, mother_ids, output_file="decay_ch
     for primary in primaries:
         collect_nodes(primary, all_primary_nodes)
 
-    # Classify nodes
-    collapsed_nuclei = {t for t in all_primary_nodes if is_collapsible_nucleus(t)}
-    em_shower_nodes  = {t for t in all_primary_nodes if t < 0} if collapse_em else set()
-    render_nodes     = all_primary_nodes - collapsed_nuclei - em_shower_nodes
+    # Also collect descendants of pseudo-primaries (parents not in this dataset, e.g. mcpart
+    # tracks that have no simchnl entry).  The pseudo-primary itself is NOT in track_to_pid.
+    all_pseudo_nodes = set()
+    for pseudo in pseudo_primaries:
+        all_pseudo_nodes.add(pseudo)
+        for child in children.get(pseudo, []):
+            collect_nodes(child, all_pseudo_nodes)
+    # Actual data nodes reachable only via pseudo-primaries
+    pseudo_data_nodes = all_pseudo_nodes - {p for p in pseudo_primaries}
+
+    all_nodes_combined = all_primary_nodes | all_pseudo_nodes
+
+    # Classify nodes (only from the data nodes, not ghost pseudo-primaries)
+    collapsed_nuclei = {t for t in all_nodes_combined
+                        if t in track_to_pid and is_collapsible_nucleus(t)}
+    em_shower_nodes  = {t for t in all_nodes_combined if t < 0} if collapse_em else set()
+    render_nodes     = (all_primary_nodes | pseudo_data_nodes) - collapsed_nuclei - em_shower_nodes
 
     # Build per-node annotation summaries
     nucleus_summary = defaultdict(Counter)
@@ -467,6 +544,8 @@ def generate_graphviz_compact(track_ids, pids, mother_ids, output_file="decay_ch
         if tid in track_to_process:
             proc_code = track_to_process[tid]
             proc_name = PROCESS_NAMES.get(int(proc_code), f"proc:{proc_code}")
+            if int(proc_code) == -1:
+                print(f"  [unset] tid={tid} pid={pid} ({name})")
             lines.append(proc_name)
         # Energy on third line (simchnl only)
         if tid in track_to_energy:
@@ -489,6 +568,14 @@ def generate_graphviz_compact(track_ids, pids, mother_ids, output_file="decay_ch
         f.write('  node [shape=box, fontsize=9, margin="0.08,0.04"];\n')
         f.write("  edge [fontsize=7];\n\n")
 
+        # Ghost nodes for pseudo-primaries (parents not in this dataset)
+        if pseudo_primaries:
+            f.write('  // Ghost nodes: parents not present in this dataset\n')
+            for pseudo in sorted(pseudo_primaries):
+                f.write(f'  "{pseudo}" [label="{pseudo}\\n(not in data)", '
+                        f'style="dotted,filled", fillcolor="white"];\n')
+            f.write('\n')
+
         # One subgraph cluster per primary chain
         for i, primary in enumerate(sorted(primaries)):
             chain_nodes = set()
@@ -507,27 +594,53 @@ def generate_graphviz_compact(track_ids, pids, mother_ids, output_file="decay_ch
                 pid_t = track_to_pid.get(tid, 0)
                 label = node_label(tid)
                 color = node_color(pid_t)
-                # Negative track IDs rendered with dashed border to distinguish EM shower
                 style = "filled,dashed" if tid < 0 else "filled"
                 f.write(f'    "{tid}" [label="{label}", style="{style}", fillcolor="{color}"];\n')
 
             f.write("  }\n\n")
 
-        # Edges (within render_nodes only)
-        for parent_tid in sorted(render_nodes):
+        # Pseudo-primary chains (children grouped outside primary clusters)
+        for j, pseudo in enumerate(sorted(pseudo_primaries)):
+            chain_nodes = set()
+            for child in children.get(pseudo, []):
+                collect_nodes(child, chain_nodes)
+            chain_render = chain_nodes - collapsed_nuclei - em_shower_nodes
+
+            if not chain_render:
+                continue
+
+            f.write(f'  subgraph cluster_pseudo_{j} {{\n')
+            f.write(f'    label="(parent {pseudo} not in data)";\n')
+            f.write(f'    style=filled; fillcolor="#fff8e8";\n')
+            f.write(f'    fontsize=10;\n')
+
+            for tid in sorted(chain_render):
+                pid_t = track_to_pid.get(tid, 0)
+                label = node_label(tid)
+                color = node_color(pid_t)
+                style = "filled,dashed" if tid < 0 else "filled"
+                f.write(f'    "{tid}" [label="{label}", style="{style}", fillcolor="{color}"];\n')
+
+            f.write("  }\n\n")
+
+        # Edges (within all render_nodes + ghost pseudo-primaries)
+        all_render = render_nodes | set(pseudo_primaries)
+        for parent_tid in sorted(all_render):
             for child_tid in sorted(children.get(parent_tid, [])):
                 if child_tid in render_nodes:
                     f.write(f'  "{parent_tid}" -> "{child_tid}";\n')
 
         f.write("}\n")
 
-    n_orig = len(all_primary_nodes)
+    n_orig = len(all_primary_nodes) + len(pseudo_data_nodes)
     n_compact = len(render_nodes)
     em_note = f" + {len(em_shower_nodes)} EM shower collapsed" if collapse_em else \
-              f" ({len({t for t in all_primary_nodes if t < 0})} EM shower shown as nodes)"
+              f" ({len({t for t in all_nodes_combined if t < 0})} EM shower shown as nodes)"
     print(f"\nCompact Graphviz DOT written to: {output_file}")
     print(f"  Nodes: {n_orig} → {n_compact} "
           f"(collapsed {len(collapsed_nuclei)} nuclei{em_note})")
+    if pseudo_primaries:
+        print(f"  Ghost parents (not in data): {sorted(pseudo_primaries)}")
 
 
 def compare_mcpart_simchnl(mc, sc):
