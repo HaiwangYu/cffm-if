@@ -5,6 +5,8 @@
 .tmp
 *.png
 *.pdf
+*.swp
+*.json
 */a.json
 */log.txt
 *__pycache__/
