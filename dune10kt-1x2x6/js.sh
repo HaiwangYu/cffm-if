@@ -26,6 +26,8 @@ if [[ $1 == "json" || $1 == "all" ]]; then
         --ext-code driftSpeed=1.60563 \
         --ext-code elecGain=14 \
         --ext-code lifetime=10 \
+        --ext-code keep_truth=true \
+        --ext-code gzip=6 \
         --ext-code recobwire_tags="[\"wclsdatavd:gauss\"]" \
         --ext-code trace_tags="[\"gauss\"]" \
         --ext-code summary_tags="[\"\"]" \
