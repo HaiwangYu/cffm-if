@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-classify_pixels.py — Assign classification labels to each pixel in pixeldata-anode*.h5
+classify_pixels.py -- Assign classification labels to each pixel in pixeldata-anode*.h5
 based on MC truth from trackid_pid_map.h5.
 
 For each event frame, reads frame_trackid_1st and frame_trackid_2nd (float32 arrays
@@ -293,7 +294,7 @@ def load_classification_maps(truth_file):
     """
     print(f"Loading MC truth: {truth_file}")
     maps = {}
-    with h5py.File(truth_file, 'r') as f:
+    with h5py.File(truth_file, 'r+') as f:
         event_keys = list(f.keys())
         print(f"  Events found: {event_keys}")
         for ek in event_keys:
@@ -310,11 +311,19 @@ def load_classification_maps(truth_file):
             label_map = classify_all(track_ids, pids, processes, mother_ids, mother_pids,
                                      children_map=children_map, children_list=children_list)
             maps[ek] = label_map
+
+            # Save labels into mcpart/ (same order as track_ids)
+            labels_arr = np.array([label_map.get(int(t), LABEL_OTHER) for t in track_ids], dtype=np.int8)
+            if 'labels' in mc:
+                del mc['labels']
+            mc.create_dataset('labels', data=labels_arr)
+            print(f"  Event {ek}: saved labels ({len(labels_arr)} entries) to {truth_file}:/{ek}/mcpart/labels")
+
             # Summary
             from collections import Counter
             counts = Counter(label_map.values())
             total = len(label_map)
-            print(f"  Event {ek}: {total} tracks — " +
+            print(f"  Event {ek}: {total} tracks -- " +
                   ", ".join(f"{LABEL_NAMES[l]}={counts.get(l,0)}" for l in sorted(LABEL_NAMES) if l != 0))
     return maps
 

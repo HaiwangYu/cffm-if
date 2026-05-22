@@ -91,6 +91,7 @@ local trackid_pid_map2h5 = g.pnode({
         simchannel_label: "tpcrawdecoder:simpleSC",
         particle_label: "largeant",
         output_file: "trackid_pid_map.h5",
+        save_mc_json: true,
     },
 }, nin=1, nout=1);
 
@@ -134,11 +135,12 @@ local hio_tru_nodes = [
         trace_tags: if fcl_params.keep_truth then [
             'rebinned_reco',
             'trackid_1st',
-            'pid_1st',
+            // 'pid_1st',
             'energyfrac_1st',
             'trackid_2nd',
-            'pid_2nd',
+            // 'pid_2nd',
             'energyfrac_2nd',
+            "total_numelectrons",
         ] else [
             'rebinned_reco'
         ],
