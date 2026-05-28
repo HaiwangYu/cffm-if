@@ -5,7 +5,7 @@ local wc = import "wirecell.jsonnet";
 local tools_maker = import 'pgrapher/common/tools.jsonnet';
 
 local params_maker = import 'pgrapher/experiment/dune10kt-1x2x6/simparams.jsonnet';
-local sp_trace_tag = "dnnsp"; // gauss, dnnsp
+local sp_trace_tag = "gauss"; // gauss, dnnsp
 local fcl_params = {
     keep_truth: std.extVar('keep_truth'),
     gzip: std.extVar('gzip'),
@@ -51,7 +51,7 @@ local chsel_pipes = [
     data: {
       channels: std.range(2560 * n, 2560 * (n + 1) - 1),
       // tags: [sp_trace_tag], // must specify tag to select traces
-      tags: ["dnnsp"], // must specify tag to select traces
+      tags: [sp_trace_tag], // must specify tag to select traces
       //channels: if n==0 then std.range(2560*n,2560*(n+1)-1) else [],
       //tags: ['orig%d' % n], // traces tag
     },
@@ -92,6 +92,7 @@ local trackid_pid_map2h5 = g.pnode({
         particle_label: "largeant",
         output_file: "trackid_pid_map.h5",
         save_mc_json: true,
+        save_extended_mcpart: true,
     },
 }, nin=1, nout=1);
 

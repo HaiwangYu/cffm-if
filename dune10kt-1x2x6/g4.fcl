@@ -1048,6 +1048,17 @@ services: {
          "generator"
       ]
       keepOnlyPrimaryFullTrajectories: false
+      NotStoredPhysics: [
+         "conv",
+         "LowEnConversion",
+         "Pair",
+         "compt",
+         "Compt",
+         "Brem",
+         "phot",
+         "Photo",
+         "annihil"
+      ]
       service_type: "ParticleListActionService"
       storeTrajectories: true
    }
