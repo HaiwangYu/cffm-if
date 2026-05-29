@@ -79,12 +79,20 @@ def build_em_shower_ancestor_set(track_ids, pids, processes, children_map, child
                                  track_to_mother=None):
     """Return the set of track IDs that are EM-shower-seeded.
 
-    Mirrors the fNotStoredPhysics logic in ParticleListAction.cc:
-    a shower root is any particle whose creator process name contains one of
-    the _NOT_STORED_PHYSICS substrings (conv, LowEnConversion, Pair, compt,
-    Compt, Brem, phot, Photo, annihil — "Ion" excluded).  No PDG filter is
-    applied, matching the C++ behaviour.  Primary EM particles (proc==0,
-    e+/e-/gamma/pi0) are also treated as shower roots.
+    A shower root is:
+      - any particle whose creator process name contains one of the
+        _NOT_STORED_PHYSICS substrings (conv, LowEnConversion, Pair, compt,
+        Compt, Brem, phot, Photo, annihil — "Ion" excluded), mirroring the
+        fNotStoredPhysics logic in ParticleListAction.cc; or
+      - any primary EM particle (proc==0, e+/e-/gamma/pi0); or
+      - any pi0, regardless of creator process — pi0 -> gamma gamma is
+        prompt (tau ~ 8e-17 s) so it always seeds an EM shower.  Without
+        this rule, pi0s from hadronic interactions (protonInelastic,
+        pi+/-Inelastic, neutronInelastic) and from kaon/Lambda decays
+        would be missed, and their decay gammas (proc=Decay, mother_pid=111)
+        plus the first generation of ionization daughters would be
+        misclassified as Blip.  The gammas and the rest of the cascade are
+        absorbed via the descendant-propagation step below.
 
     Uses pre-built children_map and children_list (from _build_ancestry /
     get_all_children) so no tree is rebuilt here.
@@ -100,20 +108,16 @@ def build_em_shower_ancestor_set(track_ids, pids, processes, children_map, child
     tid_to_pid  = {int(tid): int(pids[i])      for i, tid in enumerate(track_ids)}
     tid_to_proc = {int(tid): int(processes[i]) for i, tid in enumerate(track_ids)}
 
-    # Mirror ParticleListAction.cc logic: a particle is a shower root if its
-    # creator process name contains any _NOT_STORED_PHYSICS substring (no PDG
-    # filter — any particle born by these processes is shower-seeded).
-    # Primary EM particles (proc==0) are also shower roots, same as before.
     shower_chain = set()
     for i, tid_raw in enumerate(track_ids):
         tid       = int(tid_raw)
+        pid       = tid_to_pid.get(tid, 0)
         proc_code = tid_to_proc.get(tid, -1)
         proc_name = PROCESS_NAMES.get(proc_code, "")
         is_shower_proc = any(sub in proc_name for sub in _NOT_STORED_PHYSICS)
-        is_primary_em  = (proc_code == 0 and abs(tid_to_pid.get(tid, 0)) in _EM_SHOWER_PDGS)
-        if is_shower_proc or is_primary_em:
-            print(tid)
-            # Mark this root and all its descendants as shower-seeded
+        is_primary_em  = (proc_code == 0 and abs(pid) in _EM_SHOWER_PDGS)
+        is_pi0         = (abs(pid) == 111)
+        if is_shower_proc or is_primary_em or is_pi0:
             if tid not in shower_chain:
                 shower_chain.add(tid)
                 shower_chain.update(children_list[i])
