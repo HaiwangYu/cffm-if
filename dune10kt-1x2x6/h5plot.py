@@ -10,13 +10,17 @@ if __name__ == '__main__':
 
   fn = sys.argv[1]
   key = sys.argv[2]
-  iapa = 5
+  iapa = int(sys.argv[3])
+  print(f"File: {fn}, Key: {key}, APA: {iapa}")
   
 
   data = h5py.File(fn, 'r')
   f = data.get(key)
   if f is None:
     print('f is None')
+    print('Available keys:')
+    for k in data.keys():
+      print(k)
     exit()
   frame = np.array(f)
   print(frame.shape)

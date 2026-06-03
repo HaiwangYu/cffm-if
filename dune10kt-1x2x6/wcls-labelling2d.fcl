@@ -1944,6 +1944,7 @@ physics: {
             ]
             inputers: [
                "wclsCookedFrameSource:sigs"
+               , "Truth2h5:all"
                , "Labelling2D:all"
             ]
             outputers: [

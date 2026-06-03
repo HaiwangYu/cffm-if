@@ -54,6 +54,14 @@ local wcls_input = g.pnode({
     },
 }, nin=0, nout=1);
 
+local truth2h5 = g.pnode({
+    type: 'Truth2h5',
+    name: 'all',
+    data: {
+        output_file: "g4-tru.h5",
+    },
+}, nin=1, nout=1);
+
 local labelling2d = g.pnode({
     type: 'Labelling2D',
     name: 'all',
@@ -71,8 +79,8 @@ local hio_rec = g.pnode({
     name: 'hio_rec_all',
     data: {
         anode: wc.tn(mega_anode),
-        trace_tags: [sp_trace_tag], 
-        // trace_tags: ["rebinned_reco"], 
+        // trace_tags: [sp_trace_tag],
+        trace_tags: ["rebinned_reco"], 
         filename: "g4-rec.h5",
         gzip: 2,
     },
@@ -95,7 +103,7 @@ local hio_tru = g.pnode({
 }, nin=1, nout=1);
 
 local dumpcap = g.pnode({ type: 'DumpFrames' }, nin=1, nout=0);
-local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
+local graph = g.pipeline([wcls_input, truth2h5, labelling2d, hio_rec, hio_tru, dumpcap], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow
