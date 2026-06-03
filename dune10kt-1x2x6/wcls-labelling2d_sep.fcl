@@ -1945,6 +1945,7 @@ physics: {
             inputers: [
                "wclsCookedFrameSource:sigs"
                , "Truth2h5:all"
+               , "TrackIDPIDMap2h5:all"
                , "Labelling2D:anode0"
                , "Labelling2D:anode1"
                , "Labelling2D:anode2"
