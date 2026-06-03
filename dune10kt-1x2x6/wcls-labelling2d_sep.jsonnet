@@ -5,7 +5,7 @@ local wc = import "wirecell.jsonnet";
 local tools_maker = import 'pgrapher/common/tools.jsonnet';
 
 local params_maker = import 'pgrapher/experiment/dune10kt-1x2x6/simparams.jsonnet';
-local sp_trace_tag = "dnnsp"; // gauss, dnnsp
+local sp_trace_tag = "gauss"; // gauss, dnnsp
 local fcl_params = {
     keep_truth: std.extVar('keep_truth'),
     gzip: std.extVar('gzip'),
@@ -51,7 +51,7 @@ local chsel_pipes = [
     data: {
       channels: std.range(2560 * n, 2560 * (n + 1) - 1),
       // tags: [sp_trace_tag], // must specify tag to select traces
-      tags: ["dnnsp"], // must specify tag to select traces
+      tags: [sp_trace_tag], // must specify tag to select traces
       //channels: if n==0 then std.range(2560*n,2560*(n+1)-1) else [],
       //tags: ['orig%d' % n], // traces tag
     },
@@ -83,6 +83,19 @@ local truth2h5 = g.pnode({
         output_file: "metadata.h5",
     },
 }, nin=1, nout=1);
+
+local trackid_pid_map2h5 = g.pnode({
+    type: 'TrackIDPIDMap2h5',
+    name: 'all',
+    data: {
+        simchannel_label: "tpcrawdecoder:simpleSC",
+        particle_label: "largeant",
+        output_file: "trackid_pid_map.h5",
+        save_mc_json: true,
+        save_extended_mcpart: true,
+    },
+}, nin=1, nout=1);
+
 
 local labelling2d_pipes_nodes = [
   g.pnode({
@@ -124,9 +137,12 @@ local hio_tru_nodes = [
         trace_tags: if fcl_params.keep_truth then [
             'rebinned_reco',
             'trackid_1st',
-            'pid_1st',
+            // 'pid_1st',
+            'energyfrac_1st',
             'trackid_2nd',
-            'pid_2nd'
+            // 'pid_2nd',
+            'energyfrac_2nd',
+            "total_numelectrons",
         ] else [
             'rebinned_reco'
         ],
@@ -161,10 +177,12 @@ local fanin_tag_rules = [
             },
             trace: {
                 'rebinned_reco': 'rebinned_reco_%d'%n,
-                'trackid_1st':'trackid_1st_%d'%n,
-                'pid_1st': 'pid_1st_%d'%n,
-                'trackid_2nd': 'trackid_2nd_%d'%n,
-                'pid_2nd': 'pid_2nd_%d'%n,
+                'trackid_1st':   'trackid_1st_%d'%n,
+                'pid_1st':       'pid_1st_%d'%n,
+                'trackid_2nd':   'trackid_2nd_%d'%n,
+                'pid_2nd':       'pid_2nd_%d'%n,
+                'energyfrac_1st': 'energyfrac_1st_%d'%n,
+                'energyfrac_2nd': 'energyfrac_2nd_%d'%n,
             },
 
           }
@@ -215,7 +233,7 @@ local fanpipe = g.intern(
 
 // local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
 // local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
-local graph = g.pipeline([wcls_input, truth2h5, fanpipe], "main");
+local graph = g.pipeline([wcls_input, truth2h5, trackid_pid_map2h5, fanpipe], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow
