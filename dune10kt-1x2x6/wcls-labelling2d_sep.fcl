@@ -1966,8 +1966,8 @@ physics: {
             structs: {
                keep_truth: true
                gzip: 6
-               recobwire_tags: "[\"tpcrawdecoder:gauss\"]"
-               trace_tags: "[\"gauss\"]"
+               recobwire_tags: "[\"tpcrawdecoder:dnnsp\"]"
+               trace_tags: "[\"dnnsp\"]"
                summary_tags: "[\"\"]"
                input_mask_tags: "[]"
                output_mask_tags: "[]"
