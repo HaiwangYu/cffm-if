@@ -55,6 +55,7 @@
       "data": {
          "nticks": 6000,
          "reco_tag": "gauss",
+         "save_extended_labels": true,
          "simchannel_label": "tpcrawdecoder:simpleSC"
       },
       "name": "all",
@@ -66,8 +67,14 @@
          "filename": "g4-tru.h5",
          "gzip": 2,
          "trace_tags": [
-            "trackid",
-            "pid"
+            "orig_trackid_1st",
+            "orig_pid_1st",
+            "current_pid_1st",
+            "charge_1st",
+            "orig_trackid_2nd",
+            "orig_pid_2nd",
+            "current_pid_2nd",
+            "charge_2nd"
          ]
       },
       "name": "hio_tru_all",
