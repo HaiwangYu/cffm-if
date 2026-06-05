@@ -10,3 +10,7 @@
 */a.json
 */log.txt
 *__pycache__/
+jay-*
+*.bak
+*~
+tmp*
