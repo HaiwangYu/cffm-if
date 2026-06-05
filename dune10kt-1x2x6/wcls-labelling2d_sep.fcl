@@ -1931,6 +1931,7 @@ physics: {
          wcls_main: {
             apps: [
                "Pgrapher"
+               # "TbbFlow"
             ]
             configs: [
 #               "wcls-labelling2d.jsonnet"
