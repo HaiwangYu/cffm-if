@@ -234,7 +234,7 @@ local fanpipe = g.intern(
 
 // local graph = g.pipeline([wcls_input, hio_rec, labelling2d, hio_tru, dumpcap], "main");
 // local graph = g.pipeline([wcls_input, hio_rec, fanpipe, dumpcap], "main");
-local graph = g.pipeline([wcls_input, truth2h5, trackid_pid_map2h5, fanpipe], "main");
+local graph = g.pipeline([wcls_input, truth2h5, /*trackid_pid_map2h5,*/ fanpipe], "main");
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow
