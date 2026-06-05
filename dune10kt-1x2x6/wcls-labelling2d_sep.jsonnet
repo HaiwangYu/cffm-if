@@ -148,6 +148,7 @@ local hio_tru_nodes = [
         ],
         filename: "pixeldata-anode%d.h5" % n,
         gzip: fcl_params.gzip,
+        chunk: [2560, 1500]
     },
   }, nin=1, nout=1)
   for n in std.range(0, std.length(tools.anodes) - 1)
@@ -237,6 +238,7 @@ local graph = g.pipeline([wcls_input, truth2h5, trackid_pid_map2h5, fanpipe], "m
 
 local app = {
   type: 'Pgrapher', //Pgrapher, TbbFlow
+//   type: 'TbbFlow', //Pgrapher, TbbFlow
   data: {
     edges: g.edges(graph),
   },
@@ -247,6 +249,7 @@ local cmdline = {
     data: {
         plugins: ["WireCellGen", "WireCellPgraph", "WireCellSio", "WireCellSigProc", "WireCellRoot", "WireCellTbb", "WireCellImg"],
         apps: ["Pgrapher"] //TbbFlow
+        // apps: ["TbbFlow"] //TbbFlow
     }
 };
 
