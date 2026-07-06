@@ -14,3 +14,7 @@ jay-*
 *.bak
 *~
 tmp*
+.corepool
+*.out
+*.gz
+*.txt
