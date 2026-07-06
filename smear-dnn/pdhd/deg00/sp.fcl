@@ -1,0 +1,4 @@
+#include "standard_detsim_protodunehd.fcl"
+# TPC only (detsim; truth smearing lives in wirecell_protodunehdmc)
+physics.simulate: [ rns, tpcrawdecoder ]
+outputs.out1.fileName: "detsim.root"

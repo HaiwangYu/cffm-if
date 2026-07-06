@@ -1,0 +1,17 @@
+#include "standard_g4_dunevd10kt.fcl"
+services.Geometry: {
+  GDML: "dunevd10kt_3view_30deg_v6_refactored.gdml"
+  Name: "dunevd10kt_3view_30deg_v6_refactored"
+  SortingParameters: { SortTPCPDVD: false tool_type: "GeoObjectSorterCRU60D" }
+  SurfaceY: 147828
+}
+services.AuxDetGeometry.GDML: "dunevd10kt_3view_30deg_v6_refactored.gdml"
+# Geant4 tracks the LArG4Detector gdml (NOT services.Geometry);
+# without this the muon is stepped through the default HD world
+# and no SimEnergyDeposits are produced.
+services.LArG4Detector: {
+  category: "world"
+  gdmlFileName_: "dunevd10kt_3view_30deg_v6_refactored.gdml"
+  stepLimits: [ 4e-1, 4e-1 ]
+  volumeNames: [ "volTPCActive", "volCryostat" ]
+}

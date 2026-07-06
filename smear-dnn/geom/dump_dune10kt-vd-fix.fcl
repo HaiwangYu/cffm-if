@@ -1,0 +1,23 @@
+#include "standard_g4_dunevd10kt.fcl"
+process_name: GeoDump
+source: { module_type: EmptyEvent maxEvents: 1 }
+physics: {
+  analyzers: { geometrydump: { module_type: DumpGeometry outputCategory: "DumpGeometry" } }
+  dumpers: [ geometrydump ]
+  end_paths: [ dumpers ]
+}
+outputs: {}
+services.Geometry: {
+  GDML: "dunevd10kt_3view_30deg_v6_refactored.gdml"
+  Name: "dunevd10kt_3view_30deg_v6_refactored"
+  SortingParameters: { SortTPCPDVD: false tool_type: "GeoObjectSorterCRU60D" }
+  SurfaceY: 147828
+}
+services.AuxDetGeometry.GDML: "dunevd10kt_3view_30deg_v6_refactored.gdml"
+services.message.destinations.GeometryLog: {
+  type: file
+  filename: "dune10kt-vd-fix-geometry.txt"
+  threshold: INFO
+  categories: { DumpGeometry: { limit: -1 } default: { limit: 0 } }
+}
+services.TFileService: { fileName: "/dev/null" }
