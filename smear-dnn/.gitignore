@@ -1,0 +1,24 @@
+# smear-dnn campaign: track scripts + fcl inputs only, not data/logs.
+
+# data products
+*.root
+*.png
+*.h5
+*.db
+chanmap-*.json.gz    # regenerable via build-chanmaps.py
+
+# logs / run output
+*.log
+*.out
+status*.txt
+geom/*-geometry.txt
+geom/*.log
+
+# transient runner fragments written by the queue scripts each run
+**/q-inner.sh
+**/q[0-9].sh
+**/rerun-inner.sh
+**/rerun-sp.sh
+
+# core-pool scratch
+.corepool/

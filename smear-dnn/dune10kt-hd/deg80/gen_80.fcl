@@ -1,0 +1,55 @@
+#include "standard_g4_dune10kt.fcl"
+# Reuse the workflow g4 services (correct geometry) for the gen stage.
+process_name: SinglesGen
+source: {
+  module_type: EmptyEvent
+  timestampPlugin: { plugin_type: "GeneratedEventTimestamp" }
+  maxEvents: 1
+  firstRun: 1
+  firstEvent: 1
+}
+physics: {
+  producers: {
+    rns: { module_type: "RandomNumberSaver" }
+    generator: {
+      module_type:           "SingleGen"
+      ParticleSelectionMode: "all"
+      PadOutVectors:         false
+      PDG:                   [ 13 ]
+      P0:                    [ 10.0 ]
+      SigmaP:                [ 0.0 ]
+      PDist:                 "Gaussian"
+      X0:                    [ -671.4 ]
+      Y0:                    [ 0.0 ]
+      Z0:                    [ 115.3 ]
+      T0:                    [ 0.0 ]
+      SigmaX:                [ 0.0 ]
+      SigmaY:                [ 0.0 ]
+      SigmaZ:                [ 0.0 ]
+      SigmaT:                [ 0.0 ]
+      Theta0XZ:              [ 80.0 ]
+      Theta0YZ:              [ 0.0 ]
+      SigmaThetaXZ:          [ 0.0 ]
+      SigmaThetaYZ:          [ 0.0 ]
+      PosDist:               "uniform"
+      TDist:                 "uniform"
+      AngleDist:             "Gaussian"
+    }
+  }
+  simulate: [ rns, generator ]
+  stream1: [ out1 ]
+  trigger_paths: [ simulate ]
+  end_paths: [ stream1 ]
+}
+outputs: {
+  out1: {
+    module_type: RootOutput
+    fileName: "gen.root"
+    dataTier: "generated"
+    compressionLevel: 1
+  }
+}
+services.TFileService.fileName: "gen_hist.root"
+# the g4-stage services pin NuRandomService to preDefinedSeed (largeant only);
+# the generator needs its own seed
+services.NuRandomService: { policy: "perEvent" }

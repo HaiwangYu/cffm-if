@@ -1,0 +1,5 @@
+#include "standard_reco_protodunehd_MC.fcl"
+# NF+SP+DNN-ROI+L1SP (6-channel) only
+physics.reco: [ wclsdatahd ]
+physics.trigger_paths: [ reco ]
+outputs.out1.fileName: "sp.root"

@@ -1,0 +1,7 @@
+#include "standard_detsim_dune10kt.fcl"
+# 6-channel DNN-ROI on (ProtoDUNE-HD model)
+physics.producers.tpcrawdecoder.wcls_main.structs.use_dnnroi: true
+physics.producers.tpcrawdecoder.wcls_main.plugins: ["WireCellPgraph", "WireCellGen","WireCellSio","WireCellSigProc","WireCellRoot","WireCellLarsoft","WireCellTbb","WireCellImg","WireCellPytorch"]
+# TPC only (skip PDS sim)
+physics.simulate: [ rns, tpcrawdecoder ]
+outputs.out1.fileName: "sp.root"

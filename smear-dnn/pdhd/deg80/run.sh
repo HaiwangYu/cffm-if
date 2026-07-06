@@ -1,0 +1,10 @@
+#!/bin/bash
+# gen -> g4 -> detsim(+SP+DNN) for one experiment/angle.
+# Run inside SL7 with the smear-dnn env sourced.
+set -e
+cd "$(dirname "$0")"
+lar -n 1 -c gen_80.fcl >& gen.log
+lar -n 1 -c standard_g4_protodunehd.fcl -s gen.root -o g4.root >& g4.log
+lar -n 1 -c sp.fcl -s g4.root >& sp.log
+lar -n 1 -c sp2.fcl -s detsim.root >& sp2.log
+echo DONE

@@ -1,0 +1,6 @@
+#include "protodunevd_reco.fcl"
+# NF+SP+DNN-ROI (6-channel) only
+physics.producers.wclsdatavd: @local::protodunevd_nfsp_dnnroi_mc
+physics.reco: [ rns, wclsdatavd ]
+physics.trigger_paths: [ reco ]
+outputs.out1.fileName: "sp.root"
