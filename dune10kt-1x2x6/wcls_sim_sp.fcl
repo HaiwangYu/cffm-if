@@ -111,10 +111,11 @@ physics: {
                "WireCellPgraph",
                "WireCellGen",
                "WireCellSio",
+               "WireCellSigProc",
                "WireCellRoot",
                "WireCellLarsoft",
-               "WireCellTbb"
-               , "WireCellPytorch"
+               "WireCellTbb",
+               "WireCellPytorch"
             ]
             params: {
                engine: "TbbFlow"
