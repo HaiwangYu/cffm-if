@@ -1,0 +1,5 @@
+#include "wcls_sim_sp.fcl"
+# 1x2x6 geometry (12 APAs) config with smearing + 6-ch DNN-ROI.
+# tpcrawdecoder producer already the only sim step in the dump.
+physics.simulate: [ tpcrawdecoder ]
+outputs.out1.fileName: "sp.root"

@@ -1,0 +1,9 @@
+#include "standard_detsim_dune10kt_1x2x6.fcl"
+physics.producers.tpcrawdecoder.wcls_main.plugins: ["WireCellPgraph","WireCellGen","WireCellSio","WireCellSigProc","WireCellRoot","WireCellLarsoft","WireCellTbb","WireCellImg","WireCellPytorch"]
+# force the local (== committed) jsonnet + matching inputer/outputers
+physics.producers.tpcrawdecoder.wcls_main.configs: ["wcls-sim-drift-simchannel-nf-sp.jsonnet"]
+physics.producers.tpcrawdecoder.wcls_main.inputers: ["wclsSimDepoSetSource:"]
+physics.producers.tpcrawdecoder.wcls_main.outputers: ["wclsDepoFluxWriter:postdrift","wclsFrameSaver:spsignals"]
+physics.producers.tpcrawdecoder.wcls_main.structs.use_dnnroi: true
+physics.simulate: [ tpcrawdecoder ]
+outputs.out1.fileName: "sp_dunereco.root"
